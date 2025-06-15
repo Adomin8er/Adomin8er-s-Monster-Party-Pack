@@ -1,0 +1,56 @@
+{
+    "Changes": [
+        {
+            ".LogName": "Load/Create DBDaniel character",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/DBDaniel, Characters/Schedules/DBDaniel, Strings/Schedules/DBDaniel",
+            "FromFile": "code/blank.json",
+            "When": null
+        },
+        {
+            ".LogName": "Edit DBDaniel character data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "DBDaniel": {
+                    "DisplayName": "{{i18n:NPCs_Event.DBDaniel.NameKnown}}",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 1,
+                    "HomeRegion": "Other",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanVisitIsland": false,
+                    "Caledar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "SpouseWantsChildren": false,
+                    "SpouseGiftJealousy": false,
+                    "PerfectionScore": false,
+
+                    "FlowerDanceCanDance": null,
+                    "WinterStarParticipant": false,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EldritchKin_CharacterLobby",
+                            "Tile": { "X": 2   , "Y": 5 },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        }
+    ]
+}

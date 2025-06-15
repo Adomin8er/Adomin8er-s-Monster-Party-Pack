@@ -1,0 +1,71 @@
+{
+    "Changes": [
+        {
+            ".LogName": "Load/Create DBLorin character",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/DBLorin, Characters/Schedules/DBLorin, Strings/Schedules/DBLorin",
+            "FromFile": "code/blank.json",
+            "When": null
+        },
+        {
+            ".LogName": "Edit DBLorin character data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "DBLorin": {
+                    "DisplayName": "{{i18n:NPCs_Event.DBLorin.NameUnknown}}",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 1,
+                    "HomeRegion": "Other",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanVisitIsland": false,
+                    "Caledar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "SpouseWantsChildren": false,
+                    "SpouseGiftJealousy": false,
+                    "PerfectionScore": false,
+
+                    "FlowerDanceCanDance": null,
+                    "WinterStarParticipant": false,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EldritchKin_CharacterLobby",
+                            "Tile": { "X": 7   , "Y": 5 },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        },
+        {
+            ".LogName": "Update DBLorin name",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "DBLorin": {
+                    "DisplayName": "{{i18n:NPCs_Event.DBLorin.NameKnown}}"
+                }
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523803101": true,
+                "HasFlag |contains=guildMember": true
+            },
+            "Update": "OnLocationChange"
+        }
+    ]
+}

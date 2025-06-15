@@ -1,0 +1,33 @@
+{
+    "Changes": [
+		{	
+			"LogName": "Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 22 29 0",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Dhampir 22 29 0",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800100": true
+            }
+		}
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "Changes": [
+        {
+            ".LogName": "Load/Create DBArnold character",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/DBArnold, Characters/Schedules/DBArnold, Strings/Schedules/DBArnold",
+            "FromFile": "code/blank.json",
+            "When": null
+        },
+        {
+            ".LogName": "Edit DBArnold character data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "DBArnold": {
+                    "DisplayName": "{{i18n:NPCs_Event.DBArnold.NameKnown}}",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 1,
+                    "HomeRegion": "Other",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanVisitIsland": false,
+                    "Caledar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "SpouseWantsChildren": false,
+                    "SpouseGiftJealousy": false,
+                    "PerfectionScore": false,
+
+                    "FlowerDanceCanDance": null,
+                    "WinterStarParticipant": false,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EldritchKin_CharacterLobby",
+                            "Tile": { "X": 1   , "Y": 5 },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        }
+    ]
+}

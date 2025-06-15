@@ -1,0 +1,316 @@
+{
+    "Changes": [
+        {
+            ".LogName": "Load/Create DBKnight_01 character",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/DBKnight_01, Characters/Schedules/DBKnight_01, Strings/Schedules/DBKnight_01",
+            "FromFile": "code/blank.json",
+            "When": null
+        },
+        {
+            ".LogName": "Edit DBKnight_01 character data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "DBKnight_01": {
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_01.NameKnown}}",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 1,
+                    "HomeRegion": "Other",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanVisitIsland": false,
+                    "Caledar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "SpouseWantsChildren": false,
+                    "SpouseGiftJealousy": false,
+                    "PerfectionScore": false,
+
+                    "FlowerDanceCanDance": null,
+                    "WinterStarParticipant": false,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EldritchKin_CharacterLobby",
+                            "Tile": { "X": 1   , "Y": 7 },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        },
+        {
+            ".LogName": "Load/Create DBKnight_02 character",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/DBKnight_02, Characters/Schedules/DBKnight_02, Strings/Schedules/DBKnight_02",
+            "FromFile": "code/blank.json",
+            "When": null
+        },
+        {
+            ".LogName": "Edit DBKnight_02 character data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "DBKnight_02": {
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_02.NameKnown}}",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 1,
+                    "HomeRegion": "Other",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanVisitIsland": false,
+                    "Caledar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "SpouseWantsChildren": false,
+                    "SpouseGiftJealousy": false,
+                    "PerfectionScore": false,
+
+                    "FlowerDanceCanDance": null,
+                    "WinterStarParticipant": false,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EldritchKin_CharacterLobby",
+                            "Tile": { "X": 2   , "Y": 7 },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        },
+        {
+            ".LogName": "Load/Create DBKnight_03 character",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/DBKnight_03, Characters/Schedules/DBKnight_03, Strings/Schedules/DBKnight_03",
+            "FromFile": "code/blank.json",
+            "When": null
+        },
+        {
+            ".LogName": "Edit DBKnight_03 character data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "DBKnight_03": {
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_03.NameKnown}}",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 1,
+                    "HomeRegion": "Other",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanVisitIsland": false,
+                    "Caledar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "SpouseWantsChildren": false,
+                    "SpouseGiftJealousy": false,
+                    "PerfectionScore": false,
+
+                    "FlowerDanceCanDance": null,
+                    "WinterStarParticipant": false,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EldritchKin_CharacterLobby",
+                            "Tile": { "X": 3   , "Y": 7 },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        },
+        {
+            ".LogName": "Load/Create DBKnight_04 character",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/DBKnight_04, Characters/Schedules/DBKnight_04, Strings/Schedules/DBKnight_04",
+            "FromFile": "code/blank.json",
+            "When": null
+        },
+        {
+            ".LogName": "Edit DBKnight_04 character data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "DBKnight_04": {
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_04.NameKnown}}",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 1,
+                    "HomeRegion": "Other",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanVisitIsland": false,
+                    "Caledar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "SpouseWantsChildren": false,
+                    "SpouseGiftJealousy": false,
+                    "PerfectionScore": false,
+
+                    "FlowerDanceCanDance": null,
+                    "WinterStarParticipant": false,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EldritchKin_CharacterLobby",
+                            "Tile": { "X": 5   , "Y": 7 },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        },
+        {
+            ".LogName": "Load/Create DBKnight_05 character",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/DBKnight_05, Characters/Schedules/DBKnight_05, Strings/Schedules/DBKnight_05",
+            "FromFile": "code/blank.json",
+            "When": null
+        },
+        {
+            ".LogName": "Edit DBKnight_05 character data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "DBKnight_05": {
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_05.NameKnown}}",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 1,
+                    "HomeRegion": "Other",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanVisitIsland": false,
+                    "Caledar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "SpouseWantsChildren": false,
+                    "SpouseGiftJealousy": false,
+                    "PerfectionScore": false,
+
+                    "FlowerDanceCanDance": null,
+                    "WinterStarParticipant": false,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EldritchKin_CharacterLobby",
+                            "Tile": { "X": 6   , "Y": 7 },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        },
+        {
+            ".LogName": "Load/Create DBKnight_06 character",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/DBKnight_06, Characters/Schedules/DBKnight_06, Strings/Schedules/DBKnight_06",
+            "FromFile": "code/blank.json",
+            "When": null
+        },
+        {
+            ".LogName": "Edit DBKnight_06 character data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "DBKnight_06": {
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_06.NameKnown}}",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 1,
+                    "HomeRegion": "Other",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanVisitIsland": false,
+                    "Caledar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "SpouseWantsChildren": false,
+                    "SpouseGiftJealousy": false,
+                    "PerfectionScore": false,
+
+                    "FlowerDanceCanDance": null,
+                    "WinterStarParticipant": false,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EldritchKin_CharacterLobby",
+                            "Tile": { "X": 7   , "Y": 7 },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        }
+    ]
+}

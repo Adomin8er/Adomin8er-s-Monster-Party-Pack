@@ -1,0 +1,29 @@
+{
+    "Changes": [ 
+        {
+            ".LogName": "DBSpike Overworld Sprite",
+            "Action": "Load",
+            "Target": "Characters/DBSpike",
+            "FromFile": "assets/Characters/NPCs_Event/DBSpike_Base_OW.png",
+            "When": null
+        },
+
+        {
+            ".LogName": "DBSpike Base Portrait",
+            "Action": "Load",
+            "Target": "Portraits/DBSpike",
+            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "When": null
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "25238_HDDBSpike_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/DBSpike_Base_HD.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/DBSpike", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDDBSpike_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/DBSpike_Base_HD.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/DBSpike", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDDBSpike_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/DBSpike_Base_HD.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/DBSpike", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDDBSpike_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/DBSpike_Base_HD.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/DBSpike", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}}
+            }
+        }
+    ]
+}

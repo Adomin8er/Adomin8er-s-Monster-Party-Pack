@@ -1,0 +1,76 @@
+{
+    "Changes": [
+        {
+            ".LogName": "Load AdventureGuild",
+            "Target": "Data/Events/AdventureGuild",
+            "Action": "Load",
+            "FromFile": "code/blank.json"
+        },
+
+        {
+            ".LogName": "MPP_EK_CharacterLobby",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_CharacterLobby",
+            "FromFile": "assets/Maps/MPP_EK_CharacterLobby.tmx",
+            "When": null
+        },
+        {
+            ".LogName": "MPP_EK_CharacterLobby",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_CharacterLobby": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_CharacterLobby}}",
+                    "DefaultArrivalTile": {
+                        "X": 4,
+                        "Y": 4
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_CharacterLobby"
+                    }
+                }
+            }
+        },
+
+        {
+            ".LogName": "MPP_EK_DhampirRoom",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_DhampirRoom",
+            "FromFile": "assets/Maps/MPP_EK_DhampirRoom.tmx",
+            "When": null
+        },
+        {
+            ".LogName": "MPP_EK_DhampirRoom",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_DhampirRoom": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_DhampirRoom}}",
+                    "DefaultArrivalTile": {
+                        "X": 6,
+                        "Y": 10
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_DhampirRoom"
+                    }
+                }
+            }
+        },
+
+        {
+            ".LogName": "MPP_EK_DhampirSpouseArea",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_DhampirSpouseArea",
+            "FromFile": "assets/Maps/MPP_EK_DhampirSpouseArea.tmx",
+            "When": null
+        },
+        
+        {
+            ".LogName": "MPP_EK_DhampirSpouseRoom",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_DhampirSpouseRoom",
+            "FromFile": "assets/Maps/MPP_EK_DhampirSpouseRoom.tmx",
+            "When": null
+        }
+    ]
+}

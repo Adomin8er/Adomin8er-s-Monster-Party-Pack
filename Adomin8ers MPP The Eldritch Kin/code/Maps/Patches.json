@@ -1,0 +1,135 @@
+{
+    "Changes": [
+        {
+            ".LogName": "VanillaBeach - KrakenPath",
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "FromFile": "assets/Maps/VanillaBeach - KrakenPath.tmx",
+            "FromArea": {
+                "X": 92,
+                "Y": 0,
+                "Width": 2,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 92,
+                "Y": 0,
+                "Width": 2,
+                "Height": 5
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NPCWarp"
+                    ],
+                    "Value": "93 1 MPP_EK_CharacterLobby 4 4",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            ".LogName": "VanillaHospital - DhampirBed",
+            "Action": "EditMap",
+            "Target": "Maps/Hospital",
+            "FromFile": "assets/Maps/VanillaHospital - DhampirBed.tmx",
+            "FromArea": {
+                "X": 18,
+                "Y": 10,
+                "Width": 2,
+                "Height": 4
+            },
+            "ToArea": {
+                "X": 18,
+                "Y": 10,
+                "Width": 2,
+                "Height": 4
+            }
+        },
+        {
+            ".LogName": "VanillaSamHouse - Dropbox JodiKitchen",
+            "Action": "EditMap",
+            "Target": "Maps/SamHouse",
+            "FromFile": "assets/Maps/VanillaSamHouse - Dropbox JodiKitchen.tmx",
+            "FromArea": {
+                "X": 4,
+                "Y": 4,
+                "Width": 2,
+                "Height": 4
+            },
+            "ToArea": {
+                "X": 4,
+                "Y": 4,
+                "Width": 2,
+                "Height": 4
+            }
+        },
+        {
+            ".LogName": "VanillaScienceHouse - DhampirStairs",
+            "Action": "EditMap",
+            "Target": "Maps/ScienceHouse",
+            "FromFile": "assets/Maps/VanillaScienceHouse - DhampirArrived.tmx",
+            "FromArea": {
+                "X": 8,
+                "Y": 6,
+                "Width": 5,
+                "Height": 6
+            },
+            "ToArea": {
+                "X": 8,
+                "Y": 6,
+                "Width": 5,
+                "Height": 6
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "10 9 MPP_EK_DhampirRoom 6 13",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                // "HasReadLetter |contains=InternshipPrepThankYouLetter": true
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            ".LogName": "VanillaScienceHouse - DhampirChair",
+            "Action": "EditMap",
+            "Target": "Maps/ScienceHouse",
+            "FromFile": "assets/Maps/VanillaScienceHouse - DhampirArrived.tmx",
+            "FromArea": {
+                "X": 26,
+                "Y": 12,
+                "Width": 1,
+                "Height": 2
+            },
+            "ToArea": {
+                "X": 26,
+                "Y": 12,
+                "Width": 1,
+                "Height": 2
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "10 9 MPP_EK_DhampirRoom 6 13",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                // "HasReadLetter |contains=InternshipPrepThankYouLetter": true
+            },
+            "Update": "OnLocationChange"
+        }
+    ]
+}

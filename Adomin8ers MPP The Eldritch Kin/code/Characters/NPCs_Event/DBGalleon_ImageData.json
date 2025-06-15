@@ -1,0 +1,29 @@
+{
+    "Changes": [ 
+        {
+            ".LogName": "DBGalleon Overworld Sprite",
+            "Action": "Load",
+            "Target": "Characters/DBGalleon",
+            "FromFile": "assets/Characters/NPCs_Event/DBGalleon_Base_OW.png",
+            "When": null
+        },
+
+        {
+            ".LogName": "DBGalleon Base Portrait",
+            "Action": "Load",
+            "Target": "Portraits/DBGalleon",
+            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "When": null
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "25238_HDDBGalleon_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/DBGalleon_Base_HD.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/DBGalleon", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDDBGalleon_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/DBGalleon_Base_HD.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/DBGalleon", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDDBGalleon_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/DBGalleon_Base_HD.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/DBGalleon", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDDBGalleon_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/DBGalleon_Base_HD.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/DBGalleon", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}}
+            }
+        }
+    ]
+}

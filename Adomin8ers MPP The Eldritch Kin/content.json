@@ -1,0 +1,167 @@
+{
+  "Format": "2.2.0",
+  "ConfigSchema": {
+    "Dhampir_Gender": {
+      "AllowValues": "female, male",
+      "Default": "female"
+    }
+  },
+
+  "DynamicTokens": [
+    // Gender words DTs:
+    {
+      "Name": "GenderWordsFemale_Lower",
+      "Value": "he, she, him, her, ${her^her}$, his, hers, ${his^his}$, man, woman, men, women, boy, girl, father, mother, dad, mom, grandfather, grandmother, grandpa, grandma, son, daughter, grandson, granddaughter, brother, sister, husband, wife, uncle, aunt, king, queen, prince, princess, male, female, gentleman, lady, sir, ma'am, lord, ${lady^lady}$, mr, mrs, ${son^son}$, hun, master, mistress, nephew, niece, dress, suit, skirt, shorts, wizard, sorceress, guy, gal, mister, miss, sweetie, himself, herself" 
+    },
+    {
+      "Name": "GenderWordsFemale_Upper",
+      "Value": "He, She, Him, Her, ${Her^Her}$, His, Hers, ${His^His}$, Man, Woman, Men, Women, Boy, Girl, Father, Mother, Dad, Mom, Grandfather, Grandmother, Grandpa, Grandma, Son, Daughter, Grandson, Granddaughter, Brother, Sister, Husband, Wife, Uncle, Aunt, King, Queen, Prince, Princess, Male, Female, Gentleman, Lady, Sir, Ma'am, Lord, ${Lady^Lady}$, Mr, Mrs, ${Son^Son}$, Hun, Master, Mistress, Nephew, Niece, Dress, Suit, Skirt, Shorts, Wizard, Sorceress, Guy, Gal, Mister, Miss, Sweetie, Himself, Herself"
+    },
+    {
+      "Name": "GenderWordsMale_Lower",
+      "Value": "she, he, her, him, his, ${her^her}$, ${his^his}$, hers, woman, man, women, men, girl, boy, mother, father, mom, dad, grandmother, grandfather, grandma, grandpa, daughter, son, granddaughter, grandson, sister, brother, wife, husband, aunt, uncle, queen, king, princess, prince, female, male, lady, gentleman, ma'am, sir, ${lady^lady}$, lord, mrs, mr, hun, ${son^son}$, mistress, master, niece, nephew, suit, dress, shorts, skirt, sorceress, wizard, gal, guy, miss, mister, ${dear^sweetie}$, herself, himself"
+    },
+    {
+      "Name": "GenderWordsMale_Upper",
+      "Value": "She, He, Her, Him, His, ${Her^Her}$, ${His^His}$, Hers, Woman, Man, Women, Men, Girl, Boy, Mother, Father, Mom, Dad, Grandmother, Grandfather, Grandma, Grandpa, Daughter, Son, Granddaughter, Grandson, Sister, Brother, Wife, Husband, Aunt, Uncle, Queen, King, Princess, Prince, Female, Male, Lady, Gentleman, Ma'am, Sir, ${Lady^Lady}$, Lord, Mrs, Mr, Hun, ${Son^Son}$, Mistress, Master, Niece, Nephew, Suit, Dress, Shorts, Skirt, Sorceress, Wizard, Gal, Guy, Miss, Mister, ${Dear^Sweetie}$, Herself, Himself"
+    },
+
+    // Character based DTs female:
+
+    // Dhampir
+    {
+        "Name": "MPP_EK_Dhampir_Name_T",
+        "Value": "Casandra",
+        "When": {
+          "Dhampir_Gender": "female"
+        }
+    },
+    {
+      "Name": "MPP_EK_Dhampir_Lower_T",
+      "Value": "{{GenderWordsFemale_Lower}}",
+      "When": {
+          "Dhampir_Gender": "female"
+      }
+    },
+    {
+      "Name": "MPP_EK_Dhampir_Upper_T",
+      "Value": "{{GenderWordsFemale_Upper}}",
+      "When": {
+          "Dhampir_Gender": "female"
+      }
+    },
+
+    // Character based DTs male:
+
+    // Dhampir
+    {
+        "Name": "MPP_EK_Dhampir_Name_T",
+        "Value": "Cassian",
+        "When": {
+          "Dhampir_Gender": "male"
+        }
+    }
+  ],
+  
+  "Changes": [
+    // Core NPCs
+    {
+      "LogName": "Include Dhampir Female",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Core/Dhampir/Dhampir_ImageData.json, code/Characters/NPCs_Core/Dhampir/Dhampir_StringData.json",
+      "When": {
+        "Dhampir_Gender": "female"
+      }
+    },
+
+    // Event NPCs
+    {
+      "LogName": "Include Callahan",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/Callahan_ImageData.json, code/Characters/NPCs_Event/Callahan_StringData.json"
+    },
+    {
+      "LogName": "Include Cordelia",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/Cordelia_ImageData.json, code/Characters/NPCs_Event/Cordelia_StringData.json"
+    },
+    {
+      "LogName": "Include DBArnold",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/DBArnold_ImageData.json, code/Characters/NPCs_Event/DBArnold_StringData.json"
+    },
+    {
+      "LogName": "Include DBDaniel",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/DBDaniel_ImageData.json, code/Characters/NPCs_Event/DBDaniel_StringData.json"
+    },
+    {
+      "LogName": "Include DBGalleon",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/DBGalleon_ImageData.json, code/Characters/NPCs_Event/DBGalleon_StringData.json"
+    },
+    {
+      "LogName": "Include DBKaliah",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/DBKaliah_ImageData.json, code/Characters/NPCs_Event/DBKaliah_StringData.json"
+    },
+    {
+      "LogName": "Include DBKnights",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/DBKnights_ImageData.json, code/Characters/NPCs_Event/DBKnights_StringData.json"
+    },
+    {
+      "LogName": "Include DBLillian",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/DBLillian_ImageData.json, code/Characters/NPCs_Event/DBLillian_StringData.json"
+    },
+    {
+      "LogName": "Include DBLorin",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/DBLorin_ImageData.json, code/Characters/NPCs_Event/DBLorin_StringData.json"
+    },
+    {
+      "LogName": "Include DBMane",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/DBMane_ImageData.json, code/Characters/NPCs_Event/DBMane_StringData.json"
+    },
+    {
+      "LogName": "Include DBSpike",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/DBSpike_ImageData.json, code/Characters/NPCs_Event/DBSpike_StringData.json"
+    },
+    {
+      "LogName": "Include MPPMarlon",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/MPPMarlon_ImageData.json, code/Characters/NPCs_Event/MPPMarlon_StringData.json"
+    },
+    
+    // Data
+    {
+      "LogName": "Include Maps",
+      "Action": "Include",
+      "FromFile": "code/Data/ChairTiles.json"
+    },
+
+    // Maps
+    {
+      "LogName": "Include Maps",
+      "Action": "Include",
+      "FromFile": "code/Maps/Additions.json, code/Maps/Patches.json"
+    },
+
+    // Shops
+    {
+      "LogName": "Include Shops",
+      "Action": "Include",
+      "FromFile": "code/Shops/Traveler.json"
+    },
+
+    // StringData 
+    {
+      "LogName": "Include StringData",
+      "Action": "Include",
+      "FromFile": "code/StringData/Data.json, code/StringData/Data_Events.json, code/StringData/Data_Festivals.json"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+    "Mods": {
+        "(Eastern Arabic Integer) MPP - (MOD)": {
+            "assets": {
+                "0 - Details": "Compartmentalized assets that will be used by mod. Not code based."},
+                "Maps": {
+                    "0 - Details": "Assets required for map additions and updates.",
+                    "TMX Files": "Actual map files."
+                },
+                "ModSupport": {
+                    "0 - Details": "Assets required for additional mod based map additions and updates.",
+                    "TMX Files": "Actual map files."
+                },
+                "Characters": {
+                    "0 - Details": "Image sheets for all characters.",
+                    "NPCs_Core": {
+                        "0 - Details": "Loaded characters that will exist with actual game logic.",
+                        "~Character~": {
+                            "~F/M - Character_TYPE_HD~": "Character portrait.",
+                            "~F/M - Character_TYPE_OW~": "Character sprite."
+                        }
+                    },
+                    "NPCs_Event": {
+                        "0 - Details": "Event only characters that exist without actual game logic.",
+                        "~Character_TYPE_HD~": "Character portrait.",
+                        "~Character_TYPE_OW~": "Character sprite."
+                    }
+            },
+            "code": {
+                "0 - Details": "Compartmentalized code that will be applied to the mod.",
+                "Characters": {
+                    "0 - Details": "Specific logic for all characters: Load (Create Character), Data/Character, Data/animationDescriptions, Character/Schedules/~Character~",
+                    "NPCs_Core": {
+                        "0 - Details": "Loaded characters that will exist with actual game logic.",
+                        "~Character~": "{} Character Files"
+                    },
+                    "NPCs_Event": {
+                        "0 - Details": "Event only characters that will not exist with actual game logic.",
+                        "~Character~": "{} Character Files"
+                    }
+                },
+                "Maps": {
+                    "0 - Details": "Code and logic required for map additions and updates.",
+                    "TMX Files": "Actual map files."
+                },
+                "ModSupport": {
+                    "0 - Details": "Code and logic required for additional mod based map additions and updates.",
+                    "TMX Files": "Actual map files."
+                },
+                "StringData": {
+                    "0 - Details": "The majority of the string data that will be manipulated in this mod.",
+                    "Character_Dialogue.json": "All generic strings from JSON files in the Characters/Dialogue folder.",
+                    "Data_Events.json": "All generic strings from JSON files in the Data/Events folder.",
+                    "Data_Festivals.json": "All generic strings from JSON files in the Data/Festivals folder.",
+                    "Data.json": "All generic strings from JSON files DIRECTLY in the Data folder.",
+                    "Strings.json": "All generic strings from JSON files in the Characters/Dialogue folder."
+                }
+            },
+            "config.json": "Mod settings and preferences.",
+            "content.json": "Main gateway for all assets and logic.",
+            "manifest.json": "Mod metadata, dependencies, and version info."
+        }
+    },
+    "Logic": {
+        "Data_Events": {
+            "Example": {
+                "Setup": "(Nexus Code)-(ModPack Code)-(Monster Code)-(Event Code)",
+                "Shape": "25238-02-0-36",
+                "Example": "2523800236"
+            },
+            "Nexus Code": "25238",
+            "ModPack Code": {
+                "00": "MPP - The Eldritch Kin",
+                "01": "MPP - The Primal Accord",
+                "02": "MPP - The Revolving Solstice",
+                "03": "MPP - The Haunting Court",
+                "04": "MPP - The Ophidian Concord",
+                "05": "MPP - The Blade and Bastion",
+                "06": "MPP - The Woven Circle",
+                "07": "MPP - The Shifting Emmisaries",
+                "08": "MPP - The Forbidden Legion",
+                "09": "MPP - The Diverging Concord",
+                "10": "MPP - The Resplendent Conclave"
+            },
+            "Monster Code": {
+                "0": ["All"],
+                "1": ["Dhampir", "Aabasaham",      "Hithiri",   "Stitchveil", "Calyssëa",   "Ferrisolus", "Aranthra",  "Lapinari", "Citlalixochitl", "Follyth", "Balrog"],
+                "2": ["Djinn",   "Abaahithniyran", "Nokomisae", "Rulvaxia",   "Coralira",   "Caraphiend", "Eryndis",   "Mochira",  "Tzitzimimitl",   "Gaerach", "Ekivian"],
+                "3": ["Kraken",  "Khadimarid",     "Shokali",   "Calavid",    "Lirifleur",  "",           "Isilwith",  "Nepharun", "Tzontecuhtli",   "Ishujaa", "Miregoth"],
+                "4": ["Mimic",   "Musamuhiht",     "Ruslawa",   "Desmorg",    "Rah'tilak",  "",           "Ulmornith", "Orrynua",  "Xochilaptli",    "Särkar",  "Raviboa"],
+                "5": ["Mummy",   "Atathalam",      "Ahoka",     "",           "Regindral",  "",           "",          "",         "",               "",        "Syranth"],
+                "6": ["Reaper",  "Dlariyh",        "Ikthuwin",  "",           "Sskir-rahk", "",           "",          "",         "",               "",        "Vesperith"],
+                "7": ["Slime",   "",               "",          "",           "",           "",           "",          "",         "",               "",        "Vorskaar"],
+                "8": ["",        "",               "",          "",           "",           "",           "",          "",         "",               "",        ""],
+                "9": ["",        "",               "",          "",           "",           "",           "",          "",         "",               "",        ""]
+            },
+            "Event Code": "XX"
+        }
+    }
+}

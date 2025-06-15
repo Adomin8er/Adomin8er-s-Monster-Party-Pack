@@ -1,0 +1,32 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Priority": "Early - 100",
+            "TargetField": [
+                "Traveler",
+                "Items"
+            ],
+            "Entries": {
+                "Adomin8er.MPP_EK_DhampirPortrait":{
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Dhampir 14",
+                    "Id": "(F)Adomin8er.MPP_EK_DhampirPortrait",
+                    "ItemId": "(F)Adomin8er.MPP_EK_DhampirPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack"
+                }
+            }
+        }
+    ]
+}

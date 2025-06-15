@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="7" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="18">
+ <tileset firstgid="1" name="Vanilla_Locations_TownInterior1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="Vanilla_Locations_TownInterior1.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="Vanilla_Furniture_1" tilewidth="16" tileheight="16" tilecount="3906" columns="42">
+  <image source="Vanilla_Furniture_1.png" width="672" height="1488"/>
+ </tileset>
+ <tileset firstgid="6083" name="Vanilla_Locations_Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="Vanilla_Locations_Paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="6147" name="Vanilla_Locations_TownInterior2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="Vanilla_Locations_TownInterior2.png" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="7459" name="Vanilla_Furniture_1Front" tilewidth="16" tileheight="16" tilecount="3162" columns="34">
+  <image source="Vanilla_Furniture_1Front.png" width="544" height="1488"/>
+ </tileset>
+ <layer id="1" name="Back" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxzZmBgcMaCGXGIw+SScWCQ3AkcGCT3AglzMiLYjFD+Syw0I5p6ZBqmDx2/xGEfDDMy4McAxjcYaQ==
+  </data>
+ </layer>
+ <layer id="11" name="Back2" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg8wF2KgcEDiD2B2EsKVS4dyM8A4kwgzkKTawfyO4C4E4i70OTIBQBsLgYf
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAOGHGIw+SScWCQXAsTA8NBIG5lgqg/AaRPMmE3k5uJOPvQQSw3A0McN3a5dqB4Bw45EMhhhMjhwwAcGgg4
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYECAYgEGhhIgLhWA8F2YGBgagdgViOcCxeYB8XyoXApQbCEQpzJB+CuA9EomBqzgNSN2cULAmJuBwYQbt3yZPHbx6UDxGTjkiAUARXQK1w==
+  </data>
+ </layer>
+ <layer id="12" name="Front2" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOWMLEwNDDRCXDqAB8GCnTDwAMagGC
+  </data>
+ </layer>
+ <layer id="7" name="Paths" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYcEp8gCwmEgAAjaEA4g==
+  </data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF2AAAARgAAQ==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <objectgroup id="4" name="Buildings">
+  <object id="12" name="TileData" x="0" y="48" width="48" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DhampirSpouseRoom.001&quot;"/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="64" y="32" width="16" height="32">
+   <properties>
+    <property name="Action" value="Message &quot;DhampirSpouseRoom.003&quot;"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="48" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DhampirSpouseRoom.002&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>
