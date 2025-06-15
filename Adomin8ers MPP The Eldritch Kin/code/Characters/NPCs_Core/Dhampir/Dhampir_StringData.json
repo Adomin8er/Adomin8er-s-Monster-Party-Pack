@@ -232,8 +232,8 @@
                 "eventSeen_2523800100": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100}}",
                 "eventSeen_2523800100_memory_oneday": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_oneday}}",
                 "eventSeen_2523800100_memory_oneweek": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_oneweek}}",
-                "eventSeen_2523800100_memory_twoweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_twoweeks}}",
-                "eventSeen_2523800100_memory_fourweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_fourweeks}}",
+                "eventSeen_2523800100_memory_twoweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_twoweeks |MPP_EK_Sebastian_Name={{MPP_EK_Sebastian_Name_T}} |MPP_EK_Sebastian_Lower00={{MPP_EK_Sebastian_Lower_T |valueAt=0}} |MPP_EK_Sebastian_Lower02={{MPP_EK_Sebastian_Lower_T |valueAt=2}} }}",
+                "eventSeen_2523800100_memory_fourweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_fourweeks |MPP_EK_Maru_Name={{MPP_EK_Maru_Name_T}} |MPP_EK_Maru_Lower01={{MPP_EK_Maru_Lower_T |valueAt=1}} |MPP_EK_Maru_Lower04={{MPP_EK_Maru_Lower_T |valueAt=4}} |MPP_EK_Maru_Upper01={{MPP_EK_Maru_Upper_T |valueAt=1}} }}",
                 "eventSeen_2523800100_memory_eightweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_eightweeks}}",
                 "eventSeen_2523800100_memory_oneyear": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_oneyear}}"
             }
@@ -250,12 +250,91 @@
         },
         
 		{	
+			".LogName": "Edit Dhampir spring13 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": 
+            {
+                "Dhampir": "{{i18n:Dhampir_StringData.Data_Festivals_Spring13.Dhampir}}",
+                "Dhampir_y2": "{{i18n:Dhampir_StringData.Data_Festivals_Spring13.Dhampir_y2}}",
+                "Dhampir_spouse": "{{i18n:Dhampir_StringData.Data_Festivals_Spring13.Dhampir_spouse}}"
+			}
+		},
+        {	
 			".LogName": "Edit Dhampir spring24 dialogue",
 			"Action": "EditData",
 			"Target": "Data/Festivals/spring24",
 			"Entries": 
             {
-                "Dhampir": "{{i18n:Dhampir_StringData.Data_Festivals_Spring24.Dhampir}}"
+                "Dhampir": "{{i18n:Dhampir_StringData.Data_Festivals_Spring24.Dhampir}}",
+                "Dhampir_y2": "{{i18n:Dhampir_StringData.Data_Festivals_Spring24.Dhampir_y2}}",
+                "Dhampir_spouse": "{{i18n:Dhampir_StringData.Data_Festivals_Spring24.Dhampir_spouse}}"
+			}
+		},
+        {	
+			".LogName": "Edit Dhampir summer11 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": 
+            {
+                "Dhampir": "{{i18n:Dhampir_StringData.Data_Festivals_Summer11.Dhampir}}",
+                "Dhampir_y2": "{{i18n:Dhampir_StringData.Data_Festivals_Summer11.Dhampir_y2}}",
+                "Dhampir_spouse": "{{i18n:Dhampir_StringData.Data_Festivals_Summer11.Dhampir_spouse}}"
+			}
+		},
+        {	
+			".LogName": "Edit Dhampir summer28 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": 
+            {
+                "Dhampir": "{{i18n:Dhampir_StringData.Data_Festivals_Summer28.Dhampir}}",
+                "Dhampir_y2": "{{i18n:Dhampir_StringData.Data_Festivals_Summer28.Dhampir_y2}}",
+                "Dhampir_spouse": "{{i18n:Dhampir_StringData.Data_Festivals_Summer28.Dhampir_spouse}}"
+			}
+		},
+        {	
+			".LogName": "Edit Dhampir fall16 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": 
+            {
+                "Dhampir": "{{i18n:Dhampir_StringData.Data_Festivals_Fall16.Dhampir}}",
+                "Dhampir_y2": "{{i18n:Dhampir_StringData.Data_Festivals_Fall16.Dhampir_y2}}",
+                "Dhampir_spouse": "{{i18n:Dhampir_StringData.Data_Festivals_Fall16.Dhampir_spouse}}"
+			}
+		},
+        {	
+			".LogName": "Edit Dhampir fall27 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": 
+            {
+                "Dhampir": "{{i18n:Dhampir_StringData.Data_Festivals_Fall27.Dhampir}}",
+                "Dhampir_y2": "{{i18n:Dhampir_StringData.Data_Festivals_Fall27.Dhampir_y2}}",
+                "Dhampir_spouse": "{{i18n:Dhampir_StringData.Data_Festivals_Fall27.Dhampir_spouse}}"
+			}
+		},
+        {	
+			".LogName": "Edit Dhampir winter8 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": 
+            {
+                "Dhampir": "{{i18n:Dhampir_StringData.Data_Festivals_Winter8.Dhampir}}",
+                "Dhampir_y2": "{{i18n:Dhampir_StringData.Data_Festivals_Winter8.Dhampir_y2}}",
+                "Dhampir_spouse": "{{i18n:Dhampir_StringData.Data_Festivals_Winter8.Dhampir_spouse}}"
+			}
+		},
+        {	
+			".LogName": "Edit Dhampir winter25 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": 
+            {
+                "Dhampir": "{{i18n:Dhampir_StringData.Data_Festivals_Winter25.Dhampir}}",
+                "Dhampir_y2": "{{i18n:Dhampir_StringData.Data_Festivals_Winter25.Dhampir_y2}}",
+                "Dhampir_spouse": "{{i18n:Dhampir_StringData.Data_Festivals_Winter25.Dhampir_spouse}}"
 			}
 		},
 
@@ -520,7 +599,10 @@
             "Action": "EditData",
             "Target": "Strings/animationDescriptions",
             "Entries": {
-                "SaD_dhampir_two": "{{i18n:Dhampir.Characters.StringData.dhampir_two}}"
+                "DesertFestival_2": "{{i18n:Dhampir_StringData.Data_AnimationDescriptions.DesertFestival_2}}",
+                "marriage_DesertFestival_2": "{{i18n:Dhampir_StringData.Data_AnimationDescriptions.marriage_DesertFestival_2}}",
+                "NightMarket_2": "{{i18n:Dhampir_StringData.Data_AnimationDescriptions.NightMarket_2}}",
+                "marriage_NightMarket_2": "{{i18n:Dhampir_StringData.Data_AnimationDescriptions.marriage_NightMarket_2}}"
             },
             "When": null
         },
@@ -542,7 +624,7 @@
             "Entries": {
                 "Mon": "800 Town 37 12 2/ 1000 Town 23 27 1/ 1130 Town 27 22 2/ 1230 Town 41 39 2/ 1430 Town 69 15 3/ 1700 ScienceHouse 26 10 2/ 1900 MPP_EK_DhampirRoom 3 5 0 Dhampir_SitUp/ 2200 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
                 "marraige_Mon": "900 ScienceHouse 15 8 3/ 1230 Mountain 28 15 2/ 2100 bed",
-                "Tue": "800 Town 70 10 1/ 1130 Town 27 22 2/ 1230 Town 35 28 3/ 1430 Town 68 90 3/ 1700 ScienceHouse 26 10 2/ 1900 MPP_EK_DhampirRoom 3 5 2/ 2200 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
+                "Tue": "800 Town 69 10 1/ 1130 Town 27 22 2/ 1230 Town 35 38 3/ 1430 Town 68 90 1/ 1700 ScienceHouse 26 10 2/ 1900 MPP_EK_DhampirRoom 3 5 2/ 2200 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
                 "Wed": "900 Mountain 9 5 3/ 1130 ScienceHouse 26 10 2/ 1230 BusStop 22 22 3/ 1400 Forest 66 11 3/ 1500 Forest 105 24 1/ 1700 ScienceHouse 5 18 2/ 1900 MPP_EK_DhampirRoom 3 5 0 Dhampir_SitUp/ 2200 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
                 "Thu": "800 Town 69 52 1/ 1000 Town 69 55 1/ 1130 Town 53 94 2/ 1230 Town 74 93 1/ 1430 Town 74 96/ 1700 ScienceHouse 26 10 2/ 1900 MPP_EK_DhampirRoom 3 5 0 Dhampir_SitUp/ 2200 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
                 "Fri": "800 Town 23 53 1/ 930 Town 32 56 1/ 1000 Town 25 61 3/ 1030 Town 22 67 3/ 1100 Town 37 68 1/ 1130 Town 43 78 2/ 1200 Town 28 75 3/ 1230 Town 29 75 1/ 1300 Town 27 90 0/ 1330 Town 29 75 1/ 1400 Town 53 101 3/ 1430 Town 55 101 1/ 1500 Saloon 38 19 2/ 2100 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
@@ -553,8 +635,10 @@
                 "rain": "900 MPP_EK_DhampirRoom 9 9 0/ 1200 Town 49 32 2/ 1600 ScienceHouse 26 10 2/ 1800 MPP_EK_DhampirRoom 3 5 0 Dhampir_SitUp/ 2200 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
                 "rain2": "900 MPP_EK_DhampirRoom 9 9 0/ 1600 ScienceHouse 26 10 2/ 1800 MPP_EK_DhampirRoom 3 5 0 Dhampir_SitUp/ 2200 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
                 "GreenRain": "900 MPP_EK_DhampirRoom 8 5 0/ 2100 MPP_EK_DhampirRoom 3 5 0 Dhampir_SitUp/ 2200 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
-                "DesertFestival_2": "700 ScienceHouse 8 18 2/ 900 Desert 27 13 2/ 2410 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
-                "marraige_DesertFestival_2": "700 ScienceHouse 8 18 2/ 900 Desert 27 13 2/ 2530 bed"
+                "DesertFestival_2": "900 Desert 41 6 2 \"Strings\\animationDescriptions:DesertFestival_2\"/ 2400 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
+                "marriage_DesertFestival_2": "900 Desert 22 39 1  \"Strings\\animationDescriptions:marriage_DesertFestival_2\"/ 2400 bed",
+                "NightMarket_2": "800 Town 69 10 1/ 1130 Town 27 22 2/ 1230 Town 35 38 3/ 1430 Town 68 90 1/ 1700 Beach 13 30 1 \"Strings\\animationDescriptions:NightMarket_2\"/ 2400 MPP_EK_DhampirRoom 10 6 3 Dhampir_Sleep",
+                "marriage_NightMarket_2": "1700 Beach 37 33 1 \"Strings\\animationDescriptions:marriage_NightMarket_2\"/ 2400 bed"
             }
         },
 
@@ -563,10 +647,10 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Demetrius",
             "Entries": {
-                "eventSeen_2523800100": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.eventSeen_2523800100 |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} |MPP_EK_Dhampir_Lower13={{MPP_EK_Dhampir_Lower_T |valueAt=13}} }}",
+                "eventSeen_2523800100": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.eventSeen_2523800100 |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} |MPP_EK_Dhampir_Lower13={{MPP_EK_Dhampir_Lower_T |valueAt=13}} |MPP_EK_Maru_Name={{MPP_EK_Maru_Name_T}} }}",
                 "eventSeen_2523800100_memory_eightweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.eventSeen_2523800100_memory_eightweeks |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lowe04r={{MPP_EK_Dhampir_Lower_T |valueAt=4}} |MPP_EK_Dhampir_Lower13={{MPP_EK_Dhampir_Lower_T |valueAt=13}} }}",
                 "dating_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.dating_Dhampir |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower03={{MPP_EK_Dhampir_Lower_T |valueAt=3}} |MPP_EK_Dhampir_Lower23={{MPP_EK_Dhampir_Lower_T |valueAt=23}} }}",
-                "married_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.married_Dhampir |MPP_EK_Dhampir_Lower03={{MPP_EK_Dhampir_Lower_T |valueAt=3}} }}",
+                "married_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.married_Dhampir |MPP_EK_Dhampir_Lower03={{MPP_EK_Dhampir_Lower_T |valueAt=3}} |MPP_EK_Sebastian_Name={{MPP_EK_Sebastian_Name_T}} |MPP_EK_Sebastian_Lower00={{MPP_EK_Sebastian_Lower_T |valueAt=0}} }}",
                 "Dhampir_inlaw_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.Dhampir_inlaw_Dhampir}}",
                 "divorced_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.divorced_Dhampir |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} }}"
             },

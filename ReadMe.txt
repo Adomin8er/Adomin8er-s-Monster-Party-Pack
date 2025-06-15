@@ -20,3 +20,5 @@ Adomin8ers_MonsterPartyPack
 
 :: CREDITS ::
 ♦ Concerned Ape for Stardew Valley.
+♦ spacechase0 for Space Core.
+♦ Spiderbuttons for Cross-Mod Compatibility Tokens.

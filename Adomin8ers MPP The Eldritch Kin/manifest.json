@@ -12,6 +12,10 @@
         {
 			"UniqueID": "spacechase0.SpaceCore",
 			"IsRequired": true
-		}
+		},
+        {
+            "UniqueID": "Spiderbuttons.CMCT",
+			"IsRequired": true
+        }
     ]
 }

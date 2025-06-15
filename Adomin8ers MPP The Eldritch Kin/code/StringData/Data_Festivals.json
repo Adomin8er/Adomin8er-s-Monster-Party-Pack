@@ -1,7 +1,36 @@
 {
     "Changes": [
 		{	
-			"LogName": "Flower Dance",
+			"LogName": "Dhampir Egg Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 24 78 0",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Dhampir 22 29 0",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800100": true
+            }
+		},
+        {	
+			"LogName": "Dhampir Flower Dance",
 			"Action": "EditData",
 			"Target": "Data/Festivals/spring24",
 			"TextOperations":
@@ -22,6 +51,179 @@
                         "MainEvent_additionalCharacters"
                     ],
                     "Value": "Dhampir 22 29 0",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800100": true
+            }
+		},
+        {	
+			"LogName": "Dhampir Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 13 4 2",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Dhampir 13 4 2",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800100": true
+            }
+		},
+        {	
+			"LogName": "Dhampir Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 11 28 3",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Dhampir 11 28 3",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800100": true
+            }
+		},
+        {	
+			"LogName": "Dhampir Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 22 65 1",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800100": true
+            }
+		},
+        {	
+			"LogName": "Dhampir Spirit's Eve",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 32 68 2",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Dhampir 32 68 2",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800100": true
+            }
+		},
+        {	
+			"LogName": "Dhampir Festival of Ice",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 79 32 3",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Dhampir 79 32 3",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800100": true
+            }
+		},
+        {	
+			"LogName": "Dhampir Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 37 66 3",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Dhampir 37 66 3",
                     "Delimiter": "/"
                 }
 			],
