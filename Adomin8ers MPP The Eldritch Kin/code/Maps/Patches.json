@@ -1,35 +1,6 @@
 {
     "Changes": [
         {
-            ".LogName": "VanillaBeach - KrakenPath",
-            "Action": "EditMap",
-            "Target": "Maps/Beach",
-            "FromFile": "assets/Maps/VanillaBeach - KrakenPath.tmx",
-            "FromArea": {
-                "X": 92,
-                "Y": 0,
-                "Width": 2,
-                "Height": 5
-            },
-            "ToArea": {
-                "X": 92,
-                "Y": 0,
-                "Width": 2,
-                "Height": 5
-            },
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "NPCWarp"
-                    ],
-                    "Value": "93 1 MPP_EK_CharacterLobby 4 4",
-                    "Delimiter": " "
-                }
-            ]
-        },
-        {
             ".LogName": "VanillaHospital - DhampirBed",
             "Action": "EditMap",
             "Target": "Maps/Hospital",
@@ -94,7 +65,7 @@
                 }
             ],
             "When": {
-                // "HasReadLetter |contains=InternshipPrepThankYouLetter": true
+                "HasSeenEvent |contains=2523800100": true
             },
             "Update": "OnLocationChange"
         },
@@ -127,7 +98,7 @@
                 }
             ],
             "When": {
-                // "HasReadLetter |contains=InternshipPrepThankYouLetter": true
+                "HasSeenEvent |contains=2523800100": true
             },
             "Update": "OnLocationChange"
         }

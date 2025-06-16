@@ -12,7 +12,6 @@
     "Dhampir_StringData.Data_Characters.NameKnown": "{{MPP_EK_Dhampir_Name}}",
 
     "DHAMPIR_STRINGDATA.CHARACTERS_DIALOGUE_DHAMPIR": "",
-    "Dhampir_StringData.Characters_Dialogue_Dhampir.Location_Entry": "Just looking for a nice, shady spot to sit for a while. The town is so lively.$0",
     "Dhampir_StringData.Characters_Dialogue_Dhampir.GreenRain": "What a strange weather phenomenon... The air feels thick with an unusual energy. It's... unnerving.$2",
     "Dhampir_StringData.Characters_Dialogue_Dhampir.GreenRain_2": "The green rain again. I should probably stay indoors today. There's something about it that sets my teeth on edge.$2",
     "Dhampir_StringData.Characters_Dialogue_Dhampir.DumpsterDiveComment": "Umm! Looking for something? I hope you find it just make sure to clean yourself up afterwards please.$2",
@@ -99,7 +98,7 @@
     "Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_oneday": "It took all night, but I finally have everything unpacked.$1",
     "Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_oneweek": "My mom and dad called me the other day to see how I'm doing.$0#$b#I told them that it's hotter here than I'm used to but that the everyone here is super nice!$1",
     "Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_twoweeks": "Don't tell {{MPP_EK_Sebastian_Name}}, but I want to laugh whenever I see {{MPP_EK_Sebastian_Lower02}}.$1#$b# It's like {{MPP_EK_Sebastian_Lower00}} wants to be a creature of the night, but instead {{MPP_EK_Sebastian_Lower00}} just comes off as cheesy.$1#$b#Does {{MPP_EK_Sebastian_Lower00}} even know what a creature of the night is really like?$1",
-    "Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_fourweeks": "{{MPP_EK_Maru_Name}} and I had a girls night the other day. {{MPP_EK_Maru_Lower01}}'s so smart with electronics.$1#$b#{{MPP_EK_Maru_Upper01}} must get it from {{MPP_EK_Maru_Lower04}} dad.$1",
+    "Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_fourweeks": "{{MPP_EK_Maru_Name}} and I stayed up too late the other night. {{MPP_EK_Maru_Lower01}}'s so smart with electronics.$1#$b#{{MPP_EK_Maru_Upper01}} must get it from {{MPP_EK_Maru_Lower04}} dad.$1",
     "Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_eightweeks": "Demetrius and I were the only ones home for dinner last night. It was much less awkard than I thought it would be!$1",
     "Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_oneyear": "I can't believe it's already been a year since I got here! Pelican Town feels just like home to me now!$1",
 
@@ -231,7 +230,7 @@
     "Dhampir_StringData.Strings_StringsFromMaps.DhampirSpouseRoom.002": "It's a beautiful hand done painting by {{MPP_EK_Dhampir_Name}}'s mother. It shows the hills surrounding {{MPP_EK_Dhampir_Lower04}} hometown.",
     "Dhampir_StringData.Strings_StringsFromMaps.DhampirSpouseRoom.003": "*You read a few lines of the book laying open.*#...#...Who would name their daughter Rotisserie?",
     "Dhampir_StringData.Strings_StringsFromMaps.DhampirSpouseArea.001": "Leave a gift for the one you love!",
-    "Dhampir_StringData.Strings_StringsFromMaps.DhampirSpouseArea.002": "No matter what path you choose, I'll always be with you.^   - {{MPP_EK_Dhampir_Name}}",
+    "Dhampir_StringData.Strings_StringsFromMaps.DhampirSpouseArea.002": "No matter what path you choose, I'll always be with you.^^   - {{MPP_EK_Dhampir_Name}}",
 
     "DHAMPIR_STRINGDATA.STRINGS_STRINGSFROMCSFILES": "",
     "Dhampir_StringData.Strings_StringsFromCSFiles.Dhampir_AfterWedding": "I never thought I'd find someone who would accept all of me. Thank you for not being afraid. Now, let's go home, my love.$4",
@@ -268,7 +267,7 @@
     "Dhampir_StringData.Characters_Dialogue_Maru.eventSeen_2523800100_memory_fourweeks": "{{MPP_EK_Dhampir_Name}} and I stayed up way too late the other day and now I'm bushed.$0#$b#I don't know how {{MPP_EK_Dhampir_Lower01}} has the energy to keep up with {{MPP_EK_Dhampir_Lower04}} work after that.$1",
     "Dhampir_StringData.Characters_Dialogue_Maru.dating_Dhampir": "You finally worked up the courage to ask {{MPP_EK_Dhampir_Name}} out?$0#$b#Took you long enough!$1",
     "Dhampir_StringData.Characters_Dialogue_Maru.married_Dhampir": "Oh my gosh! You guys did it!$1#$b#Congratulations on getting married!$1",
-    "Dhampir_StringData.Characters_Dialogue_Maru.Dhampir_inlaw_Dhampir": "When you get home, will you tell {{MPP_EK_Dhampir_Name}} that we need to have another girls night soon?$0",
+    "Dhampir_StringData.Characters_Dialogue_Maru.Dhampir_inlaw_Dhampir": "When you get home, will you tell {{MPP_EK_Dhampir_Name}} that we need hang out again soon?$0",
     "Dhampir_StringData.Characters_Dialogue_Maru.divorced_Dhampir": "I saw {{MPP_EK_Dhampir_Name}} the other day. {{MPP_EK_Dhampir_Upper01}}'s trying to be strong, but I can tell you really hurt {{MPP_EK_Dhampir_Lower03}}. I'm... very disappointed in you.",
     "Dhampir_StringData.Characters_Dialogue_Robin.eventSeen_2523800100": "{{MPP_EK_Dhampir_Name}} is going to be such a good carpenter one day. I can already feel it.$1",
     "Dhampir_StringData.Characters_Dialogue_Robin.eventSeen_2523800100_memory_oneweek": "I overheard {{MPP_EK_Dhampir_Name}} talking to {{MPP_EK_Dhampir_Lower04}} mom and dad the other day.$0#$b#I hope {{MPP_EK_Dhampir_Lower01}} told them how well {{MPP_EK_Dhampir_Lower01}}'s doing!$1",
@@ -336,7 +335,7 @@
     "===Category.003===": "<<<<<<<<<<<<<<<          Code.StringData.Data            >>>>>>>>>>>>>>>",
     
     "---DATA.DATA_MAIL---": "------------------------------------------------------",
-    "Data.Data_Mail.MonstrousTownMeeting_Arbitrary": "Hello @.^^Mayor Lewis and I have just announced a town meeting that will occur during our next sunny day. Please meet me in the mountains at your earliest convenience on that day.^   - Marlon[#]Monstrous Town Meeting",
+    "Data.Data_Mail.MonstrousTownMeeting_Arbitrary": "Hello @.^^Mayor Lewis and I have just announced a town meeting that will occur during our next sunny day. Please meet me in the mountains at your earliest convenience on that day.^^   - Marlon[#]Monstrous Town Meeting",
     "Data.Data_Mail.SpecialOrderThanks_Dhampir": "Thanks for gathering the materials! The room looks wonderful and I've already been selected as a mentor. The intern should get here on Thursday.^^   - Robin[#]Internship Prep",
 
     "---DATA.DATA_SPECIALORDERS---": "------------------------------------------------------",
@@ -372,7 +371,7 @@
     "Data_Events.2523800100.003": "This is {{MPP_EK_Dhampir_Name}}, {{MPP_EK_Dhampir_Lower01}}'s the intern I was telling you about.#$b#{{MPP_EK_Dhampir_Name}}, this is @. They run the farm nearby.",
     "Data_Events.2523800100.004": "It's a pleasure to meet you! Robin says you're a big customer.#$b#I look forward to working with you!$9",
     "Data_Events.2523800100.005": "Since {{MPP_EK_Dhampir_Lower01}} doesn't have {{MPP_EK_Dhampir_Lower04}} license yet, {{MPP_EK_Dhampir_Name}} can't help me with your larger projects so {{MPP_EK_Dhampir_Lower01}}'ll be helping me with other tasks in town.#$b#Make sure to treat {{MPP_EK_Dhampir_Lower03}} well!$1",
-    "Data_Events.2523800100.006": "You're room is upstairs. Let me show you the way so you can get settled in.",
+    "Data_Events.2523800100.006": "You're room is upstairs. Let me show you the way so you can get settled in so you can be ready for tomorrow.",
     "Data_Events.2523800100.007": "I'll be with you in just a moment @!",
     "Data_Events.2523800101.001": "Hi @.",
     "Data_Events.2523800101.002": "Robin asked me to repair the fence for Lewis. What do you think?",

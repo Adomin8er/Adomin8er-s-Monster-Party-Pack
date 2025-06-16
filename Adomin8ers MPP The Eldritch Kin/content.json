@@ -77,73 +77,25 @@
     //   }
     // }
 
-    // Has AHDPnG = True
-
-    // Dhampir
-    {
-      "Name": "MPP_EK_Abel_Name_T",
-      "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Abel_Name_T}}",
-      "When": {
-        "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
-      }
-    },
-    {
-      "Name": "AHDPnG_Abel_Lower_T",
-      "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Abel_Lower_T}}",
-      "When": {
-        "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
-      }
-    },
-    {
-      "Name": "AHDPnG_Abel_Upper_T",
-      "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Abel_Upper_T}}",
-      "When": {
-        "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
-      }
-    },
-
-    // Has AHDPnG = False
-    {
-      "Name": "MPP_EK_Abel_Name_T",
-      "Value": "MPP_EK_Abel_Name_T off",
-      "When": {
-        "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
-      }
-    },
-    {
-      "Name": "AHDPnG_Abel_Lower_T",
-      "Value": "AHDPnG_Abel_Lower_T off",
-      "When": {
-        "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
-      }
-    },
-    {
-      "Name": "AHDPnG_Abel_Upper_T",
-      "Value": "AHDPnG_Abel_Upper_T off",
-      "When": {
-        "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
-      }
-    },
-
     // Has Adomin8er.Adomin8ersHDSVEPortraits_and_Genderbend DT = TRUE:
 
     // Abel
     {
-        "Name": "AHDPnG_Abel_Name_T",
+        "Name": "MPP_EK_Abigail_Name_T",
         "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Abel_Name_T}}",
         "When": {
             "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Abel_Lower_T",
+      "Name": "MPP_EK_Abigail_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Abel_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Abel_Upper_T",
+      "Name": "MPP_EK_Abigail_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Abel_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -151,21 +103,21 @@
     },
     // Emmett
     {
-      "Name": "AHDPnG_Emmett_Name_T",
+      "Name": "MPP_EK_Emily_Name_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Emmett_Name_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Emmett_Lower_T",
+      "Name": "MPP_EK_Emily_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Emmett_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Emmett_Upper_T",
+      "Name": "MPP_EK_Emily_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Emmett_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -173,21 +125,21 @@
     },
     // Hayden
     {
-      "Name": "AHDPnG_Hayden_Name_T",
+      "Name": "MPP_EK_Haley_Name_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Hayden_Name_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Hayden_Lower_T",
+      "Name": "MPP_EK_Haley_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Hayden_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Hayden_Upper_T",
+      "Name": "MPP_EK_Haley_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Hayden_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -195,21 +147,21 @@
     },
     // Leif
     {
-      "Name": "AHDPnG_Leif_Name_T",
+      "Name": "MPP_EK_Leah_Name_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Leif_Name_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Leif_Lower_T",
+      "Name": "MPP_EK_Leah_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Leif_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Leif_Upper_T",
+      "Name": "MPP_EK_Leah_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Leif_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -217,21 +169,21 @@
     },
     // Micah
     {
-      "Name": "AHDPnG_Micah_Name_T",
+      "Name": "MPP_EK_Maru_Name_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Micah_Name_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Micah_Lower_T",
+      "Name": "MPP_EK_Maru_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Micah_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Micah_Upper_T",
+      "Name": "MPP_EK_Maru_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Micah_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -239,21 +191,21 @@
     },
     // Peter
     {
-      "Name": "AHDPnG_Peter_Name_T",
+      "Name": "MPP_EK_Penny_Name_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Peter_Name_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Peter_Lower_T",
+      "Name": "MPP_EK_Penny_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Peter_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Peter_Upper_T",
+      "Name": "MPP_EK_Penny_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Peter_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -261,21 +213,21 @@
     },
     // Alexis
     {
-      "Name": "AHDPnG_Alexis_Name_T",
+      "Name": "MPP_EK_Alex_Name_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Alexis_Name_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Alexis_Lower_T",
+      "Name": "MPP_EK_Alex_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Alexis_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Alexis_Upper_T",
+      "Name": "MPP_EK_Alex_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Alexis_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -283,21 +235,21 @@
     },
     // Elena
     {
-      "Name": "AHDPnG_Elena_Name_T",
+      "Name": "MPP_EK_Elliott_Name_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Elena_Name_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Elena_Lower_T",
+      "Name": "MPP_EK_Elliott_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Elena_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Elena_Upper_T",
+      "Name": "MPP_EK_Elliott_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Elena_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -305,21 +257,21 @@
     },
     // Harriet
     {
-      "Name": "AHDPnG_Harriet_Name_T",
+      "Name": "MPP_EK_Harvey_Name_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Harriet_Name_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Harriet_Lower_T",
+      "Name": "MPP_EK_Harvey_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Harriet_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Harriet_Upper_T",
+      "Name": "MPP_EK_Harvey_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Harriet_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -327,21 +279,21 @@
     },
     // Sabrina
     {
-      "Name": "AHDPnG_Sabrina_Name_T",
+      "Name": "MPP_EK_Sebastian_Name_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Sabrina_Name_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Sabrina_Lower_T",
+      "Name": "MPP_EK_Sebastian_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Sabrina_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Sabrina_Upper_T",
+      "Name": "MPP_EK_Sebastian_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Sabrina_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -349,21 +301,21 @@
     },
     // Samantha
     {
-      "Name": "AHDPnG_Samantha_Name_T",
+      "Name": "MPP_EK_Sam_Name_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Samantha_Name_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Samantha_Lower_T",
+      "Name": "MPP_EK_Sam_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Samantha_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Samantha_Upper_T",
+      "Name": "MPP_EK_Sam_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Samantha_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -371,21 +323,21 @@
     },
     // Shaylin
     {
-      "Name": "AHDPnG_Shaylin_Name_T",
+      "Name": "MPP_EK_Shane_Name_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Shaylin_Name_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Shaylin_Lower_T",
+      "Name": "MPP_EK_Shane_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Shaylin_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Shaylin_Upper_T",
+      "Name": "MPP_EK_Shane_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Shaylin_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -393,21 +345,21 @@
     },
     // Sorceress
     {
-        "Name": "AHDPnG_Sorceress_Name_T",
+        "Name": "MPP_EK_Wizard_Name_T",
         "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Sorceress_Name_T}}",
         "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
         }
     },
     {
-      "Name": "AHDPnG_Sorceress_Lower_T",
+      "Name": "MPP_EK_Wizard_Lower_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Sorceress_Lower_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
       }
     },
     {
-      "Name": "AHDPnG_Sorceress_Upper_T",
+      "Name": "MPP_EK_Wizard_Upper_T",
       "Value": "{{Spiderbuttons.CMCT/Dynamic: Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend, AHDPnG_Sorceress_Upper_T}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": true
@@ -417,21 +369,21 @@
 
     // Abel
     {
-        "Name": "AHDPnG_Abel_Name_T",
-        "Value": "Abel",
+        "Name": "MPP_EK_Abigail_Name_T",
+        "Value": "Abigail",
         "When": {
             "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Abel_Lower_T",
+      "Name": "MPP_EK_Abigail_Lower_T",
       "Value": "{{GenderWordsMale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Abel_Upper_T",
+      "Name": "MPP_EK_Abigail_Upper_T",
       "Value": "{{GenderWordsMale_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -439,21 +391,21 @@
     },
     // Emmett
     {
-      "Name": "AHDPnG_Emmett_Name_T",
-      "Value": "Emmett",
+      "Name": "MPP_EK_Emily_Name_T",
+      "Value": "Emily",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Emmett_Lower_T",
+      "Name": "MPP_EK_Emily_Lower_T",
       "Value": "{{GenderWordsMale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Emmett_Upper_T",
+      "Name": "MPP_EK_Emily_Upper_T",
       "Value": "{{GenderWordsMale_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -461,21 +413,21 @@
     },
     // Hayden
     {
-      "Name": "AHDPnG_Hayden_Name_T",
-      "Value": "Hayden",
+      "Name": "MPP_EK_Haley_Name_T",
+      "Value": "Haley",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Hayden_Lower_T",
+      "Name": "MPP_EK_Haley_Lower_T",
       "Value": "{{GenderWordsMale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Hayden_Upper_T",
+      "Name": "MPP_EK_Haley_Upper_T",
       "Value": "{{GenderWordsMale_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -483,21 +435,21 @@
     },
     // Leif
     {
-      "Name": "AHDPnG_Leif_Name_T",
-      "Value": "Leif",
+      "Name": "MPP_EK_Leah_Name_T",
+      "Value": "Leah",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Leif_Lower_T",
+      "Name": "MPP_EK_Leah_Lower_T",
       "Value": "{{GenderWordsMale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Leif_Upper_T",
+      "Name": "MPP_EK_Leah_Upper_T",
       "Value": "{{GenderWordsMale_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -505,21 +457,21 @@
     },
     // Micah
     {
-      "Name": "AHDPnG_Micah_Name_T",
-      "Value": "Micah",
+      "Name": "MPP_EK_Maru_Name_T",
+      "Value": "Maru",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Micah_Lower_T",
+      "Name": "MPP_EK_Maru_Lower_T",
       "Value": "{{GenderWordsMale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Micah_Upper_T",
+      "Name": "MPP_EK_Maru_Upper_T",
       "Value": "{{GenderWordsMale_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -527,21 +479,21 @@
     },
     // Peter
     {
-      "Name": "AHDPnG_Peter_Name_T",
-      "Value": "Peter",
+      "Name": "MPP_EK_Penny_Name_T",
+      "Value": "Penny",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Peter_Lower_T",
+      "Name": "MPP_EK_Penny_Lower_T",
       "Value": "{{GenderWordsMale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Peter_Upper_T",
+      "Name": "MPP_EK_Penny_Upper_T",
       "Value": "{{GenderWordsMale_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -549,21 +501,21 @@
     },
     // Alexis
     {
-      "Name": "AHDPnG_Alexis_Name_T",
-      "Value": "Alexis",
+      "Name": "MPP_EK_Alex_Name_T",
+      "Value": "Alex",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Alexis_Lower_T",
+      "Name": "MPP_EK_Alex_Lower_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Alexis_Upper_T",
+      "Name": "MPP_EK_Alex_Upper_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -571,21 +523,21 @@
     },
     // Elena
     {
-      "Name": "AHDPnG_Elena_Name_T",
-      "Value": "Elena",
+      "Name": "MPP_EK_Elliott_Name_T",
+      "Value": "Elliott",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Elena_Lower_T",
+      "Name": "MPP_EK_Elliott_Lower_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Elena_Upper_T",
+      "Name": "MPP_EK_Elliott_Upper_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -593,21 +545,21 @@
     },
     // Harriet
     {
-      "Name": "AHDPnG_Harriet_Name_T",
-      "Value":  "Harriet",
+      "Name": "MPP_EK_Harvey_Name_T",
+      "Value":  "Harvey",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Harriet_Lower_T",
+      "Name": "MPP_EK_Harvey_Lower_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Harriet_Upper_T",
+      "Name": "MPP_EK_Harvey_Upper_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -615,21 +567,21 @@
     },
     // Sabrina
     {
-      "Name": "AHDPnG_Sabrina_Name_T",
-      "Value":  "Sabrina",
+      "Name": "MPP_EK_Sebastian_Name_T",
+      "Value":  "Sebastian",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Sabrina_Lower_T",
+      "Name": "MPP_EK_Sebastian_Lower_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Sabrina_Upper_T",
+      "Name": "MPP_EK_Sebastian_Upper_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -637,21 +589,21 @@
     },
     // Samantha
     {
-      "Name": "AHDPnG_Samantha_Name_T",
-      "Value": "Samantha",
+      "Name": "MPP_EK_Sam_Name_T",
+      "Value": "Sam",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Samantha_Lower_T",
+      "Name": "MPP_EK_Sam_Lower_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Samantha_Upper_T",
+      "Name": "MPP_EK_Sam_Upper_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -659,21 +611,21 @@
     },
     // Shaylin
     {
-      "Name": "AHDPnG_Shaylin_Name_T",
-      "Value":  "Shaylin",
+      "Name": "MPP_EK_Shane_Name_T",
+      "Value":  "Shane",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Shaylin_Lower_T",
+      "Name": "MPP_EK_Shane_Lower_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Shaylin_Upper_T",
+      "Name": "MPP_EK_Shane_Upper_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
@@ -681,21 +633,21 @@
     },
     // Sorceress
     {
-        "Name": "AHDPnG_Sorceress_Name_T",
-        "Value":  "Sorceress",
+        "Name": "MPP_EK_Wizard_Name_T",
+        "Value":  "Wizard",
         "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
         }
     },
     {
-      "Name": "AHDPnG_Sorceress_Lower_T",
+      "Name": "MPP_EK_Wizard_Lower_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
-      "Name": "AHDPnG_Sorceress_Upper_T",
+      "Name": "MPP_EK_Wizard_Upper_T",
       "Value": "{{GenderWordsFemale_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
