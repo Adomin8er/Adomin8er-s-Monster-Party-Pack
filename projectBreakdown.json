@@ -84,15 +84,15 @@
             },
             "Monster Code": {
                 "0": ["All"],
-                "1": ["Dhampir", "Aabasaham",      "Hithiri",   "Stitchveil", "Calyssëa",   "Ferrisolus", "Aranthra",  "Lapinari", "Citlalixochitl", "Follyth", "Balrog"],
-                "2": ["Djinn",   "Abaahithniyran", "Nokomisae", "Rulvaxia",   "Coralira",   "Caraphiend", "Eryndis",   "Mochira",  "Tzitzimimitl",   "Gaerach", "Ekivian"],
-                "3": ["Kraken",  "Khadimarid",     "Shokali",   "Calavid",    "Lirifleur",  "",           "Isilwith",  "Nepharun", "Tzontecuhtli",   "Ishujaa", "Miregoth"],
-                "4": ["Mimic",   "Musamuhiht",     "Ruslawa",   "Desmorg",    "Rah'tilak",  "",           "Ulmornith", "Orrynua",  "Xochilaptli",    "Särkar",  "Raviboa"],
-                "5": ["Mummy",   "Atathalam",      "Ahoka",     "",           "Regindral",  "",           "",          "",         "",               "",        "Syranth"],
-                "6": ["Reaper",  "Dlariyh",        "Ikthuwin",  "",           "Sskir-rahk", "",           "",          "",         "",               "",        "Vesperith"],
-                "7": ["Slime",   "",               "",          "",           "",           "",           "",          "",         "",               "",        "Vorskaar"],
-                "8": ["",        "",               "",          "",           "",           "",           "",          "",         "",               "",        ""],
-                "9": ["",        "",               "",          "",           "",           "",           "",          "",         "",               "",        ""]
+                "1": ["Dhampir",  "Aabasaham",      "Hithiri",   "Stitchveil", "Calyssëa",   "Ferrisolus", "Aranthra",  "Lapinari", "Citlalixochitl", "Follyth", "Balrog"],
+                "2": ["Djinn",    "Abaahithniyran", "Nokomisae", "Rulvaxia",   "Coralira",   "Caraphiend", "Eryndis",   "Mochira",  "Tzitzimimitl",   "Gaerach", "Ekivian"],
+                "3": ["Gargyole", "Khadimarid",     "Shokali",   "Calavid",    "Lirifleur",  "",           "Isilwith",  "Nepharun", "Tzontecuhtli",   "Ishujaa", "Miregoth"],
+                "4": ["Kraken",   "Musamuhiht",     "Ruslawa",   "Desmorg",    "Rah'tilak",  "",           "Ulmornith", "Orrynua",  "Xochilaptli",    "Särkar",  "Raviboa"],
+                "5": ["Mimic",    "Atathalam",      "Ahoka",     "",           "Regindral",  "",           "",          "",         "",               "",        "Syranth"],
+                "6": ["Mummy",    "Dlariyh",        "Ikthuwin",  "",           "Sskir-rahk", "",           "",          "",         "",               "",        "Vesperith"],
+                "7": ["Reaper",   "",               "",          "",           "",           "",           "",          "",         "",               "",        "Vorskaar"],
+                "8": ["Slime",    "",               "",          "",           "",           "",           "",          "",         "",               "",        ""],
+                "9": ["",         "",               "",          "",           "",           "",           "",          "",         "",               "",        ""]
             },
             "Event Code": "XX"
         }
