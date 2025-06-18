@@ -11,7 +11,7 @@
 	"Dependencies": [
         {
             "UniqueID": "Spiderbuttons.CMCT",
-			"IsRequired": false
+			"IsRequired": true
         }
     ]
 }
