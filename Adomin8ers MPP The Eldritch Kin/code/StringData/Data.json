@@ -93,6 +93,92 @@
             "When": {
                 "FarmhouseUpgrade |contains=1,2,3": true
             }
+        },
+        
+        {
+            ".LogName": "Edit SpecialOrder Gargoyle",
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "BakingCompetition": {
+                    "Name": "Baking Competition",
+                    "Requester": "Gus",
+                    "Duration": "Week",
+                    "Repeatable": "False",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "Need baking indgredients for local pastry competition! If you'd like to dontate I'll waive your participation fee!^ -Gus",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "Drop off Large Milk in Gus's Fridge.",
+                            "RequiredCount": "10",
+                            "Data": {
+                                "DropBox": "GusFridge",
+                                "DropBoxGameLocation": "Saloon",
+                                "DropBoxIndicatorLocation": "18 15",
+                                "AcceptedContextTags": "item_large_milk"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "Drop off Large Eggs in Gus's Fridge.",
+                            "RequiredCount": "10",
+                            "Data": {
+                                "DropBox": "GusFridge",
+                                "DropBoxGameLocation": "Saloon",
+                                "DropBoxIndicatorLocation": "18 15",
+                                "AcceptedContextTags": "item_large_egg"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "Drop off FLour in Gus's Fridge.",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "DropBox": "GusFridge",
+                                "DropBoxGameLocation": "Saloon",
+                                "DropBoxIndicatorLocation": "18 15",
+                                "AcceptedContextTags": "item_flour"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "Drop off Sugar in Gus's Fridge.",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "DropBox": "GusFridge",
+                                "DropBoxGameLocation": "Saloon",
+                                "DropBoxIndicatorLocation": "18 15",
+                                "AcceptedContextTags": "item_sugar"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Friendship",
+                            "Data": {
+                                "Amount": "500",
+                                "TargetName": "Gus"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "SpecialOrderThanks_Gargoyle",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                }
+            },
+            // "When": {
+            //     "FarmhouseUpgrade |contains=1,2,3": true
+            // }
         }
     ]
 }
