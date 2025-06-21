@@ -36,6 +36,140 @@
                 "Height": 4
             }
         },
+        
+        {
+            ".LogName": "Vanilla_Saloon - BakingCompetition",
+            "Action": "EditMap",
+            "Target": "Maps/Saloon",
+            "FromFile": "assets/Maps/Vanilla_Saloon - BakingCompetition.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 14,
+                "Width": 29,
+                "Height": 11
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 14,
+                "Width": 29,
+                "Height": 11
+            }
+        },
+
+        {
+            ".LogName": "VanillaSandyHouse - DropBox SandyBarrel",
+            "Action": "EditMap",
+            "Target": "Maps/SandyHouse",
+            "FromFile": "assets/Maps/VanillaSandyHouse - DropBox SandyBarrel.tmx",
+            "FromArea": {
+                "X": 1,
+                "Y": 6,
+                "Width": 2,
+                "Height": 2
+            },
+            "ToArea": {
+                "X": 1,
+                "Y": 6,
+                "Width": 2,
+                "Height": 2
+            },
+            "When": {
+                "HasReadLetter |contains=SpecialOrderThanks_Djinn": false
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            ".LogName": "VanillaSandyHouse - SprucedUp",
+            "Action": "EditMap",
+            "Target": "Maps/SandyHouse",
+            "FromFile": "assets/Maps/VanillaSandyHouse - SprucedUp.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 19,
+                "Height": 10
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 19,
+                "Height": 10
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "Front 12 1 256 Front 12 2 288 Back 12 4 2183 Back 12 5 2215",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Search": "1047",
+                    "Value": "2183",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Search": "1079",
+                    "Value": "2215",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "10 7 4 14 7 4 18 7 4 22 7 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Search": "1009",
+                    "Value": "2210",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Search": "1010",
+                    "Value": "2210",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "Front 12 1 1253 Front 12 2 1285 Back 12 4 2210 Back 12 5 2210",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasReadLetter |contains=SpecialOrderThanks_Djinn": true
+            },
+            "Update": "OnLocationChange"
+        },
+
         {
             ".LogName": "VanillaScienceHouse - DhampirStairs",
             "Action": "EditMap",
