@@ -6,7 +6,8 @@
             "Target": "Data/Mail",
             "Entries": {
                 "MonstrousTownMeeting_Arbitrary": "{{i18n:Data.Data_Mail.MonstrousTownMeeting_Arbitrary}}",
-                "SpecialOrderThanks_Dhampir": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Dhampir}}"
+                "SpecialOrderThanks_Dhampir": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Dhampir}}",
+                "SpecialOrderThanks_Djinn": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Djinn}}"
             }
         },
         {
@@ -92,6 +93,69 @@
             },
             "When": {
                 "FarmhouseUpgrade |contains=1,2,3": true
+            }
+        },
+        {
+            ".LogName": "Edit SpecialOrder Djinn",
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "RegionalInspections": {
+                    "Name": "{{i18n:Data.Data_SpecialOrders.Djinn.Name}}",
+                    "Requester": "Sandy",
+                    "Duration": "Week",
+                    "Repeatable": "False",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:Data.Data_SpecialOrders.Djinn.Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:Data.Data_SpecialOrders.Djinn.Objective.01}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "RobinWood",
+                                "DropBoxGameLocation": "ScienceHouse",
+                                "DropBoxIndicatorLocation": "11 18",
+                                "AcceptedContextTags": "item_price_catalogue"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:Data.Data_SpecialOrders.Djinn.Objective.01}}",
+                            "RequiredCount": "100",
+                            "Data": {
+                                "DropBox": "RobinWood",
+                                "DropBoxGameLocation": "ScienceHouse",
+                                "DropBoxIndicatorLocation": "11 18",
+                                "AcceptedContextTags": "item_crystal_floor"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Friendship",
+                            "Data": {
+                                "Amount": "500",
+                                "TargetName": "Sandy"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "SpecialOrderThanks_Djinn",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasCraftingRecipe |contains=Crystal Floor": true
             }
         }
     ]

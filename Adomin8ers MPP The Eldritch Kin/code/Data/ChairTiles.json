@@ -39,7 +39,8 @@
                 "Vanilla_Locations_TownInterior1/31/34": "1/1/up/booth/1/3/false",
                 "Vanilla_Locations_TownInterior1/22/22": "1/1/down/stool tall/-1/-1/false",
                 "Vanilla_Locations_TownInterior1/24/13": "1/1/right/chair/-1/-1/false",
-                "Vanilla_Furniture_1/18/17": "1/2/left/couch/-1/-1/false"
+                "Vanilla_Furniture_1/18/17": "1/2/left/couch/-1/-1/false",
+                "MPP_EK_Locations_TownInterior1/12/26": "1/1/right/chair/-1/-1/false"
             }
         }
     ]
