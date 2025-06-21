@@ -10,6 +10,7 @@
     "---DHAMPIR_STRINGDATA---": "------------------------------------------------------",
     "DHAMPIR_STRINGDATA.DATA_CHARACTERS": "",
     "Dhampir_StringData.Data_Characters.NameKnown": "{{MPP_EK_Dhampir_Name}}",
+    "Dhampir_StringData.Data_Characters.Gender": "{{MPP_EK_Djinn_Upper37}}",
 
     "DHAMPIR_STRINGDATA.CHARACTERS_DIALOGUE_DHAMPIR": "",
     "Dhampir_StringData.Characters_Dialogue_Dhampir.GreenRain": "What a strange weather phenomenon... The air feels thick with an unusual energy. It's... unnerving.$2",
@@ -283,7 +284,9 @@
     "Dhampir_StringData.Characters_Dialogue_Sebastian.divorced_Dhampir": "So you couldn't handle it, huh? Figures. {{MPP_EK_Dhampir_Upper01}}'s better off without you.$2",
 
     "---DJINN_STRINGDATA---": "------------------------------------------------------",
-    "DJINN.CHARACTERS.STRINGDATA": "",
+    "DJINN.DATA_CHARACTERS": "",
+    "Djinn.Data_Characters.NameKnown": "{{MPP_EK_Djinn_Name}}",
+
     "DJINN.DATA_SPECIALORDERS": "",
     
     "---KRAKEN_STRINGDATA---": "------------------------------------------------------",
@@ -337,6 +340,7 @@
     "---DATA.DATA_MAIL---": "------------------------------------------------------",
     "Data.Data_Mail.MonstrousTownMeeting_Arbitrary": "Hello @.^^Mayor Lewis and I have just announced a town meeting that will occur during our next sunny day. Please meet me in the mountains at your earliest convenience on that day.^^   - Marlon[#]Monstrous Town Meeting",
     "Data.Data_Mail.SpecialOrderThanks_Dhampir": "Thanks for gathering the materials! The room looks wonderful and I've already been selected as a mentor. The intern should get here on Thursday.^^   - Robin[#]Internship Prep",
+    "Data.Data_Mail.SpecialOrderThanks_Djinn": "TheWe did it! The Oasis was ranked #1 for most beautiful tourist stop in all of Calico. Come celebrate with me this weekend!.^^   - Sandy[#]Regional Inspections",
 
     "---DATA.DATA_SPECIALORDERS---": "------------------------------------------------------",
     "DATA.DATA_SPECIALORDERS.DHAMPIR": "",
@@ -345,7 +349,12 @@
     "Data.Data_SpecialOrders.Dhampir.Objective.02": "Drop stone off in Robin's store.",
     "Data.Data_SpecialOrders.Dhampir.Objective.03": "Drop iron bars off in Robin's store.",
     "Data.Data_SpecialOrders.Dhampir.Objective.04": "Drop pine tar off in Robin's store.",
-    "Data.Data_SpecialOrders.Dhampir.Text": "I've applied to be part of the Carpenter's internship program but need to make space for a guest to stay with me during their time here in the valley. Can you bring me materials so I can refurbish our attic?",
+    "Data.Data_SpecialOrders.Dhampir.Text": "I've applied to be part of the Carpenter's internship program but need to make space for a guest to stay with me during their time here in the valley. Can you bring me materials so I can refurbish our attic?^ -Robin",
+
+    "DATA.DATA_SPECIALORDERS.Djinn": "",
+    "Data.Data_SpecialOrders.Djinn.Name": "Regional Inspections",
+    "Data.Data_SpecialOrders.Djinn.Objective.01": "Drop crystal floor off in Robin's store.",
+    "Data.Data_SpecialOrders.Djinn.Text": "Regional inspections are starting up soon. I want to make sure my store is at the top of the charts. Can you help me bring supplies to help spruce up this place?",
 
     "===Category.004===": "<<<<<<<<<<<<<<<       Code.StringData.Data_Events        >>>>>>>>>>>>>>>",
 
