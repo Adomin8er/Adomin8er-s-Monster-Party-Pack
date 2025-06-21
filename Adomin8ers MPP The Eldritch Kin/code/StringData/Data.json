@@ -7,7 +7,8 @@
             "Entries": {
                 "MonstrousTownMeeting_Arbitrary": "{{i18n:Data.Data_Mail.MonstrousTownMeeting_Arbitrary}}",
                 "SpecialOrderThanks_Dhampir": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Dhampir}}",
-                "SpecialOrderThanks_Djinn": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Djinn}}"
+                "SpecialOrderThanks_Djinn": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Djinn}}",
+                "SpecialOrderThanks_Gargoyle": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Gargoyle}}"
             }
         },
         {
@@ -108,7 +109,7 @@
                     "RequiredTags": "",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "Need baking indgredients for local pastry competition! If you'd like to dontate I'll waive your participation fee!^ -Gus",
+                    "Text": "Need baking ingredients for local pastry competition! If you'd like to donate I'll waive your participation fee!^ -Gus",
                     "ItemToRemoveOnEnd": null,
                     "MailToRemoveOnEnd": null,
                     "RandomizedElements": null,
@@ -124,6 +125,8 @@
                                 "AcceptedContextTags": "item_large_milk"
                             }
                         },
+                        {
+                            "Type": "Donate",
                             "Text": "Drop off Large Eggs in Gus's Fridge.",
                             "RequiredCount": "10",
                             "Data": {
@@ -135,7 +138,7 @@
                         },
                         {
                             "Type": "Donate",
-                            "Text": "Drop off FLour in Gus's Fridge.",
+                            "Text": "Drop off Flour in Gus's Fridge.",
                             "RequiredCount": "50",
                             "Data": {
                                 "DropBox": "GusFridge",
@@ -174,9 +177,9 @@
                     ]
                 }
             },
-            // "When": {
-            //     "FarmhouseUpgrade |contains=1,2,3": true
-            // }
+            "When": {
+                "Query: BUILDINGS_CONSTRUCTED All Barn 1, BUILDINGS_CONSTRUCTED Farm Coop 1": true
+            }
         },
         {
             ".LogName": "Edit SpecialOrder Djinn",
