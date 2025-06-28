@@ -1,0 +1,270 @@
+{
+    "Changes": [
+        {
+            ".LogName": "Load/Create Djinn character",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Djinn, Characters/Dialogue/MarriageDialogueDjinn, Characters/Schedules/Djinn, Strings/Schedules/Djinn",
+            "FromFile": "code/blank.json"
+        },
+        {
+            ".LogName": "Edit Djinn character data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Djinn": {
+                    "DisplayName": "{{i18n:Djinn_StringData.Characters_DisplayName |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} }}",
+                    "Gender": "female",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 14,
+                    "HomeRegion": "Other",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+
+                    "CanSocialize": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanBeRomanced": false,
+                    "KissSpriteIndex": 33,
+                    "KissSpriteFacingRight": false,
+                    "CanReceiveGifts": true,
+                    "CanVisitIsland": false,
+                    "Caledar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "SpouseWantsChildren": true,
+                    "SpouseGiftJealousy": true,
+                    "PerfectionScore": false,
+
+                    "DumpsterDiveFriendshipEffect": -25,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarParticipant": true,
+                    
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "SandyHouse",
+                            "Tile": { "X": -100   , "Y": -100 },
+                            "Direction": "Left"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        },
+        // {
+        //     "LogName": "Enable dating Djinn",
+        //     "Action": "EditData",
+        //     "Target": "Data/Characters",
+        //     "Entries": {
+        //         "Djinn": {
+        //             "CanBeRomanced": true,
+        //             "CanVisitIsland": true,
+        //             "FlowerDanceCanDance": true
+        //         }
+        //     },
+        //     "When": {
+        //         "HasSeenEvent |contains=2523800107": true
+        //     }
+        // },
+
+        {
+            ".LogName": "Edit Djinn gift tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Djinn": "/64 769 709 348 637 575 767 852/ /80 66 422 410 726 725 382/ /145 283 595 773 RiverJelly 16 376/ /248 772 768 421 74 93 167/ / /"
+            }
+        },
+
+        {
+            ".LogName": "Edit Djinn standard dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Djinn",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+
+        {
+            ".LogName": "Edit Djinn rain dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+        
+		{	
+			".LogName": "Edit Djinn spring13 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": 
+            {
+                "Placeholder":""
+            }
+		},
+        {	
+			".LogName": "Edit Djinn spring24 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": 
+            {
+                "Placeholder":""
+            }
+		},
+        {	
+			".LogName": "Edit Djinn summer11 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": 
+            {
+                "Placeholder":""
+            }
+		},
+        {	
+			".LogName": "Edit Djinn summer28 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": 
+            {
+                "Placeholder":""
+            }
+		},
+        {	
+			".LogName": "Edit Djinn fall16 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": 
+            {
+                "Placeholder":""
+            }
+		},
+        {	
+			".LogName": "Edit Djinn fall27 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": 
+            {
+                "Placeholder":""
+            }
+		},
+        {	
+			".LogName": "Edit Djinn winter8 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": 
+            {
+                "Placeholder":""
+            }
+		},
+        {	
+			".LogName": "Edit Djinn winter25 dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": 
+            {
+                "Placeholder":""
+            }
+		},
+
+        {
+            ".LogName": "Edit Djinn engagement dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+
+        {
+            ".LogName": "Edit Djinn marriage dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueDjinn",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+
+        {
+            ".LogName": "Edit Djinn extra dialogue",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+
+        {
+            ".LogName": "Edit Djinn StringsFromMaps dialogue",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+
+        {
+            ".LogName": "Edit Djinn StringsFromCSFiles dialogue",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+        
+        {
+            ".LogName": "Edit Djinn movie dialogue",
+            "Action": "EditData",
+            "Target": "Strings/movieReactions",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/movieReactions",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+        
+        {
+            ".LogName": "Edit Djinn animation strings",
+            "Action": "EditData",
+            "Target": "Strings/animationDescriptions",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+        {
+            ".LogName": "Edit Djinn animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+        {
+            ".LogName": "Edit Djinn schedule",
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Djinn",
+            "Entries": {
+                "Placeholder":""
+            }
+        },
+
+        {
+            ".LogName": "Edit FRIEND_1 dialogue for the Djinn",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/FRIEND_1",
+            "Entries": {
+                "Placeholder":""
+            }
+        }
+    ]
+}

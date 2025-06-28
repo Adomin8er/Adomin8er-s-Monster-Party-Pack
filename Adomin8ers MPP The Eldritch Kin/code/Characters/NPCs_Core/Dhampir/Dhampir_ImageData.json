@@ -112,7 +112,7 @@
             ".LogName": "Dhampir's purchasable painting data.",
             "Target": "Data/Furniture",
             "Entries": {
-                "Adomin8er.MPP_EK_DhampirPortrait": "Dhampir/painting/2 2/2 2/1/999/-1/Casandra Portrait/0/Mods\\Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin\\EK_Portraits/true"
+                "Adomin8er.MPP_EK_DhampirPortrait": "Dhampir/painting/2 2/2 2/1/999/-1/{{i18n:Conent.Dynamic_Tokens.Names.Dhampir_FemaleName}} Portrait/0/Mods\\Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin\\EK_Portraits/true"
             },
             "When": {
                 "Dhampir_Gender": "female"

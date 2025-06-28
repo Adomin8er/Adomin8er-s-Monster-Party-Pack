@@ -1,12 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load AdventureGuild",
-            "Target": "Data/Events/AdventureGuild",
-            "Action": "Load",
-            "FromFile": "code/blank.json"
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Locations_Arbitrary.001": "+--------------------------------------------+",
+                "TC_Data_Locations_Arbitrary.002": "|         Data/Locations/Arbitrary           |",
+                "TC_Data_Locations_Arbitrary.003": "+--------------------------------------------+"
+            }
         },
-
         {
             ".LogName": "MPP_EK_CharacterLobby",
             "Action": "Load",
@@ -32,6 +34,16 @@
             }
         },
 
+        
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Locations_Dhampir.001": "+--------------------------------------------+",
+                "TC_Data_Locations_Dhampir.002": "|          Data/Locations/Dhampir            |",
+                "TC_Data_Locations_Dhampir.003": "+--------------------------------------------+"
+            }
+        },
         {
             ".LogName": "MPP_EK_DhampirRoom",
             "Action": "Load",
@@ -56,7 +68,6 @@
                 }
             }
         },
-
         {
             ".LogName": "MPP_EK_DhampirSpouseArea",
             "Action": "Load",
@@ -64,12 +75,29 @@
             "FromFile": "assets/Maps/MPP_EK_DhampirSpouseArea.tmx",
             "When": null
         },
-        
         {
             ".LogName": "MPP_EK_DhampirSpouseRoom",
             "Action": "Load",
             "Target": "Maps/MPP_EK_DhampirSpouseRoom",
             "FromFile": "assets/Maps/MPP_EK_DhampirSpouseRoom.tmx",
+            "When": null
+        },
+
+        
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Locations_Djinn.001": "+--------------------------------------------+",
+                "TC_Data_Locations_Djinn.002": "|           Data/Locations/Djinn             |",
+                "TC_Data_Locations_Djinn.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            ".LogName": "MPP_EK_DesertTruck",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_DesertTruck",
+            "FromFile": "assets/Maps/MPP_EK_DesertTruck.tmx",
             "When": null
         }
     ]

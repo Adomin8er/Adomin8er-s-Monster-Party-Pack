@@ -1,6 +1,15 @@
 {
     "Changes": [
         {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Mail.001": "+--------------------------------------------+",
+                "TC_Data_Mail.002": "|                 Data/Mail                  |",
+                "TC_Data_Mail.003": "+--------------------------------------------+"
+            }
+        },
+        {
             ".LogName": "EDIT MAIL - Mail text.",
             "Action": "EditData",
             "Target": "Data/Mail",
@@ -9,6 +18,17 @@
                 "SpecialOrderThanks_Dhampir": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Dhampir}}",
                 "SpecialOrderThanks_Djinn": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Djinn}}",
                 "SpecialOrderThanks_Gargoyle": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Gargoyle}}"
+            }
+        },
+
+        
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_SpecialOrders.001": "+--------------------------------------------+",
+                "TC_Data_SpecialOrders.002": "|             Data/SpecialOrders             |",
+                "TC_Data_SpecialOrders.003": "+--------------------------------------------+"
             }
         },
         {
@@ -93,7 +113,59 @@
                 }
             },
             "When": {
-                "FarmhouseUpgrade |contains=1,2,3": true
+                "HasSeenEvent |contains=2523800100": true
+            }
+        },
+        {
+            ".LogName": "Edit SpecialOrder Djinn",
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "RegionalInspections": {
+                    "Name": "{{i18n:Data.Data_SpecialOrders.Djinn.Name}}",
+                    "Requester": "Sandy",
+                    "Duration": "Week",
+                    "Repeatable": "False",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:Data.Data_SpecialOrders.Djinn.Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:Data.Data_SpecialOrders.Djinn.Objective.01}}",
+                            "RequiredCount": "200",
+                            "Data": {
+                                "DropBox": "RobinWood",
+                                "DropBoxGameLocation": "ScienceHouse",
+                                "DropBoxIndicatorLocation": "11 18",
+                                "AcceptedContextTags": "item_crystal_floor"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Friendship",
+                            "Data": {
+                                "Amount": "500",
+                                "TargetName": "Sandy"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "SpecialOrderThanks_Djinn",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800200": true
             }
         },
         {
@@ -178,70 +250,78 @@
                 }
             },
             "When": {
-                "Query: BUILDINGS_CONSTRUCTED All Barn 1, BUILDINGS_CONSTRUCTED Farm Coop 1": true
+                "HasSeenEvent |contains=2523800300": true
+            }
+        },
+
+        
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_TriggerActions.001": "+--------------------------------------------+",
+                "TC_Data_TriggerActions.002": "|            Data/TriggerActions             |",
+                "TC_Data_TriggerActions.003": "+--------------------------------------------+"
             }
         },
         {
-            ".LogName": "Edit SpecialOrder Djinn",
+            ".LogName": "Arbitrary.Data_Events.2523800000",
             "Action": "EditData",
-            "Target": "Data/SpecialOrders",
+            "Target": "Data/TriggerActions",
             "Entries": {
-                "RegionalInspections": {
-                    "Name": "{{i18n:Data.Data_SpecialOrders.Djinn.Name}}",
-                    "Requester": "Sandy",
-                    "Duration": "Week",
-                    "Repeatable": "False",
-                    "RequiredTags": "",
-                    "OrderType": "",
-                    "SpecialRule": "",
-                    "Text": "{{i18n:Data.Data_SpecialOrders.Djinn.Text}}",
-                    "ItemToRemoveOnEnd": null,
-                    "MailToRemoveOnEnd": null,
-                    "RandomizedElements": null,
-                    "Objectives": [
-                        {
-                            "Type": "Donate",
-                            "Text": "{{i18n:Data.Data_SpecialOrders.Djinn.Objective.01}}",
-                            "RequiredCount": "1",
-                            "Data": {
-                                "DropBox": "RobinWood",
-                                "DropBoxGameLocation": "ScienceHouse",
-                                "DropBoxIndicatorLocation": "11 18",
-                                "AcceptedContextTags": "item_price_catalogue"
-                            }
-                        },
-                        {
-                            "Type": "Donate",
-                            "Text": "{{i18n:Data.Data_SpecialOrders.Djinn.Objective.01}}",
-                            "RequiredCount": "100",
-                            "Data": {
-                                "DropBox": "RobinWood",
-                                "DropBoxGameLocation": "ScienceHouse",
-                                "DropBoxIndicatorLocation": "11 18",
-                                "AcceptedContextTags": "item_crystal_floor"
-                            }
-                        }
-                    ],
-                    "Rewards": [
-                        {
-                            "Type": "Friendship",
-                            "Data": {
-                                "Amount": "500",
-                                "TargetName": "Sandy"
-                            }
-                        },
-                        {
-                            "Type": "Mail",
-                            "Data": {
-                                "MailReceived": "SpecialOrderThanks_Djinn",
-                                "NoLetter": "false"
-                            }
-                        }
+                "25238_MonstrousTownMeeting_Invite": {
+                    "Id": "25238_MonstrousTownMeeting_Invite",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_FRIENDSHIP_POINTS Any Dhampir 1250\" \"PLAYER_FRIENDSHIP_POINTS Any Djinn 1250\"",
+                    "Actions": [
+                        "AddMail All MonstrousTownMeeting_Arbitrary tomorrow"
                     ]
                 }
-            },
-            "When": {
-                "HasCraftingRecipe |contains=Crystal Floor": true
+            }
+        },
+        {
+            ".LogName": "Dhampir Special Order Creation",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "25238_SpecialOrderLoaded_Dhampir": {
+                    "Id": "25238_SpecialOrderLoaded_Dhampir",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_FARMHOUSE_UPGRADE Any 1 3\"",
+                    "Actions": [
+                        "MarkEventSeen All 2523800100 true"
+                    ]
+                }
+            }
+        },
+        {
+            ".LogName": "Djinn Special Order Creation",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "25238_SpecialOrderLoaded_Djinn": {
+                    "Id": "25238_SpecialOrderLoaded_Djinn",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_HAS_CRAFTING_RECIPE Any Crystal Floor\", ANY \"PLAYER_VISITED_LOCATION Any SandyHouse\"",
+                    "Actions": [
+                        "MarkEventSeen All 2523800200 true"
+                    ]
+                }
+            }
+        },
+        {
+            ".LogName": "Gargoyle Special Order Creation",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "25238_SpecialOrderLoaded_Gargoyle": {
+                    "Id": "25238_SpecialOrderLoaded_Gargoyle",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"BUILDINGS_CONSTRUCTED Farm \\\"Barn\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"Big Barn\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"Deluxe Barn\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"FlashShifter.StardewValleyExpandedCP_PremiumBarn\\\"\", ANY \"BUILDINGS_CONSTRUCTED Farm \\\"Coop\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"Big Coop\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"Deluxe Coop\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"FlashShifter.StardewValleyExpandedCP_PremiumCoop\\\"\"",
+                    "Actions": [
+                        "MarkEventSeen All 2523800300 true"
+                    ]
+                }
             }
         }
     ]

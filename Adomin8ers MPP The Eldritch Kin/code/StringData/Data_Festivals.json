@@ -1,6 +1,15 @@
 {
-    "Changes": [
-		{	
+    "Changes": [        
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Festivals_spring13.001": "+--------------------------------------------+",
+                "TC_Data_Festivals_spring13.002": "|   Data/Festivals/spring13 - Egg Festival   |",
+                "TC_Data_Festivals_spring13.003": "+--------------------------------------------+"
+            }
+        },
+        {	
 			"LogName": "Dhampir Egg Festival",
 			"Action": "EditData",
 			"Target": "Data/Festivals/spring13",
@@ -26,9 +35,20 @@
                 }
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
+
+              
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Festivals_spring24.001": "+--------------------------------------------+",
+                "TC_Data_Festivals_spring24.002": "|   Data/Festivals/spring24 - Flower Dance   |",
+                "TC_Data_Festivals_spring24.003": "+--------------------------------------------+"
+            }
+        },
         {	
 			"LogName": "Dhampir Flower Dance",
 			"Action": "EditData",
@@ -55,9 +75,20 @@
                 }
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
+
+              
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Festivals_summer11.001": "+--------------------------------------------+",
+                "TC_Data_Festivals_summer11.002": "|       Data/Festivals/summer11 - Luau       |",
+                "TC_Data_Festivals_summer11.003": "+--------------------------------------------+"
+            }
+        },
         {	
 			"LogName": "Dhampir Luau",
 			"Action": "EditData",
@@ -84,9 +115,20 @@
                 }
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
+
+              
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Festivals_summer28.001": "+---------------------------------------------+",
+                "TC_Data_Festivals_summer28.002": "| Data/Festivals/summer28 - Moonlight Jellies |",
+                "TC_Data_Festivals_summer28.003": "+---------------------------------------------+"
+            }
+        },
         {	
 			"LogName": "Dhampir Moonlight Jellies",
 			"Action": "EditData",
@@ -113,9 +155,20 @@
                 }
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
+
+              
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Festivals_fall16.001": "+--------------------------------------------+",
+                "TC_Data_Festivals_fall16.002": "|        Data/Festivals/fall16 - Fair        |",
+                "TC_Data_Festivals_fall16.003": "+--------------------------------------------+"
+            }
+        },
         {	
 			"LogName": "Dhampir Fair",
 			"Action": "EditData",
@@ -141,9 +194,20 @@
                 }
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
+
+              
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Festivals_fall27.001": "+--------------------------------------------+",
+                "TC_Data_Festivals_fall27.002": "|   Data/Festivals/fall27 - Spirit's Eve     |",
+                "TC_Data_Festivals_fall27.003": "+--------------------------------------------+"
+            }
+        },
         {	
 			"LogName": "Dhampir Spirit's Eve",
 			"Action": "EditData",
@@ -170,9 +234,20 @@
                 }
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
+
+              
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Festivals_winter8.001": "+--------------------------------------------+",
+                "TC_Data_Festivals_winter8.002": "|  Data/Festivals/winter8 - Festival of Ice  |",
+                "TC_Data_Festivals_winter8.003": "+--------------------------------------------+"
+            }
+        },
         {	
 			"LogName": "Dhampir Festival of Ice",
 			"Action": "EditData",
@@ -199,9 +274,20 @@
                 }
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
+
+              
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "TC_Data_Festivals_winter25.001": "+--------------------------------------------+",
+                "TC_Data_Festivals_winter25.002": "|    Data/Festivals/winter25 - Winter Star   |",
+                "TC_Data_Festivals_winter25.003": "+--------------------------------------------+"
+            }
+        },
         {	
 			"LogName": "Dhampir Winter Star",
 			"Action": "EditData",
@@ -228,7 +314,7 @@
                 }
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		}
     ]

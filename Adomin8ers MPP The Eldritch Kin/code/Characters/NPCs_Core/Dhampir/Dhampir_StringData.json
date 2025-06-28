@@ -12,8 +12,8 @@
             "Target": "Data/Characters",
             "Entries": {
                 "Dhampir": {
-                    "DisplayName": "{{i18n:Dhampir_StringData.Data_Characters.NameKnown |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} }}",
-                    "Gender": "Female",
+                    "DisplayName": "{{i18n:Dhampir_StringData.Characters_DisplayName |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} }}",
+                    "Gender": "{{i18n:Dhampir_StringData.Characters_Gender |MPP_EK_Dhampir_Upper37={{MPP_EK_Dhampir_Upper_T |valueAt=37}} }}",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
                     "BirthDay": 14,
@@ -97,9 +97,6 @@
                         "Y": 32
                     }
                 }
-            },
-            "When": {
-                "Dhampir_Gender": "female"
             }
         },
         {
@@ -114,7 +111,7 @@
                 }
             },
             "When": {
-                "HasSeenEvent |contains=2523800106": true
+                "HasSeenEvent |contains=2523800107": true
             }
         },
 
@@ -226,13 +223,13 @@
                 "winter_Thu6": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.winter_Thu6}}",
                 "winter_Thu8": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.winter_Thu8}}",
 
-                "eventSeen_2523800100": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100}}",
-                "eventSeen_2523800100_memory_oneday": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_oneday}}",
-                "eventSeen_2523800100_memory_oneweek": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_oneweek}}",
-                "eventSeen_2523800100_memory_twoweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_twoweeks |MPP_EK_Sebastian_Name={{MPP_EK_Sebastian_Name_T}} |MPP_EK_Sebastian_Lower00={{MPP_EK_Sebastian_Lower_T |valueAt=0}} |MPP_EK_Sebastian_Lower02={{MPP_EK_Sebastian_Lower_T |valueAt=2}} }}",
-                "eventSeen_2523800100_memory_fourweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_fourweeks |MPP_EK_Maru_Name={{MPP_EK_Maru_Name_T}} |MPP_EK_Maru_Lower01={{MPP_EK_Maru_Lower_T |valueAt=1}} |MPP_EK_Maru_Lower04={{MPP_EK_Maru_Lower_T |valueAt=4}} |MPP_EK_Maru_Upper01={{MPP_EK_Maru_Upper_T |valueAt=1}} }}",
-                "eventSeen_2523800100_memory_eightweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_eightweeks}}",
-                "eventSeen_2523800100_memory_oneyear": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800100_memory_oneyear}}"
+                "eventSeen_2523800101": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800101}}",
+                "eventSeen_2523800101_memory_oneday": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800101_memory_oneday}}",
+                "eventSeen_2523800101_memory_oneweek": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800101_memory_oneweek}}",
+                "eventSeen_2523800101_memory_twoweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800101_memory_twoweeks |MPP_EK_Sebastian_Name={{MPP_EK_Sebastian_Name_T}} |MPP_EK_Sebastian_Lower00={{MPP_EK_Sebastian_Lower_T |valueAt=0}} |MPP_EK_Sebastian_Lower02={{MPP_EK_Sebastian_Lower_T |valueAt=2}} }}",
+                "eventSeen_2523800101_memory_fourweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800101_memory_fourweeks |MPP_EK_Maru_Name={{MPP_EK_Maru_Name_T}} |MPP_EK_Maru_Lower01={{MPP_EK_Maru_Lower_T |valueAt=1}} |MPP_EK_Maru_Lower04={{MPP_EK_Maru_Lower_T |valueAt=4}} |MPP_EK_Maru_Upper01={{MPP_EK_Maru_Upper_T |valueAt=1}} }}",
+                "eventSeen_2523800101_memory_eightweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800101_memory_eightweeks}}",
+                "eventSeen_2523800101_memory_oneyear": "{{i18n:Dhampir_StringData.Characters_Dialogue_Dhampir.eventSeen_2523800101_memory_oneyear}}"
             }
         },
 
@@ -630,7 +627,7 @@
                 "Dhampir_marriage_NightMarket_2": "1700 Beach 37 33 1 \"Strings\\animationDescriptions:Dhampir_marriage_NightMarket_2\"/ 2400 bed"
             },
             "When": {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
         },
 
@@ -639,8 +636,8 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Demetrius",
             "Entries": {
-                "eventSeen_2523800100": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.eventSeen_2523800100 |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} |MPP_EK_Dhampir_Lower13={{MPP_EK_Dhampir_Lower_T |valueAt=13}} |MPP_EK_Maru_Name={{MPP_EK_Maru_Name_T}} }}",
-                "eventSeen_2523800100_memory_eightweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.eventSeen_2523800100_memory_eightweeks |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower04={{MPP_EK_Dhampir_Lower_T |valueAt=4}} |MPP_EK_Dhampir_Lower13={{MPP_EK_Dhampir_Lower_T |valueAt=13}} }}",
+                "eventSeen_2523800101": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.eventSeen_2523800101 |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} |MPP_EK_Dhampir_Lower13={{MPP_EK_Dhampir_Lower_T |valueAt=13}} |MPP_EK_Maru_Name={{MPP_EK_Maru_Name_T}} }}",
+                "eventSeen_2523800101_memory_eightweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.eventSeen_2523800101_memory_eightweeks |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower04={{MPP_EK_Dhampir_Lower_T |valueAt=4}} |MPP_EK_Dhampir_Lower13={{MPP_EK_Dhampir_Lower_T |valueAt=13}} }}",
                 "dating_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.dating_Dhampir |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower03={{MPP_EK_Dhampir_Lower_T |valueAt=3}} |MPP_EK_Dhampir_Lower23={{MPP_EK_Dhampir_Lower_T |valueAt=23}} }}",
                 "married_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.married_Dhampir |MPP_EK_Dhampir_Lower03={{MPP_EK_Dhampir_Lower_T |valueAt=3}} |MPP_EK_Sebastian_Name={{MPP_EK_Sebastian_Name_T}} |MPP_EK_Sebastian_Lower00={{MPP_EK_Sebastian_Lower_T |valueAt=0}} }}",
                 "Dhampir_inlaw_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Demetrius.Dhampir_inlaw_Dhampir}}",
@@ -652,8 +649,8 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Lewis",
             "Entries": {
-                "eventSeen_2523800100": "{{i18n:Dhampir_StringData.Characters_Dialogue_Lewis.eventSeen_2523800100 |MPP_EK_Dhampir_Lower03={{MPP_EK_Dhampir_Lower_T |valueAt=3}} }}",
-                "eventSeen_2523800100_memory_oneyear": "{{i18n:Dhampir_StringData.Characters_Dialogue_Lewis.eventSeen_2523800100_memory_oneyear |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} |MPP_EK_Dhampir_Lower04={{MPP_EK_Dhampir_Lower_T |valueAt=4}} }}",
+                "eventSeen_2523800101": "{{i18n:Dhampir_StringData.Characters_Dialogue_Lewis.eventSeen_2523800101 |MPP_EK_Dhampir_Lower03={{MPP_EK_Dhampir_Lower_T |valueAt=3}} }}",
+                "eventSeen_2523800101_memory_oneyear": "{{i18n:Dhampir_StringData.Characters_Dialogue_Lewis.eventSeen_2523800101_memory_oneyear |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} |MPP_EK_Dhampir_Lower04={{MPP_EK_Dhampir_Lower_T |valueAt=4}} }}",
                 "married_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Lewis.married_Dhampir}}"
             }
         },
@@ -662,8 +659,8 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Maru",
             "Entries": {
-                "eventSeen_2523800100": "{{i18n:Dhampir_StringData.Characters_Dialogue_Maru.eventSeen_2523800100 |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} |MPP_EK_Dhampir_Lower13={{MPP_EK_Dhampir_Lower_T |valueAt=13}} }}",
-                "eventSeen_2523800100_memory_fourweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Maru.eventSeen_2523800100_memory_fourweeks |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} |MPP_EK_Dhampir_Lower04={{MPP_EK_Dhampir_Lower_T |valueAt=4}} }}",
+                "eventSeen_2523800101": "{{i18n:Dhampir_StringData.Characters_Dialogue_Maru.eventSeen_2523800101 |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} |MPP_EK_Dhampir_Lower13={{MPP_EK_Dhampir_Lower_T |valueAt=13}} }}",
+                "eventSeen_2523800101_memory_fourweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Maru.eventSeen_2523800101_memory_fourweeks |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} |MPP_EK_Dhampir_Lower04={{MPP_EK_Dhampir_Lower_T |valueAt=4}} }}",
                 "dating_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Maru.dating_Dhampir |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} }}",
                 "married_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Maru.married_Dhampir}}",
                 "Dhampir_inlaw_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Maru.Dhampir_inlaw_Dhampir |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} }}",
@@ -675,8 +672,8 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Robin",
             "Entries": {
-                "eventSeen_2523800100": "{{i18n:Dhampir_StringData.Characters_Dialogue_Robin.eventSeen_2523800100 |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} }}",
-                "eventSeen_2523800100_memory_oneweek": "{{i18n:Dhampir_StringData.Characters_Dialogue_Robin.eventSeen_2523800100_memory_oneweek |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} }}",
+                "eventSeen_2523800101": "{{i18n:Dhampir_StringData.Characters_Dialogue_Robin.eventSeen_2523800101 |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} }}",
+                "eventSeen_2523800101_memory_oneweek": "{{i18n:Dhampir_StringData.Characters_Dialogue_Robin.eventSeen_2523800101_memory_oneweek |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} }}",
                 "dating_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Robin.dating_Dhampir |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower03={{MPP_EK_Dhampir_Lower_T |valueAt=3}} |MPP_EK_Dhampir_Upper={{MPP_EK_Dhampir_Upper_T |valueAt=1}} }}",
                 "married_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Robin.married_Dhampir}}",
                 "Dhampir_inlaw_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Robin.Dhampir_inlaw_Dhampir |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} |MPP_EK_Dhampir_Lower29={{MPP_EK_Dhampir_Lower_T |valueAt=29}} |MPP_EK_Dhampir_Upper={{MPP_EK_Dhampir_Upper_T |valueAt=1}} }}",
@@ -688,8 +685,8 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Sebastian",
             "Entries": {
-                "eventSeen_2523800100": "{{i18n:Dhampir_StringData.Characters_Dialogue_Sebastian.eventSeen_2523800100}}",
-                "eventSeen_2523800100_memory_twoweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Sebastian.eventSeen_2523800100_memory_twoweeks |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} }}",
+                "eventSeen_2523800101": "{{i18n:Dhampir_StringData.Characters_Dialogue_Sebastian.eventSeen_2523800101}}",
+                "eventSeen_2523800101_memory_twoweeks": "{{i18n:Dhampir_StringData.Characters_Dialogue_Sebastian.eventSeen_2523800101_memory_twoweeks |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower01={{MPP_EK_Dhampir_Lower_T |valueAt=1}} }}",
                 "dating_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Sebastian.dating_Dhampir |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} }}",
                 "married_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Sebastian.married_Dhampir |MPP_EK_Dhampir_Lower03={{MPP_EK_Dhampir_Lower_T |valueAt=3}} }}",
                 "Dhampir_inlaw_Dhampir": "{{i18n:Dhampir_StringData.Characters_Dialogue_Sebastian.Dhampir_inlaw_Dhampir |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} |MPP_EK_Dhampir_Lower03={{MPP_EK_Dhampir_Lower_T |valueAt=3}} }}",
