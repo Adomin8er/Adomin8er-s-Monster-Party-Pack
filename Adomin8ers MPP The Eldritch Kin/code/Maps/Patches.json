@@ -1,16 +1,62 @@
 {
     "Changes": [
         {
+            "LogName": "Arbitrary - 25238/code/Maps/Patches - DeveloperNotes",
             "Action": "EditData",
             "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
             "Entries": {
-                "TC_Data_Locations_Hospital.001": "+--------------------------------------------+",
-                "TC_Data_Locations_Hospital.002": "|         Data/Locations/Hospital            |",
-                "TC_Data_Locations_Hospital.003": "+--------------------------------------------+"
+                "DeveloperNotes_Data_Locations_Arbitrary.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Locations_Arbitrary.002": "|          Data/Locations/Arbitrary          |",
+                "DeveloperNotes_Data_Locations_Arbitrary.003": "+--------------------------------------------+"
             }
         },
         {
-            ".LogName": "VanillaHospital - DhampirBed",
+            "LogName": "Arbitrary - Map Patch - CharacterLobby Setup",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_CharacterLobby": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_CharacterLobby}}",
+                    "DefaultArrivalTile": {
+                        "X": 4,
+                        "Y": 4
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_CharacterLobby"
+                    }
+                }
+            }
+        },
+        
+        {
+            "LogName": "Dhampir - 25238/code/Maps/Patches - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Locations_Dhampir.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Locations_Dhampir.002": "|           Data/Locations/Dhampir           |",
+                "DeveloperNotes_Data_Locations_Dhampir.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Dhampir - Map Patch - DhampirRoom Setup",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_DhampirRoom": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_DhampirRoom}}",
+                    "DefaultArrivalTile": {
+                        "X": 6,
+                        "Y": 10
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_DhampirRoom"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Dhampir - Map Patch - Hospital Dhampir Bed",
             "Action": "EditMap",
             "Target": "Maps/Hospital",
             "FromFile": "assets/Maps/VanillaHospital - DhampirBed.tmx",
@@ -27,115 +73,135 @@
                 "Height": 4
             }
         },
-
-
         {
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
-            "Entries": {
-                "TC_Data_Locations_JodiKitchen.001": "+--------------------------------------------+",
-                "TC_Data_Locations_JodiKitchen.002": "|        Data/Locations/JodiKitchen          |",
-                "TC_Data_Locations_JodiKitchen.003": "+--------------------------------------------+"
-            }
-        },
-        {
-            ".LogName": "VanillaSamHouse - Dropbox JodiKitchen",
+            "LogName": "Dhampir - Map Patch - ScienceHouse DhampirRoom Warp",
             "Action": "EditMap",
-            "Target": "Maps/SamHouse",
-            "FromFile": "assets/Maps/VanillaSamHouse - Dropbox JodiKitchen.tmx",
-            "FromArea": {
-                "X": 4,
-                "Y": 4,
-                "Width": 2,
-                "Height": 4
-            },
-            "ToArea": {
-                "X": 4,
-                "Y": 4,
-                "Width": 2,
-                "Height": 4
-            }
-        },
-
-
-        {
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
-            "Entries": {
-                "TC_Data_Locations_Saloon.001": "+--------------------------------------------+",
-                "TC_Data_Locations_Saloon.002": "|           Data/Locations/Saloon            |",
-                "TC_Data_Locations_Saloon.003": "+--------------------------------------------+"
-            }
-        },        
-        {
-            ".LogName": "Vanilla_Saloon - BakingCompetition",
-            "Action": "EditMap",
-            "Target": "Maps/Saloon",
-            "FromFile": "assets/Maps/Vanilla_Saloon - BakingCompetition.tmx",
-            "FromArea": {
-                "X": 0,
-                "Y": 14,
-                "Width": 29,
-                "Height": 11
-            },
-            "ToArea": {
-                "X": 0,
-                "Y": 14,
-                "Width": 29,
-                "Height": 11
-            }
-        },
-
-
-        {
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
-            "Entries": {
-                "TC_Data_Locations_SandyHouse.001": "+--------------------------------------------+",
-                "TC_Data_Locations_SandyHouse.002": "|         Data/Locations/SandyHouse          |",
-                "TC_Data_Locations_SandyHouse.003": "+--------------------------------------------+"
-            }
-        },
-        {
-            ".LogName": "VanillaSandyHouse - DropBox SandyBarrel",
-            "Action": "EditMap",
-            "Target": "Maps/SandyHouse",
-            "FromFile": "assets/Maps/VanillaSandyHouse - DropBox SandyBarrel.tmx",
-            "FromArea": {
-                "X": 1,
-                "Y": 6,
-                "Width": 2,
-                "Height": 2
-            },
-            "ToArea": {
-                "X": 1,
-                "Y": 6,
-                "Width": 2,
-                "Height": 2
-            },
+            "Target": "Maps/ScienceHouse",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "10 9 MPP_EK_DhampirRoom 6 13",
+                    "Delimiter": " "
+                }
+            ],
             "When": {
-                "HasReadLetter |contains=SpecialOrderThanks_Djinn": false
+                "HasSeenEvent |contains=2523800101": true
             },
             "Update": "OnLocationChange"
         },
         {
-            ".LogName": "VanillaSandyHouse - SprucedUp",
+            "LogName": "Dhampir - Map Patch - ScienceHouse DhampirRoom Stairs",
+            "Action": "EditMap",
+            "Target": "Maps/ScienceHouse",
+            "FromFile": "assets/Maps/VanillaScienceHouse - DhampirArrived.tmx",
+            "FromArea": {
+                "X": 8,
+                "Y": 6,
+                "Width": 5,
+                "Height": 6
+            },
+            "ToArea": {
+                "X": 8,
+                "Y": 6,
+                "Width": 5,
+                "Height": 6
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800101": true
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Dhampir - Map Patch - ScienceHouse Dhampir Chair",
+            "Action": "EditMap",
+            "Target": "Maps/ScienceHouse",
+            "FromFile": "assets/Maps/VanillaScienceHouse - DhampirArrived.tmx",
+            "FromArea": {
+                "X": 26,
+                "Y": 12,
+                "Width": 1,
+                "Height": 2
+            },
+            "ToArea": {
+                "X": 26,
+                "Y": 12,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800101": true
+            },
+            "Update": "OnLocationChange"
+        },
+        
+        {
+            "LogName": "Djinn - 25238/code/Maps/Patches - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Locations_Djinn.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Locations_Djinn.002": "|            Data/Locations/Djinn            |",
+                "DeveloperNotes_Data_Locations_Djinn.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Djinn - Map Patch - Courthouse",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_CourtHouse": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_CourtHouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 7,
+                        "Y": 19
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_CourtHouse"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Djinn - Map Patch - SandyHouse Dropbox Barrel",
             "Action": "EditMap",
             "Target": "Maps/SandyHouse",
-            "FromFile": "assets/Maps/VanillaSandyHouse - SprucedUp.tmx",
+            "FromFile": "assets/Maps/VanillaSandyHouse - DropBox SandyBarrel.tmx",
             "FromArea": {
                 "X": 0,
                 "Y": 0,
-                "Width": 19,
+                "Width": 20,
                 "Height": 10
             },
             "ToArea": {
                 "X": 0,
                 "Y": 0,
-                "Width": 19,
+                "Width": 20,
                 "Height": 10
             },
+            "When": {
+                "HasReadLetter |contains=Djinn_SpecialOrderThanks": false
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Djinn - Map Patch - SandyHouseImproved Setup",
+            "Action": "EditMap",
+            "Target": "Maps/SandyHouse",
+            "FromFile": "assets/Maps/VanillaSandyHouse - Improved.tmx",
             "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "10 7 4 14 7 4 18 7 4 22 7 4",
+                    "Delimiter": " "
+                },
                 {
                     "Operation": "Append",
                     "Target": [
@@ -163,15 +229,6 @@
                     ],
                     "Search": "1079",
                     "Value": "2215",
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "Light"
-                    ],
-                    "Value": "10 7 4 14 7 4 18 7 4 22 7 4",
                     "Delimiter": " "
                 },
                 {
@@ -205,84 +262,7 @@
                 }
             ],
             "When": {
-                "HasReadLetter |contains=SpecialOrderThanks_Djinn": true
-            },
-            "Update": "OnLocationChange"
-        },
-
-
-        {
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
-            "Entries": {
-                "TC_Data_Locations_ScienceHouse.001": "+--------------------------------------------+",
-                "TC_Data_Locations_ScienceHouse.002": "|        Data/Locations/ScienceHouse         |",
-                "TC_Data_Locations_ScienceHouse.003": "+--------------------------------------------+"
-            }
-        },
-        {
-            ".LogName": "VanillaScienceHouse - DhampirStairs",
-            "Action": "EditMap",
-            "Target": "Maps/ScienceHouse",
-            "FromFile": "assets/Maps/VanillaScienceHouse - DhampirArrived.tmx",
-            "FromArea": {
-                "X": 8,
-                "Y": 6,
-                "Width": 5,
-                "Height": 6
-            },
-            "ToArea": {
-                "X": 8,
-                "Y": 6,
-                "Width": 5,
-                "Height": 6
-            },
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "Warp"
-                    ],
-                    "Value": "10 9 MPP_EK_DhampirRoom 6 13",
-                    "Delimiter": " "
-                }
-            ],
-            "When": {
-                "HasSeenEvent |contains=2523800101": true
-            },
-            "Update": "OnLocationChange"
-        },
-        {
-            ".LogName": "VanillaScienceHouse - DhampirChair",
-            "Action": "EditMap",
-            "Target": "Maps/ScienceHouse",
-            "FromFile": "assets/Maps/VanillaScienceHouse - DhampirArrived.tmx",
-            "FromArea": {
-                "X": 26,
-                "Y": 12,
-                "Width": 1,
-                "Height": 2
-            },
-            "ToArea": {
-                "X": 26,
-                "Y": 12,
-                "Width": 1,
-                "Height": 2
-            },
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "Warp"
-                    ],
-                    "Value": "10 9 MPP_EK_DhampirRoom 6 13",
-                    "Delimiter": " "
-                }
-            ],
-            "When": {
-                "HasSeenEvent |contains=2523800101": true
+                "HasReadLetter |contains=Djinn_SpecialOrderThanks": true
             },
             "Update": "OnLocationChange"
         }

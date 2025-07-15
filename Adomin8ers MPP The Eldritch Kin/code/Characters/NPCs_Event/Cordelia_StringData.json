@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create Cordelia character",
+            "LogName": "Cordelia - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/Cordelia, Characters/Schedules/Cordelia, Strings/Schedules/Cordelia",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit Cordelia character data",
+            "LogName": "Cordelia - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {

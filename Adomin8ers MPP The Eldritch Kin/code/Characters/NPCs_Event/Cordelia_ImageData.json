@@ -1,7 +1,7 @@
 {
     "Changes": [ 
         {
-            ".LogName": "Cordelia Overworld Sprite",
+            "LogName": "Cordelia - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/Cordelia",
             "FromFile": "assets/Characters/NPCs_Event/Cordelia_Base_OW.png",
@@ -9,13 +9,14 @@
         },
 
         {
-            ".LogName": "Cordelia Base Portrait",
+            "LogName": "Cordelia - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/Cordelia",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "Cordelia - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {

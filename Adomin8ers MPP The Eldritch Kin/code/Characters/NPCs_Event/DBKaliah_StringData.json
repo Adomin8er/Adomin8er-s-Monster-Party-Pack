@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create DBKaliah character",
+            "LogName": "DBKaliah - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBKaliah, Characters/Schedules/DBKaliah, Strings/Schedules/DBKaliah",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBKaliah character data",
+            "LogName": "DBKaliah - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {

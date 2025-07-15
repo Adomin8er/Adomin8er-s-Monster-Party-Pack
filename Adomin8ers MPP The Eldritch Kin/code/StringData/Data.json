@@ -1,38 +1,60 @@
 {
     "Changes": [
         {
+            "LogName": "Arbitrary - 25238/code/StringData/Data - DeveloperNotes",
             "Action": "EditData",
             "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
             "Entries": {
-                "TC_Data_Mail.001": "+--------------------------------------------+",
-                "TC_Data_Mail.002": "|                 Data/Mail                  |",
-                "TC_Data_Mail.003": "+--------------------------------------------+"
+                "DeveloperNotes_Data_Arbitrary.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Arbitrary.002": "|               Data/Arbitrary               |",
+                "DeveloperNotes_Data_Arbitrary.003": "+--------------------------------------------+"
             }
         },
         {
-            ".LogName": "EDIT MAIL - Mail text.",
+            "Logname": "Arbitrary - Mail - Arbitrary_MonstrousTownMeeting",
             "Action": "EditData",
             "Target": "Data/Mail",
             "Entries": {
-                "MonstrousTownMeeting_Arbitrary": "{{i18n:Data.Data_Mail.MonstrousTownMeeting_Arbitrary}}",
-                "SpecialOrderThanks_Dhampir": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Dhampir}}",
-                "SpecialOrderThanks_Djinn": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Djinn}}",
-                "SpecialOrderThanks_Gargoyle": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Gargoyle}}"
+                "Arbitrary_MonstrousTownMeeting": "{{i18n:Data.Data_Mail.Arbitrary_MonstrousTownMeeting}}"
+            }
+        },
+        {
+            "Logname": "Arbitrary - TriggerActions - AddMail All Arbitrary_MonstrousTownMeeting tomorrow",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "25238_Arbitrary_MonstrousTownMeeting_Invite": {
+                    "Id": "25238_Arbitrary_MonstrousTownMeeting_Invite",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_FRIENDSHIP_POINTS Any Dhampir 1250\" \"PLAYER_FRIENDSHIP_POINTS Any Djinn 1250\"",
+                    "Actions": [
+                        "AddMail All Arbitrary_MonstrousTownMeeting tomorrow"
+                    ]
+                }
             }
         },
 
         
         {
+            "LogName": "Dhampir - 25238/code/StringData/Data - DeveloperNotes",
             "Action": "EditData",
             "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
             "Entries": {
-                "TC_Data_SpecialOrders.001": "+--------------------------------------------+",
-                "TC_Data_SpecialOrders.002": "|             Data/SpecialOrders             |",
-                "TC_Data_SpecialOrders.003": "+--------------------------------------------+"
+                "DeveloperNotes_Data_Dhampir.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Dhampir.002": "|                Data/Dhampir                |",
+                "DeveloperNotes_Data_Dhampir.003": "+--------------------------------------------+"
             }
         },
         {
-            ".LogName": "Edit SpecialOrder Dhampir",
+            "Logname": "Dhampir - Mail - Dhampir_SpecialOrderThanks",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "Dhampir_SpecialOrderThanks": "{{i18n:Data.Data_Mail.Dhampir_SpecialOrderThanks}}"
+            }
+        },
+        {
+            "Logname": "Dhampir - SpecialOrder - Details",
             "Action": "EditData",
             "Target": "Data/SpecialOrders",
             "Entries": {
@@ -105,7 +127,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "SpecialOrderThanks_Dhampir",
+                                "MailReceived": "Dhampir_SpecialOrderThanks",
                                 "NoLetter": "false"
                             }
                         }
@@ -117,7 +139,59 @@
             }
         },
         {
-            ".LogName": "Edit SpecialOrder Djinn",
+            "Logname": "Dhampir - TriggerAction - SpecialOrder",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "25238_Dhampir_SpecialOrderLoaded": {
+                    "Id": "25238_Dhampir_SpecialOrderLoaded",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_FARMHOUSE_UPGRADE Any 1 3\"",
+                    "Actions": [
+                        "MarkEventSeen All 2523800100 true"
+                    ]
+                }
+            }
+        },
+        {
+            "Logname": "Dhampir - Weddings - Attendance",
+            "Action": "EditData",
+            "Target": "Data/Weddings",
+            "TargetField": [
+                "Attendees"
+            ],
+            "Entries": {
+                "Dhampir": {
+                    "ID": "Dhampir",
+                    "Setup": "Dhampir 23 71 0"
+                }
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523800101": true
+            }
+        },
+
+        
+        {
+            "LogName": "Djinn - 25238/code/StringData/Data - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Djinn.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Djinn.002": "|                 Data/Djinn                 |",
+                "DeveloperNotes_Data_Djinn.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "Logname": "Djinn - Mail - Dhampir_SpecialOrderThanks",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "Djinn_SpecialOrderThanks": "{{i18n:Data.Data_Mail.Djinn_SpecialOrderThanks}}"
+            }
+        },
+        {
+            "Logname": "Djinn - SpecialOrder - Details",
             "Action": "EditData",
             "Target": "Data/SpecialOrders",
             "Entries": {
@@ -139,9 +213,9 @@
                             "Text": "{{i18n:Data.Data_SpecialOrders.Djinn.Objective.01}}",
                             "RequiredCount": "200",
                             "Data": {
-                                "DropBox": "RobinWood",
-                                "DropBoxGameLocation": "ScienceHouse",
-                                "DropBoxIndicatorLocation": "11 18",
+                                "DropBox": "SandyBarrel",
+                                "DropBoxGameLocation": "SandyHouse",
+                                "DropBoxIndicatorLocation": "8 3",
                                 "AcceptedContextTags": "item_crystal_floor"
                             }
                         }
@@ -157,7 +231,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "SpecialOrderThanks_Djinn",
+                                "MailReceived": "Djinn_SpecialOrderThanks",
                                 "NoLetter": "false"
                             }
                         }
@@ -169,138 +243,12 @@
             }
         },
         {
-            ".LogName": "Edit SpecialOrder Gargoyle",
-            "Action": "EditData",
-            "Target": "Data/SpecialOrders",
-            "Entries": {
-                "BakingCompetition": {
-                    "Name": "Baking Competition",
-                    "Requester": "Gus",
-                    "Duration": "Week",
-                    "Repeatable": "False",
-                    "RequiredTags": "",
-                    "OrderType": "",
-                    "SpecialRule": "",
-                    "Text": "Need baking ingredients for local pastry competition! If you'd like to donate I'll waive your participation fee!^ -Gus",
-                    "ItemToRemoveOnEnd": null,
-                    "MailToRemoveOnEnd": null,
-                    "RandomizedElements": null,
-                    "Objectives": [
-                        {
-                            "Type": "Donate",
-                            "Text": "Drop off Large Milk in Gus's Fridge.",
-                            "RequiredCount": "10",
-                            "Data": {
-                                "DropBox": "GusFridge",
-                                "DropBoxGameLocation": "Saloon",
-                                "DropBoxIndicatorLocation": "18 15",
-                                "AcceptedContextTags": "item_large_milk"
-                            }
-                        },
-                        {
-                            "Type": "Donate",
-                            "Text": "Drop off Large Eggs in Gus's Fridge.",
-                            "RequiredCount": "10",
-                            "Data": {
-                                "DropBox": "GusFridge",
-                                "DropBoxGameLocation": "Saloon",
-                                "DropBoxIndicatorLocation": "18 15",
-                                "AcceptedContextTags": "item_large_egg"
-                            }
-                        },
-                        {
-                            "Type": "Donate",
-                            "Text": "Drop off Flour in Gus's Fridge.",
-                            "RequiredCount": "50",
-                            "Data": {
-                                "DropBox": "GusFridge",
-                                "DropBoxGameLocation": "Saloon",
-                                "DropBoxIndicatorLocation": "18 15",
-                                "AcceptedContextTags": "item_flour"
-                            }
-                        },
-                        {
-                            "Type": "Donate",
-                            "Text": "Drop off Sugar in Gus's Fridge.",
-                            "RequiredCount": "50",
-                            "Data": {
-                                "DropBox": "GusFridge",
-                                "DropBoxGameLocation": "Saloon",
-                                "DropBoxIndicatorLocation": "18 15",
-                                "AcceptedContextTags": "item_sugar"
-                            }
-                        }
-                    ],
-                    "Rewards": [
-                        {
-                            "Type": "Friendship",
-                            "Data": {
-                                "Amount": "500",
-                                "TargetName": "Gus"
-                            }
-                        },
-                        {
-                            "Type": "Mail",
-                            "Data": {
-                                "MailReceived": "SpecialOrderThanks_Gargoyle",
-                                "NoLetter": "false"
-                            }
-                        }
-                    ]
-                }
-            },
-            "When": {
-                "HasSeenEvent |contains=2523800300": true
-            }
-        },
-
-        
-        {
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
-            "Entries": {
-                "TC_Data_TriggerActions.001": "+--------------------------------------------+",
-                "TC_Data_TriggerActions.002": "|            Data/TriggerActions             |",
-                "TC_Data_TriggerActions.003": "+--------------------------------------------+"
-            }
-        },
-        {
-            ".LogName": "Arbitrary.Data_Events.2523800000",
+            "Logname": "Djinn - TriggerAction - SpecialOrder",
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-                "25238_MonstrousTownMeeting_Invite": {
-                    "Id": "25238_MonstrousTownMeeting_Invite",
-                    "Trigger": "DayStarted",
-                    "Condition": "ANY \"PLAYER_FRIENDSHIP_POINTS Any Dhampir 1250\" \"PLAYER_FRIENDSHIP_POINTS Any Djinn 1250\"",
-                    "Actions": [
-                        "AddMail All MonstrousTownMeeting_Arbitrary tomorrow"
-                    ]
-                }
-            }
-        },
-        {
-            ".LogName": "Dhampir Special Order Creation",
-            "Action": "EditData",
-            "Target": "Data/TriggerActions",
-            "Entries": {
-                "25238_SpecialOrderLoaded_Dhampir": {
-                    "Id": "25238_SpecialOrderLoaded_Dhampir",
-                    "Trigger": "DayStarted",
-                    "Condition": "ANY \"PLAYER_FARMHOUSE_UPGRADE Any 1 3\"",
-                    "Actions": [
-                        "MarkEventSeen All 2523800100 true"
-                    ]
-                }
-            }
-        },
-        {
-            ".LogName": "Djinn Special Order Creation",
-            "Action": "EditData",
-            "Target": "Data/TriggerActions",
-            "Entries": {
-                "25238_SpecialOrderLoaded_Djinn": {
-                    "Id": "25238_SpecialOrderLoaded_Djinn",
+                "25238_Djinn_SpecialOrderLoaded": {
+                    "Id": "25238_Djinn_SpecialOrderLoaded",
                     "Trigger": "DayStarted",
                     "Condition": "ANY \"PLAYER_HAS_CRAFTING_RECIPE Any Crystal Floor\", ANY \"PLAYER_VISITED_LOCATION Any SandyHouse\"",
                     "Actions": [
@@ -310,18 +258,20 @@
             }
         },
         {
-            ".LogName": "Gargoyle Special Order Creation",
+            "Logname": "Djinn - Weddings - Attendance",
             "Action": "EditData",
-            "Target": "Data/TriggerActions",
+            "Target": "Data/Weddings",
+            "TargetField": [
+                "Attendees"
+            ],
             "Entries": {
-                "25238_SpecialOrderLoaded_Gargoyle": {
-                    "Id": "25238_SpecialOrderLoaded_Gargoyle",
-                    "Trigger": "DayStarted",
-                    "Condition": "ANY \"BUILDINGS_CONSTRUCTED Farm \\\"Barn\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"Big Barn\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"Deluxe Barn\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"FlashShifter.StardewValleyExpandedCP_PremiumBarn\\\"\", ANY \"BUILDINGS_CONSTRUCTED Farm \\\"Coop\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"Big Coop\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"Deluxe Coop\\\"\" \"BUILDINGS_CONSTRUCTED Farm \\\"FlashShifter.StardewValleyExpandedCP_PremiumCoop\\\"\"",
-                    "Actions": [
-                        "MarkEventSeen All 2523800300 true"
-                    ]
+                "Djinn": {
+                    "ID": "Djinn",
+                    "Setup": "Djinn 24 71 0"
                 }
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523800201": true
             }
         }
     ]

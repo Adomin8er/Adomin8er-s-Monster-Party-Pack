@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create DBArnold character",
+            "LogName": "DBArnold - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBArnold, Characters/Schedules/DBArnold, Strings/Schedules/DBArnold",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBArnold character data",
+            "LogName": "DBArnold - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {

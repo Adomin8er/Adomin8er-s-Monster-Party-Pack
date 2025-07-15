@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create DBKnight_01 character",
+            "LogName": "DBKnight_01 - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBKnight_01, Characters/Schedules/DBKnight_01, Strings/Schedules/DBKnight_01",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBKnight_01 character data",
+            "LogName": "DBKnight_01 - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
@@ -53,14 +53,14 @@
             }
         },
         {
-            ".LogName": "Load/Create DBKnight_02 character",
+            "LogName": "DBKnight_02 - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBKnight_02, Characters/Schedules/DBKnight_02, Strings/Schedules/DBKnight_02",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBKnight_02 character data",
+            "LogName": "DBKnight_02 - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
@@ -105,14 +105,14 @@
             }
         },
         {
-            ".LogName": "Load/Create DBKnight_03 character",
+            "LogName": "DBKnight_03 - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBKnight_03, Characters/Schedules/DBKnight_03, Strings/Schedules/DBKnight_03",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBKnight_03 character data",
+            "LogName": "DBKnight_03 - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
@@ -157,14 +157,14 @@
             }
         },
         {
-            ".LogName": "Load/Create DBKnight_04 character",
+            "LogName": "DBKnight_04 - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBKnight_04, Characters/Schedules/DBKnight_04, Strings/Schedules/DBKnight_04",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBKnight_04 character data",
+            "LogName": "DBKnight_04 - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
@@ -209,14 +209,14 @@
             }
         },
         {
-            ".LogName": "Load/Create DBKnight_05 character",
+            "LogName": "DBKnight_05 - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBKnight_05, Characters/Schedules/DBKnight_05, Strings/Schedules/DBKnight_05",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBKnight_05 character data",
+            "LogName": "DBKnight_05 - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
@@ -261,14 +261,14 @@
             }
         },
         {
-            ".LogName": "Load/Create DBKnight_06 character",
+            "LogName": "DBKnight_06 - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBKnight_06, Characters/Schedules/DBKnight_06, Strings/Schedules/DBKnight_06",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBKnight_06 character data",
+            "LogName": "DBKnight_06 - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {

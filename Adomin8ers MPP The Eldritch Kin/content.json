@@ -51,7 +51,7 @@
     },
     {
       "Name": "MPP_EK_Dhampir_Upper_T",
-      "Value": "{{GenderWordsSwapped_Lower}}",
+      "Value": "{{GenderWords_Lower}}",
       "When": {
           "Dhampir_Gender": "Female"
       }
@@ -74,7 +74,7 @@
     },
     {
       "Name": "MPP_EK_Djinn_Upper_T",
-      "Value": "{{GenderWordsSwapped_Lower}}",
+      "Value": "{{GenderWords_Lower}}",
       "When": {
           "Djinn_Gender": "Female"
       }
@@ -102,6 +102,29 @@
     //   "Value": "{{GenderWordsSwapped_Upper}}",
     //   "When": {
     //       "Dhampir_Gender": "Male"
+    //   }
+    // }
+
+    // Djinn
+    // {
+    //     "Name": "MPP_EK_Djinn_Name_T",
+    //     "Value": "{{i18n:Content.Dynamic_Tokens.Names.Djinn_MaleName}}",
+    //     "When": {
+    //       "Djinn_Gender": "Male"
+    //     }
+    // },
+    // {
+    //   "Name": "MPP_EK_Djinn_Lower_T",
+    //   "Value": "{{GenderWordsSwapped_Lower}}",
+    //   "When": {
+    //       "Djinn_Gender": "Male"
+    //   }
+    // },
+    // {
+    //   "Name": "MPP_EK_Djinn_Upper_T",
+    //   "Value": "{{GenderWordsSwapped_Upper}}",
+    //   "When": {
+    //       "Djinn_Gender": "Male"
     //   }
     // }
 
@@ -684,25 +707,6 @@
   ],
   
   "Changes": [
-    // Developer items
-    // {
-    //   "LogName": "Developer notes. Useless if uncommented. Just maintained here for testing purposes.",
-    //   "Action": "Include",
-    //   "FromFile": "code/Arbitrary_StringData.json",
-    //   "When": {
-    //     "Dhampir_Gender": "female"
-    //   }
-    // },
-
-    // Arbitrary Data
-    {
-      "LogName": "Arbitrary String Data",
-      "Action": "Include",
-      "FromFile": "code/Arbitrary_StringData.json",
-      "When": {
-        "Dhampir_Gender": "female"
-      }
-    },
 
     // Core NPCs
     {
@@ -779,16 +783,22 @@
       "FromFile": "code/Characters/NPCs_Event/DBSpike_ImageData.json, code/Characters/NPCs_Event/DBSpike_StringData.json"
     },
     {
-      "LogName": "Include MPPMarlon",
+      "LogName": "Include MPP_Marlon",
       "Action": "Include",
-      "FromFile": "code/Characters/NPCs_Event/MPPMarlon_ImageData.json, code/Characters/NPCs_Event/MPPMarlon_StringData.json"
+      "FromFile": "code/Characters/NPCs_Event/MPP_Marlon_ImageData.json, code/Characters/NPCs_Event/MPP_Marlon_StringData.json"
+    },
+    {
+      "LogName": "Include MPP_MrQi",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/MPP_MrQi_ImageData.json, code/Characters/NPCs_Event/MPP_MrQi_StringData.json"
     },
     
-    // Data
+    // Items   
     {
-      "LogName": "Include Maps",
-      "Action": "Include",
-      "FromFile": "code/Data/ChairTiles.json"
+        "LogName": "Include MPP Purchaseable Portraits",
+        "Action": "Load",
+        "Target": "Mods/Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin/EK_Portraits",
+        "FromFile": "assets/Items/EK_Portraits.png",
     },
 
     // Maps
@@ -807,9 +817,21 @@
 
     // StringData 
     {
-      "LogName": "Include StringData",
+      "LogName": "Include StringData Files",
       "Action": "Include",
-      "FromFile": "code/StringData/Data.json, code/StringData/Data_Events.json, code/StringData/Data_Festivals.json"
+      "FromFile": "code/StringData/Data.json, code/StringData/Data_Events.json, code/StringData/Data_Festivals.json, code/StringData/ChairTiles.json"
+    },
+
+
+
+    // Mod Compatability
+    {
+      "LogName": "Include StardewValleyExpanded Compatability Files",
+      "Action": "Include",
+      "FromFile": "mod compatability/StardewValleyExpanded.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     }
   ]
 }

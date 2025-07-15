@@ -1,7 +1,7 @@
 {
-    "Changes": [ 
+    "Changes": [
         {
-            ".LogName": "Dhampir base overworld sprite",
+            "LogName": "Dhampir - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/Dhampir",
             "FromFile": "assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_OW_F.png",
@@ -10,7 +10,7 @@
             }
         },
         {
-            ".LogName": "Dhampir winter overworld sprite",
+            "LogName": "Dhampir - Winter Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/Dhampir_Winter",
             "FromFile": "assets/Characters/NPCs_Core/Dhampir/Dhampir_Winter_OW_F.png",
@@ -19,7 +19,7 @@
             }
         },
         {
-            ".LogName": "Dhampir beach overworld sprite",
+            "LogName": "Dhampir - Beach Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/Dhampir_Beach",
             "FromFile": "assets/Characters/NPCs_Core/Dhampir/Dhampir_Beach_OW_F.png",
@@ -29,7 +29,7 @@
         },
 
         {
-            ".LogName": "Dhampir Base Portrait",
+            "LogName": "Dhampir - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/Dhampir",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
@@ -38,7 +38,7 @@
             }
         },
         {
-            ".LogName": "Dhampir Base Portrait",
+            "LogName": "Dhampir - Winter Portrait",
             "Action": "Load",
             "Target": "Portraits/Dhampir_Winter",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
@@ -47,7 +47,7 @@
             }
         },
         {
-            ".LogName": "Dhampir Base Portrait",
+            "LogName": "Dhampir - Beach Portrait",
             "Action": "Load",
             "Target": "Portraits/Dhampir_Beach",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
@@ -56,6 +56,7 @@
             }
         },
         {
+            "LogName": "Dhampir - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
@@ -97,22 +98,13 @@
                 "Dhampir_Gender": "female"
             }
         },
-        
+
         {
-            "Action": "Load",
-            ".LogName": "Dhampir's purchasable painting image.",
-            "Target": "Mods/Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin/EK_Portraits",
-            "FromFile": "assets/Items/EK_Portraits.png",
-            "When": {
-                "Dhampir_Gender": "female"
-            }
-        },
-        {
+            "LogName": "Dhampir - Purchaseable Portrait",
             "Action": "EditData",
-            ".LogName": "Dhampir's purchasable painting data.",
             "Target": "Data/Furniture",
             "Entries": {
-                "Adomin8er.MPP_EK_DhampirPortrait": "Dhampir/painting/2 2/2 2/1/999/-1/{{i18n:Conent.Dynamic_Tokens.Names.Dhampir_FemaleName}} Portrait/0/Mods\\Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin\\EK_Portraits/true"
+                "Adomin8er.MPP_EK_DhampirPortrait": "Dhampir/painting/2 2/2 2/1/999/-1/{{i18n:Dhampir_StringData.Characters_DisplayName |MPP_EK_Dhampir_Name={{MPP_EK_Dhampir_Name_T}} }} Portrait/0/Mods\\Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin\\EK_Portraits/true"
             },
             "When": {
                 "Dhampir_Gender": "female"

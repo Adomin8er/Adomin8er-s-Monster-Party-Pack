@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="3">
+ <tileset firstgid="1" name="Locations_DesertTiles" tilewidth="16" tileheight="16" tilecount="368" columns="16">
+  <image source="MPP_EK_Locations_DesertTiles.png" width="256" height="368"/>
+ </tileset>
+ <layer id="1" name="Buildings" width="4" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAP5BgRbBtGTHkACOIAXQ==
+  </data>
+ </layer>
+ <layer id="3" name="Front" width="4" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYMANdBjxSEIBAAaTAC4=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Buildings"/>
+ <objectgroup id="4" name="Front"/>
+</map>

@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create DBLorin character",
+            "LogName": "DBLorin - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBLorin, Characters/Schedules/DBLorin, Strings/Schedules/DBLorin",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBLorin character data",
+            "LogName": "DBLorin - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
@@ -53,7 +53,7 @@
             }
         },
         {
-            ".LogName": "Update DBLorin name",
+            "LogName": "Update DBLorin name",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Fields": {

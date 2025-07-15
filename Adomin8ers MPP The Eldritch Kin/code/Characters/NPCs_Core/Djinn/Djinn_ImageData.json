@@ -1,17 +1,68 @@
 {
-    "Changes": [ 
+    "Changes": [
         {
-            ".LogName": "Djinn base overworld sprite",
+            "LogName": "Djinn - Base Overworld Sprite 1",
             "Action": "Load",
             "Target": "Characters/Djinn",
-            "FromFile": "assets/Characters/NPCs_Core/Djinn/Djinn_Base_OW_F.png",
+            "FromFile": "assets/Characters/NPCs_Core/Djinn/Djinn_Base1_OW_F.png",
             "When": {
                 "Djinn_Gender": "female"
             }
         },
+        {
+            "LogName": "Djinn - Base Overworld Sprite 2",
+            "Action": "Load",
+            "Target": "Characters/Djinn",
+            "FromFile": "assets/Characters/NPCs_Core/Djinn/Djinn_Base{{Random:1,2}}_OW_F.png",
+            "When": {
+                "Djinn_Gender": "female",
+                "Spouse |contains=Djinn": false,
+                "HasSeenEvent |contains=2523800209": true
+            }
+        },
+        {
+            "LogName": "Djinn - Winter Overworld Sprite 1",
+            "Action": "Load",
+            "Target": "Characters/Djinn_Winter",
+            "FromFile": "assets/Characters/NPCs_Core/Djinn/Djinn_Winter1_OW_F.png",
+            "When": {
+                "Djinn_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Djinn - Winter Overworld Sprite 2",
+            "Action": "Load",
+            "Target": "Characters/Djinn_Winter",
+            "FromFile": "assets/Characters/NPCs_Core/Djinn/Djinn_Winter{{Random:1,2}}_OW_F.png",
+            "When": {
+                "Djinn_Gender": "female",
+                "Spouse |contains=Djinn": false,
+                "HasSeenEvent |contains=2523800209": true
+            }
+        },
+        {
+            "LogName": "Djinn - Beach Overworld Sprite 1",
+            "Action": "Load",
+            "Target": "Characters/Djinn_Beach",
+            "FromFile": "assets/Characters/NPCs_Core/Djinn/Djinn_Beach1_OW_F.png",
+            "When": {
+                "Djinn_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Djinn - Beach Overworld Sprite 2",
+            "Action": "Load",
+            "Target": "Characters/Djinn_Beach",
+            "FromFile": "assets/Characters/NPCs_Core/Djinn/Djinn_Beach{{Random:1,2}}_OW_F.png",
+            "When": {
+                "Djinn_Gender": "female",
+                "Spouse |contains=Djinn": false,
+                "HasSeenEvent |contains=2523800209": true
+            }
+        },
 
         {
-            ".LogName": "Djinn Base Portrait",
+            "LogName": "Djinn - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/Djinn",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
@@ -20,6 +71,25 @@
             }
         },
         {
+            "LogName": "Djinn - Winter Portrait",
+            "Action": "Load",
+            "Target": "Portraits/Djinn_Winter",
+            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "When": {
+                "Djinn_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Djinn - Beach Portrait",
+            "Action": "Load",
+            "Target": "Portraits/Djinn_Beach",
+            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "When": {
+                "Djinn_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Djinn - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
@@ -33,7 +103,32 @@
                 "25238_HDDjinn_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Base_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
                 "25238_HDDjinn_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Base_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
                 "25238_HDDjinn_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Base_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
-                "25238_HDDjinn_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Base_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}}
+                "25238_HDDjinn_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Base_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Base_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Winter_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Winter_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Winter", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDDjinn_Beach_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Djinn/Djinn_Beach_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Djinn_Beach", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}}
             },
             "When": {
                 "Djinn_Gender": "female"
@@ -41,20 +136,11 @@
         },
         
         {
-            "Action": "Load",
-            ".LogName": "Djinn's purchasable painting image.",
-            "Target": "Mods/Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin/EK_Portraits",
-            "FromFile": "assets/Items/EK_Portraits.png",
-            "When": {
-                "Djinn_Gender": "female"
-            }
-        },
-        {
+            "LogName": "Dhampir - Purchaseable Portrait",
             "Action": "EditData",
-            ".LogName": "Djinn's purchasable painting data.",
             "Target": "Data/Furniture",
             "Entries": {
-                "Adomin8er.MPP_EK_DjinnPortrait": "Djinn/painting/2 2/2 2/1/999/-1/{{i18n:Conent.Dynamic_Tokens.Names.Djinn_FemaleName}} Portrait/0/Mods\\Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin\\EK_Portraits/true"
+                "Adomin8er.MPP_EK_DjinnPortrait": "Djinn/painting/2 2/2 2/1/999/-1/{{i18n:Djinn_StringData.Characters_DisplayName |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} }} Portrait/2/Mods\\Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin\\EK_Portraits/true"
             },
             "When": {
                 "Djinn_Gender": "female"

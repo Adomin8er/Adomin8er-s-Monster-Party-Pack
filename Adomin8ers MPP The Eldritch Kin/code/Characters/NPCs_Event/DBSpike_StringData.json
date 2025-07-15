@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create DBSpike character",
+            "LogName": "DBSpike - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBSpike, Characters/Schedules/DBSpike, Strings/Schedules/DBSpike",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBSpike character data",
+            "LogName": "DBSpike - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {

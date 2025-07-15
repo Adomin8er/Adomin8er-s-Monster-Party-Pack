@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create Callahan character",
+            "LogName": "Callahan - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/Callahan, Characters/Schedules/Callahan, Strings/Schedules/Callahan",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit Callahan character data",
+            "LogName": "Callahan - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {

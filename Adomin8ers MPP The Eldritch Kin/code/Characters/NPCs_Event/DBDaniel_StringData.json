@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create DBDaniel character",
+            "LogName": "DBDaniel - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBDaniel, Characters/Schedules/DBDaniel, Strings/Schedules/DBDaniel",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBDaniel character data",
+            "LogName": "DBDaniel - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {

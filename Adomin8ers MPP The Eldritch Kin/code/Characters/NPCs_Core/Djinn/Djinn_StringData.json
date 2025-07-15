@@ -1,30 +1,29 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create Djinn character",
+            "LogName": "Djinn - StringData - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/Djinn, Characters/Dialogue/MarriageDialogueDjinn, Characters/Schedules/Djinn, Strings/Schedules/Djinn",
             "FromFile": "code/blank.json"
         },
         {
-            ".LogName": "Edit Djinn character data",
+            "LogName": "Djinn - StringData - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
                 "Djinn": {
                     "DisplayName": "{{i18n:Djinn_StringData.Characters_DisplayName |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} }}",
-                    "Gender": "female",
+                    "Gender": "{{i18n:Djinn_StringData.Characters_Gender |MPP_EK_Djinn_Upper37={{MPP_EK_Djinn_Upper_T |valueAt=37}} }}",
                     "Age": "Adult",
-                    "BirthSeason": "Spring",
-                    "BirthDay": 14,
+                    "BirthSeason": "Summer",
+                    "BirthDay": 3,
                     "HomeRegion": "Other",
                     "Manner": "Polite",
                     "SocialAnxiety": "Outgoing",
                     "Optimism": "Positive",
-
                     "CanSocialize": true,
                     "CanGreetNearbyCharacters": true,
-                    "CanBeRomanced": false,
+                    "CanBeRomanced": true,
                     "KissSpriteIndex": 33,
                     "KissSpriteFacingRight": false,
                     "CanReceiveGifts": true,
@@ -34,17 +33,61 @@
                     "SpouseWantsChildren": true,
                     "SpouseGiftJealousy": true,
                     "PerfectionScore": false,
-
                     "DumpsterDiveFriendshipEffect": -25,
-                    "FlowerDanceCanDance": false,
-                    "WinterStarParticipant": true,
-                    
+                    "FlowerDanceCanDance": true,
+                    "WinterStarParticipant": false,
+                    "Appearance": [
+                        {
+                            "Id": "Djinn_Winter",
+                            "Season": "Winter",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Djinn_Winter",
+                            "Sprite": "Characters/Djinn_Winter",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        },
+                        {
+                            "Id": "Djinn_Beach",
+                            "Portrait": "Portraits/Djinn_Beach",
+                            "Sprite": "Characters/Djinn_Beach",
+                            "IsIslandAttire": true,
+                            "Precedence": -101,
+                            "Weight": 1
+                        }
+                    ],
+                    "SpouseRoom": {
+                        "MapAsset": "MPP_EK_DjinnSpouseRoom",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "MPP_EK_DjinnSpouseArea",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 4,
+                            "Height": 4
+                        },
+                        "SpriteAnimationPixelOffset": {
+                            "X": 0,
+                            "Y": 0
+                        }
+                    },
                     "Home": [
                         {
                             "Id": "Default",
-                            "Location": "SandyHouse",
-                            "Tile": { "X": -100   , "Y": -100 },
-                            "Direction": "Left"
+                            "Location": "MPP_EK_CharacterLobby",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 1
+                            },
+                            "Direction": "Down"
                         }
                     ],
                     "TextureName": null,
@@ -55,215 +98,649 @@
                 }
             }
         },
-        // {
-        //     "LogName": "Enable dating Djinn",
-        //     "Action": "EditData",
-        //     "Target": "Data/Characters",
-        //     "Entries": {
-        //         "Djinn": {
-        //             "CanBeRomanced": true,
-        //             "CanVisitIsland": true,
-        //             "FlowerDanceCanDance": true
-        //         }
-        //     },
-        //     "When": {
-        //         "HasSeenEvent |contains=2523800107": true
-        //     }
-        // },
-
         {
-            ".LogName": "Edit Djinn gift tastes",
+            "LogName": "Djinn - StringData - Update Home",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Djinn": {
+                    "WinterStarParticipant": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "SandyHouse",
+                            "Tile": {
+                                "X": 14,
+                                "Y": 8
+                            },
+                            "Direction": "Left"
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800201": true
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Update Dating",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Djinn": {
+                    "CanBeRomanced": true,
+                    "CanVisitIsland": true,
+                    "FlowerDanceCanDance": true
+                }
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800206": true
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - NPCGiftTastes",
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "Entries": {
-                "Djinn": "/64 769 709 348 637 575 767 852/ /80 66 422 410 726 725 382/ /145 283 595 773 RiverJelly 16 376/ /248 772 768 421 74 93 167/ / /"
+                "Djinn": "/279 253 226 74 82 90 373 578/ /395 215 260 64 68 88 164 165 903/ /84 412 416 721 142 457 161 342/ /247 265 868 308 167 229 172 168/ / /"
             }
         },
-
         {
-            ".LogName": "Edit Djinn standard dialogue",
+            "LogName": "Djinn - StringData - Dialogue Base",
             "Action": "EditData",
             "Target": "Characters/Dialogue/Djinn",
             "Entries": {
-                "Placeholder":""
+                "Location_Entry": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Location_Entry}}",
+                "GreenRain": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.GreenRain}}",
+                "GreenRain_2": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.GreenRain_2}}",
+                "DumpsterDiveComment": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.DumpsterDiveComment}}",
+                "HitBySlingshot": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.HitBySlingshot}}",
+                "Resort": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Resort}}",
+                "Resort_Bar": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Resort_Bar}}",
+                "Resort_Chair": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Resort_Chair}}",
+                "Resort_Dance": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Resort_Dance}}",
+                "Resort_Entering": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Resort_Entering}}",
+                "Resort_Leaving": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Resort_Leaving}}",
+                "Resort_Shore": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Resort_Shore}}",
+                "Resort_Towel": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Resort_Towel}}",
+                "Resort_Umbrella": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Resort_Umbrella}}",
+                "Resort_Wander": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Resort_Wander}}",
+                "SpouseFarmhouseClutter": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.SpouseFarmhouseClutter}}",
+                "SpouseGiftJealous": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.SpouseGiftJealous}}",
+                "Spouse_MonstersInHouse": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Spouse_MonstersInHouse}}",
+                "SpouseStardrop": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.SpouseStardrop}}",
+                "breakUp": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.breakUp}}",
+                "divorced": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.divorced}}",
+                "WipedMemory": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.WipedMemory |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} }}",
+                "AcceptGift_(O)226": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptGift_(O)226}}",
+                "AcceptGift_(O)82": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptGift_(O)82}}",
+                "AcceptGift_(O)279": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptGift_(O)279}}",
+                "AcceptGift_Loved": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptGift_Loved |MPP_EK_Djinn_Lower13={{MPP_EK_Djinn_Lower_T |valueAt=13}} }}",
+                "AcceptGift_Liked": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptGift_Liked}}",
+                "AcceptGift_Neutral": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptGift_Neutral}}",
+                "AcceptGift_Disliked": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptGift_Disliked}}",
+                "AcceptGift_Hated": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptGift_Hated}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Liked": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptBirthdayGift_Liked}}",
+                "AcceptBirthdayGift_Neutral": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptBirthdayGift_Neutral}}",
+                "AcceptBirthdayGift_Disliked": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptBirthdayGift_Disliked}}",
+                "AcceptBirthdayGift_Hated": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptBirthdayGift_Hated}}",
+                "AcceptBouquet": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.AcceptBouquet}}",
+                "MovieInvitation": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.MovieInvitation}}",
+                "RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.RejectMovieTicket_DontWantToSeeThatMovie}}",
+                "RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.RejectMovieTicket_AlreadyWatchedThisWeek}}",
+                "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.RejectMovieTicket_AlreadyInvitedBySomeoneElse}}",
+                "RejectMovieTicket_Divorced": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.RejectMovieTicket_Divorced}}",
+                "RejectItem_(O)168": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.RejectItem_(O)168}}",
+                "RejectGift_Divorced": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.RejectGift_Divorced}}",
+                "RejectBouquet_LowHearts": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.RejectBouquet_LowHearts}}",
+                "RejectBouquet_Divorced": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.RejectBouquet_Divorced}}",
+                "RejectMermaidPendant_Under10Hearts": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.RejectMermaidPendant_Under10Hearts}}",
+                "RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.RejectMermaidPendant_NeedHouseUpgrade}}",
+                "RejectMermaidPendant_Divorced": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.RejectMermaidPendant_Divorced}}",
+                "Fair_Judging": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Fair_Judging}}",
+                "Fair_Judged_PlayerWon": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Fair_Judged_PlayerWon}}",
+                "Fair_Judged_PlayerLost": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Fair_Judged_PlayerLost}}",
+                "FlowerDance_Accept": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.FlowerDance_Accept}}",
+                "FlowerDance_Decline": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.FlowerDance_Decline}}",
+                "WinterStar_GiveGift_Before_Spouse": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.WinterStar_GiveGift_Before_Spouse}}",
+                "WinterStar_GiveGift_Before": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.WinterStar_GiveGift_Before}}",
+                "WinterStar_GiveGift_After_Spouse": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.WinterStar_GiveGift_After_Spouse}}",
+                "WinterStar_GiveGift_After": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.WinterStar_GiveGift_After}}",
+                "Oasis": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Oasis}}",
+                "SeedShop_Tue": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.SeedShop_Tue}}",
+                "Mon": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Mon}}",
+                "Tue": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Tue}}",
+                "Wed": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Wed}}",
+                "Thu": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Thu}}",
+                "Fri": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Fri}}",
+                "Sat": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Sat}}",
+                "Sun": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Sun}}",
+                "spring_Mon": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.spring_Mon}}",
+                "summer_1": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.summer_1}}",
+                "fall_2": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.fall_2}}",
+                "winter_3": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.winter_3}}",
+                "Tue4": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Tue4}}",
+                "Fri8": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Fri8}}",
+                "eventSeen_2523800201": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.eventSeen_2523800201}}",
+                "eventSeen_2523800201_memory_oneday": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.eventSeen_2523800201_memory_oneday}}",
+                "eventSeen_2523800201_memory_oneweek": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.eventSeen_2523800201_memory_oneweek |MPP_EK_Emily_Name={{MPP_EK_Emily_Name_T}} |MPP_EK_Emily_Upper01={{MPP_EK_Emily_Upper_T |ValueAt=1}} }}",
+                "eventSeen_2523800201_memory_twoweeks": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.eventSeen_2523800201_memory_twoweeks}}",
+                "eventSeen_2523800201_memory_fourweeks": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.eventSeen_2523800201_memory_fourweeks}}",
+                "eventSeen_2523800201_memory_eightweeks": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.eventSeen_2523800201_memory_eightweeks}}",
+                "eventSeen_2523800201_memory_oneyear": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.eventSeen_2523800201_memory_oneyear}}",
+                "eventSeen_2523800209": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.eventSeen_2523800209}}",
+                "eventSeen_2523800209_memory_oneweek": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.eventSeen_2523800209_memory_oneweek}}",
+                "eventSeen_2523800209_memory_eightweeks": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.eventSeen_2523800209_memory_eightweeks}}",
+                "eventSeen_2523800209_memory_oneyear": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.eventSeen_2523800209_memory_oneyear}}"
             }
         },
-
         {
-            ".LogName": "Edit Djinn rain dialogue",
+            "LogName": "Djinn - StringData - Dialogue Rainy",
             "Action": "EditData",
             "Target": "Characters/Dialogue/rainy",
             "Entries": {
-                "Placeholder":""
+                "Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Rainy.Djinn}}"
+            },
+            "When": {
+                "LocationContext |contains=Default": true
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Djinn - StringData -Dialogue 01/13 Egg Festival",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Djinn": "{{i18n:Djinn_StringData.Data_Festivals_Spring13.Djinn}}",
+                "Djinn_y2": "{{i18n:Djinn_StringData.Data_Festivals_Spring13.Djinn_y2}}",
+                "Djinn_spouse": "{{i18n:Djinn_StringData.Data_Festivals_Spring13.Djinn_spouse}}"
             }
         },
-        
-		{	
-			".LogName": "Edit Djinn spring13 dialogue",
-			"Action": "EditData",
-			"Target": "Data/Festivals/spring13",
-			"Entries": 
-            {
-                "Placeholder":""
-            }
-		},
-        {	
-			".LogName": "Edit Djinn spring24 dialogue",
-			"Action": "EditData",
-			"Target": "Data/Festivals/spring24",
-			"Entries": 
-            {
-                "Placeholder":""
-            }
-		},
-        {	
-			".LogName": "Edit Djinn summer11 dialogue",
-			"Action": "EditData",
-			"Target": "Data/Festivals/summer11",
-			"Entries": 
-            {
-                "Placeholder":""
-            }
-		},
-        {	
-			".LogName": "Edit Djinn summer28 dialogue",
-			"Action": "EditData",
-			"Target": "Data/Festivals/summer28",
-			"Entries": 
-            {
-                "Placeholder":""
-            }
-		},
-        {	
-			".LogName": "Edit Djinn fall16 dialogue",
-			"Action": "EditData",
-			"Target": "Data/Festivals/fall16",
-			"Entries": 
-            {
-                "Placeholder":""
-            }
-		},
-        {	
-			".LogName": "Edit Djinn fall27 dialogue",
-			"Action": "EditData",
-			"Target": "Data/Festivals/fall27",
-			"Entries": 
-            {
-                "Placeholder":""
-            }
-		},
-        {	
-			".LogName": "Edit Djinn winter8 dialogue",
-			"Action": "EditData",
-			"Target": "Data/Festivals/winter8",
-			"Entries": 
-            {
-                "Placeholder":""
-            }
-		},
-        {	
-			".LogName": "Edit Djinn winter25 dialogue",
-			"Action": "EditData",
-			"Target": "Data/Festivals/winter25",
-			"Entries": 
-            {
-                "Placeholder":""
-            }
-		},
-
         {
-            ".LogName": "Edit Djinn engagement dialogue",
+            "LogName": "Djinn - StringData -Dialogue 01/24 Flower Dance",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Djinn": "{{i18n:Djinn_StringData.Data_Festivals_Spring24.Djinn}}",
+                "Djinn_y2": "{{i18n:Djinn_StringData.Data_Festivals_Spring24.Djinn_y2}}",
+                "Djinn_spouse": "{{i18n:Djinn_StringData.Data_Festivals_Spring24.Djinn_spouse}}"
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Dialogue 02/11 Luau",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Djinn": "{{i18n:Djinn_StringData.Data_Festivals_Summer11.Djinn}}",
+                "Djinn_y2": "{{i18n:Djinn_StringData.Data_Festivals_Summer11.Djinn_y2}}",
+                "Djinn_spouse": "{{i18n:Djinn_StringData.Data_Festivals_Summer11.Djinn_spouse}}"
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Dialogue 02/28 Moonlight Jellies",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Djinn": "{{i18n:Djinn_StringData.Data_Festivals_Summer28.Djinn}}",
+                "Djinn_y2": "{{i18n:Djinn_StringData.Data_Festivals_Summer28.Djinn_y2}}",
+                "Djinn_spouse": "{{i18n:Djinn_StringData.Data_Festivals_Summer28.Djinn_spouse}}"
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Dialogue 03/16 Fair",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "Djinn": "{{i18n:Djinn_StringData.Data_Festivals_Fall16.Djinn}}",
+                "Djinn_y2": "{{i18n:Djinn_StringData.Data_Festivals_Fall16.Djinn_y2}}",
+                "Djinn_spouse": "{{i18n:Djinn_StringData.Data_Festivals_Fall16.Djinn_spouse}}"
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Dialogue 03/27 Spirit's Eve",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "Djinn": "{{i18n:Djinn_StringData.Data_Festivals_Fall27.Djinn}}",
+                "Djinn_y2": "{{i18n:Djinn_StringData.Data_Festivals_Fall27.Djinn_y2}}",
+                "Djinn_spouse": "{{i18n:Djinn_StringData.Data_Festivals_Fall27.Djinn_spouse}}"
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Dialogue 04/08 Festival of Ice",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries": {
+                "Djinn": "{{i18n:Djinn_StringData.Data_Festivals_Winter8.Djinn}}",
+                "Djinn_y2": "{{i18n:Djinn_StringData.Data_Festivals_Winter8.Djinn_y2}}",
+                "Djinn_spouse": "{{i18n:Djinn_StringData.Data_Festivals_Winter8.Djinn_spouse}}"
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Dialogue 04/25 Winter Star",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "Djinn": "{{i18n:Djinn_StringData.Data_Festivals_Winter25.Djinn}}",
+                "Djinn_y2": "{{i18n:Djinn_StringData.Data_Festivals_Winter25.Djinn_y2}}",
+                "Djinn_spouse": "{{i18n:Djinn_StringData.Data_Festivals_Winter25.Djinn_spouse}}"
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Dialogue Engagement",
             "Action": "EditData",
             "Target": "Data/EngagementDialogue",
             "Entries": {
-                "Placeholder":""
+                "Djinn0": "{{i18n:Djinn_StringData.Data_EngagementDialogue.Djinn0}}",
+                "Djinn1": "{{i18n:Djinn_StringData.Data_EngagementDialogue.Djinn1}}"
             }
         },
-
         {
-            ".LogName": "Edit Djinn marriage dialogue",
+            "LogName": "Djinn - StringData - Dialogue Marriage",
             "Action": "EditData",
             "Target": "Characters/Dialogue/MarriageDialogueDjinn",
             "Entries": {
-                "Placeholder":""
+                "spring_14": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.spring_14}}",
+                "summer_28": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.summer_28}}",
+                "fall_1": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.fall_1}}",
+                "winter_17": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.winter_17}}",
+                "patio_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.patio_Djinn}}",
+                "Rainy_Day_0": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Rainy_Day_0}}",
+                "Rainy_Day_1": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Rainy_Day_1}}",
+                "Rainy_Day_2": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Rainy_Day_2}}",
+                "Rainy_Day_3": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Rainy_Day_3}}",
+                "Rainy_Day_4": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Rainy_Day_4}}",
+                "Indoor_Day_0": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Indoor_Day_0}}",
+                "Indoor_Day_1": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Indoor_Day_1}}",
+                "Indoor_Day_2": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Indoor_Day_2}}",
+                "Indoor_Day_3": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Indoor_Day_3}}",
+                "Indoor_Day_4": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Indoor_Day_4}}",
+                "Rainy_Night_0": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Rainy_Night_0}}",
+                "Rainy_Night_1": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Rainy_Night_1}}",
+                "Rainy_Night_2": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Rainy_Night_2}}",
+                "Rainy_Night_3": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Rainy_Night_3}}",
+                "Rainy_Night_4": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Rainy_Night_4}}",
+                "Rainy_Night_5": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Rainy_Night_5}}",
+                "Indoor_Night_0": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Indoor_Night_0}}",
+                "Indoor_Night_1": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Indoor_Night_1}}",
+                "Indoor_Night_2": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Indoor_Night_2}}",
+                "Indoor_Night_3": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Indoor_Night_3}}",
+                "Indoor_Night_4": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Indoor_Night_4}}",
+                "Indoor_Night_5": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Indoor_Night_5}}",
+                "funLeave_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.funLeave_Djinn}}",
+                "funReturn_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.funReturn_Djinn}}",
+                "spring_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.spring_Djinn}}",
+                "summer_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.summer_Djinn}}",
+                "fall_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.fall_Djinn}}",
+                "winter_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.winter_Djinn}}",
+                "Outdoor_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Outdoor_Djinn}}",
+                "Outdoor_0": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Outdoor_0}}",
+                "Outdoor_1": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Outdoor_1}}",
+                "Outdoor_2": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Outdoor_2}}",
+                "Outdoor_3": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Outdoor_3}}",
+                "Outdoor_4": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Outdoor_4}}",
+                "Outdoor_5": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Outdoor_5}}",
+                "spouseRoom_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.spouseRoom_Djinn}}",
+                "OneKid_0": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.OneKid_0}}",
+                "OneKid_1": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.OneKid_1}}",
+                "OneKid_2": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.OneKid_2}}",
+                "OneKid_3": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.OneKid_3}}",
+                "OneKid_4": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.OneKid_4}}",
+                "TwoKids_0": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.TwoKids_0}}",
+                "TwoKids_1": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.TwoKids_1}}",
+                "TwoKids_2": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.TwoKids_2}}",
+                "TwoKids_3": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.TwoKids_3}}",
+                "TwoKids_4": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.TwoKids_4}}",
+                "Good_0": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Good_0}}",
+                "Good_1": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Good_1}}",
+                "Good_2": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Good_2}}",
+                "Good_3": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Good_3}}",
+                "Good_4": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Good_4}}",
+                "Good_5": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Good_5}}",
+                "Good_6": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Good_6}}",
+                "Good_7": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Good_7}}",
+                "Good_8": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Good_8}}",
+                "Good_9": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Good_9}}",
+                "Neutral_0": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Neutral_0}}",
+                "Neutral_1": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Neutral_1}}",
+                "Neutral_2": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Neutral_2}}",
+                "Neutral_3": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Neutral_3}}",
+                "Neutral_4": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Neutral_4}}",
+                "Neutral_5": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Neutral_5 |MPP_EK_Emily_Name={{MPP_EK_Emily_Name_T}} }}",
+                "Neutral_6": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Neutral_6}}",
+                "Neutral_7": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Neutral_7}}",
+                "Neutral_8": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Neutral_8}}",
+                "Neutral_9": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Neutral_9}}",
+                "Bad_0": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Bad_0}}",
+                "Bad_1": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Bad_1}}",
+                "Bad_2": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Bad_2}}",
+                "Bad_3": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Bad_3}}",
+                "Bad_4": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Bad_4}}",
+                "Bad_5": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Bad_5}}",
+                "Bad_6": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Bad_6}}",
+                "Bad_7": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Bad_7}}",
+                "Bad_8": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Bad_8}}",
+                "Bad_9": "{{i18n:Djinn_StringData.Characters_Dialogue_MarriageDialogueDjinn.Bad_9}}"
             }
         },
-
         {
-            ".LogName": "Edit Djinn extra dialogue",
+            "LogName": "Djinn - StringData - Dialogue Extra",
             "Action": "EditData",
             "Target": "Data/ExtraDialogue",
             "Entries": {
-                "Placeholder":""
-            }
+                "SummitEvent_Dialogue3_Djinn": "{{i18n:Djinn_StringData.Data_ExtraDialogue.SummitEvent_Dialogue3_Djinn}}"
+            },
+            "When": null
         },
-
         {
-            ".LogName": "Edit Djinn StringsFromMaps dialogue",
+            "LogName": "Djinn - StringData - Strings From Maps",
             "Action": "EditData",
             "Target": "Strings/StringsFromMaps",
             "Entries": {
-                "Placeholder":""
+                "DjinnSandyHouse.001": "{{i18n:Djinn_StringData.Strings_StringsFromMaps.DjinnSandyHouse.001}}",
+                "DjinnSandyHouse.002": "{{i18n:Djinn_StringData.Strings_StringsFromMaps.DjinnSandyHouse.002}}",
+                "DjinnSpouseRoom.001": "{{i18n:Djinn_StringData.Strings_StringsFromMaps.DjinnSpouseRoom.001 |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} }}",
+                "DjinnSpouseRoom.002": "{{i18n:Djinn_StringData.Strings_StringsFromMaps.DjinnSpouseRoom.002 |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Upper04={{MPP_EK_Djinn_Upper_T |valueAt=4}} }}"
             }
         },
-
         {
-            ".LogName": "Edit Djinn StringsFromCSFiles dialogue",
+            "LogName": "Djinn - StringData - Strings From CS Files",
             "Action": "EditData",
             "Target": "Strings/StringsFromCSFiles",
             "Entries": {
-                "Placeholder":""
+                "Djinn_AfterWedding": "{{i18n:Djinn_StringData.Strings_StringsFromCSFiles.Djinn_AfterWedding |MPP_EK_Djinn_Lower29={{MPP_EK_Djinn_Lower_T |valueAt=29}} }}",
+                "Djinn_Engaged": "{{i18n:Djinn_StringData.Strings_StringsFromCSFiles.Djinn_Engaged}}"
             }
         },
-        
         {
-            ".LogName": "Edit Djinn movie dialogue",
+            "LogName": "Djinn - StringData - Dialogue Movie Reactions",
             "Action": "EditData",
             "Target": "Strings/movieReactions",
             "Entries": {
-                "Placeholder":""
+                "Djinn_love_movie_BeforeMovie": "{{i18n:Djinn_StringData.Strings_MovieReactions.Djinn_love_movie_BeforeMovie}}",
+                "Djinn_love_movie_DuringMovie": "{{i18n:Djinn_StringData.Strings_MovieReactions.Djinn_love_movie_DuringMovie}}",
+                "Djinn_love_movie_AfterMovie": "{{i18n:Djinn_StringData.Strings_MovieReactions.Djinn_love_movie_AfterMovie}}",
+                "Djinn_like_movie_BeforeMovie": "{{i18n:Djinn_StringData.Strings_MovieReactions.Djinn_like_movie_BeforeMovie}}",
+                "Djinn_like_movie_DuringMovie": "{{i18n:Djinn_StringData.Strings_MovieReactions.Djinn_like_movie_DuringMovie}}",
+                "Djinn_like_movie_AfterMovie": "{{i18n:Djinn_StringData.Strings_MovieReactions.Djinn_like_movie_AfterMovie}}",
+                "Djinn_dislike_movie_BeforeMovie": "{{i18n:Djinn_StringData.Strings_MovieReactions.Djinn_dislike_movie_BeforeMovie}}",
+                "Djinn_dislike_movie_DuringMovie": "{{i18n:Djinn_StringData.Strings_MovieReactions.Djinn_dislike_movie_DuringMovie}}",
+                "Djinn_dislike_movie_AfterMovie": "{{i18n:Djinn_StringData.Strings_MovieReactions.Djinn_dislike_movie_AfterMovie}}"
             }
         },
-
         {
+            "LogName": "Djinn - StringData - Data Movie Reactions",
             "Action": "EditData",
             "Target": "Data/movieReactions",
             "Entries": {
-                "Placeholder":""
+                "NPCName": "Djinn",
+                "Reactions": [
+                    {
+                        "Tag": "action",
+                        "Response": "love",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_love_movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_love_movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_love_movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_0"
+                    },
+                    {
+                        "Tag": "comedy",
+                        "Response": "love",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_love_movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_love_movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_love_movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_1"
+                    },
+                    {
+                        "Tag": "sci-fi",
+                        "Response": "like",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_like_movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_like_movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_like_movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_2"
+                    },
+                    {
+                        "Tag": "family",
+                        "Response": "like",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_like_movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_like_movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_like_movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_3"
+                    },
+                    {
+                        "Tag": "romance",
+                        "Response": "like",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_like_movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_like_movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_like_movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_4"
+                    },
+                    {
+                        "Tag": "documentary",
+                        "Response": "dislike",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_dislike_movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_dislike_movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_dislike_movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_5"
+                    },
+                    {
+                        "Tag": "classic",
+                        "Response": "dislike",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_dislike_movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_dislike_movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Djinn_dislike_movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_6"
+                    },
+                    {
+                        "Tag": "horror",
+                        "Response": "reject",
+                        "Whitelist": [],
+                        "Id": "reaction_7"
+                    },
+                    {
+                        "Tag": "art",
+                        "Response": "reject",
+                        "Whitelist": [],
+                        "Id": "reaction_8"
+                    }
+                ]
             }
         },
-        
         {
-            ".LogName": "Edit Djinn animation strings",
+            "LogName": "Djinn - StringData - Dialogue Animation Descriptions",
             "Action": "EditData",
             "Target": "Strings/animationDescriptions",
             "Entries": {
-                "Placeholder":""
+                "Djinn_DesertFestival_1": "{{i18n:Djinn_StringData.Data_AnimationDescriptions.Djinn_DesertFestival_1}}",
+                "Djinn_marriage_DesertFestival_1": "{{i18n:Djinn_StringData.Data_AnimationDescriptions.Djinn_marriage_DesertFestival_1 |MPP_EK_Emily_Name={{MPP_EK_Emily_Name_T}} |MPP_EK_Emily_Lower03={{MPP_EK_Emily_Lower_T |valueAt=3}} }}",
+                "Djinn_NightMarket_1": "{{i18n:Djinn_StringData.Data_AnimationDescriptions.Djinn_NightMarket_1}}",
+                "Djinn_marriage_NightMarket_1": "{{i18n:Djinn_StringData.Data_AnimationDescriptions.Djinn_marriage_NightMarket_1}}"
             }
         },
         {
-            ".LogName": "Edit Djinn animations",
+            "LogName": "Djinn - StringData - Data Animation Descriptions",
             "Action": "EditData",
             "Target": "Data/animationDescriptions",
             "Entries": {
-                "Placeholder":""
+                "Djinn_Sleep": "52/52/52"
             }
         },
         {
-            ".LogName": "Edit Djinn schedule",
+            "LogName": "Djinn - StringData - Schedules",
             "Action": "EditData",
             "Target": "Characters/Schedules/Djinn",
             "Entries": {
-                "Placeholder":""
+                "Mon": "900 SandyHouse 10 5 2/ 1200 SandyHouse 14 8 3/ 1500 SandyHouse 7 5 0/ 1700 SandyHouse 14 8 3",
+                "marriage_Wed": "1000 SandyHouse 14 8 3/ 1300 SandyHouse 7 8 0/ 1400 SandyHouse 14 8 3/ 1800 bed",
+                "Tue": "900 SandyHouse 6 6 2/ 1200 SandyHouse 14 8 3/ 1400 SandyHouse 9 5 0/ 1600 SandyHouse 14 8 3",
+                "Wed": "930 SandyHouse 5 5 0/ 1230 SandyHouse 14 8 3/ 1430 SandyHouse 6 8 0/ 1630 SandyHouse 14 8 3",
+                "Thu": "1000 SandyHouse 9 5 2/ 1300 SandyHouse 14 8 3/ 1500 SandyHouse 5 5 0/ 1700 SandyHouse 14 8 3",
+                "Fri": "1030 SandyHouse 6 5 0/ 1330 SandyHouse 14 8 3/ 1530 SandyHouse 6 6 2/ 1730 SandyHouse 14 8 3",
+                "marriage_Fri": "1000 SandyHouse 14 8 3/ 1300 SandyHouse 7 8 0/ 1400 SandyHouse 14 8 3/ 1800 bed",
+                "Sat": "1100 SandyHouse 6 6 2/ 1400 SandyHouse 14 8 3/ 1600 SandyHouse 9 5 0/ 1800 SandyHouse 14 8 3",
+                "Sun": "1030 SandyHouse 5 5 0/ 1330 SandyHouse 14 8 3/ 1530 SandyHouse 6 8 0/ 1730 SandyHouse 14 8 3",
+                "rain": "1000 SandyHouse 9 5 2/ 1300 SandyHouse 14 8 3/ 1500 SandyHouse 5 5 0/ 1700 SandyHouse 14 8 3",
+                "rain2": "930 SandyHouse 6 5 0/ 1230 SandyHouse 14 8 3/ 1430 SandyHouse 6 6 2/ 1630 SandyHouse 14 8 3",
+                "GreenRain": "900 SandyHouse 9 5 2/ 1200 SandyHouse 14 8 3/ 1400 SandyHouse 6 8 0/ 1600 SandyHouse 14 8 3",
+                "DesertFestival_1": "0 Desert 16 37 0/900 Desert 16 42 2 \"Strings\\animationDescriptions:Djinn_DesertFestival_1\"",
+                "marriage_DesertFestival_1": "900 Desert 30 23 2 \"Strings\\animationDescriptions:Djinn_marriage_DesertFestival_1\"/ 2400 bed",
+                "NightMarket_1": "1600 Beach 38 36 2 \"Strings\\animationDescriptions:Djinn_NightMarket_1\"",
+                "marriage_NightMarket_1": "1700 Beach 21 21 2 \"Strings\\animationDescriptions:Djinn_marriage_NightMarket_1\"/ 2400 bed"
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800201": true
             }
         },
-
         {
-            ".LogName": "Edit FRIEND_1 dialogue for the Djinn",
+            "LogName": "Djinn - StringData - Dialogue Sandy",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/FRIEND_1",
+            "Target": "Characters/Dialogue/Sandy",
             "Entries": {
-                "Placeholder":""
+                "eventSeen_2523800201": "{{i18n:Djinn_StringData.Characters_Dialogue_Sandy.eventSeen_2523800201 |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Lower01={{MPP_EK_Djinn_Lower_T |ValueAt=1}} |MPP_EK_Djinn_Upper04={{MPP_EK_Djinn_Upper_T |valueAt=4}} }}",
+                "dating_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Sandy.dating_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Upper01={{MPP_EK_Djinn_Upper_T |ValueAt=1}} |MPP_EK_Djinn_Lower04={{MPP_EK_Djinn_Lower_T |valueAt=4}} |MPP_EK_Djinn_Lower03={{MPP_EK_Djinn_Lower_T |valueAt=3}} }}",
+                "married_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Sandy.married_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Lower01={{MPP_EK_Djinn_Lower_T |ValueAt=1}} }}",
+                "Djinn_inlaw_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Sandy.Djinn_inlaw_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Lower03={{MPP_EK_Djinn_Lower_T |valueAt=3}} }}",
+                "divorced_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Sandy.divorced_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Upper01={{MPP_EK_Djinn_Upper_T |ValueAt=1}} |MPP_EK_Djinn_Lower04={{MPP_EK_Djinn_Lower_T |valueAt=4}} }}"
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Dialogue Emily",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries": {
+                "eventSeen_2523800201": "{{i18n:Djinn_StringData.Characters_Dialogue_Emily.eventSeen_2523800201 |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Upper04={{MPP_EK_Djinn_Upper_T |valueAt=4}} |MPP_EK_Djinn_Lower03={{MPP_EK_Djinn_Lower_T |valueAt=3}} }}",
+                "eventSeen_2523800201_memory_oneweek": "{{i18n:Djinn_StringData.Characters_Dialogue_Emily.eventSeen_2523800201_memory_oneweek |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Upper04={{MPP_EK_Djinn_Upper_T |valueAt=4}} |MPP_EK_Djinn_Lower03={{MPP_EK_Djinn_Lower_T |valueAt=3}} }}",
+                "dating_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Emily.dating_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} }}",
+                "married_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Emily.married_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} }}",
+                "Djinn_inlaw_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Emily.Djinn_inlaw_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Upper04={{MPP_EK_Djinn_Upper_T |valueAt=4}} }}",
+                "divorced_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Emily.divorced_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} }}"
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Dialogue Caroline",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Caroline",
+            "Entries": {
+                "eventSeen_2523800201": "{{i18n:Djinn_StringData.Characters_Dialogue_Caroline.eventSeen_2523800201 |MPP_EK_Djinn_Lower01={{MPP_EK_Djinn_Lower_T |ValueAt=1}} }}",
+                "eventSeen_2523800209": "{{i18n:Djinn_StringData.Characters_Dialogue_Caroline.eventSeen_2523800209 |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Lower01={{MPP_EK_Djinn_Lower_T |ValueAt=1}} |MPP_EK_Djinn_Upper01={{MPP_EK_Djinn_Upper_T |ValueAt=1}} |MPP_EK_Djinn_Lower03={{MPP_EK_Djinn_Lower_T |valueAt=3}} }}",
+                "dating_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Caroline.dating_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Upper01={{MPP_EK_Djinn_Upper_T |ValueAt=1}} |MPP_EK_Djinn_Lower09={{MPP_EK_Djinn_Lower_T |valueAt=9}} |MPP_EK_Djinn_Lower04={{MPP_EK_Djinn_Lower_T |valueAt=4}} }}",
+                "married_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Caroline.married_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Upper01={{MPP_EK_Djinn_Upper_T |ValueAt=1}} }}",
+                "Djinn_inlaw_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Caroline.Djinn_inlaw_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Lower01={{MPP_EK_Djinn_Lower_T |ValueAt=1}} |MPP_EK_Djinn_Lower03={{MPP_EK_Djinn_Lower_T |valueAt=3}} }}",
+                "divorced_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Caroline.divorced_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} |MPP_EK_Djinn_Lower01={{MPP_EK_Djinn_Lower_T |ValueAt=1}} }}"
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Dialogue Lewis",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Lewis",
+            "Entries": {
+                "married_Djinn": "{{i18n:Djinn_StringData.Characters_Dialogue_Lewis.married_Djinn |MPP_EK_Djinn_Name={{MPP_EK_Djinn_Name_T}} }}"
             }
         }
     ]

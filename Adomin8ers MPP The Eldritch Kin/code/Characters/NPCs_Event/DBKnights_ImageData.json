@@ -1,20 +1,21 @@
 {
     "Changes": [ 
         {
-            ".LogName": "DBKnight_01 Overworld Sprite",
+            "LogName": "DBKnight_01 - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/DBKnight_01",
             "FromFile": "assets/Characters/NPCs_Event/DBKnights_Base_OW.png",
             "When": null
         },
         {
-            ".LogName": "DBKnight_01 Base Portrait",
+            "LogName": "DBKnight_01 - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBKnight_01",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "DBKnight_01 - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
@@ -26,20 +27,21 @@
         },
         
         {
-            ".LogName": "DBKnight_02 Overworld Sprite",
+            "LogName": "DBKnight_02 - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/DBKnight_02",
             "FromFile": "assets/Characters/NPCs_Event/DBKnights_Base_OW.png",
             "When": null
         },
         {
-            ".LogName": "DBKnight_02 Base Portrait",
+            "LogName": "DBKnight_02 - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBKnight_02",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "DBKnight_02 - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
@@ -51,20 +53,21 @@
         },
         
         {
-            ".LogName": "DBKnight_03 Overworld Sprite",
+            "LogName": "DBKnight_03 - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/DBKnight_03",
             "FromFile": "assets/Characters/NPCs_Event/DBKnights_Base_OW.png",
             "When": null
         },
         {
-            ".LogName": "DBKnight_03 Base Portrait",
+            "LogName": "DBKnight_03 - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBKnight_03",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "DBKnight_03 - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
@@ -76,20 +79,21 @@
         },
         
         {
-            ".LogName": "DBKnight_04 Overworld Sprite",
+            "LogName": "DBKnight_04 - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/DBKnight_04",
             "FromFile": "assets/Characters/NPCs_Event/DBKnights_Base_OW.png",
             "When": null
         },
         {
-            ".LogName": "DBKnight_04 Base Portrait",
+            "LogName": "DBKnight_04 - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBKnight_04",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "DBKnight_04 - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
@@ -101,20 +105,21 @@
         },
         
         {
-            ".LogName": "DBKnight_05 Overworld Sprite",
+            "LogName": "DBKnight_05 - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/DBKnight_05",
             "FromFile": "assets/Characters/NPCs_Event/DBKnights_Base_OW.png",
             "When": null
         },
         {
-            ".LogName": "DBKnight_05 Base Portrait",
+            "LogName": "DBKnight_05 - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBKnight_05",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "DBKnight_05 - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
@@ -126,20 +131,21 @@
         },
         
         {
-            ".LogName": "DBKnight_06 Overworld Sprite",
+            "LogName": "DBKnight_06 - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/DBKnight_06",
             "FromFile": "assets/Characters/NPCs_Event/DBKnights_Base_OW.png",
             "When": null
         },
         {
-            ".LogName": "DBKnight_06 Base Portrait",
+            "LogName": "DBKnight_06 - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBKnight_06",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "DBKnight_06 - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {

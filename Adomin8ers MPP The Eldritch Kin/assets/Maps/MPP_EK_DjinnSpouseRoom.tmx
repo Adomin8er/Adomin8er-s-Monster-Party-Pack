@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="7" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="18">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="7" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="20">
  <tileset firstgid="1" name="Locations_TownInterior1" tilewidth="16" tileheight="16" tilecount="2272" columns="32">
   <image source="MPP_EK_Locations_TownInterior1.png" width="512" height="1136"/>
  </tileset>
@@ -12,32 +12,29 @@
  <tileset firstgid="6243" name="Locations_TownInterior2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
   <image source="MPP_EK_Locations_TownInterior2.png" width="512" height="656"/>
  </tileset>
- <tileset firstgid="7555" name="Furniture_1Front" tilewidth="16" tileheight="16" tilecount="3162" columns="34">
-  <image source="MPP_EK_Furniture_1Front.png" width="544" height="1488"/>
- </tileset>
  <layer id="1" name="Back" width="7" height="10">
   <data encoding="base64" compression="zlib">
-   eJxzZmBgcMaCGXGIw+SScWCQ3AkcGCT3AglzMiLYjFD+Syw0I5p6ZBqmDx2/xGEfDDMy4McAxjcYaQ==
+   eJxzZmBgcMaCGXGIw+SScWCQ3AkgbuJgYGhGwi0cELkXQLwIyF6MhJdA5TgZcctRou8QkH0YCR+ByuHDAIIHHSU=
   </data>
  </layer>
  <layer id="11" name="Back2" width="7" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYBg8YLkUA8MKIF4JxKukUOWOA/kngPgkEJ9Ck3sO5L8A4pdA/ApNjlwAAElMCp8=
+   eJxjYBgF2AAAARgAAQ==
   </data>
  </layer>
  <layer id="3" name="Buildings" width="7" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYMAOGHGIw+SScWCQXAsTA8NBIG5lgqg/AaRPMmE3k5uJOPvQwV5uBoZ93NjlngPFX+CQA4EcRogcPgwAlBoJuA==
+   eJxjYMAOGHGIw+SScWCYvghWBoaTHAwMp4D4NBBf5idsJjXk1gDtWsuBXe4MB6o+fBgAJDcIVQ==
   </data>
  </layer>
  <layer id="5" name="Front" width="7" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYECAywIMDFeA+KoAhO/CxMDQCMSuQPwXKPYPiP9D5VKAYguBOJUJwl8BpFcyMWAFrxmxixMCk7kZGKZw45a/Jo9d/DtQ/AcOOWIBACehDvc=
+   eJxjYCAMOjkYGLqAuBuI6/kR4hasDAwrgWKrgHg1EK/kx20GNUEP0K5eDvL0niVSHwAwdAdO
   </data>
  </layer>
  <layer id="12" name="Front2" width="7" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYKAOWMLEwNDDRCXDqAB8GCnTDwAMagGC
+   eJxjYBgF2AAAARgAAQ==
   </data>
  </layer>
  <layer id="7" name="Paths" width="7" height="10">
@@ -52,19 +49,14 @@
  </layer>
  <objectgroup id="2" name="Back"/>
  <objectgroup id="4" name="Buildings">
-  <object id="12" name="TileData" x="0" y="48" width="48" height="16">
+  <object id="18" name="TileData" x="48" y="112" width="16" height="32">
    <properties>
-    <property name="Action" value="Message &quot;DhampirSpouseRoom.001&quot;"/>
+    <property name="Action" value="Message &quot;DjinnSpouseRoom.002&quot;"/>
    </properties>
   </object>
-  <object id="13" name="TileData" x="64" y="32" width="16" height="32">
+  <object id="19" name="TileData" x="32" y="48" width="48" height="16">
    <properties>
-    <property name="Action" value="Message &quot;DhampirSpouseRoom.003&quot;"/>
-   </properties>
-  </object>
-  <object id="16" name="TileData" x="48" y="32" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message &quot;DhampirSpouseRoom.002&quot;"/>
+    <property name="Action" value="Message &quot;DjinnSpouseRoom.001&quot;"/>
    </properties>
   </object>
  </objectgroup>

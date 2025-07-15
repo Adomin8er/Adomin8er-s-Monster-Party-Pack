@@ -1,20 +1,20 @@
 {
     "Changes": [
         {
-            "LogName": "DBLillian - Data - Setup",
+            "LogName": "MPP_Marlon - Data - Setup",
             "Action": "Load",
-            "Target": "Characters/Dialogue/DBLillian, Characters/Schedules/DBLillian, Strings/Schedules/DBLillian",
+            "Target": "Characters/Dialogue/MPP_Marlon, Characters/Schedules/MPP_Marlon, Strings/Schedules/MPP_Marlon",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            "LogName": "DBLillian - Data - Characters",
+            "LogName": "MPP_Marlon - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
-                "DBLillian": {
-                    "DisplayName": "{{i18n:NPCs_Event.DBLillian.NameKnown}}",
-                    "Gender": "Female",
+                "MPP_Marlon": {
+                    "DisplayName": "{{i18n:NPCs_Event.MPP_Marlon.NameKnown}}",
+                    "Gender": "Male",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
                     "BirthDay": 1,
@@ -40,7 +40,7 @@
                         {
                             "Id": "Default",
                             "Location": "MPP_EK_CharacterLobby",
-                            "Tile": { "X": 6   , "Y": 5 },
+                            "Tile": { "X": 3   , "Y": 3 },
                             "Direction": "Down"
                         }
                     ],

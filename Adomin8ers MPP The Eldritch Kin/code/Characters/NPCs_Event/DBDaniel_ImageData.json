@@ -1,7 +1,7 @@
 {
     "Changes": [ 
         {
-            ".LogName": "DBDaniel Overworld Sprite",
+            "LogName": "DBDaniel - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/DBDaniel",
             "FromFile": "assets/Characters/NPCs_Event/DBDaniel_Base_OW.png",
@@ -9,13 +9,14 @@
         },
 
         {
-            ".LogName": "DBDaniel Base Portrait",
+            "LogName": "DBDaniel - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBDaniel",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "DBDaniel - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {

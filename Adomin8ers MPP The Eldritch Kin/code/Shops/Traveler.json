@@ -1,6 +1,17 @@
 {
     "Changes": [
         {
+            "LogName": "Traveler - 25238/code/Shops - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Shops_Traveler.001": "+--------------------------------------------+",
+                "DeveloperNotes_Shops_Traveler.002": "|               Shops/Traveler               |",
+                "DeveloperNotes_Shops_Traveler.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Items - EK Purchaseable Potraits",
             "Action": "EditData",
             "Target": "Data/Shops",
             "Priority": "Early - 100",
@@ -22,6 +33,23 @@
                     "Condition": "PLAYER_HEARTS Current Dhampir 14",
                     "Id": "(F)Adomin8er.MPP_EK_DhampirPortrait",
                     "ItemId": "(F)Adomin8er.MPP_EK_DhampirPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack"
+                },                
+                "Adomin8er.MPP_EK_DjinnPortrait":{
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Djinn 14",
+                    "Id": "(F)Adomin8er.MPP_EK_DjinnPortrait",
+                    "ItemId": "(F)Adomin8er.MPP_EK_DjinnPortrait",
                     "IsRecipe": false,
                     "StackModifierMode": "Stack",
                     "QualityModifierMode": "Stack"
