@@ -1,18 +1,43 @@
 {
     "Required": {
+
+    },
+    "Optional": {},
+    "Remeber": {},
+    "Templates": {},
+    "Testing": {
+        "Dhampir": {
+            "TriggerActions #1": "debug upgradehouse 1"
+        },
         "Djinn": {
-            "SpouseRoom": "Needed",
-            "SpouseArea": "Needed",
-            "ConversationData": "Needed",
-            "i18n tokens": "Needed",
-            "TranslationTokens": "Needed",
-            "Beach outfit gold necklace OW": "Needed"
+            "TriggerActions #2": [
+                "CC: debug craftingrecipe Crystal Floor",
+                "CC: debug warp sandyhouse",
+                "CC: debug warp farmhouse"
+            ],
+            "SpecialOrder": [
+                "CC: debug season fall",
+                "CC: debug day 07",
+                "CC: debug warp town 62 94",
+                "CC: debug warp farmhouse",
+                "CC: debug item 333 200",
+                "CC: debug warp sandyhouse"
+            ],
+            "Meet Djinn": [
+                "CC: debug day 5",
+                "CC: debug warp sandyhouse"
+            ],
+            "Date Djinn": [
+                "CC: debug day 12",
+                "CC: debug warp sandyhouse",
+                "CC: debug item 458",
+                "CC: debug warp farmhouse"
+            ],
+            "Marry Djinn": [
+                "CC: debug warp sandyhouse",
+                "CC: debug item 460",
+                "CC: debug warp farmhouse"
+            ]
         }
-    },
-    "Optional": {
-    },
-    "Remeber": {
-    },
-    "Templates": {
     }
 }
