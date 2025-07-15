@@ -5,26 +5,31 @@
       "AllowValues": "Female",
       "Default": "Female",
       "Section": "Demi-Human Gender"
+    },
+    "Djinn_Gender": {
+      "AllowValues": "Female",
+      "Default": "Female",
+      "Section": "Demi-Human Gender"
     }
   },
 
   "DynamicTokens": [
     // Gender words DTs:
     {
-      "Name": "GenderWordsFemale_Lower",
-      "Value": "he, she, him, her, ${her^her}$, his, hers, ${his^his}$, man, woman, men, women, boy, girl, father, mother, dad, mom, grandfather, grandmother, grandpa, grandma, son, daughter, grandson, granddaughter, brother, sister, husband, wife, uncle, aunt, king, queen, prince, princess, male, female, gentleman, lady, sir, ma'am, lord, ${lady^lady}$, mr, mrs, ${son^son}$, hun, master, mistress, nephew, niece, dress, suit, skirt, shorts, wizard, sorceress, guy, gal, mister, miss, sweetie, himself, herself" 
+      "Name": "GenderWords_Lower",
+      "Value": "{{i18n:Content.Dynamic_Tokens.GenderTokens.GenderWords_Lower}}"
     },
     {
-      "Name": "GenderWordsFemale_Upper",
-      "Value": "He, She, Him, Her, ${Her^Her}$, His, Hers, ${His^His}$, Man, Woman, Men, Women, Boy, Girl, Father, Mother, Dad, Mom, Grandfather, Grandmother, Grandpa, Grandma, Son, Daughter, Grandson, Granddaughter, Brother, Sister, Husband, Wife, Uncle, Aunt, King, Queen, Prince, Princess, Male, Female, Gentleman, Lady, Sir, Ma'am, Lord, ${Lady^Lady}$, Mr, Mrs, ${Son^Son}$, Hun, Master, Mistress, Nephew, Niece, Dress, Suit, Skirt, Shorts, Wizard, Sorceress, Guy, Gal, Mister, Miss, Sweetie, Himself, Herself"
+      "Name": "GenderWords_Upper",
+      "Value": "{{i18n:Content.Dynamic_Tokens.GenderTokens.GenderWords_Upper}}"
     },
     {
-      "Name": "GenderWordsMale_Lower",
-      "Value": "she, he, her, him, his, ${her^her}$, ${his^his}$, hers, woman, man, women, men, girl, boy, mother, father, mom, dad, grandmother, grandfather, grandma, grandpa, daughter, son, granddaughter, grandson, sister, brother, wife, husband, aunt, uncle, queen, king, princess, prince, female, male, lady, gentleman, ma'am, sir, ${lady^lady}$, lord, mrs, mr, hun, ${son^son}$, mistress, master, niece, nephew, suit, dress, shorts, skirt, sorceress, wizard, gal, guy, miss, mister, ${dear^sweetie}$, herself, himself"
+      "Name": "GenderWordsSwapped_Lower",
+      "Value": "{{i18n:Content.Dynamic_Tokens.GenderTokens.GenderWordsSwapped_Lower}}"
     },
     {
-      "Name": "GenderWordsMale_Upper",
-      "Value": "She, He, Her, Him, His, ${Her^Her}$, ${His^His}$, Hers, Woman, Man, Women, Men, Girl, Boy, Mother, Father, Mom, Dad, Grandmother, Grandfather, Grandma, Grandpa, Daughter, Son, Granddaughter, Grandson, Sister, Brother, Wife, Husband, Aunt, Uncle, Queen, King, Princess, Prince, Female, Male, Lady, Gentleman, Ma'am, Sir, ${Lady^Lady}$, Lord, Mrs, Mr, Hun, ${Son^Son}$, Mistress, Master, Niece, Nephew, Suit, Dress, Shorts, Skirt, Sorceress, Wizard, Gal, Guy, Miss, Mister, ${Dear^Sweetie}$, Herself, Himself"
+      "Name": "GenderWordsSwapped_Upper",
+      "Value": "{{i18n:Content.Dynamic_Tokens.GenderTokens.GenderWordsSwapped_Upper}}"
     },
 
     // Character based DTs female:
@@ -32,23 +37,46 @@
     // Dhampir
     {
       "Name": "MPP_EK_Dhampir_Name_T",
-      "Value": "Casandra",
+      "Value": "{{i18n:Content.Dynamic_Tokens.Names.Dhampir_FemaleName}}",
       "When": {
         "Dhampir_Gender": "Female"
       }
     },
     {
       "Name": "MPP_EK_Dhampir_Lower_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Lower}}",
       "When": {
           "Dhampir_Gender": "Female"
       }
     },
     {
       "Name": "MPP_EK_Dhampir_Upper_T",
-      "Value": "{{GenderWordsFemale_Upper}}",
+      "Value": "{{GenderWords_Lower}}",
       "When": {
           "Dhampir_Gender": "Female"
+      }
+    },
+
+    // Djinn
+    {
+      "Name": "MPP_EK_Djinn_Name_T",
+      "Value": "{{i18n:Content.Dynamic_Tokens.Names.Djinn_FemaleName}}",
+      "When": {
+        "Djinn_Gender": "Female"
+      }
+    },
+    {
+      "Name": "MPP_EK_Djinn_Lower_T",
+      "Value": "{{GenderWords_Lower}}",
+      "When": {
+          "Djinn_Gender": "Female"
+      }
+    },
+    {
+      "Name": "MPP_EK_Djinn_Upper_T",
+      "Value": "{{GenderWords_Lower}}",
+      "When": {
+          "Djinn_Gender": "Female"
       }
     },
 
@@ -57,23 +85,46 @@
     // Dhampir
     // {
     //     "Name": "MPP_EK_Dhampir_Name_T",
-    //     "Value": "Cassian",
+    //     "Value": "{{i18n:Content.Dynamic_Tokens.Names.Dhampir_MaleName}}",
     //     "When": {
     //       "Dhampir_Gender": "Male"
     //     }
     // },
     // {
     //   "Name": "MPP_EK_Dhampir_Lower_T",
-    //   "Value": "{{GenderWordsMale_Lower}}",
+    //   "Value": "{{GenderWordsSwapped_Lower}}",
     //   "When": {
     //       "Dhampir_Gender": "Male"
     //   }
     // },
     // {
     //   "Name": "MPP_EK_Dhampir_Upper_T",
-    //   "Value": "{{GenderWordsMale_Upper}}",
+    //   "Value": "{{GenderWordsSwapped_Upper}}",
     //   "When": {
     //       "Dhampir_Gender": "Male"
+    //   }
+    // }
+
+    // Djinn
+    // {
+    //     "Name": "MPP_EK_Djinn_Name_T",
+    //     "Value": "{{i18n:Content.Dynamic_Tokens.Names.Djinn_MaleName}}",
+    //     "When": {
+    //       "Djinn_Gender": "Male"
+    //     }
+    // },
+    // {
+    //   "Name": "MPP_EK_Djinn_Lower_T",
+    //   "Value": "{{GenderWordsSwapped_Lower}}",
+    //   "When": {
+    //       "Djinn_Gender": "Male"
+    //   }
+    // },
+    // {
+    //   "Name": "MPP_EK_Djinn_Upper_T",
+    //   "Value": "{{GenderWordsSwapped_Upper}}",
+    //   "When": {
+    //       "Djinn_Gender": "Male"
     //   }
     // }
 
@@ -377,14 +428,14 @@
     },
     {
       "Name": "MPP_EK_Abigail_Lower_T",
-      "Value": "{{GenderWordsMale_Lower}}",
+      "Value": "{{GenderWordsSwapped_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Abigail_Upper_T",
-      "Value": "{{GenderWordsMale_Upper}}",
+      "Value": "{{GenderWordsSwapped_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -399,14 +450,14 @@
     },
     {
       "Name": "MPP_EK_Emily_Lower_T",
-      "Value": "{{GenderWordsMale_Lower}}",
+      "Value": "{{GenderWordsSwapped_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Emily_Upper_T",
-      "Value": "{{GenderWordsMale_Upper}}",
+      "Value": "{{GenderWordsSwapped_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -421,14 +472,14 @@
     },
     {
       "Name": "MPP_EK_Haley_Lower_T",
-      "Value": "{{GenderWordsMale_Lower}}",
+      "Value": "{{GenderWordsSwapped_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Haley_Upper_T",
-      "Value": "{{GenderWordsMale_Upper}}",
+      "Value": "{{GenderWordsSwapped_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -443,14 +494,14 @@
     },
     {
       "Name": "MPP_EK_Leah_Lower_T",
-      "Value": "{{GenderWordsMale_Lower}}",
+      "Value": "{{GenderWordsSwapped_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Leah_Upper_T",
-      "Value": "{{GenderWordsMale_Upper}}",
+      "Value": "{{GenderWordsSwapped_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -465,14 +516,14 @@
     },
     {
       "Name": "MPP_EK_Maru_Lower_T",
-      "Value": "{{GenderWordsMale_Lower}}",
+      "Value": "{{GenderWordsSwapped_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Maru_Upper_T",
-      "Value": "{{GenderWordsMale_Upper}}",
+      "Value": "{{GenderWordsSwapped_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -487,14 +538,14 @@
     },
     {
       "Name": "MPP_EK_Penny_Lower_T",
-      "Value": "{{GenderWordsMale_Lower}}",
+      "Value": "{{GenderWordsSwapped_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Penny_Upper_T",
-      "Value": "{{GenderWordsMale_Upper}}",
+      "Value": "{{GenderWordsSwapped_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -509,14 +560,14 @@
     },
     {
       "Name": "MPP_EK_Alex_Lower_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Alex_Upper_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -531,14 +582,14 @@
     },
     {
       "Name": "MPP_EK_Elliott_Lower_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Elliott_Upper_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -553,14 +604,14 @@
     },
     {
       "Name": "MPP_EK_Harvey_Lower_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Harvey_Upper_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -575,14 +626,14 @@
     },
     {
       "Name": "MPP_EK_Sebastian_Lower_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Sebastian_Upper_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -597,14 +648,14 @@
     },
     {
       "Name": "MPP_EK_Sam_Lower_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Sam_Upper_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -619,14 +670,14 @@
     },
     {
       "Name": "MPP_EK_Shane_Lower_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Shane_Upper_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -641,14 +692,14 @@
     },
     {
       "Name": "MPP_EK_Wizard_Lower_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Lower}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
     },
     {
       "Name": "MPP_EK_Wizard_Upper_T",
-      "Value": "{{GenderWordsFemale_Lower}}",
+      "Value": "{{GenderWords_Upper}}",
       "When": {
           "HasMod |contains=Adomin8er.Adomin8ersHDVanillaPortraits_and_Genderbend": false
       }
@@ -656,6 +707,7 @@
   ],
   
   "Changes": [
+
     // Core NPCs
     {
       "LogName": "Include Dhampir Female",
@@ -663,6 +715,14 @@
       "FromFile": "code/Characters/NPCs_Core/Dhampir/Dhampir_ImageData.json, code/Characters/NPCs_Core/Dhampir/Dhampir_StringData.json",
       "When": {
         "Dhampir_Gender": "female"
+      }
+    },
+    {
+      "LogName": "Include Djinn Female",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Core/Djinn/Djinn_ImageData.json, code/Characters/NPCs_Core/Djinn/Djinn_StringData.json",
+      "When": {
+        "Djinn_Gender": "female"
       }
     },
 
@@ -723,16 +783,22 @@
       "FromFile": "code/Characters/NPCs_Event/DBSpike_ImageData.json, code/Characters/NPCs_Event/DBSpike_StringData.json"
     },
     {
-      "LogName": "Include MPPMarlon",
+      "LogName": "Include MPP_Marlon",
       "Action": "Include",
-      "FromFile": "code/Characters/NPCs_Event/MPPMarlon_ImageData.json, code/Characters/NPCs_Event/MPPMarlon_StringData.json"
+      "FromFile": "code/Characters/NPCs_Event/MPP_Marlon_ImageData.json, code/Characters/NPCs_Event/MPP_Marlon_StringData.json"
+    },
+    {
+      "LogName": "Include MPP_MrQi",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/MPP_MrQi_ImageData.json, code/Characters/NPCs_Event/MPP_MrQi_StringData.json"
     },
     
-    // Data
+    // Items   
     {
-      "LogName": "Include Maps",
-      "Action": "Include",
-      "FromFile": "code/Data/ChairTiles.json"
+        "LogName": "Include MPP Purchaseable Portraits",
+        "Action": "Load",
+        "Target": "Mods/Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin/EK_Portraits",
+        "FromFile": "assets/Items/EK_Portraits.png",
     },
 
     // Maps
@@ -751,9 +817,21 @@
 
     // StringData 
     {
-      "LogName": "Include StringData",
+      "LogName": "Include StringData Files",
       "Action": "Include",
-      "FromFile": "code/StringData/Data.json, code/StringData/Data_Events.json, code/StringData/Data_Festivals.json"
+      "FromFile": "code/StringData/Data.json, code/StringData/Data_Events.json, code/StringData/Data_Festivals.json, code/StringData/ChairTiles.json"
+    },
+
+
+
+    // Mod Compatability
+    {
+      "LogName": "Include StardewValleyExpanded Compatability Files",
+      "Action": "Include",
+      "FromFile": "mod compatability/StardewValleyExpanded.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     }
   ]
 }

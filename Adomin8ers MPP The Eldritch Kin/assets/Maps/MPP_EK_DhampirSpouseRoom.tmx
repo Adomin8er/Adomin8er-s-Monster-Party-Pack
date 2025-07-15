@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="7" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="18">
- <tileset firstgid="1" name="Vanilla_Locations_TownInterior1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="Vanilla_Locations_TownInterior1.png" width="512" height="1088"/>
+ <tileset firstgid="1" name="Locations_TownInterior1" tilewidth="16" tileheight="16" tilecount="2272" columns="32">
+  <image source="MPP_EK_Locations_TownInterior1.png" width="512" height="1136"/>
  </tileset>
- <tileset firstgid="2177" name="Vanilla_Furniture_1" tilewidth="16" tileheight="16" tilecount="3906" columns="42">
-  <image source="Vanilla_Furniture_1.png" width="672" height="1488"/>
+ <tileset firstgid="2273" name="Furniture_1" tilewidth="16" tileheight="16" tilecount="3906" columns="42">
+  <image source="MPP_EK_Furniture_1.png" width="672" height="1488"/>
  </tileset>
- <tileset firstgid="6083" name="Vanilla_Locations_Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
-  <image source="Vanilla_Locations_Paths.png" width="64" height="256"/>
+ <tileset firstgid="6179" name="Locations_Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="MPP_EK_Locations_Paths.png" width="64" height="256"/>
  </tileset>
- <tileset firstgid="6147" name="Vanilla_Locations_TownInterior2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
-  <image source="Vanilla_Locations_TownInterior2.png" width="512" height="656"/>
+ <tileset firstgid="6243" name="Locations_TownInterior2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="MPP_EK_Locations_TownInterior2.png" width="512" height="656"/>
  </tileset>
- <tileset firstgid="7459" name="Vanilla_Furniture_1Front" tilewidth="16" tileheight="16" tilecount="3162" columns="34">
-  <image source="Vanilla_Furniture_1Front.png" width="544" height="1488"/>
+ <tileset firstgid="7555" name="Furniture_1Front" tilewidth="16" tileheight="16" tilecount="3162" columns="34">
+  <image source="MPP_EK_Furniture_1Front.png" width="544" height="1488"/>
  </tileset>
  <layer id="1" name="Back" width="7" height="10">
   <data encoding="base64" compression="zlib">
@@ -22,17 +22,17 @@
  </layer>
  <layer id="11" name="Back2" width="7" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYBg8wF2KgcEDiD2B2EsKVS4dyM8A4kwgzkKTawfyO4C4E4i70OTIBQBsLgYf
+   eJxjYBg8YLkUA8MKIF4JxKukUOWOA/kngPgkEJ9Ck3sO5L8A4pdA/ApNjlwAAElMCp8=
   </data>
  </layer>
  <layer id="3" name="Buildings" width="7" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYMAOGHGIw+SScWCQXAsTA8NBIG5lgqg/AaRPMmE3k5uJOPvQQSw3A0McN3a5dqB4Bw45EMhhhMjhwwAcGgg4
+   eJxjYMAOGHGIw+SScWCQXAsTA8NBIG5lgqg/AaRPMmE3k5uJOPvQwV5uBoZ93NjlngPFX+CQA4EcRogcPgwAlBoJuA==
   </data>
  </layer>
  <layer id="5" name="Front" width="7" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYECAYgEGhhIgLhWA8F2YGBgagdgViOcCxeYB8XyoXApQbCEQpzJB+CuA9EomBqzgNSN2cULAmJuBwYQbt3yZPHbx6UDxGTjkiAUARXQK1w==
+   eJxjYECAywIMDFeA+KoAhO/CxMDQCMSuQPwXKPYPiP9D5VKAYguBOJUJwl8BpFcyMWAFrxmxixMCk7kZGKZw45a/Jo9d/DtQ/AcOOWIBACehDvc=
   </data>
  </layer>
  <layer id="12" name="Front2" width="7" height="10">
@@ -42,7 +42,7 @@
  </layer>
  <layer id="7" name="Paths" width="7" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYBgYcEp8gCwmEgAAjaEA4g==
+   eJxjYBgYoCUxQBYTCQAqQABD
   </data>
  </layer>
  <layer id="9" name="AlwaysFront" width="7" height="10">

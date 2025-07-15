@@ -1,7 +1,7 @@
 {
     "Changes": [ 
         {
-            ".LogName": "DBKaliah Overworld Sprite",
+            "LogName": "DBKaliah - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/DBKaliah",
             "FromFile": "assets/Characters/NPCs_Event/DBKaliah_Base_OW.png",
@@ -9,13 +9,14 @@
         },
 
         {
-            ".LogName": "DBKaliah Base Portrait",
+            "LogName": "DBKaliah - Base Portraits",
             "Action": "Load",
             "Target": "Portraits/DBKaliah",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "DBKaliah - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {

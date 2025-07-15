@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create DBGalleon character",
+            "LogName": "DBGalleon - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBGalleon, Characters/Schedules/DBGalleon, Strings/Schedules/DBGalleon",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBGalleon character data",
+            "LogName": "DBGalleon - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
@@ -39,7 +39,7 @@
                     "Home": [
                         {
                             "Id": "Default",
-                            "Location": "EldritchKin_CharacterLobby",
+                            "Location": "MPP_EK_CharacterLobby",
                             "Tile": { "X": 3   , "Y": 5 },
                             "Direction": "Down"
                         }

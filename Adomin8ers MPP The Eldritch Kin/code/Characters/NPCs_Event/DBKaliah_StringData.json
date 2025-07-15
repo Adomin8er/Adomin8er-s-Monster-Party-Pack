@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create DBKaliah character",
+            "LogName": "DBKaliah - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBKaliah, Characters/Schedules/DBKaliah, Strings/Schedules/DBKaliah",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBKaliah character data",
+            "LogName": "DBKaliah - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
@@ -39,7 +39,7 @@
                     "Home": [
                         {
                             "Id": "Default",
-                            "Location": "EldritchKin_CharacterLobby",
+                            "Location": "MPP_EK_CharacterLobby",
                             "Tile": { "X": 5   , "Y": 5 },
                             "Direction": "Down"
                         }

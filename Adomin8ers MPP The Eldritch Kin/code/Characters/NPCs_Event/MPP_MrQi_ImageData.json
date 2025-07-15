@@ -1,0 +1,30 @@
+{
+    "Changes": [ 
+        {
+            "LogName": "MPP_MrQi - Base Overworld Sprite",
+            "Action": "Load",
+            "Target": "Characters/MPP_MrQi",
+            "FromFile": "assets/Characters/NPCs_Event/MPP_MrQi_Base_OW.png",
+            "When": null
+        },
+
+        {
+            "LogName": "MPP_MrQi - Base Portrait",
+            "Action": "Load",
+            "Target": "Portraits/MPP_MrQi",
+            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "When": null
+        },
+        {
+            "LogName": "MPP_MrQi - Upscalse Portraits",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "25238_HD_MPP_MrQi_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/MPP_MrQi_Base_HD.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/MPP_MrQi", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HD_MPP_MrQi_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/MPP_MrQi_Base_HD.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/MPP_MrQi", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HD_MPP_MrQi_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/MPP_MrQi_Base_HD.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/MPP_MrQi", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HD_MPP_MrQi_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/MPP_MrQi_Base_HD.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/MPP_MrQi", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}}
+            }
+        }
+    ]
+}

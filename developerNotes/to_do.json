@@ -1,5 +1,13 @@
 {
     "Required": {
+        "Djinn": {
+            "SpouseRoom": "Needed",
+            "SpouseArea": "Needed",
+            "ConversationData": "Needed",
+            "i18n tokens": "Needed",
+            "TranslationTokens": "Needed",
+            "Beach outfit gold necklace OW": "Needed"
+        }
     },
     "Optional": {
     },

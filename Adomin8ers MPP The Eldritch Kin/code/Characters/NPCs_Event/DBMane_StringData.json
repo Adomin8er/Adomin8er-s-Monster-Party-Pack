@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create DBMane character",
+            "LogName": "DBMane - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBMane, Characters/Schedules/DBMane, Strings/Schedules/DBMane",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBMane character data",
+            "LogName": "DBMane - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
@@ -39,7 +39,7 @@
                     "Home": [
                         {
                             "Id": "Default",
-                            "Location": "EldritchKin_CharacterLobby",
+                            "Location": "MPP_EK_CharacterLobby",
                             "Tile": { "X": 1   , "Y": 6 },
                             "Direction": "Down"
                         }

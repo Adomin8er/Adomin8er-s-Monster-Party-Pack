@@ -1,7 +1,7 @@
 {
     "Changes": [ 
         {
-            ".LogName": "DBLillian Overworld Sprite",
+            "LogName": "DBLillian - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/DBLillian",
             "FromFile": "assets/Characters/NPCs_Event/DBLillian_Base_OW.png",
@@ -9,13 +9,14 @@
         },
 
         {
-            ".LogName": "DBLillian Base Portrait",
+            "LogName": "DBLillian - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBLillian",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "DBLillian - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {

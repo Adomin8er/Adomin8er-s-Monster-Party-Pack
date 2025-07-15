@@ -1,0 +1,56 @@
+{
+    "Changes": [
+        {
+            "LogName": "MPP_Marlon - Data - Setup",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/MPP_Marlon, Characters/Schedules/MPP_Marlon, Strings/Schedules/MPP_Marlon",
+            "FromFile": "code/blank.json",
+            "When": null
+        },
+        {
+            "LogName": "MPP_Marlon - Data - Characters",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "MPP_Marlon": {
+                    "DisplayName": "{{i18n:NPCs_Event.MPP_Marlon.NameKnown}}",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 1,
+                    "HomeRegion": "Other",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanVisitIsland": false,
+                    "Caledar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "SpouseWantsChildren": false,
+                    "SpouseGiftJealousy": false,
+                    "PerfectionScore": false,
+
+                    "FlowerDanceCanDance": null,
+                    "WinterStarParticipant": false,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "MPP_EK_CharacterLobby",
+                            "Tile": { "X": 3   , "Y": 3 },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        }
+    ]
+}

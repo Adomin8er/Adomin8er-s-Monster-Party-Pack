@@ -1,7 +1,17 @@
 {
-    "Changes": [
-		{	
-			"LogName": "Dhampir Egg Festival",
+    "Changes": [        
+        {
+            "LogName": "Dhampir - 25238/code/StringData/Data_Festivals - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Festivals_Dhampir.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Festivals_Dhampir.002": "|           Data/Festivals/Dhampir           |",
+                "DeveloperNotes_Data_Festivals_Dhampir.003": "+--------------------------------------------+"
+            }
+        },
+        {	
+			"LogName": "Dhampir - Festival - 01/13 EggFestival",
 			"Action": "EditData",
 			"Target": "Data/Festivals/spring13",
 			"TextOperations":
@@ -12,25 +22,43 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-   				    "Value": "Dhampir 24 78 0",
+   				    "Value": "Dhampir 26 68 3",
    				    "Delimiter": "/"
 				},
                 {
                     "Operation": "Append",
                     "Target": [
                         "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Dhampir 24 64 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
                         "MainEvent_additionalCharacters"
                     ],
-                    "Value": "Dhampir 22 29 0",
+                    "Value": "Dhampir 35 69 3",
                     "Delimiter": "/"
-                }
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 18 65 1",
+   				    "Delimiter": "/"
+				}
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
         {	
-			"LogName": "Dhampir Flower Dance",
+			"LogName": "Dhampir - Festival - 01/24 Flower Dance",
 			"Action": "EditData",
 			"Target": "Data/Festivals/spring24",
 			"TextOperations":
@@ -41,25 +69,43 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-   				    "Value": "Dhampir 22 29 0",
+   				    "Value": "Dhampir 9 34 2",
    				    "Delimiter": "/"
 				},
                 {
                     "Operation": "Append",
                     "Target": [
                         "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Dhampir 18 30 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
                         "MainEvent_additionalCharacters"
                     ],
-                    "Value": "Dhampir 22 29 0",
+                    "Value": "Dhampir 10 21 2",
                     "Delimiter": "/"
-                }
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 8 33 2",
+   				    "Delimiter": "/"
+				}
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
         {	
-			"LogName": "Dhampir Luau",
+			"LogName": "Dhampir - Festival - 02/11 Luau",
 			"Action": "EditData",
 			"Target": "Data/Festivals/summer11",
 			"TextOperations":
@@ -70,25 +116,43 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-   				    "Value": "Dhampir 13 4 2",
+   				    "Value": "Dhampir 17 5 2",
    				    "Delimiter": "/"
 				},
                 {
                     "Operation": "Append",
                     "Target": [
                         "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Dhampir 19 11 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
                         "MainEvent_additionalCharacters"
                     ],
-                    "Value": "Dhampir 13 4 2",
+                    "Value": "Dhampir 27 11 1",
                     "Delimiter": "/"
-                }
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 17 5 2",
+   				    "Delimiter": "/"
+				}
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
         {	
-			"LogName": "Dhampir Moonlight Jellies",
+			"LogName": "Dhampir - Festival - 02/28 Moonlight Jellies",
 			"Action": "EditData",
 			"Target": "Data/Festivals/summer28",
 			"TextOperations":
@@ -99,25 +163,43 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-   				    "Value": "Dhampir 11 28 3",
+   				    "Value": "Dhampir 13 28 1",
    				    "Delimiter": "/"
 				},
                 {
                     "Operation": "Append",
                     "Target": [
                         "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Dhampir 44 35 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
                         "MainEvent_additionalCharacters"
                     ],
-                    "Value": "Dhampir 11 28 3",
+                    "Value": "Dhampir 13 28 1",
                     "Delimiter": "/"
-                }
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 44 35 1",
+   				    "Delimiter": "/"
+				}
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
         {	
-			"LogName": "Dhampir Fair",
+			"LogName": "Dhampir - Festival - 03/16 Fair",
 			"Action": "EditData",
 			"Target": "Data/Festivals/fall16",
 			"TextOperations":
@@ -128,24 +210,25 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-   				    "Value": "Dhampir 22 65 1",
+   				    "Value": "Dhampir 45 63 0",
    				    "Delimiter": "/"
 				},
                 {
-                    "Operation": "Append",
-                    "Target": [
+   				    "Operation": "Append",
+   				    "Target": [
                         "Entries",
-                        "MainEvent_additionalCharacters"
+                        "Set-Up_additionalCharacters_y2"
                     ],
-                    "Delimiter": "/"
-                }
+   				    "Value": "Dhampir 38 70 3",
+   				    "Delimiter": "/"
+				}
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
         {	
-			"LogName": "Dhampir Spirit's Eve",
+			"LogName": "Dhampir - Festival - 03/27 Spirit's Eve",
 			"Action": "EditData",
 			"Target": "Data/Festivals/fall27",
 			"TextOperations":
@@ -156,25 +239,25 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-   				    "Value": "Dhampir 32 68 2",
+   				    "Value": "Dhampir 36 67 3",
    				    "Delimiter": "/"
 				},
                 {
                     "Operation": "Append",
                     "Target": [
                         "Entries",
-                        "MainEvent_additionalCharacters"
+                        "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "Dhampir 32 68 2",
+                    "Value": "Dhampir 28 71 3",
                     "Delimiter": "/"
                 }
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
         {	
-			"LogName": "Dhampir Festival of Ice",
+			"LogName": "Dhampir - Festival - 04/08 Festival of Ice",
 			"Action": "EditData",
 			"Target": "Data/Festivals/winter8",
 			"TextOperations":
@@ -185,25 +268,43 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-   				    "Value": "Dhampir 79 32 3",
+   				    "Value": "Dhampir 74 17 3",
+   				    "Delimiter": "/"
+				},
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 80 47 2",
    				    "Delimiter": "/"
 				},
                 {
                     "Operation": "Append",
                     "Target": [
                         "Entries",
-                        "MainEvent_additionalCharacters"
+                        "Main-Event_additionalCharacters"
                     ],
-                    "Value": "Dhampir 79 32 3",
+                    "Value": "Dhampir 82 33 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters_y2"
+                    ],
+                    "Value": "Dhampir 82 34 3",
                     "Delimiter": "/"
                 }
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
             }
 		},
         {	
-			"LogName": "Dhampir Winter Star",
+			"LogName": "Dhampir - Festival - 04/25 Winter Star",
 			"Action": "EditData",
 			"Target": "Data/Festivals/winter25",
 			"TextOperations":
@@ -214,7 +315,16 @@
                         "Entries",
                         "Set-Up_additionalCharacters"
                     ],
-   				    "Value": "Dhampir 37 66 3",
+   				    "Value": "Dhampir 34 62 2",
+   				    "Delimiter": "/"
+				},
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 25 70 3",
    				    "Delimiter": "/"
 				},
                 {
@@ -223,12 +333,373 @@
                         "Entries",
                         "MainEvent_additionalCharacters"
                     ],
-                    "Value": "Dhampir 37 66 3",
+                    "Value": "Dhampir 34 62 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Dhampir 25 70 3",
                     "Delimiter": "/"
                 }
 			],
             "When":  {
-                "HasSeenEvent |contains=2523800100": true
+                "HasSeenEvent |contains=2523800101": true
+            }
+		},
+
+        {
+            "LogName": "Djinn - 25238/code/StringData/Data_Festivals - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Festivals_Djinn.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Festivals_Djinn.002": "|           Data/Festivals/Djinn           |",
+                "DeveloperNotes_Data_Festivals_Djinn.003": "+--------------------------------------------+"
+            }
+        },
+        {	
+			"LogName": "Djinn - Festival - 01/13 EggFestival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Djinn 25 59 1",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Djinn 36 64 3",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Djinn 23 67 1",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Djinn 23 65 1",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800201": true
+            }
+		},
+        {	
+			"LogName": "Djinn - Festival - 01/24 Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Djinn 25 35 3",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Djinn 14 21 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Djinn 20 21 2",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Djinn 13 34 2",
+   				    "Delimiter": "/"
+				}
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800201": true
+            }
+		},
+        {	
+			"LogName": "Djinn - Festival - 02/11 Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Djinn 45 12 1",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Djinn 33 11 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Djinn 38 19 0",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Djinn 21 15 2",
+   				    "Delimiter": "/"
+				}
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800201": true
+            }
+		},
+        {	
+			"LogName": "Djinn - Festival - 02/28 Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Djinn 19 24 2",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Djinn 24 32 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Djinn 19 24 2",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Djinn 24 32 3",
+   				    "Delimiter": "/"
+				}
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800201": true
+            }
+		},
+        {	
+			"LogName": "Djinn - Festival - 03/16 Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Djinn 22 65 0",
+   				    "Delimiter": "/"
+				},
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Djinn 27 61 1",
+   				    "Delimiter": "/"
+				}
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800201": true
+            }
+		},
+        {	
+			"LogName": "Djinn - Festival - 03/27 Spirit's Eve",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Djinn 21 42 0",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Djinn 32 68 2",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800201": true
+            }
+		},
+        {	
+			"LogName": "Djinn - Festival - 04/08 Festival of Ice",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Djinn 57 38 1",
+   				    "Delimiter": "/"
+				},
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Djinn 57 33 0",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Djinn 58 36 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters_y2"
+                    ],
+                    "Value": "Djinn 59 33 1",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800201": true
+            }
+		},
+        {	
+			"LogName": "Djinn - Festival - 04/25 Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Djinn 25 65 3",
+   				    "Delimiter": "/"
+				},
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Djinn 34 73 0",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Djinn 25 65 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Djinn 34 73 0",
+                    "Delimiter": "/"
+                }
+                
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800201": true
             }
 		}
     ]

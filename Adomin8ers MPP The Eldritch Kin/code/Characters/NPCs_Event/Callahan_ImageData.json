@@ -1,7 +1,7 @@
 {
     "Changes": [ 
         {
-            ".LogName": "Callahan Overworld Sprite",
+            "LogName": "Callahan - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/Callahan",
             "FromFile": "assets/Characters/NPCs_Event/Callahan_Base_OW.png",
@@ -9,13 +9,14 @@
         },
 
         {
-            ".LogName": "Callahan Base Portrait",
+            "LogName": "Callahan - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/Callahan",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "Callahan - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {

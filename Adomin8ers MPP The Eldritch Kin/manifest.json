@@ -12,6 +12,10 @@
         {
             "UniqueID": "Spiderbuttons.CMCT",
 			"IsRequired": true
-        }
+        },
+        {
+			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+			"IsRequired": false
+		}
     ]
 }

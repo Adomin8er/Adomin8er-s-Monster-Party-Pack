@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create Callahan character",
+            "LogName": "Callahan - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/Callahan, Characters/Schedules/Callahan, Strings/Schedules/Callahan",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit Callahan character data",
+            "LogName": "Callahan - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
@@ -39,7 +39,7 @@
                     "Home": [
                         {
                             "Id": "Default",
-                            "Location": "EldritchKin_CharacterLobby",
+                            "Location": "MPP_EK_CharacterLobby",
                             "Tile": { "X": 1   , "Y": 3 },
                             "Direction": "Down"
                         }

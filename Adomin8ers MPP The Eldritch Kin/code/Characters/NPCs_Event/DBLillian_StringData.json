@@ -1,14 +1,14 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create DBLillian character",
+            "LogName": "DBLillian - Data - Setup",
             "Action": "Load",
             "Target": "Characters/Dialogue/DBLillian, Characters/Schedules/DBLillian, Strings/Schedules/DBLillian",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit DBLillian character data",
+            "LogName": "DBLillian - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
@@ -39,7 +39,7 @@
                     "Home": [
                         {
                             "Id": "Default",
-                            "Location": "EldritchKin_CharacterLobby",
+                            "Location": "MPP_EK_CharacterLobby",
                             "Tile": { "X": 6   , "Y": 5 },
                             "Direction": "Down"
                         }

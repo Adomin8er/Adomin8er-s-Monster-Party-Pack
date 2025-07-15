@@ -1,75 +1,105 @@
 {
     "Changes": [
         {
-            ".LogName": "Load AdventureGuild",
+            "LogName": "Arbitrary - 25238/code/Maps/Additions - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Maps_Additions_Arbitrary.001": "+--------------------------------------------+",
+                "DeveloperNotes_Maps_Additions_Arbitrary.002": "|              Maps/Arbitrary                |",
+                "DeveloperNotes_Maps_Additions_Arbitrary.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Arbitrary - Map Addition - AdventureGuild",
             "Target": "Data/Events/AdventureGuild",
             "Action": "Load",
             "FromFile": "code/blank.json"
         },
-
         {
-            ".LogName": "MPP_EK_CharacterLobby",
+            "LogName": "Arbitrary - Map Addition - Desert",
+            "Target": "Data/Events/Desert",
+            "Action": "Load",
+            "FromFile": "code/blank.json"
+        },
+        {
+            "LogName": "Arbitrary - Map Addition - MPP_EK_CharacterLobby",
             "Action": "Load",
             "Target": "Maps/MPP_EK_CharacterLobby",
             "FromFile": "assets/Maps/MPP_EK_CharacterLobby.tmx",
             "When": null
         },
+
+        
         {
-            ".LogName": "MPP_EK_CharacterLobby",
+            "LogName": "Dhampir - 25238/code/Maps/Additions - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Data/Locations",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
             "Entries": {
-                "MPP_EK_CharacterLobby": {
-                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_CharacterLobby}}",
-                    "DefaultArrivalTile": {
-                        "X": 4,
-                        "Y": 4
-                    },
-                    "CreateOnLoad": {
-                        "MapPath": "Maps/MPP_EK_CharacterLobby"
-                    }
-                }
+                "DeveloperNotes_Maps_Additions_Dhampir.001": "+--------------------------------------------+",
+                "DeveloperNotes_Maps_Additions_Dhampir.002": "|                Maps/Dhampir                |",
+                "DeveloperNotes_Maps_Additions_Dhampir.003": "+--------------------------------------------+"
             }
         },
-
         {
-            ".LogName": "MPP_EK_DhampirRoom",
+            "LogName": "Dhampir - Map Addition - MPP_EK_DhampirRoom",
             "Action": "Load",
             "Target": "Maps/MPP_EK_DhampirRoom",
             "FromFile": "assets/Maps/MPP_EK_DhampirRoom.tmx",
             "When": null
         },
         {
-            ".LogName": "MPP_EK_DhampirRoom",
-            "Action": "EditData",
-            "Target": "Data/Locations",
-            "Entries": {
-                "MPP_EK_DhampirRoom": {
-                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_DhampirRoom}}",
-                    "DefaultArrivalTile": {
-                        "X": 6,
-                        "Y": 10
-                    },
-                    "CreateOnLoad": {
-                        "MapPath": "Maps/MPP_EK_DhampirRoom"
-                    }
-                }
-            }
-        },
-
-        {
-            ".LogName": "MPP_EK_DhampirSpouseArea",
+            "LogName": "Dhampir - Map Addition - MPP_EK_DhampirSpouseArea",
             "Action": "Load",
             "Target": "Maps/MPP_EK_DhampirSpouseArea",
             "FromFile": "assets/Maps/MPP_EK_DhampirSpouseArea.tmx",
             "When": null
         },
-        
         {
-            ".LogName": "MPP_EK_DhampirSpouseRoom",
+            "LogName": "Dhampir - Map Addition - MPP_EK_DhampirSpouseRoom",
             "Action": "Load",
             "Target": "Maps/MPP_EK_DhampirSpouseRoom",
             "FromFile": "assets/Maps/MPP_EK_DhampirSpouseRoom.tmx",
+            "When": null
+        },
+
+        
+        {
+            "LogName": "Djinn - 25238/code/Maps/Additions - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Maps_Additions_Djinn.001": "+--------------------------------------------+",
+                "DeveloperNotes_Maps_Additions_Djinn.002": "|                 Maps/Djinn                 |",
+                "DeveloperNotes_Maps_Additions_Djinn.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Dhampir - Map Addition - MPP_EK_CourtHouse",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_CourtHouse",
+            "FromFile": "assets/Maps/MPP_EK_CourtHouse.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Dhampir - Map Addition - MPP_EK_DesertTruck",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_DesertTruck",
+            "FromFile": "assets/Maps/MPP_EK_DesertTruck.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Dhampir - Map Addition - MPP_EK_DjinnSpouseArea",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_DjinnSpouseArea",
+            "FromFile": "assets/Maps/MPP_EK_DjinnSpouseArea.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Dhampir - Map Addition - MPP_EK_DjinnSpouseRoom",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_DjinnSpouseRoom",
+            "FromFile": "assets/Maps/MPP_EK_DjinnSpouseRoom.tmx",
             "When": null
         }
     ]

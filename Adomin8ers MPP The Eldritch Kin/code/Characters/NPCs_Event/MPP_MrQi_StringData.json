@@ -1,19 +1,19 @@
 {
     "Changes": [
         {
-            ".LogName": "Load/Create MPPMarlon character",
+            "LogName": "MPP_MrQi - Data - Setup",
             "Action": "Load",
-            "Target": "Characters/Dialogue/MPPMarlon, Characters/Schedules/MPPMarlon, Strings/Schedules/MPPMarlon",
+            "Target": "Characters/Dialogue/MPP_MrQi, Characters/Schedules/MPP_MrQi, Strings/Schedules/MPP_MrQi",
             "FromFile": "code/blank.json",
             "When": null
         },
         {
-            ".LogName": "Edit MPPMarlon character data",
+            "LogName": "MPP_MrQi - Data - Characters",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Entries": {
-                "MPPMarlon": {
-                    "DisplayName": "{{i18n:NPCs_Event.MPPMarlon.NameKnown}}",
+                "MPP_MrQi": {
+                    "DisplayName": "{{i18n:NPCs_Event.MPP_MrQi.NameKnown}}",
                     "Gender": "Male",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
@@ -39,8 +39,8 @@
                     "Home": [
                         {
                             "Id": "Default",
-                            "Location": "EldritchKin_CharacterLobby",
-                            "Tile": { "X": 3   , "Y": 3 },
+                            "Location": "MPP_EK_CharacterLobby",
+                            "Tile": { "X": 5   , "Y": 3 },
                             "Direction": "Down"
                         }
                     ],

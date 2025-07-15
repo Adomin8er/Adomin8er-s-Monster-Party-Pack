@@ -1,7 +1,7 @@
 {
     "Changes": [ 
         {
-            "LogName": "F - DBLorin Overworld Sprite",
+            "LogName": "DBLorin - Base Overworld Sprite",
             "Action": "Load",
             "Target": "Characters/DBLorin",
             "FromFile": "assets/Characters/NPCs_Event/DBLorin_Base_OW.png",
@@ -9,13 +9,14 @@
         },
 
         {
-            "LogName": "F - DBLorin Base Portrait",
+            "LogName": "DBLorin - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBLorin",
             "FromFile": "assets/Characters/Size1536_ImageBase.png",
             "When": null
         },
         {
+            "LogName": "DBLorin - Upscale Portraits",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {

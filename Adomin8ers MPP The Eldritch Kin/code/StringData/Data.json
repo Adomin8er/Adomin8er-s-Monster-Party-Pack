@@ -1,16 +1,60 @@
 {
     "Changes": [
         {
-            ".LogName": "EDIT MAIL - Mail text.",
+            "LogName": "Arbitrary - 25238/code/StringData/Data - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Data/Mail",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
             "Entries": {
-                "MonstrousTownMeeting_Arbitrary": "{{i18n:Data.Data_Mail.MonstrousTownMeeting_Arbitrary}}",
-                "SpecialOrderThanks_Dhampir": "{{i18n:Data.Data_Mail.SpecialOrderThanks_Dhampir}}"
+                "DeveloperNotes_Data_Arbitrary.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Arbitrary.002": "|               Data/Arbitrary               |",
+                "DeveloperNotes_Data_Arbitrary.003": "+--------------------------------------------+"
             }
         },
         {
-            ".LogName": "Edit SpecialOrder Dhampir",
+            "Logname": "Arbitrary - Mail - Arbitrary_MonstrousTownMeeting",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "Arbitrary_MonstrousTownMeeting": "{{i18n:Data.Data_Mail.Arbitrary_MonstrousTownMeeting}}"
+            }
+        },
+        {
+            "Logname": "Arbitrary - TriggerActions - AddMail All Arbitrary_MonstrousTownMeeting tomorrow",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "25238_Arbitrary_MonstrousTownMeeting_Invite": {
+                    "Id": "25238_Arbitrary_MonstrousTownMeeting_Invite",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_FRIENDSHIP_POINTS Any Dhampir 1250\" \"PLAYER_FRIENDSHIP_POINTS Any Djinn 1250\"",
+                    "Actions": [
+                        "AddMail All Arbitrary_MonstrousTownMeeting tomorrow"
+                    ]
+                }
+            }
+        },
+
+        
+        {
+            "LogName": "Dhampir - 25238/code/StringData/Data - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Dhampir.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Dhampir.002": "|                Data/Dhampir                |",
+                "DeveloperNotes_Data_Dhampir.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "Logname": "Dhampir - Mail - Dhampir_SpecialOrderThanks",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "Dhampir_SpecialOrderThanks": "{{i18n:Data.Data_Mail.Dhampir_SpecialOrderThanks}}"
+            }
+        },
+        {
+            "Logname": "Dhampir - SpecialOrder - Details",
             "Action": "EditData",
             "Target": "Data/SpecialOrders",
             "Entries": {
@@ -83,7 +127,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "SpecialOrderThanks_Dhampir",
+                                "MailReceived": "Dhampir_SpecialOrderThanks",
                                 "NoLetter": "false"
                             }
                         }
@@ -91,7 +135,143 @@
                 }
             },
             "When": {
-                "FarmhouseUpgrade |contains=1,2,3": true
+                "HasSeenEvent |contains=2523800100": true
+            }
+        },
+        {
+            "Logname": "Dhampir - TriggerAction - SpecialOrder",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "25238_Dhampir_SpecialOrderLoaded": {
+                    "Id": "25238_Dhampir_SpecialOrderLoaded",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_FARMHOUSE_UPGRADE Any 1 3\"",
+                    "Actions": [
+                        "MarkEventSeen All 2523800100 true"
+                    ]
+                }
+            }
+        },
+        {
+            "Logname": "Dhampir - Weddings - Attendance",
+            "Action": "EditData",
+            "Target": "Data/Weddings",
+            "TargetField": [
+                "Attendees"
+            ],
+            "Entries": {
+                "Dhampir": {
+                    "ID": "Dhampir",
+                    "Setup": "Dhampir 23 71 0"
+                }
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523800101": true
+            }
+        },
+
+        
+        {
+            "LogName": "Djinn - 25238/code/StringData/Data - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Djinn.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Djinn.002": "|                 Data/Djinn                 |",
+                "DeveloperNotes_Data_Djinn.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "Logname": "Djinn - Mail - Dhampir_SpecialOrderThanks",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "Djinn_SpecialOrderThanks": "{{i18n:Data.Data_Mail.Djinn_SpecialOrderThanks}}"
+            }
+        },
+        {
+            "Logname": "Djinn - SpecialOrder - Details",
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "RegionalInspections": {
+                    "Name": "{{i18n:Data.Data_SpecialOrders.Djinn.Name}}",
+                    "Requester": "Sandy",
+                    "Duration": "Week",
+                    "Repeatable": "False",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:Data.Data_SpecialOrders.Djinn.Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:Data.Data_SpecialOrders.Djinn.Objective.01}}",
+                            "RequiredCount": "200",
+                            "Data": {
+                                "DropBox": "SandyBarrel",
+                                "DropBoxGameLocation": "SandyHouse",
+                                "DropBoxIndicatorLocation": "8 3",
+                                "AcceptedContextTags": "item_crystal_floor"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Friendship",
+                            "Data": {
+                                "Amount": "500",
+                                "TargetName": "Sandy"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Djinn_SpecialOrderThanks",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800200": true
+            }
+        },
+        {
+            "Logname": "Djinn - TriggerAction - SpecialOrder",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "25238_Djinn_SpecialOrderLoaded": {
+                    "Id": "25238_Djinn_SpecialOrderLoaded",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_HAS_CRAFTING_RECIPE Any Crystal Floor\", ANY \"PLAYER_VISITED_LOCATION Any SandyHouse\"",
+                    "Actions": [
+                        "MarkEventSeen All 2523800200 true"
+                    ]
+                }
+            }
+        },
+        {
+            "Logname": "Djinn - Weddings - Attendance",
+            "Action": "EditData",
+            "Target": "Data/Weddings",
+            "TargetField": [
+                "Attendees"
+            ],
+            "Entries": {
+                "Djinn": {
+                    "ID": "Djinn",
+                    "Setup": "Djinn 24 71 0"
+                }
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523800201": true
             }
         }
     ]

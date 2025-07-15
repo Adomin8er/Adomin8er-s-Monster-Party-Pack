@@ -1,0 +1,47 @@
+{
+    "Changes": [
+        {
+            "LogName": "Compatability - StardewValleyExpanded - Map Patch - SandyHouse Shop Closed",
+            "Action": "EditMap",
+            "Target": "Maps/SandyHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 6
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"DjinnSandyHouse.001\""
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 2,
+                        "Y": 6
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"DjinnSandyHouse.001\""
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 3,
+                        "Y": 6
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"DjinnSandyHouse.001\""
+                    }
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Query: {{Hearts:Sandy}} >= 5": true,
+                "DayOfWeek |contains=Saturday": true
+            },
+            "Update": "OnLocationChange"
+        }
+    ]
+}
