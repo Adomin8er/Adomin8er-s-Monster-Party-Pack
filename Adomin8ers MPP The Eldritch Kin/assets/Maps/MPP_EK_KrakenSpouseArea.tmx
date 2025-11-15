@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="4">
+ <tileset firstgid="1" name="L_DesertTiles" tilewidth="16" tileheight="16" tilecount="368" columns="16">
+  <image source="MPP_EK_Location_DesertTiles.png" width="256" height="368"/>
+ </tileset>
+ <tileset firstgid="369" name="L_spring_Beach" tilewidth="16" tileheight="16" tilecount="561" columns="17">
+  <image source="spring_MPP_EK_Location_Beach.png" width="272" height="528"/>
+ </tileset>
+ <layer id="1" name="Buildings" width="4" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAPdjMh2HxMmPIAGRwAzg==
+  </data>
+ </layer>
+ <layer id="3" name="Front" width="4" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMAAAAQAAB
+  </data>
+ </layer>
+ <objectgroup id="2" name="Buildings">
+  <object id="3" name="TileData" x="0" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;KrakenSpouseArea.001&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Front"/>
+</map>

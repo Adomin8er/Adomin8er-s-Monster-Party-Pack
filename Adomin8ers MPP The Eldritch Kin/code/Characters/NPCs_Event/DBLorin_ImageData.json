@@ -1,8 +1,14 @@
 {
-    "Changes": [ 
+    "Changes": [
         {
-            "LogName": "DBLorin - Base Overworld Sprite",
+            "LogName": "DBLorin - Base OW Sprite Empty",
             "Action": "Load",
+            "Target": "Characters/DBLorin",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "DBLorin - Base OW Sprite",
+            "Action": "EditImage",
             "Target": "Characters/DBLorin",
             "FromFile": "assets/Characters/NPCs_Event/DBLorin_Base_OW.png",
             "When": null
@@ -12,7 +18,7 @@
             "LogName": "DBLorin - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBLorin",
-            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
             "When": null
         },
         {

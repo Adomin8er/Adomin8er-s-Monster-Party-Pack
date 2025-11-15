@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="3">
- <tileset firstgid="1" name="Locations_OutdoorsSpring" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
-  <image source="MPP_EK_Locations_OutdoorsSpring.png" width="400" height="1264"/>
+ <tileset firstgid="1" name="L_OutdoorsSpring" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_MPP_EK_Location_OutdoorsTileSheet.png" width="400" height="1264"/>
  </tileset>
  <layer id="1" name="Buildings" width="4" height="4">
   <data encoding="base64" compression="zlib">

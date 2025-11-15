@@ -13,7 +13,7 @@
             "Target": "Data/Characters",
             "Entries": {
                 "DBLorin": {
-                    "DisplayName": "{{i18n:NPCs_Event.DBLorin.NameUnknown}}",
+                    "DisplayName": "{{i18n:Content.Dynamic_Tokens.Names.Arbitrary_Unknown}}",
                     "Gender": "Male",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
@@ -27,7 +27,7 @@
                     "CanBeRomanced": false,
                     "CanReceiveGifts": false,
                     "CanVisitIsland": false,
-                    "Caledar": "HiddenAlways",
+                    "Calendar": "HiddenAlways",
                     "SocialTab": "HiddenAlways",
                     "SpouseWantsChildren": false,
                     "SpouseGiftJealousy": false,
@@ -53,16 +53,16 @@
             }
         },
         {
-            "LogName": "Update DBLorin name",
+            "LogName": "DBLorin - Data - Update Name",
             "Action": "EditData",
             "Target": "Data/Characters",
             "Fields": {
                 "DBLorin": {
-                    "DisplayName": "{{i18n:NPCs_Event.DBLorin.NameKnown}}"
+                    "DisplayName": "{{i18n:NPCs_Event.DBLorin.Name}}"
                 }
             },
             "When":  {
-                "HasSeenEvent |contains=2523803101": true,
+                "HasSeenEvent |contains=2523800401": true,
                 "HasFlag |contains=guildMember": true
             },
             "Update": "OnLocationChange"

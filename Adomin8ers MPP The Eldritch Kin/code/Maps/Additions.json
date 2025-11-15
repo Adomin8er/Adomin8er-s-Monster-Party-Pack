@@ -3,7 +3,7 @@
         {
             "LogName": "Arbitrary - 25238/code/Maps/Additions - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
                 "DeveloperNotes_Maps_Additions_Arbitrary.001": "+--------------------------------------------+",
                 "DeveloperNotes_Maps_Additions_Arbitrary.002": "|              Maps/Arbitrary                |",
@@ -12,15 +12,17 @@
         },
         {
             "LogName": "Arbitrary - Map Addition - AdventureGuild",
-            "Target": "Data/Events/AdventureGuild",
             "Action": "Load",
-            "FromFile": "code/blank.json"
+            "Target": "Data/Events/AdventureGuild",
+            "FromFile": "code/blank.json",
+            "When": null
         },
         {
             "LogName": "Arbitrary - Map Addition - Desert",
-            "Target": "Data/Events/Desert",
             "Action": "Load",
-            "FromFile": "code/blank.json"
+            "Target": "Data/Events/Desert",
+            "FromFile": "code/blank.json",
+            "When": null
         },
         {
             "LogName": "Arbitrary - Map Addition - MPP_EK_CharacterLobby",
@@ -34,7 +36,7 @@
         {
             "LogName": "Dhampir - 25238/code/Maps/Additions - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
                 "DeveloperNotes_Maps_Additions_Dhampir.001": "+--------------------------------------------+",
                 "DeveloperNotes_Maps_Additions_Dhampir.002": "|                Maps/Dhampir                |",
@@ -62,12 +64,26 @@
             "FromFile": "assets/Maps/MPP_EK_DhampirSpouseRoom.tmx",
             "When": null
         },
+        {
+            "LogName": "Dhampir - Map Addition - MPP_EK_Hospital",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_Hospital",
+            "FromFile": "assets/Maps/MPP_EK_Hospital.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Dhampir - Map Addition - MPP_EK_ScienceHouse",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_ScienceHouse",
+            "FromFile": "assets/Maps/MPP_EK_ScienceHouse.tmx",
+            "When": null
+        },
 
         
         {
             "LogName": "Djinn - 25238/code/Maps/Additions - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
                 "DeveloperNotes_Maps_Additions_Djinn.001": "+--------------------------------------------+",
                 "DeveloperNotes_Maps_Additions_Djinn.002": "|                 Maps/Djinn                 |",
@@ -75,31 +91,92 @@
             }
         },
         {
-            "LogName": "Dhampir - Map Addition - MPP_EK_CourtHouse",
+            "LogName": "Djinn - Map Addition - MPP_EK_CourtHouse",
             "Action": "Load",
             "Target": "Maps/MPP_EK_CourtHouse",
             "FromFile": "assets/Maps/MPP_EK_CourtHouse.tmx",
             "When": null
         },
         {
-            "LogName": "Dhampir - Map Addition - MPP_EK_DesertTruck",
+            "LogName": "Djinn - Map Addition - MPP_EK_DesertTruck",
             "Action": "Load",
             "Target": "Maps/MPP_EK_DesertTruck",
             "FromFile": "assets/Maps/MPP_EK_DesertTruck.tmx",
             "When": null
         },
         {
-            "LogName": "Dhampir - Map Addition - MPP_EK_DjinnSpouseArea",
+            "LogName": "Djinn - Map Addition - MPP_EK_DjinnSpouseArea",
             "Action": "Load",
             "Target": "Maps/MPP_EK_DjinnSpouseArea",
             "FromFile": "assets/Maps/MPP_EK_DjinnSpouseArea.tmx",
             "When": null
         },
         {
-            "LogName": "Dhampir - Map Addition - MPP_EK_DjinnSpouseRoom",
+            "LogName": "Djinn - Map Addition - MPP_EK_DjinnSpouseRoom",
             "Action": "Load",
             "Target": "Maps/MPP_EK_DjinnSpouseRoom",
             "FromFile": "assets/Maps/MPP_EK_DjinnSpouseRoom.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Djinn - Map Addition - MPP_EK_SandyHouse",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_SandyHouse",
+            "FromFile": "assets/Maps/MPP_EK_SandyHouse.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Djinn - Map Addition - MPP_EK_SandyHouse_Improved",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_SandyHouse_Improved",
+            "FromFile": "assets/Maps/MPP_EK_SandyHouse_Improved.tmx",
+            "When": null
+        },
+
+        
+        {
+            "LogName": "Kraken - 25238/code/Maps/Additions - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Maps_Additions_Kraken.001": "+--------------------------------------------+",
+                "DeveloperNotes_Maps_Additions_Kraken.002": "|                 Maps/Kraken                |",
+                "DeveloperNotes_Maps_Additions_Kraken.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Kraken - Map Addition - MPP_EK_Beach",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_Beach",
+            "FromFile": "assets/Maps/MPP_EK_Beach.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Kraken - Map Addition - MPP_EK_KrakenRoom",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_KrakenRoom",
+            "FromFile": "assets/Maps/MPP_EK_KrakenRoom.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Kraken - Map Addition - MPP_EK_SamHouse",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_SamHouse",
+            "FromFile": "assets/Maps/MPP_EK_SamHouse.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Kraken - Map Addition - MPP_EK_KrakenSpouseArea",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_KrakenSpouseArea",
+            "FromFile": "assets/Maps/MPP_EK_KrakenSpouseArea.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Kraken - Map Addition - MPP_EK_KrakenSpouseRoom",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_KrakenSpouseRoom",
+            "FromFile": "assets/Maps/MPP_EK_KrakenSpouseRoom.tmx",
             "When": null
         }
     ]

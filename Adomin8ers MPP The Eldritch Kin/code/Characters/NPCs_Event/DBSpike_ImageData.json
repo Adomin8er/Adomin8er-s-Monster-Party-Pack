@@ -1,8 +1,14 @@
 {
-    "Changes": [ 
+    "Changes": [
         {
-            "LogName": "DBSpike - Base Overworld Sprite",
+            "LogName": "DBSpike - Base OW Sprite Empty",
             "Action": "Load",
+            "Target": "Characters/DBSpike",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "DBSpike - Base OW Sprite",
+            "Action": "EditImage",
             "Target": "Characters/DBSpike",
             "FromFile": "assets/Characters/NPCs_Event/DBSpike_Base_OW.png",
             "When": null
@@ -12,7 +18,7 @@
             "LogName": "DBSpike - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBSpike",
-            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
             "When": null
         },
         {

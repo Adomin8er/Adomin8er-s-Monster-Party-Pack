@@ -23,18 +23,18 @@
                     "Optimism": "Positive",
                     "CanSocialize": true,
                     "CanGreetNearbyCharacters": true,
-                    "CanBeRomanced": true,
+                    "CanBeRomanced": false,
                     "KissSpriteIndex": 33,
                     "KissSpriteFacingRight": false,
                     "CanReceiveGifts": true,
                     "CanVisitIsland": false,
-                    "Caledar": "HiddenUntilMet",
+                    "Calendar": "HiddenUntilMet",
                     "SocialTab": "HiddenUntilMet",
                     "SpouseWantsChildren": true,
                     "SpouseGiftJealousy": true,
                     "PerfectionScore": false,
                     "DumpsterDiveFriendshipEffect": -25,
-                    "FlowerDanceCanDance": true,
+                    "FlowerDanceCanDance": false,
                     "WinterStarParticipant": false,
                     "Appearance": [
                         {
@@ -150,7 +150,6 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Djinn",
             "Entries": {
-                "Location_Entry": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.Location_Entry}}",
                 "GreenRain": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.GreenRain}}",
                 "GreenRain_2": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.GreenRain_2}}",
                 "DumpsterDiveComment": "{{i18n:Djinn_StringData.Characters_Dialogue_Djinn.DumpsterDiveComment}}",
@@ -248,7 +247,7 @@
             "Update": "OnLocationChange"
         },
         {
-            "LogName": "Djinn - StringData -Dialogue 01/13 Egg Festival",
+            "LogName": "Djinn - StringData - Dialogue 01/13 Egg Festival",
             "Action": "EditData",
             "Target": "Data/Festivals/spring13",
             "Entries": {
@@ -258,13 +257,27 @@
             }
         },
         {
-            "LogName": "Djinn - StringData -Dialogue 01/24 Flower Dance",
+            "LogName": "Djinn - StringData - Dialogue 01/24 Flower Dance",
             "Action": "EditData",
             "Target": "Data/Festivals/spring24",
             "Entries": {
                 "Djinn": "{{i18n:Djinn_StringData.Data_Festivals_Spring24.Djinn}}",
-                "Djinn_y2": "{{i18n:Djinn_StringData.Data_Festivals_Spring24.Djinn_y2}}",
-                "Djinn_spouse": "{{i18n:Djinn_StringData.Data_Festivals_Spring24.Djinn_spouse}}"
+                "Djinn_y2": "{{i18n:Djinn_StringData.Data_Festivals_Spring24.Djinn_y2}}"
+            },
+            "When": {
+                "Spouse |contains=Djinn": false
+            }
+        },
+        {
+            "LogName": "Djinn - StringData - Dialogue 01/24 Flower Dance",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Djinn": "{{i18n:Djinn_StringData.Data_Festivals_Spring24.Djinn_spouse}}",
+                "Djinn_y2": "{{i18n:Djinn_StringData.Data_Festivals_Spring24.Djinn_spouse}}"
+            },
+            "When": {
+                "Spouse |contains=Djinn": true
             }
         },
         {
@@ -657,10 +670,10 @@
             "Action": "EditData",
             "Target": "Strings/animationDescriptions",
             "Entries": {
-                "Djinn_DesertFestival_1": "{{i18n:Djinn_StringData.Data_AnimationDescriptions.Djinn_DesertFestival_1}}",
-                "Djinn_marriage_DesertFestival_1": "{{i18n:Djinn_StringData.Data_AnimationDescriptions.Djinn_marriage_DesertFestival_1 |MPP_EK_Emily_Name={{MPP_EK_Emily_Name_T}} |MPP_EK_Emily_Lower03={{MPP_EK_Emily_Lower_T |valueAt=3}} }}",
-                "Djinn_NightMarket_1": "{{i18n:Djinn_StringData.Data_AnimationDescriptions.Djinn_NightMarket_1}}",
-                "Djinn_marriage_NightMarket_1": "{{i18n:Djinn_StringData.Data_AnimationDescriptions.Djinn_marriage_NightMarket_1}}"
+                "Djinn_DesertFestival_1.001": "{{i18n:Djinn_StringData.Strings_AnimationDescriptions.Djinn_DesertFestival_1.001}}",
+                "Djinn_marriage_DesertFestival_1.001": "{{i18n:Djinn_StringData.Strings_AnimationDescriptions.Djinn_marriage_DesertFestival_1.001 |MPP_EK_Emily_Name={{MPP_EK_Emily_Name_T}} |MPP_EK_Emily_Lower03={{MPP_EK_Emily_Lower_T |valueAt=3}} }}",
+                "Djinn_NightMarket_1.001": "{{i18n:Djinn_StringData.Strings_AnimationDescriptions.Djinn_NightMarket_1.001}}",
+                "Djinn_marriage_NightMarket_1.001": "{{i18n:Djinn_StringData.Strings_AnimationDescriptions.Djinn_marriage_NightMarket_1.001}}"
             }
         },
         {
@@ -668,7 +681,7 @@
             "Action": "EditData",
             "Target": "Data/animationDescriptions",
             "Entries": {
-                "Djinn_Sleep": "52/52/52"
+                "djinn_sleep": "52/52/52"
             }
         },
         {
@@ -688,10 +701,10 @@
                 "rain": "1000 SandyHouse 9 5 2/ 1300 SandyHouse 14 8 3/ 1500 SandyHouse 5 5 0/ 1700 SandyHouse 14 8 3",
                 "rain2": "930 SandyHouse 6 5 0/ 1230 SandyHouse 14 8 3/ 1430 SandyHouse 6 6 2/ 1630 SandyHouse 14 8 3",
                 "GreenRain": "900 SandyHouse 9 5 2/ 1200 SandyHouse 14 8 3/ 1400 SandyHouse 6 8 0/ 1600 SandyHouse 14 8 3",
-                "DesertFestival_1": "0 Desert 16 37 0/900 Desert 16 42 2 \"Strings\\animationDescriptions:Djinn_DesertFestival_1\"",
-                "marriage_DesertFestival_1": "900 Desert 30 23 2 \"Strings\\animationDescriptions:Djinn_marriage_DesertFestival_1\"/ 2400 bed",
-                "NightMarket_1": "1600 Beach 38 36 2 \"Strings\\animationDescriptions:Djinn_NightMarket_1\"",
-                "marriage_NightMarket_1": "1700 Beach 21 21 2 \"Strings\\animationDescriptions:Djinn_marriage_NightMarket_1\"/ 2400 bed"
+                "DesertFestival_1.001": "0 Desert 16 37 0/900 Desert 16 42 2 \"Strings\\animationDescriptions:Djinn_DesertFestival_1.001\"",
+                "marriage_DesertFestival_1.001": "900 Desert 30 23 2 \"Strings\\animationDescriptions:Djinn_marriage_DesertFestival_1.001\"/ 2400 bed",
+                "NightMarket_1.001": "1600 Beach 38 36 2 \"Strings\\animationDescriptions:Djinn_NightMarket_1.001\"",
+                "marriage_NightMarket_1.001": "1700 Beach 21 21 2 \"Strings\\animationDescriptions:Djinn_marriage_NightMarket_1.001\"/ 2400 bed"
             },
             "When": {
                 "HasSeenEvent |contains=2523800201": true
