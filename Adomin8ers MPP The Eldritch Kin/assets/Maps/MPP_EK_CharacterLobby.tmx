@@ -3,8 +3,8 @@
  <properties>
   <property name="Warp" value="3 0 Desert 18 27 4 0 Desert 18 27 5 0 Desert 18 27 3 8 Beach 93 2 4 8 Beach 93 2 5 8 Beach 93 2"/>
  </properties>
- <tileset firstgid="1" name="Locations_OutdoorsSpring" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
-  <image source="MPP_EK_Locations_OutdoorsSpring.png" width="400" height="1264"/>
+ <tileset firstgid="1" name="L_spring_Outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_MPP_EK_Location_OutdoorsTileSheet.png" width="400" height="1264"/>
  </tileset>
  <layer id="1" name="Back" width="9" height="9">
   <data encoding="csv">
@@ -37,28 +37,28 @@
  </layer>
  <layer id="3" name="Buildings" width="9" height="9">
   <data encoding="csv">
-941,944,945,0,0,0,945,945,946,
-966,0,0,0,0,0,0,0,996,
-991,0,0,0,0,0,0,0,971,
+176,176,176,0,0,0,176,176,176,
+176,0,0,0,0,0,0,0,176,
+176,0,0,0,0,0,0,0,176,
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,
-966,0,0,0,0,0,0,0,996,
-991,0,0,0,0,0,0,0,971,
-1066,1067,1068,0,0,0,1067,1068,1071
+176,0,0,0,0,0,0,0,176,
+176,0,0,0,0,0,0,0,176,
+176,176,176,0,0,0,176,176,176
 </data>
  </layer>
  <layer id="4" name="Front" width="9" height="9">
   <data encoding="csv">
-941,944,945,992,0,995,945,945,946,
-966,967,968,993,0,994,969,970,996,
-991,992,0,0,0,0,0,995,971,
-969,993,0,0,0,0,0,994,969,
+967,968,993,0,0,0,994,969,970,
+992,0,0,0,0,0,0,0,995,
+993,0,0,0,0,0,0,0,994,
 0,0,0,0,0,0,0,0,0,
-1043,1018,0,0,0,0,0,1019,1043,
-966,1017,0,0,0,0,0,1020,996,
-991,1042,1043,1018,0,1019,1044,1045,971,
-1066,1067,1068,1017,0,1020,1067,1068,1071
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,1019,
+1017,0,0,0,0,0,0,0,1020,
+1042,1043,1018,0,0,0,1019,1044,1045
 </data>
  </layer>
  <layer id="5" name="Front2" width="9" height="9">

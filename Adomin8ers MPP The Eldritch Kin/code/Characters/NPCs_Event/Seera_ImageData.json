@@ -1,0 +1,36 @@
+{
+    "Changes": [
+        {
+            "LogName": "Seera - Base OW Sprite Empty",
+            "Action": "Load",
+            "Target": "Characters/Seera",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "Seera - Base OW Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Seera",
+            "FromFile": "assets/Characters/NPCs_Event/Seera_Base_OW.png",
+            "When": null
+        },
+
+        {
+            "LogName": "Seera - Base Portrait",
+            "Action": "Load",
+            "Target": "Portraits/Seera",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
+            "When": null
+        },
+        {
+            "LogName": "Seera - Upscalse Portraits",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "25238_HD_Seera_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/Seera_Base_HD.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Seera", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HD_Seera_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/Seera_Base_HD.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Seera", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HD_Seera_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/Seera_Base_HD.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Seera", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HD_Seera_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Event/MPP_MrQi_Base_HD.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Seera", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}}
+            }
+        }
+    ]
+}

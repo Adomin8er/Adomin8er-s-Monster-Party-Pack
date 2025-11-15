@@ -3,7 +3,7 @@
         {
             "LogName": "Arbitrary - 25238/code/StringData/Data - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
                 "DeveloperNotes_Data_Arbitrary.001": "+--------------------------------------------+",
                 "DeveloperNotes_Data_Arbitrary.002": "|               Data/Arbitrary               |",
@@ -26,7 +26,7 @@
                 "25238_Arbitrary_MonstrousTownMeeting_Invite": {
                     "Id": "25238_Arbitrary_MonstrousTownMeeting_Invite",
                     "Trigger": "DayStarted",
-                    "Condition": "ANY \"PLAYER_FRIENDSHIP_POINTS Any Dhampir 1250\" \"PLAYER_FRIENDSHIP_POINTS Any Djinn 1250\"",
+                    "Condition": "ANY \"PLAYER_FRIENDSHIP_POINTS Any Dhampir 1250\" \"PLAYER_FRIENDSHIP_POINTS Any Djinn 1250\" \"PLAYER_FRIENDSHIP_POINTS Any Kraken 1250\"",
                     "Actions": [
                         "AddMail All Arbitrary_MonstrousTownMeeting tomorrow"
                     ]
@@ -38,7 +38,7 @@
         {
             "LogName": "Dhampir - 25238/code/StringData/Data - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
                 "DeveloperNotes_Data_Dhampir.001": "+--------------------------------------------+",
                 "DeveloperNotes_Data_Dhampir.002": "|                Data/Dhampir                |",
@@ -175,7 +175,7 @@
         {
             "LogName": "Djinn - 25238/code/StringData/Data - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
                 "DeveloperNotes_Data_Djinn.001": "+--------------------------------------------+",
                 "DeveloperNotes_Data_Djinn.002": "|                 Data/Djinn                 |",
@@ -183,7 +183,7 @@
             }
         },
         {
-            "Logname": "Djinn - Mail - Dhampir_SpecialOrderThanks",
+            "Logname": "Djinn - Mail - Djinn_SpecialOrderThanks",
             "Action": "EditData",
             "Target": "Data/Mail",
             "Entries": {
@@ -272,6 +272,139 @@
             },
             "When":  {
                 "HasSeenEvent |contains=2523800201": true
+            }
+        },
+
+        
+        {
+            "LogName": "Kraken - 25238/code/StringData/Data - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Kraken.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Kraken.002": "|                Data/Kraken                 |",
+                "DeveloperNotes_Data_Kraken.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "Logname": "Kraken - Mail - Kraken_SpecialOrderThanks",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "Kraken_SpecialOrderThanks": "{{i18n:Data.Data_Mail.Kraken_SpecialOrderThanks}}"
+            }
+        },
+        {
+            "Logname": "Kraken - SpecialOrder - Details",
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "RegionalInspections": {
+                    "Name": "{{i18n:Data.Data_SpecialOrders.Kraken.Name}}",
+                    "Requester": "Jodi",
+                    "Duration": "Week",
+                    "Repeatable": "False",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:Data.Data_SpecialOrders.Kraken.Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:Data.Data_SpecialOrders.Kraken.Objective.01}}",
+                            "RequiredCount": "2",
+                            "Data": {
+                                "DropBox": "JodiKitchen",
+                                "DropBoxGameLocation": "SamHouse",
+                                "DropBoxIndicatorLocation": "4 3",
+                                "AcceptedContextTags": "item_pizza"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:Data.Data_SpecialOrders.Kraken.Objective.02}}",
+                            "RequiredCount": "10",
+                            "Data": {
+                                "DropBox": "JodiKitchen",
+                                "DropBoxGameLocation": "SamHouse",
+                                "DropBoxIndicatorLocation": "4 3",
+                                "AcceptedContextTags": "item_cookie"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:Data.Data_SpecialOrders.Kraken.Objective.03}}",
+                            "RequiredCount": "10",
+                            "Data": {
+                                "DropBox": "JodiKitchen",
+                                "DropBoxGameLocation": "SamHouse",
+                                "DropBoxIndicatorLocation": "4 3",
+                                "AcceptedContextTags": "item_ice_cream"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Friendship",
+                            "Data": {
+                                "Amount": "500",
+                                "TargetName": "Jodi"
+                            }
+                        },
+                        {
+                            "Type": "Friendship",
+                            "Data": {
+                                "Amount": "500",
+                                "TargetName": "Vincent"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Kraken_SpecialOrderThanks",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800400": true
+            }
+        },
+        {
+            "Logname": "Kraken - TriggerAction - SpecialOrder",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "25238_Kraken_SpecialOrderLoaded": {
+                    "Id": "25238_Kraken_SpecialOrderLoaded",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_HAS_COOKING_RECIPE Any Cookies\"",
+                    "Actions": [
+                        "MarkEventSeen All 2523800400 true"
+                    ]
+                }
+            }
+        },
+        {
+            "Logname": "Kraken - Weddings - Attendance",
+            "Action": "EditData",
+            "Target": "Data/Weddings",
+            "TargetField": [
+                "Attendees"
+            ],
+            "Entries": {
+                "Kraken": {
+                    "ID": "Kraken",
+                    "Setup": "Kraken 26 71 0"
+                }
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523800409": true
             }
         }
     ]

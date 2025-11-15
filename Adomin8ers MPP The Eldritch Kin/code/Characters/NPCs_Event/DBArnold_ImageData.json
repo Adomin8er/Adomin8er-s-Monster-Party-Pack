@@ -1,8 +1,14 @@
 {
-    "Changes": [ 
+    "Changes": [
         {
-            "LogName": "DBArnold - Base Overworld Sprite",
+            "LogName": "DBArnold - Base OW Sprite Empty",
             "Action": "Load",
+            "Target": "Characters/DBArnold",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "DBArnold - Base OW Sprite",
+            "Action": "EditImage",
             "Target": "Characters/DBArnold",
             "FromFile": "assets/Characters/NPCs_Event/DBArnold_Base_OW.png",
             "When": null
@@ -12,7 +18,7 @@
             "LogName": "DBArnold - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBArnold",
-            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
             "When": null
         },
         {

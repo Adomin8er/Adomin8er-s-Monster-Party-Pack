@@ -1,0 +1,820 @@
+{
+    "Changes": [
+        {
+            "LogName": "Kraken - StringData - Setup",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Kraken, Characters/Dialogue/MarriageDialogueKraken, Characters/Schedules/Kraken, Strings/Schedules/Kraken",
+            "FromFile": "code/blank.json"
+        },
+        {
+            "LogName": "Kraken - StringData - Characters",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Kraken": {
+                    "DisplayName": "{{i18n:Content.Dynamic_Tokens.Names.Arbitrary_Unknown}}",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 8,
+                    "HomeRegion": "Other",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Neutral",
+                    "CanSocialize": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanBeRomanced": false,
+                    "KissSpriteIndex": 33,
+                    "KissSpriteFacingRight": false,
+                    "CanReceiveGifts": true,
+                    "CanVisitIsland": false,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "SpouseWantsChildren": true,
+                    "SpouseGiftJealousy": true,
+                    "PerfectionScore": false,
+                    "DumpsterDiveFriendshipEffect": -25,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarParticipant": false,
+                    "Appearance": [
+                        {
+                            "Id": "Kraken_Winter",
+                            "Season": "Winter",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Kraken_Winter",
+                            "Sprite": "Characters/Kraken_Winter",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 0
+                        },
+                        {
+                            "Id": "Kraken_Beach",
+                            "Portrait": "Portraits/Kraken_Beach",
+                            "Sprite": "Characters/Kraken_Beach",
+                            "IsIslandAttire": true,
+                            "Precedence": -101,
+                            "Weight": 0
+                        }
+                    ],
+                    "SpouseRoom": {
+                        "MapAsset": "MPP_EK_KrakenSpouseRoom",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "MPP_EK_KrakenSpouseArea",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 4,
+                            "Height": 4
+                        },
+                        "SpriteAnimationPixelOffset": {
+                            "X": 0,
+                            "Y": 0
+                        }
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "MPP_EK_CharacterLobby",
+                            "Tile": {
+                                "X": 5,
+                                "Y": 1
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Update Name",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Kraken": {
+                    "DisplayName": "{{i18n:Kraken_StringData.Characters_DisplayName |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}"
+                }
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523800403": true
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Kraken - StringData - Update Home",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Kraken": {
+                    "WinterStarParticipant": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "MPP_EK_KrakenRoom",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 6
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                }
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523800409": true
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Kraken - StringData - Update Dating",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Kraken": {
+                    "CanBeRomanced": true,
+                    "CanVisitIsland": true,
+                    "FlowerDanceCanDance": true
+                }
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800409": true
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - NPCGiftTastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Kraken": "/445 730 149 151 155 337 797 394 732/ /447 715 717 718 719 723 62 84 575 397/ /-75 -26 18 22 402 591 593 595 597 216 196 206/ /-21 168 169 170 171 172 167 202 209 213 178 92/ /-4 152 390 80 86 393 330/"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Base",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Kraken",
+            "Entries": {
+                "GreenRain": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.GreenRain}}",
+                "GreenRain_2": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.GreenRain_2}}",
+                "DumpsterDiveComment": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.DumpsterDiveComment}}",
+                "HitBySlingshot": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.HitBySlingshot}}",
+                "Resort": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Resort}}",
+                "Resort_Bar": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Resort_Bar}}",
+                "Resort_Chair": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Resort_Chair}}",
+                "Resort_Dance": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Resort_Dance}}",
+                "Resort_Entering": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Resort_Entering}}",
+                "Resort_Leaving": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Resort_Leaving}}",
+                "Resort_Shore": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Resort_Shore}}",
+                "Resort_Towel": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Resort_Towel}}",
+                "Resort_Umbrella": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Resort_Umbrella}}",
+                "Resort_Wander": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Resort_Wander}}",
+                "SpouseFarmhouseClutter": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.SpouseFarmhouseClutter}}",
+                "SpouseGiftJealous": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.SpouseGiftJealous}}",
+                "Spouse_MonstersInHouse": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Spouse_MonstersInHouse}}",
+                "SpouseStardrop": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.SpouseStardrop}}",
+                "breakUp": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.breakUp}}",
+                "divorced": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.divorced}}",
+                "WipedMemory": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.WipedMemory}}",
+                "AcceptGift_(O)730": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_(O)730}}",
+                "AcceptGift_(O)149": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_(O)149}}",
+                "AcceptGift_(O)732": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_(O)732}}",
+                "AcceptGift_(O)445": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_(O)445}}",
+                "AcceptGift_(O)447": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_(O)447}}",
+                "AcceptGift_category_artisan_goods": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_category_artisan_goods}}",
+                "AcceptGift_category_bait": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_category_bait}}",
+                "AcceptGift_Loved": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_Loved}}",
+                "AcceptGift_Liked": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_Liked}}",
+                "AcceptGift_Neutral": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_Neutral}}",
+                "AcceptGift_Disliked": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_Disliked}}",
+                "AcceptGift_Hated": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptGift_Hated}}",
+                "AcceptBirthdayGift_(O)797": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptBirthdayGift_(O)797}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Liked": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptBirthdayGift_Liked}}",
+                "AcceptBirthdayGift_Neutral": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptBirthdayGift_Neutral}}",
+                "AcceptBirthdayGift_Disliked": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptBirthdayGift_Disliked}}",
+                "AcceptBirthdayGift_Hated": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptBirthdayGift_Hated}}",
+                "AcceptBouquet": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.AcceptBouquet}}",
+                "MovieInvitation": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.MovieInvitation}}",
+                "RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectMovieTicket_DontWantToSeeThatMovie}}",
+                "RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectMovieTicket_AlreadyWatchedThisWeek}}",
+                "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectMovieTicket_AlreadyInvitedBySomeoneElse}}",
+                "RejectMovieTicket_Divorced": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectMovieTicket_Divorced}}",
+                "RejectItem_(O)202": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectItem_(O)202}}",
+                "RejectGift_Divorced": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectGift_Divorced}}",
+                "RejectBouquet_VeryLowHearts": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectBouquet_VeryLowHearts}}",
+                "RejectBouquet_LowHearts": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectBouquet_LowHearts}}",
+                "RejectBouquet_AlreadyAccepted": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectBouquet_AlreadyAccepted}}",
+                "RejectBouquet_AlreadyAccepted_Married": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectBouquet_AlreadyAccepted_Married}}",
+                "RejectBouquet_Divorced": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectBouquet_Divorced}}",
+                "RejectMermaidPendant_Under10Hearts": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectMermaidPendant_Under10Hearts}}",
+                "RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectMermaidPendant_NeedHouseUpgrade}}",
+                "RejectMermaidPendant_AlreadyAccepted_Engaged": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectMermaidPendant_AlreadyAccepted_Engaged}}",
+                "RejectMermaidPendant_Divorced": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.RejectMermaidPendant_Divorced}}",
+                "Fair_Judging": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Fair_Judging}}",
+                "Fair_Judged_PlayerWon": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Fair_Judged_PlayerWon}}",
+                "Fair_Judged_PlayerLost": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Fair_Judged_PlayerLost}}",
+                "Fair_Judged_PlayerLost_Skipped": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Fair_Judged_PlayerLost_Skipped}}",
+                "Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Fair_Judged_PlayerLost_PurpleShorts}}",
+                "FlowerDance_Accept": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.FlowerDance_Accept}}",
+                "FlowerDance_Accept_Spouse": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.FlowerDance_Accept_Spouse}}",
+                "FlowerDance_Decline": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.FlowerDance_Decline}}",
+                "WinterStar_GiveGift_Before_Spouse": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.WinterStar_GiveGift_Before_Spouse}}",
+                "WinterStar_GiveGift_Before": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.WinterStar_GiveGift_Before}}",
+                "WinterStar_GiveGift_After_Spouse": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.WinterStar_GiveGift_After_Spouse}}",
+                "WinterStar_GiveGift_After": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.WinterStar_GiveGift_After}}",
+                "Beach_Sun": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Beach_Sun}}",
+                "Beach_8": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Beach_8}}",
+                "Town_Mon": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Town_Mon}}",
+                "Mon": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Mon}}",
+                "Mon4": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Mon4}}",
+                "Mon8": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Mon8}}",
+                "Tue": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Tue}}",
+                "Wed6": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Wed6}}",
+                "Thu": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Thu}}",
+                "Fri10": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Fri10}}",
+                "Sat2": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.Sat2}}",
+                "spring_Mon": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.spring_Mon}}",
+                "summer_Tue": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.summer_Tue}}",
+                "summer_15": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.summer_15}}",
+                "fall_Sat": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.fall_Sat}}",
+                "winter_Wed": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.winter_Wed}}",
+                "eventSeen_2523800402": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.eventSeen_2523800402}}",
+                "eventSeen_2523800408": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.eventSeen_2523800408}}",
+                "eventSeen_2523800408_memory_oneday": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.eventSeen_2523800408_memory_oneday}}",
+                "eventSeen_2523800408_memory_oneweek": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.eventSeen_2523800408_memory_oneweek}}",
+                "eventSeen_2523800408_memory_twoweeks": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.eventSeen_2523800408_memory_twoweeks}}",
+                "eventSeen_2523800408_memory_fourweeks": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.eventSeen_2523800408_memory_fourweeks}}",
+                "eventSeen_2523800408_memory_eightweeks": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.eventSeen_2523800408_memory_eightweeks}}",
+                "eventSeen_2523800408_memory_oneyear": "{{i18n:Kraken_StringData.Characters_Dialogue_Kraken.eventSeen_2523800408_memory_oneyear}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Rainy",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_Rainy.Kraken}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue 01/13 Egg Festival",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Kraken": "{{i18n:Kraken_StringData.Data_Festivals_Spring13.Kraken}}",
+                "Kraken_y2": "{{i18n:Kraken_StringData.Data_Festivals_Spring13.Kraken_y2}}",
+                "Kraken_spouse": "{{i18n:Kraken_StringData.Data_Festivals_Spring13.Kraken_spouse}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue 01/24 Flower Dance",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Kraken": "{{i18n:Kraken_StringData.Data_Festivals_Spring24.Kraken}}",
+                "Kraken_y2": "{{i18n:Kraken_StringData.Data_Festivals_Spring24.Kraken_y2}}"
+            },
+            "When": {
+                "Spouse |contains=Kraken": false
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue 01/24 Flower Dance",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Kraken": "{{i18n:Kraken_StringData.Data_Festivals_Spring24.Kraken_spouse}}",
+                "Kraken_y2": "{{i18n:Kraken_StringData.Data_Festivals_Spring24.Kraken_spouse}}"
+            },
+            "When": {
+                "Spouse |contains=Kraken": true
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue 02/11 Luau",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Kraken": "{{i18n:Kraken_StringData.Data_Festivals_Summer11.Kraken}}",
+                "Kraken_y2": "{{i18n:Kraken_StringData.Data_Festivals_Summer11.Kraken_y2}}",
+                "Kraken_spouse": "{{i18n:Kraken_StringData.Data_Festivals_Summer11.Kraken_spouse}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue 02/28 Moonlight Jellies",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Kraken": "{{i18n:Kraken_StringData.Data_Festivals_Summer28.Kraken}}",
+                "Kraken_y2": "{{i18n:Kraken_StringData.Data_Festivals_Summer28.Kraken_y2}}",
+                "Kraken_spouse": "{{i18n:Kraken_StringData.Data_Festivals_Summer28.Kraken_spouse}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue 03/16 Fair",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "Kraken": "{{i18n:Kraken_StringData.Data_Festivals_Fall16.Kraken}}",
+                "Kraken_y2": "{{i18n:Kraken_StringData.Data_Festivals_Fall16.Kraken_y2}}",
+                "Kraken_spouse": "{{i18n:Kraken_StringData.Data_Festivals_Fall16.Kraken_spouse}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue 03/27 Spirit's Eve",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "Kraken": "{{i18n:Kraken_StringData.Data_Festivals_Fall27.Kraken}}",
+                "Kraken_y2": "{{i18n:Kraken_StringData.Data_Festivals_Fall27.Kraken_y2}}",
+                "Kraken_spouse": "{{i18n:Kraken_StringData.Data_Festivals_Fall27.Kraken_spouse}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue 04/08 Festival of Ice",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries": {
+                "Kraken": "{{i18n:Kraken_StringData.Data_Festivals_Winter8.Kraken}}",
+                "Kraken_y2": "{{i18n:Kraken_StringData.Data_Festivals_Winter8.Kraken_y2}}",
+                "Kraken_spouse": "{{i18n:Kraken_StringData.Data_Festivals_Winter8.Kraken_spouse}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue 04/25 Winter Star",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "Kraken": "{{i18n:Kraken_StringData.Data_Festivals_Winter25.Kraken}}",
+                "Kraken_y2": "{{i18n:Kraken_StringData.Data_Festivals_Winter25.Kraken_y2}}",
+                "Kraken_spouse": "{{i18n:Kraken_StringData.Data_Festivals_Winter25.Kraken_spouse}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Engagement",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "Kraken0": "{{i18n:Kraken_StringData.Data_EngagementDialogue.Kraken0}}",
+                "Kraken1": "{{i18n:Kraken_StringData.Data_EngagementDialogue.Kraken1}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Marriage",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueKraken",
+            "Entries": {
+                "spring_1": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.spring_1}}",
+                "summer_15": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.summer_15}}",
+                "fall_2": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.fall_2}}",
+                "winter_20": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.winter_20}}",
+                "patio_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.patio_Kraken}}",
+                "Rainy_Day_0": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Rainy_Day_0}}",
+                "Rainy_Day_1": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Rainy_Day_1}}",
+                "Rainy_Day_2": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Rainy_Day_2}}",
+                "Rainy_Day_3": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Rainy_Day_3}}",
+                "Rainy_Day_4": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Rainy_Day_4}}",
+                "Indoor_Day_0": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Indoor_Day_0}}",
+                "Indoor_Day_1": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Indoor_Day_1}}",
+                "Indoor_Day_2": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Indoor_Day_2}}",
+                "Indoor_Day_3": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Indoor_Day_3}}",
+                "Indoor_Day_4": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Indoor_Day_4}}",
+                "Rainy_Night_0": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Rainy_Night_0}}",
+                "Rainy_Night_1": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Rainy_Night_1}}",
+                "Rainy_Night_2": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Rainy_Night_2}}",
+                "Rainy_Night_3": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Rainy_Night_3}}",
+                "Rainy_Night_4": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Rainy_Night_4}}",
+                "Rainy_Night_5": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Rainy_Night_5}}",
+                "Indoor_Night_0": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Indoor_Night_0}}",
+                "Indoor_Night_1": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Indoor_Night_1}}",
+                "Indoor_Night_2": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Indoor_Night_2}}",
+                "Indoor_Night_3": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Indoor_Night_3}}",
+                "Indoor_Night_4": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Indoor_Night_4}}",
+                "Indoor_Night_5": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Indoor_Night_5}}",
+                "funReturn_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.funReturn_Kraken}}",
+                "spring_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.spring_Kraken}}",
+                "summer_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.summer_Kraken}}",
+                "fall_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.fall_Kraken}}",
+                "winter_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.winter_Kraken}}",
+                "Outdoor_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Outdoor_Kraken}}",
+                "Outdoor_0": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Outdoor_0}}",
+                "Outdoor_1": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Outdoor_1}}",
+                "Outdoor_2": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Outdoor_2}}",
+                "Outdoor_3": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Outdoor_3}}",
+                "Outdoor_4": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Outdoor_4}}",
+                "Outdoor_5": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Outdoor_5}}",
+                "spouseRoom_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.spouseRoom_Kraken}}",
+                "OneKid_0": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.OneKid_0}}",
+                "OneKid_1": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.OneKid_1}}",
+                "OneKid_2": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.OneKid_2}}",
+                "OneKid_3": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.OneKid_3}}",
+                "OneKid_4": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.OneKid_4}}",
+                "TwoKids_0": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.TwoKids_0}}",
+                "TwoKids_1": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.TwoKids_1}}",
+                "TwoKids_2": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.TwoKids_2}}",
+                "TwoKids_3": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.TwoKids_3}}",
+                "TwoKids_4": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.TwoKids_4}}",
+                "Good_0": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Good_0}}",
+                "Good_1": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Good_1}}",
+                "Good_2": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Good_2}}",
+                "Good_3": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Good_3}}",
+                "Good_4": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Good_4}}",
+                "Good_5": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Good_5}}",
+                "Good_6": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Good_6}}",
+                "Good_7": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Good_7}}",
+                "Good_8": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Good_8}}",
+                "Good_9": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Good_9}}",
+                "Neutral_0": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Neutral_0}}",
+                "Neutral_1": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Neutral_1}}",
+                "Neutral_2": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Neutral_2}}",
+                "Neutral_3": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Neutral_3}}",
+                "Neutral_4": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Neutral_4}}",
+                "Neutral_5": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Neutral_5}}",
+                "Neutral_6": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Neutral_6}}",
+                "Neutral_7": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Neutral_7}}",
+                "Neutral_8": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Neutral_8}}",
+                "Neutral_9": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Neutral_9}}",
+                "Bad_0": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Bad_0}}",
+                "Bad_1": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Bad_1}}",
+                "Bad_2": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Bad_2}}",
+                "Bad_3": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Bad_3}}",
+                "Bad_4": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Bad_4}}",
+                "Bad_5": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Bad_5}}",
+                "Bad_6": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Bad_6}}",
+                "Bad_7": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Bad_7}}",
+                "Bad_8": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Bad_8}}",
+                "Bad_9": "{{i18n:Kraken_StringData.Characters_Dialogue_MarriageDialogueKraken.Bad_9}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Extra",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "SummitEvent_Dialogue3_Kraken": "{{i18n:Kraken_StringData.Data_ExtraDialogue.SummitEvent_Dialogue3_Kraken}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Strings From Maps",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "KrakenRoom.001": "{{i18n:Kraken_StringData.Strings_StringsFromMaps.KrakenRoom.001}}",
+                "KrakenSpouseRoom.001": "{{i18n:Kraken_StringData.Strings_StringsFromMaps.KrakenSpouseRoom.001}}",
+                "KrakenSpouseRoom.002": "{{i18n:Kraken_StringData.Strings_StringsFromMaps.KrakenSpouseRoom.002}}",
+                "KrakenSpouseArea.001": "{{i18n:Kraken_StringData.Strings_StringsFromMaps.KrakenSpouseArea.001}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Strings From CS Files",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "Kraken_AfterWedding": "{{i18n:Kraken_StringData.Strings_StringsFromCSFiles.Kraken_AfterWedding}}",
+                "Kraken_Engaged": "{{i18n:Kraken_StringData.Strings_StringsFromCSFiles.Kraken_Engaged}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Movie Reactions",
+            "Action": "EditData",
+            "Target": "Strings/movieReactions",
+            "Entries": {
+                "Kraken_love_movie_BeforeMovie": "{{i18n:Kraken_StringData.Strings_MovieReactions.Kraken_love_movie_BeforeMovie}}",
+                "Kraken_love_movie_DuringMovie": "{{i18n:Kraken_StringData.Strings_MovieReactions.Kraken_love_movie_DuringMovie}}",
+                "Kraken_love_movie_AfterMovie": "{{i18n:Kraken_StringData.Strings_MovieReactions.Kraken_love_movie_AfterMovie}}",
+                "Kraken_like_movie_BeforeMovie": "{{i18n:Kraken_StringData.Strings_MovieReactions.Kraken_like_movie_BeforeMovie}}",
+                "Kraken_like_movie_DuringMovie": "{{i18n:Kraken_StringData.Strings_MovieReactions.Kraken_like_movie_DuringMovie}}",
+                "Kraken_like_movie_AfterMovie": "{{i18n:Kraken_StringData.Strings_MovieReactions.Kraken_like_movie_AfterMovie}}",
+                "Kraken_dislike_movie_BeforeMovie": "{{i18n:Kraken_StringData.Strings_MovieReactions.Kraken_dislike_movie_BeforeMovie}}",
+                "Kraken_dislike_movie_DuringMovie": "{{i18n:Kraken_StringData.Strings_MovieReactions.Kraken_dislike_movie_DuringMovie}}",
+                "Kraken_dislike_movie_AfterMovie": "{{i18n:Kraken_StringData.Strings_MovieReactions.Kraken_dislike_movie_AfterMovie}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Data Movie Reactions",
+            "Action": "EditData",
+            "Target": "Data/movieReactions",
+            "Entries": {
+                "NPCName": "Kraken",
+                "Reactions": [
+                    {
+                        "Tag": "horror",
+                        "Response": "love",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Love_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Love_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Love_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_0"
+                    },
+                    {
+                        "Tag": "art",
+                        "Response": "love",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Love_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Love_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Love_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_1"
+                    },
+                    {
+                        "Tag": "documentary",
+                        "Response": "like",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Like_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Like_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Like_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_2"
+                    },
+                    {
+                        "Tag": "sci-fi",
+                        "Response": "like",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Like_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Like_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Like_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_3"
+                    },
+                    {
+                        "Tag": "classic",
+                        "Response": "dislike",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Dislike_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Dislike_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Dislike_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_4"
+                    },
+                    {
+                        "Tag": "action",
+                        "Response": "like",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Dislike_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Dislike_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Kraken_Dislike_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_5"
+                    },
+                    {
+                        "Tag": "comedy",
+                        "Response": "reject",
+                        "Whitelist": [],
+                        "Id": "reaction_6"
+                    },
+                    {
+                        "Tag": "family",
+                        "Response": "reject",
+                        "Whitelist": [],
+                        "Id": "reaction_7"
+                    },
+                    {
+                        "Tag": "romance",
+                        "Response": "reject",
+                        "Whitelist": [],
+                        "Id": "reaction_8"
+                    }
+                ]
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Animation Descriptions",
+            "Action": "EditData",
+            "Target": "Strings/animationDescriptions",
+            "Entries": {
+                "Kraken_AdventureGuild.001": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_AdventureGuild.001}}",
+                "Kraken_AdventureGuild.002": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_AdventureGuild.002}}",
+                "Kraken_DesertFestival_3.001": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_DesertFestival_3.001}}",
+                "Kraken_DesertFestival_3.002": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_DesertFestival_3.002}}",
+                "Kraken_DesertFestival_3.003": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_DesertFestival_3.003}}",
+                "Kraken_marriage_DesertFestival_3.001": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_marriage_DesertFestival_3.001}}",
+                "Kraken_marriage_DesertFestival_3.002": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_marriage_DesertFestival_3.002}}",
+                "Kraken_marriage_DesertFestival_3.003": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_marriage_DesertFestival_3.003}}",
+                "Kraken_NightMarket_3.001": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_NightMarket_3.001}}",
+                "Kraken_NightMarket_3.002": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_NightMarket_3.002}}",
+                "Kraken_NightMarket_3.003": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_NightMarket_3.003}}",
+                "Kraken_marriage_NightMarket_3.001": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_marriage_NightMarket_3.001}}",
+                "Kraken_marriage_NightMarket_3.002": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_marriage_NightMarket_3.002}}",
+                "Kraken_marriage_NightMarket_3.003": "{{i18n:Kraken_StringData.Strings_AnimationDescriptions.Kraken_marriage_NightMarket_3.003}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Data Animation Descriptions",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "kraken_sleep": "52/52/52"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Schedules",
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Kraken",
+            "Entries": {
+                "Mon": "600 MPP_EK_CharacterLobby 5 1 2/ 800 Beach 89 5 2/ 1130 Beach 88 30 1/ 1630 Beach 91 22 1/ 2000 Beach 93 1 2",
+                "Wed": "600 MPP_EK_CharacterLobby 5 1 2/ 900 Beach 81 6 2/ 1200 Beach 82 40 3/ 1730 Beach 89 5 2/ 2000 Beach 93 1 2",
+                "Thu": "600 MPP_EK_CharacterLobby 5 1 2/ 830 Beach 79 25 2/ 1100 Beach 87 40 2/ 1700 Beach 81 6 2/ 2000 Beach 93 1 2",
+                "Fri": "600 MPP_EK_CharacterLobby 5 1 2/ 800 Beach 81 13 2/ 1200 Beach 74 25 2/ 1730 Beach 79 25 2/ 2000 Beach 93 1 2",
+                "Sun": "600 MPP_EK_CharacterLobby 5 1 2/ 830 Beach 93 12 1/ 1130 Beach 75 20 3/ 1600 Beach 81 13 2/ 2000 Beach 93 1 2",
+                "Rain": "600 MPP_EK_CharacterLobby 5 1 2/ 630 Beach 91 22 1/ 1200 Beach 92 22 1/ 1700 Beach 93 12 1/ 2000 Beach 93 1 2",
+                "GreenRain": "600 MPP_EK_CharacterLobby 5 1 2/ 630 Beach 93 4 2/ 2000 Beach 93 1 2"
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800403": true,
+                "HasSeenEvent |contains=2523800409": false
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Schedules",
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Kraken",
+            "Entries": {
+                "Mon": "600 MPP_EK_KrakenRoom 7 6 2/ 800 Beach 89 5 2/ 1130 Beach 88 30 1/ 1630 Beach 91 22 1/ 2000 MPP_EK_KrakenRoom 7 4 3 kraken_sleep",
+                "Tue": "600 MPP_EK_KrakenRoom 7 6 2/ 1100 MPP_EK_KrakenRoom 1 5 2/ 1600 MPP_EK_KrakenRoom 7 6 2/ 2000 MPP_EK_KrakenRoom 7 4 3 kraken_sleep",
+                "Wed": "600 MPP_EK_KrakenRoom 7 6 2/ 900 Beach 81 6 2/ 1200 Beach 82 40 3/ 1730 Beach 89 5 2/ 2000 MPP_EK_KrakenRoom 7 4 3 kraken_sleep",
+                "Thu": "600 MPP_EK_KrakenRoom 7 6 2/ 830 Beach 79 25 2/ 1100 Beach 87 40 2/ 1700 Beach 81 6 2/ 2000 MPP_EK_KrakenRoom 7 4 3 kraken_sleep",
+                "Fri": "600 MPP_EK_KrakenRoom 7 6 2/ 800 Beach 81 13 2/ 1200 Beach 74 25 2/ 1730 Beach 79 25 2/ 2000 MPP_EK_KrakenRoom 7 4 3 kraken_sleep",
+                "Sat": "600 MPP_EK_KrakenRoom 7 6 2/ 1100 AdventureGuild 4 13 0 \"Strings\\animationDescriptions:Kraken_AdventureGuild.001\"/ 1730 AdventureGuild 7 12 0 \"Strings\\animationDescriptions:Kraken_AdventureGuild.002\"/ 2000 MPP_EK_KrakenRoom 7 4 3 kraken_sleep",
+                "Sun": "600 MPP_EK_KrakenRoom 7 6 2/ 830 Beach 93 12 1/ 1130 Beach 75 20 3/ 1600 Beach 81 13 2/ 2000 MPP_EK_KrakenRoom 7 4 3 kraken_sleep",
+                "Rain": "600 MPP_EK_KrakenRoom 7 6 2/ 630 Beach 91 22 1/ 1200 Beach 92 22 1/ 1700 Beach 93 12 1/ 2000 MPP_EK_KrakenRoom 7 4 3 kraken_sleep",
+                "GreenRain": "600 MPP_EK_KrakenRoom 7 6 2/ 630 Beach 93 4 2/ 2000 Beach 93 1 2",
+                "DesertFestival_3": "0 Desert 31 60 2 / 600 Desert 31 60 2/ 1100 Desert 34 60 2 \"Strings\\animationDescriptions:Kraken_DesertFestival_3.001\"/ 1200 Desert 28 61 2/ 1500 Desert 31 64 2 \"Strings\\animationDescriptions:Kraken_DesertFestival_3.002\"/ 1800 Desert 33 57/ 2000 Desert 34 60 2 \"Strings\\animationDescriptions:Kraken_DesertFestival_3.003\"",
+                "marriage_DesertFestival_3": "1000 Desert 8 20 2/ 1100 Desert 8 18 2/ 1110 Desert 5 18 2 \"Strings\\animationDescriptions:Kraken_marriage_DesertFestival_3.001\"/ 1500 Desert 12 16 2 \"Strings\\animationDescriptions:Kraken_marriage_DesertFestival_3.002\"/ 2000 Desert 5 18 2 \"Strings\\animationDescriptions:Kraken_marriage_DesertFestival_3.003\"",
+                "NightMarket_3": "0 Beach 103 49 2/ 600 Beach 103 49 2/ 1700 Beach 31 37 2 \"Strings\\animationDescriptions:Kraken_NightMarket_3.001\"/ 1955 Beach 31 38 2/ 2000 Beach 42 42 2 \"Strings\\animationDescriptions:Kraken_NightMarket_3.002\"/ 2300 Beach 59 36 2 \"Strings\\animationDescriptions:Kraken_NightMarket_3.003\"",
+                "marriage_NightMarket_3": "1330 Beach 58 32 2/ 1700 Beach 58 29 2/ 1710 Beach 59 38 2 \"Strings\\animationDescriptions:Kraken_marriage_NightMarket_3.001\"/ 1925 Beach 60 38 2/ 1930 Beach 4 37 2 \"Strings\\animationDescriptions:Kraken_marriage_NightMarket_3.002\"/ 2230 Beach 42 42 2 \"Strings\\animationDescriptions:Kraken_marriage_NightMarket_3.003\""
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800409": true
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Elliott",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries": {
+                "eventSeen_2523800404": "{{i18n:Kraken_StringData.Characters_Dialogue_Elliott.eventSeen_2523800404}}",
+                "eventSeen_2523800404_memory_oneday": "{{i18n:Kraken_StringData.Characters_Dialogue_Elliott.eventSeen_2523800404_memory_oneday}}",
+                "married_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_Elliott.married_Kraken}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Jodi",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jodi",
+            "Entries": {
+                "eventSeen_2523800408": "{{i18n:Kraken_StringData.Characters_Dialogue_Jodi.eventSeen_2523800408 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} |MPP_EK_Kraken_Upper01={{MPP_EK_Kraken_Upper_T |valueAt=1}} }}",
+                "eventSeen_2523800408_memory_oneday": "{{i18n:Kraken_StringData.Characters_Dialogue_Jodi.eventSeen_2523800408_memory_oneday |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}",
+                "eventSeen_2523800408_memory_oneweek": "{{i18n:Kraken_StringData.Characters_Dialogue_Jodi.eventSeen_2523800408_memory_oneweek |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} |MPP_EK_Kraken_Upper01={{MPP_EK_Kraken_Upper_T |valueAt=1}} }}",
+                "eventSeen_2523800408_memory_eightweeks": "{{i18n:Kraken_StringData.Characters_Dialogue_Jodi.eventSeen_2523800408_memory_eightweeks |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}",
+                "eventSeen_2523800411": "{{i18n:Kraken_StringData.Characters_Dialogue_Jodi.eventSeen_2523800411}}",
+                "eventSeen_2523800411_memory_fourweeks": "{{i18n:Kraken_StringData.Characters_Dialogue_Jodi.eventSeen_2523800411_memory_fourweeks}}",
+                "eventSeen_2523800411_memory_oneyear": "{{i18n:Kraken_StringData.Characters_Dialogue_Jodi.eventSeen_2523800411_memory_oneyear}}",
+                "dating_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_Jodi.dating_Kraken}}",
+                "married_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_Jodi.married_Kraken |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}",
+                "Kraken_inlaw_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_Jodi.Kraken_inlaw_Kraken}}",
+                "divorced_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_Jodi.divorced_Kraken |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Kent",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Kent",
+            "Entries": {
+                "eventSeen_2523800411": "{{i18n:Kraken_StringData.Characters_Dialogue_Kent.eventSeen_2523800411}}",
+                "eventSeen_2523800411_memory_twoweeks": "{{i18n:Kraken_StringData.Characters_Dialogue_Kent.eventSeen_2523800411_memory_twoweeks}}",
+                "eventSeen_2523800411_memory_oneyear": "{{i18n:Kraken_StringData.Characters_Dialogue_Kent.eventSeen_2523800411_memory_oneyear}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Lewis",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Lewis",
+            "Entries": {
+                "married_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_Lewis.married_Kraken}}",
+                "divorced_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_Lewis.divorced_Kraken |MPP_EK_Kraken_Lower29={{MPP_EK_Kraken_Lower_T |valueAt=29}} }}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Marlon",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marlon",
+            "Entries": {
+                "eventSeen_2523800402": "{{i18n:Kraken_StringData.Characters_Dialogue_Marlon.eventSeen_2523800402}}",
+                "eventSeen_2523800411": "{{i18n:Kraken_StringData.Characters_Dialogue_Marlon.eventSeen_2523800411_memory_oneday}}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Vincent",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Vincent",
+            "Entries": {
+                "eventSeen_2523800408": "{{i18n:Kraken_StringData.Characters_Dialogue_Vincent.eventSeen_2523800408 |MPP_EK_Kraken_Lower09={{MPP_EK_Kraken_Lower_T |valueAt=9}} }}",
+                "eventSeen_2523800408_memory_twoweeks": "{{i18n:Kraken_StringData.Characters_Dialogue_Vincent.eventSeen_2523800408_memory_twoweeks |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} |MPP_EK_Kraken_Upper01={{MPP_EK_Kraken_Upper_T |valueAt=1}} }}",
+                "eventSeen_2523800411": "{{i18n:Kraken_StringData.Characters_Dialogue_Vincent.eventSeen_2523800411}}",
+                "eventSeen_2523800411_memory_oneweek": "{{i18n:Kraken_StringData.Characters_Dialogue_Vincent.eventSeen_2523800411_memory_oneweek |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}",
+                "eventSeen_2523800411_memory_oneyear": "{{i18n:Kraken_StringData.Characters_Dialogue_Vincent.eventSeen_2523800411_memory_oneyear |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} |MPP_EK_Kraken_Upper01={{MPP_EK_Kraken_Upper_T |valueAt=1}} }}",
+                "married_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_Vincent.married_Kraken |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}",
+                "divorced_Kraken": "{{i18n:Kraken_StringData.Characters_Dialogue_Vincent.divorced_Kraken |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}"
+            }
+        },
+        {
+            "LogName": "Kraken - StringData - Dialogue Willy",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Willy",
+            "Entries": {
+                "eventSeen_2523800405": "{{i18n:Kraken_StringData.Characters_Dialogue_Willy.eventSeen_2523800405}}",
+                "eventSeen_2523800405_memory_oneweek": "{{i18n:Kraken_StringData.Characters_Dialogue_Willy.eventSeen_2523800405_memory_oneweek}}"
+            }
+        }
+    ]
+}

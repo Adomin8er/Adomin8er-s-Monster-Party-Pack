@@ -13,7 +13,7 @@
             "Target": "Data/Characters",
             "Entries": {
                 "DBLillian": {
-                    "DisplayName": "{{i18n:NPCs_Event.DBLillian.NameKnown}}",
+                    "DisplayName": "{{i18n:NPCs_Event.DBLillian.Name}}",
                     "Gender": "Female",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
@@ -27,7 +27,7 @@
                     "CanBeRomanced": false,
                     "CanReceiveGifts": false,
                     "CanVisitIsland": false,
-                    "Caledar": "HiddenAlways",
+                    "Calendar": "HiddenAlways",
                     "SocialTab": "HiddenAlways",
                     "SpouseWantsChildren": false,
                     "SpouseGiftJealousy": false,

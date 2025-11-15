@@ -1,25 +1,39 @@
 {
+    "Pushing Updates": [
+    ],
     "Required": {
-
+        "Kraken": [
+        ]
     },
     "Optional": {},
     "Remeber": {},
     "Templates": {},
     "Testing": {
+        "GENERIC": {
+            "SpecialOrder": [
+                "CC: debug season fall",
+                "CC: debug day 07",
+                "CC: debug warp town 62 94",
+                "CC: debug season spring",
+                "CC: debug warp farmhouse"
+            ]
+        },
         "Dhampir": {
-            "TriggerActions #1": "debug upgradehouse 1"
+            "TriggerActions #1": [
+                "debug upgradehouse 1"
+            ],
+            "SpecialOrder": [
+                "CC: debug item ???",
+                "CC: debug warp sciencehouse"
+            ]
         },
         "Djinn": {
-            "TriggerActions #2": [
+            "TriggerActions #1": [
                 "CC: debug craftingrecipe Crystal Floor",
                 "CC: debug warp sandyhouse",
                 "CC: debug warp farmhouse"
             ],
             "SpecialOrder": [
-                "CC: debug season fall",
-                "CC: debug day 07",
-                "CC: debug warp town 62 94",
-                "CC: debug warp farmhouse",
                 "CC: debug item 333 200",
                 "CC: debug warp sandyhouse"
             ],
@@ -34,10 +48,65 @@
                 "CC: debug warp farmhouse"
             ],
             "Marry Djinn": [
+                "CC: debug upgradehouse 1",
                 "CC: debug warp sandyhouse",
                 "CC: debug item 460",
                 "CC: debug warp farmhouse"
             ]
+        },
+        "Kraken": {
+            "TriggerActions #1": [
+                "CC: debug cookingrecipe Cookies"
+            ],
+            "SpecialOrder": [
+                "CC: debug item 206 2",
+                "CC: debug item 223 10",
+                "CC: debug item 233 10",
+                "CC: debug warp samhouse",
+                "CC: debug item 388 300",
+                "CC: debug warp beach"
+            ],
+            "Meet Kraken": [
+                "CC: debug day 5",
+                "CC: debug warp beach"
+            ],
+            "Date Kraken": [
+                "CC: debug warp krakenroom",
+                "CC: debug item 458",
+                "CC: debug warp farmhouse"
+            ],
+            "Marry Kraken": [
+                "CC: debug upgradehouse 1",
+                "CC: debug warp krakenroom",
+                "CC: debug item 460",
+                "CC: debug warp farmhouse"
+            ]
+        },
+        "Emotes": {
+            "0": "startEmoteCloud",
+            "4": "emptyCan",
+            "8": "questionMark",
+            "12": "angry",
+            "16": "exclamationMark",
+            "20": "heart",
+            "24": "sleep",
+            "28": "sad",
+            "32": "happy",
+            "36": "X",
+            "40": "pause",
+            "44": "fishing",
+            "48": "yoba",
+            "52": "videoGame",
+            "56": "musicNote",
+            "60": "blushing",
+            "64": "thumbsUp",
+            "68": "thumbsDown",
+            "72": "greenBubbles",
+            "76": "laughing",
+            "80": "surprised",
+            "84": "waving",
+            "88": "taunting",
+            "92": "skeptical"
         }
     }
 }

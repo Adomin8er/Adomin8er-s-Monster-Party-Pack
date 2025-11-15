@@ -13,7 +13,7 @@
             "Target": "Data/Characters",
             "Entries": {
                 "DBKnight_01": {
-                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_01.NameKnown}}",
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_01.Name}}",
                     "Gender": "Male",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
@@ -27,7 +27,7 @@
                     "CanBeRomanced": false,
                     "CanReceiveGifts": false,
                     "CanVisitIsland": false,
-                    "Caledar": "HiddenAlways",
+                    "Calendar": "HiddenAlways",
                     "SocialTab": "HiddenAlways",
                     "SpouseWantsChildren": false,
                     "SpouseGiftJealousy": false,
@@ -65,7 +65,7 @@
             "Target": "Data/Characters",
             "Entries": {
                 "DBKnight_02": {
-                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_02.NameKnown}}",
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_02.Name}}",
                     "Gender": "Male",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
@@ -79,7 +79,7 @@
                     "CanBeRomanced": false,
                     "CanReceiveGifts": false,
                     "CanVisitIsland": false,
-                    "Caledar": "HiddenAlways",
+                    "Calendar": "HiddenAlways",
                     "SocialTab": "HiddenAlways",
                     "SpouseWantsChildren": false,
                     "SpouseGiftJealousy": false,
@@ -117,7 +117,7 @@
             "Target": "Data/Characters",
             "Entries": {
                 "DBKnight_03": {
-                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_03.NameKnown}}",
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_03.Name}}",
                     "Gender": "Male",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
@@ -131,7 +131,7 @@
                     "CanBeRomanced": false,
                     "CanReceiveGifts": false,
                     "CanVisitIsland": false,
-                    "Caledar": "HiddenAlways",
+                    "Calendar": "HiddenAlways",
                     "SocialTab": "HiddenAlways",
                     "SpouseWantsChildren": false,
                     "SpouseGiftJealousy": false,
@@ -169,7 +169,7 @@
             "Target": "Data/Characters",
             "Entries": {
                 "DBKnight_04": {
-                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_04.NameKnown}}",
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_04.Name}}",
                     "Gender": "Male",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
@@ -183,7 +183,7 @@
                     "CanBeRomanced": false,
                     "CanReceiveGifts": false,
                     "CanVisitIsland": false,
-                    "Caledar": "HiddenAlways",
+                    "Calendar": "HiddenAlways",
                     "SocialTab": "HiddenAlways",
                     "SpouseWantsChildren": false,
                     "SpouseGiftJealousy": false,
@@ -221,7 +221,7 @@
             "Target": "Data/Characters",
             "Entries": {
                 "DBKnight_05": {
-                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_05.NameKnown}}",
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_05.Name}}",
                     "Gender": "Male",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
@@ -235,7 +235,7 @@
                     "CanBeRomanced": false,
                     "CanReceiveGifts": false,
                     "CanVisitIsland": false,
-                    "Caledar": "HiddenAlways",
+                    "Calendar": "HiddenAlways",
                     "SocialTab": "HiddenAlways",
                     "SpouseWantsChildren": false,
                     "SpouseGiftJealousy": false,
@@ -273,7 +273,7 @@
             "Target": "Data/Characters",
             "Entries": {
                 "DBKnight_06": {
-                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_06.NameKnown}}",
+                    "DisplayName": "{{i18n:NPCs_Event.DBKnight_06.Name}}",
                     "Gender": "Male",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
@@ -287,7 +287,7 @@
                     "CanBeRomanced": false,
                     "CanReceiveGifts": false,
                     "CanVisitIsland": false,
-                    "Caledar": "HiddenAlways",
+                    "Calendar": "HiddenAlways",
                     "SocialTab": "HiddenAlways",
                     "SpouseWantsChildren": false,
                     "SpouseGiftJealousy": false,

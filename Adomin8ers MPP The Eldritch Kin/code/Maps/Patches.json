@@ -3,63 +3,29 @@
         {
             "LogName": "Arbitrary - 25238/code/Maps/Patches - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
-                "DeveloperNotes_Data_Locations_Arbitrary.001": "+--------------------------------------------+",
-                "DeveloperNotes_Data_Locations_Arbitrary.002": "|          Data/Locations/Arbitrary          |",
-                "DeveloperNotes_Data_Locations_Arbitrary.003": "+--------------------------------------------+"
-            }
-        },
-        {
-            "LogName": "Arbitrary - Map Patch - CharacterLobby Setup",
-            "Action": "EditData",
-            "Target": "Data/Locations",
-            "Entries": {
-                "MPP_EK_CharacterLobby": {
-                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_CharacterLobby}}",
-                    "DefaultArrivalTile": {
-                        "X": 4,
-                        "Y": 4
-                    },
-                    "CreateOnLoad": {
-                        "MapPath": "Maps/MPP_EK_CharacterLobby"
-                    }
-                }
+                "DeveloperNotes_Data_Location_Arbitrary.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Location_Arbitrary.002": "|          Data/Locations/Arbitrary          |",
+                "DeveloperNotes_Data_Location_Arbitrary.003": "+--------------------------------------------+"
             }
         },
         
         {
             "LogName": "Dhampir - 25238/code/Maps/Patches - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
-                "DeveloperNotes_Data_Locations_Dhampir.001": "+--------------------------------------------+",
-                "DeveloperNotes_Data_Locations_Dhampir.002": "|           Data/Locations/Dhampir           |",
-                "DeveloperNotes_Data_Locations_Dhampir.003": "+--------------------------------------------+"
-            }
-        },
-        {
-            "LogName": "Dhampir - Map Patch - DhampirRoom Setup",
-            "Action": "EditData",
-            "Target": "Data/Locations",
-            "Entries": {
-                "MPP_EK_DhampirRoom": {
-                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_DhampirRoom}}",
-                    "DefaultArrivalTile": {
-                        "X": 6,
-                        "Y": 10
-                    },
-                    "CreateOnLoad": {
-                        "MapPath": "Maps/MPP_EK_DhampirRoom"
-                    }
-                }
+                "DeveloperNotes_Data_Location_Dhampir.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Location_Dhampir.002": "|           Data/Locations/Dhampir           |",
+                "DeveloperNotes_Data_Location_Dhampir.003": "+--------------------------------------------+"
             }
         },
         {
             "LogName": "Dhampir - Map Patch - Hospital Dhampir Bed",
             "Action": "EditMap",
             "Target": "Maps/Hospital",
-            "FromFile": "assets/Maps/VanillaHospital - DhampirBed.tmx",
+            "FromFile": "assets/Maps/MPP_EK_Hospital.tmx",
             "FromArea": {
                 "X": 18,
                 "Y": 10,
@@ -97,7 +63,7 @@
             "LogName": "Dhampir - Map Patch - ScienceHouse DhampirRoom Stairs",
             "Action": "EditMap",
             "Target": "Maps/ScienceHouse",
-            "FromFile": "assets/Maps/VanillaScienceHouse - DhampirArrived.tmx",
+            "FromFile": "assets/Maps/MPP_EK_ScienceHouse.tmx",
             "FromArea": {
                 "X": 8,
                 "Y": 6,
@@ -119,7 +85,7 @@
             "LogName": "Dhampir - Map Patch - ScienceHouse Dhampir Chair",
             "Action": "EditMap",
             "Target": "Maps/ScienceHouse",
-            "FromFile": "assets/Maps/VanillaScienceHouse - DhampirArrived.tmx",
+            "FromFile": "assets/Maps/MPP_EK_ScienceHouse.tmx",
             "FromArea": {
                 "X": 26,
                 "Y": 12,
@@ -141,35 +107,18 @@
         {
             "LogName": "Djinn - 25238/code/Maps/Patches - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
-                "DeveloperNotes_Data_Locations_Djinn.001": "+--------------------------------------------+",
-                "DeveloperNotes_Data_Locations_Djinn.002": "|            Data/Locations/Djinn            |",
-                "DeveloperNotes_Data_Locations_Djinn.003": "+--------------------------------------------+"
-            }
-        },
-        {
-            "LogName": "Djinn - Map Patch - Courthouse",
-            "Action": "EditData",
-            "Target": "Data/Locations",
-            "Entries": {
-                "MPP_EK_CourtHouse": {
-                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_CourtHouse}}",
-                    "DefaultArrivalTile": {
-                        "X": 7,
-                        "Y": 19
-                    },
-                    "CreateOnLoad": {
-                        "MapPath": "Maps/MPP_EK_CourtHouse"
-                    }
-                }
+                "DeveloperNotes_Data_Location_Djinn.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Location_Djinn.002": "|            Data/Locations/Djinn            |",
+                "DeveloperNotes_Data_Location_Djinn.003": "+--------------------------------------------+"
             }
         },
         {
             "LogName": "Djinn - Map Patch - SandyHouse Dropbox Barrel",
             "Action": "EditMap",
             "Target": "Maps/SandyHouse",
-            "FromFile": "assets/Maps/VanillaSandyHouse - DropBox SandyBarrel.tmx",
+            "FromFile": "assets/Maps/MPP_EK_SandyHouse.tmx",
             "FromArea": {
                 "X": 0,
                 "Y": 0,
@@ -191,7 +140,7 @@
             "LogName": "Djinn - Map Patch - SandyHouseImproved Setup",
             "Action": "EditMap",
             "Target": "Maps/SandyHouse",
-            "FromFile": "assets/Maps/VanillaSandyHouse - Improved.tmx",
+            "FromFile": "assets/Maps/MPP_EK_SandyHouse_Improved.tmx",
             "TextOperations": [
                 {
                     "Operation": "Append",
@@ -265,6 +214,225 @@
                 "HasReadLetter |contains=Djinn_SpecialOrderThanks": true
             },
             "Update": "OnLocationChange"
+        },
+        
+        {
+            "LogName": "Kraken - 25238/code/Maps/Patches - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Location_Kraken.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Location_Kraken.002": "|            Data/Locations/Kraken            |",
+                "DeveloperNotes_Data_Location_Kraken.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Kraken - Map Patch - Dropbox JodiKitchen",
+            "Action": "EditMap",
+            "Target": "Maps/SamHouse",
+            "FromFile": "assets/Maps/MPP_EK_SamHouse.tmx",
+            "FromArea": {
+                "X": 4,
+                "Y": 4,
+                "Width": 2,
+                "Height": 4
+            },
+            "ToArea": {
+                "X": 4,
+                "Y": 4,
+                "Width": 2,
+                "Height": 4
+            },
+            "When": {
+                "HasReadLetter |contains=Kraken_SpecialOrderThanks": false
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Kraken - Map Patch - Beach CharacterLobby Warp",
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NPCWarp"
+                    ],
+                    "Value": "93 1 MPP_EK_CharacterLobby 4 4",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Kraken - Map Patch - Beach Trees",
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "FromFile": "assets/Maps/MPP_EK_Beach.tmx",
+            "FromArea": {
+                "X": 92,
+                "Y": 0,
+                "Width": 2,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 92,
+                "Y": 0,
+                "Width": 2,
+                "Height": 5
+            }
+        },
+        {
+            "LogName": "Kraken - Map Patch - Beach KrakenRoom Warp",
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "94 8 MPP_EK_KrakenRoom 2 13 94 9 MPP_EK_KrakenRoom 3 13",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasSeenEvent |contains=2523800409": true
+            }
+        },
+        {
+            "LogName": "Kraken - Map Patch - Beach Boat",
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "FromFile": "assets/Maps/MPP_EK_Beach.tmx",
+            "FromArea": {
+                "X": 94,
+                "Y": 8,
+                "Width": 3,
+                "Height": 2
+            },
+            "ToArea": {
+                "X": 94,
+                "Y": 8,
+                "Width": 3,
+                "Height": 2
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800409": true
+            }
+        },
+        {
+            "LogName": "Kraken - Map Patch - NightMarket CharacterLobby Warp",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-NightMarket",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NPCWarp"
+                    ],
+                    "Value": "93 1 MPP_EK_CharacterLobby 4 4",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Kraken - Map Patch - NightMarket Trees",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-NightMarket",
+            "FromFile": "assets/Maps/MPP_EK_Beach.tmx",
+            "FromArea": {
+                "X": 92,
+                "Y": 0,
+                "Width": 2,
+                "Height": 5
+            },
+            "ToArea": {
+                "X": 92,
+                "Y": 0,
+                "Width": 2,
+                "Height": 5
+            }
+        },
+        {
+            "LogName": "Kraken - Map Patch - NightMarket KrakenRoom Warp",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-NightMarket",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "94 8 MPP_EK_KrakenRoom 2 13 94 9 MPP_EK_KrakenRoom 3 13",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasSeenEvent |contains=2523800409": true
+            }
+        },
+        {
+            "LogName": "Kraken - Map Patch - NightMarket Boat",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-NightMarket",
+            "FromFile": "assets/Maps/MPP_EK_Beach.tmx",
+            "FromArea": {
+                "X": 94,
+                "Y": 8,
+                "Width": 3,
+                "Height": 2
+            },
+            "ToArea": {
+                "X": 94,
+                "Y": 8,
+                "Width": 3,
+                "Height": 2
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800409": true
+            }
+        },
+        {
+            "LogName": "Kraken - Map Patch - DesertFestival TopLake Warp",
+            "Action": "EditMap",
+            "Target": "Maps/Desert-Festival",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NPCWarp"
+                    ],
+                    "Value": "8 20 Desert 8 18",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "Spouse |contains=Kraken": true
+            }
+        },
+        {
+            "LogName": "Kraken - Map Patch - NightMarket TopLake Warp",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-NightMarket",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NPCWarp"
+                    ],
+                    "Value": "58 32 Beach 58 29",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "Spouse |contains=Kraken": true
+            }
         }
     ]
 }

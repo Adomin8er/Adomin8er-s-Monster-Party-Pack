@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="7" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="18">
- <tileset firstgid="1" name="Locations_TownInterior1" tilewidth="16" tileheight="16" tilecount="2272" columns="32">
-  <image source="MPP_EK_Locations_TownInterior1.png" width="512" height="1136"/>
+ <tileset firstgid="1" name="L_TownInterior1" tilewidth="16" tileheight="16" tilecount="2272" columns="32">
+  <image source="MPP_EK_Location_TownInterior1.png" width="512" height="1136"/>
  </tileset>
- <tileset firstgid="2273" name="Furniture_1" tilewidth="16" tileheight="16" tilecount="3906" columns="42">
+ <tileset firstgid="2273" name="F_1" tilewidth="16" tileheight="16" tilecount="3906" columns="42">
   <image source="MPP_EK_Furniture_1.png" width="672" height="1488"/>
  </tileset>
- <tileset firstgid="6179" name="Locations_Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
-  <image source="MPP_EK_Locations_Paths.png" width="64" height="256"/>
+ <tileset firstgid="6179" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="MPP_EK_Paths.png" width="64" height="256"/>
  </tileset>
- <tileset firstgid="6243" name="Locations_TownInterior2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
-  <image source="MPP_EK_Locations_TownInterior2.png" width="512" height="656"/>
+ <tileset firstgid="6243" name="L_TownInterior2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="MPP_EK_Location_TownInterior2.png" width="512" height="656"/>
  </tileset>
- <tileset firstgid="7555" name="Furniture_1Front" tilewidth="16" tileheight="16" tilecount="3162" columns="34">
+ <tileset firstgid="7555" name="F_1Front" tilewidth="16" tileheight="16" tilecount="3162" columns="34">
   <image source="MPP_EK_Furniture_1Front.png" width="544" height="1488"/>
  </tileset>
  <layer id="1" name="Back" width="7" height="10">

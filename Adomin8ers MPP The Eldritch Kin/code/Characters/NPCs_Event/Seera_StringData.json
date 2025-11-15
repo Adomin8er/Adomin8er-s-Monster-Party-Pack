@@ -1,0 +1,56 @@
+{
+    "Changes": [
+        {
+            "LogName": "Seera - Data - Setup",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Seera, Characters/Schedules/Seera, Strings/Schedules/Seera",
+            "FromFile": "code/blank.json",
+            "When": null
+        },
+        {
+            "LogName": "Seera - Data - Characters",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Seera": {
+                    "DisplayName": "{{i18n:NPCs_Event.Seera.Name}}",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 1,
+                    "HomeRegion": "Other",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanVisitIsland": false,
+                    "Calendar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "SpouseWantsChildren": false,
+                    "SpouseGiftJealousy": false,
+                    "PerfectionScore": false,
+
+                    "FlowerDanceCanDance": null,
+                    "WinterStarParticipant": false,
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "MPP_EK_CharacterLobby",
+                            "Tile": { "X": 6   , "Y": 3 },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        }
+    ]
+}

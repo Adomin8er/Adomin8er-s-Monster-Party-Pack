@@ -1,0 +1,289 @@
+{
+    "Changes": [
+        {
+            "LogName": "Kraken - Base OW Sprite Empty",
+            "Action": "Load",
+            "Target": "Characters/Kraken",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "Kraken - Base OW Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Kraken",
+            "FromFile": "assets/Characters/NPCs_Core/Kraken/Kraken_Base_OW_F.png",
+            "When": {
+                "Kraken_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Kraken - Base Swimming OW Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Kraken",
+            "FromFile": "assets/Characters/NPCs_Core/Kraken/Kraken_BaseSwim_OW_F.png",
+            "When": {
+                "Kraken_Gender": "female",
+                "Day": 17,
+                "LocationName |contains=DesertFestival": true,
+                "Query: {{Time}} >= 1100": true,
+                "Spouse |contains=Kraken": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - Base Swimming OW Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Kraken",
+            "FromFile": "assets/Characters/NPCs_Core/Kraken/Kraken_BaseSwim_OW_F.png",
+            "When": {
+                "Kraken_Gender": "female",
+                "Day": 17,
+                "LocationName |contains=DesertFestival": true,
+                "Spouse |contains=Kraken": false
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - Winter OW Sprite Empty",
+            "Action": "Load",
+            "Target": "Characters/Kraken_Winter",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "Kraken - Winter OW Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Kraken_Winter",
+            "FromFile": "assets/Characters/NPCs_Core/Kraken/Kraken_Winter_OW_F.png",
+            "When": {
+                "Kraken_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Kraken - Winter Swimming OW Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Kraken_Winter",
+            "FromFile": "assets/Characters/NPCs_Core/Kraken/Kraken_WinterSwim_OW_F.png",
+            "When": {
+                "Kraken_Gender": "female",
+                "Day": 17,
+                "LocationName |contains=BeachNightMarket": true,
+                "Query: {{Time}} >= 1700": true,
+                "Spouse |contains=Kraken": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - Winter Swimming OW Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Kraken_Winter",
+            "FromFile": "assets/Characters/NPCs_Core/Kraken/Kraken_WinterSwim_OW_F.png",
+            "When": {
+                "Kraken_Gender": "female",
+                "Day": 17,
+                "LocationName |contains=BeachNightMarket": true,
+                "Spouse |contains=Kraken": false
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - Beach OW Sprite Empty",
+            "Action": "Load",
+            "Target": "Characters/Kraken_Beach",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "Kraken - Beach OW Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Kraken_Beach",
+            "FromFile": "assets/Characters/NPCs_Core/Kraken/Kraken_Beach_OW_F.png",
+            "When": {
+                "Kraken_Gender": "female"
+            }
+        },
+
+        {
+            "LogName": "Kraken - Base Portrait",
+            "Action": "Load",
+            "Target": "Portraits/Kraken",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
+            "When": {
+                "Kraken_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Kraken - Winter Portrait",
+            "Action": "Load",
+            "Target": "Portraits/Kraken_Winter",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
+            "When": {
+                "Kraken_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Kraken - Beach Portrait",
+            "Action": "Load",
+            "Target": "Portraits/Kraken_Beach",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
+            "When": {
+                "Kraken_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Kraken - Upscale Portraits",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "25238_HDKraken_Base1_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:11", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:11", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:11", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}}
+            },
+            "When": {
+                "Kraken_Gender": "female",
+                "HasSeenEvent |contains=2523800409": false
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - Upscale Portraits",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "25238_HDKraken_Base1_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base1_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base1_HD_F.png}}:11", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter1_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter1_HD_F.png}}:11", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach1_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach1_HD_F.png}}:11", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}}
+            },
+            "When": {
+                "Kraken_Gender": "female",
+                "Query: {{Hearts:Kraken}}<=5": true,
+                "HasSeenEvent |contains=2523800409": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - Upscale Portraits Friendly",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "25238_HDKraken_Base2_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base2_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base2_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base2_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base2_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base2_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base2_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base2_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base2_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base2_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base2_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Base2_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Base2_HD_F.png}}:11", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Winter2_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Winter2_HD_F.png}}:11", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Winter", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDKraken_Beach2_11": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Kraken/Kraken_Beach2_HD_F.png}}:11", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Kraken_Beach", "TargetRect": {"X": 64, "Y": 320, "Width": 64, "Height": 64}}
+            },
+            "When": {
+                "Kraken_Gender": "female",
+                "Query: {{Hearts:Kraken}}>=6": true,
+                "HasSeenEvent |contains=2523800409": true
+            },
+            "Update": "OnTimeChange"
+        },
+
+        {
+            "LogName": "Kraken - Purchaseable Portrait",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "Adomin8er.MPP_EK_KrakenPortrait": "Kraken/painting/2 2/2 2/1/999/-1/{{i18n:Kraken_StringData.Characters_DisplayName |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }} Portrait/6/Mods\\Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin\\EK_Portraits/true"
+            },
+            "When": {
+                "Kraken_Gender": "female"
+            }
+        }
+    ]
+}
