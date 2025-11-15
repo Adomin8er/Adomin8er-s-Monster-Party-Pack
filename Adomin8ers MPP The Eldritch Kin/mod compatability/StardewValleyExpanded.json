@@ -42,6 +42,508 @@
                 "DayOfWeek |contains=Saturday": true
             },
             "Update": "OnLocationChange"
-        }
+        },
+        {
+            "LogName": "Compatability - StardewValleyExpanded - Map Patch - SandyHouse Shop Closed",
+            "Action": "EditMap",
+            "Target": "Maps/SandyHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 6
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"DjinnSandyHouse.001\""
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 2,
+                        "Y": 6
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"DjinnSandyHouse.001\""
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 3,
+                        "Y": 6
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"DjinnSandyHouse.001\""
+                    }
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Query: {{Hearts:Sandy}} >= 5": true,
+                "DayOfWeek |contains=Saturday": true
+            }
+        },
+        {	
+			"LogName": "Compatability - StardewValleyExpanded - Dhampir - 01/13 EggFestival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 25 69 3",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Dhampir 36 71 3",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 18 65 1",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Dhampir 24 64 1",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800101": true
+            }
+		},
+        {	
+			"LogName": "Compatability - StardewValleyExpanded - Dhampir - 02/11 Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 17 5 2",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Dhampir 27 13 1",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 17 5 2",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Dhampir 19 11 1",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800101": true
+            }
+		},
+        {	
+			"LogName": "Compatability - StardewValleyExpanded - Dhampir - 03/16 Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 45 63 0",
+   				    "Delimiter": "/"
+				},
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 21 62 2",
+   				    "Delimiter": "/"
+				}
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800101": true
+            }
+		},
+        {	
+			"LogName": "Compatability - StardewValleyExpanded - Dhampir - 04/08 Festival of Ice",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 74 17 3",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Dhampir 80 30 3",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 67 46 0",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters_y2"
+                    ],
+                    "Value": "Dhampir 83 40 3",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasSeenEvent |contains=2523800101": true
+            }
+		},
+                {	
+			"LogName": "Compatability - StardewValleyExpanded - Dhampir - 04/25 Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Dhampir 34 62 2",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Dhampir 34 62 2",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 25 70 3",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+   				    "Value": "Dhampir 25 70 3",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasSeenEvent |contains=2523800101": true
+            }
+		},
+        {	
+			"LogName": "Compatability - StardewValleyExpanded - Djinn - 04/08 Festival of Ice",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Djinn 63 27 2",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Djinn 59 33 1",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Djinn 72 50 2",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters_y2"
+                    ],
+                    "Value": "Djinn 69 46 0",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasSeenEvent |contains=2523800201": true
+            }
+		},
+        {	
+			"LogName": "Compatability - StardewValleyExpanded - Djinn - 04/25 Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Djinn 25 65 3",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+   				    "Value": "Djinn 25 65 3",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Djinn 34 73 0",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Djinn 34 73 0",
+                    "Delimiter": "/"
+                }
+                
+			],
+            "When":  {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasSeenEvent |contains=2523800201": true
+            }
+		},
+        {	
+			"LogName": "Compatability - StardewValleyExpanded - Kraken - 01/13 EggFestival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Kraken 32 55 2",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Kraken 38 70 3",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Kraken 31 72 0",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Kraken 23 66 1",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasSeenEvent |contains=2523800409": true
+            }
+		},
+        {	
+			"LogName": "Compatability - StardewValleyExpanded - Kraken - 04/08 Festival of Ice",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Kraken 69 39 1",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Kraken 71 48 0",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Kraken 76 39 0",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters_y2"
+                    ],
+                    "Value": "Kraken 69 24 2",
+                    "Delimiter": "/"
+                }
+			],
+            "When":  {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasSeenEvent |contains=2523800409": true
+            }
+		},
+        {	
+			"LogName": "Compatability - StardewValleyExpanded - Dhampir - 04/25 Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+   				    "Value": "Kraken 21 63 1",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+   				    "Value": "Kraken 21 63 1",
+                    "Delimiter": "/"
+                },
+                {
+   				    "Operation": "Append",
+   				    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+   				    "Value": "Kraken 35 81 0",
+   				    "Delimiter": "/"
+				},
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Kraken 35 81 0",
+                    "Delimiter": "/"
+                }
+                
+			],
+            "When":  {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasSeenEvent |contains=2523800409": true
+            }
+		}
     ]
 }

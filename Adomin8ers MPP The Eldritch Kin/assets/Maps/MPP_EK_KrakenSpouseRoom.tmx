@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="7" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="26">
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="MPP_EK_Paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="L_Mine_Frost" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="MPP_EK_Location_Mine_Frost.png" width="256" height="288"/>
+  <tile id="237">
+   <animation>
+    <frame tileid="237" duration="125"/>
+    <frame tileid="238" duration="125"/>
+    <frame tileid="239" duration="125"/>
+    <frame tileid="238" duration="125"/>
+    <frame tileid="237" duration="125"/>
+    <frame tileid="270" duration="125"/>
+    <frame tileid="271" duration="125"/>
+    <frame tileid="270" duration="125"/>
+   </animation>
+  </tile>
+  <tile id="253">
+   <animation>
+    <frame tileid="253" duration="125"/>
+    <frame tileid="254" duration="125"/>
+    <frame tileid="255" duration="125"/>
+    <frame tileid="254" duration="125"/>
+    <frame tileid="253" duration="125"/>
+    <frame tileid="286" duration="125"/>
+    <frame tileid="287" duration="125"/>
+    <frame tileid="286" duration="125"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="353" name="L_spring_OutdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_MPP_EK_Location_OutdoorsTileSheet.png" width="400" height="1264"/>
+  <tile id="183">
+   <animation>
+    <frame tileid="183" duration="1000"/>
+    <frame tileid="1182" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="184">
+   <animation>
+    <frame tileid="184" duration="1000"/>
+    <frame tileid="1183" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="185">
+   <animation>
+    <frame tileid="185" duration="1000"/>
+    <frame tileid="1184" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="208">
+   <animation>
+    <frame tileid="208" duration="1000"/>
+    <frame tileid="1207" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="210">
+   <animation>
+    <frame tileid="210" duration="1000"/>
+    <frame tileid="1209" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="211">
+   <animation>
+    <frame tileid="211" duration="1000"/>
+    <frame tileid="1210" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="233">
+   <animation>
+    <frame tileid="233" duration="1000"/>
+    <frame tileid="1232" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="235">
+   <animation>
+    <frame tileid="235" duration="1000"/>
+    <frame tileid="1290" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="237">
+   <animation>
+    <frame tileid="237" duration="1000"/>
+    <frame tileid="1291" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="238">
+   <animation>
+    <frame tileid="238" duration="1000"/>
+    <frame tileid="1292" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="258">
+   <animation>
+    <frame tileid="258" duration="1000"/>
+    <frame tileid="1257" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="259">
+   <animation>
+    <frame tileid="259" duration="1000"/>
+    <frame tileid="1258" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="260">
+   <animation>
+    <frame tileid="260" duration="1000"/>
+    <frame tileid="1315" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="283">
+   <animation>
+    <frame tileid="283" duration="1000"/>
+    <frame tileid="1312" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="284">
+   <animation>
+    <frame tileid="284" duration="1000"/>
+    <frame tileid="1313" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="308">
+   <animation>
+    <frame tileid="308" duration="1000"/>
+    <frame tileid="1316" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="309">
+   <animation>
+    <frame tileid="309" duration="1000"/>
+    <frame tileid="1317" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="1240">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1241">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1242">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1243">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1244">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1245">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1246">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1247">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1248">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1249">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1265">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1266">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1267">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1268">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1269">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1270">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1271">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1272">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1273">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1274">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1297">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1298">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1299">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1322">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1323">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1324">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2328" name="L_spring_Beach" tilewidth="16" tileheight="16" tilecount="561" columns="17">
+  <image source="spring_MPP_EK_Location_Beach.png" width="272" height="528"/>
+ </tileset>
+ <layer id="1" name="Back" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJyrYmZgqCIDryECN3OiYlLlZuOR20vAzDVE2IcPAABFCSWJ
+  </data>
+ </layer>
+ <layer id="11" name="Back2" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA/2MXFwLAbiPdwYcq9BYoJcDMwCHJjyvFzkyenABRLZiLNjQBltQSw
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJzrYmBg6AbiHiS6F4g3APEsINZjZGCYg8TeB6QPAPEuIN4NxHvQ2A+AeB8nA8N+IJZgYmCQhGIpIP7AgAnOczEwGAPlGBgx5YS5GRh8gHICOORA+hSAckeBdh3jRMgxQfWB7LsGFL8OxEpAMWUgVgHiVKh9Xgy4MQCC5hlu
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAPrOVkYFjHSabmAQBK3AwMKUwQTAgIMDIwAABntQJ4
+  </data>
+ </layer>
+ <layer id="12" name="Front2" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF2AAAARgAAQ==
+  </data>
+ </layer>
+ <layer id="7" name="Paths" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYwDFA9hILAAYYAAk=
+  </data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF2AAAARgAAQ==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <objectgroup id="4" name="Buildings">
+  <object id="18" name="TileData" x="0" y="48" width="32" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;KrakenSpouseRoom.001&quot;"/>
+   </properties>
+  </object>
+  <object id="20" name="TileData" x="0" y="112" width="32" height="32">
+   <properties>
+    <property name="Action" value="Message &quot;KrakenSpouseRoom.002&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

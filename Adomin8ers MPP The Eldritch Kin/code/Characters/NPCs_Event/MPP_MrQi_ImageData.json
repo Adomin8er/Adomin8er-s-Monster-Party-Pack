@@ -1,8 +1,14 @@
 {
-    "Changes": [ 
+    "Changes": [
         {
-            "LogName": "MPP_MrQi - Base Overworld Sprite",
+            "LogName": "MPP_MrQi - Base OW Sprite Empty",
             "Action": "Load",
+            "Target": "Characters/MPP_MrQi",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "MPP_MrQi - Base OW Sprite",
+            "Action": "EditImage",
             "Target": "Characters/MPP_MrQi",
             "FromFile": "assets/Characters/NPCs_Event/MPP_MrQi_Base_OW.png",
             "When": null
@@ -12,7 +18,7 @@
             "LogName": "MPP_MrQi - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/MPP_MrQi",
-            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
             "When": null
         },
         {

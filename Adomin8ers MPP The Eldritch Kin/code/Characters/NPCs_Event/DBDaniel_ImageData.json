@@ -1,8 +1,14 @@
 {
-    "Changes": [ 
+    "Changes": [
         {
-            "LogName": "DBDaniel - Base Overworld Sprite",
+            "LogName": "DBDaniel - Base OW Sprite Empty",
             "Action": "Load",
+            "Target": "Characters/DBDaniel",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "DBDaniel - Base OW Sprite",
+            "Action": "EditImage",
             "Target": "Characters/DBDaniel",
             "FromFile": "assets/Characters/NPCs_Event/DBDaniel_Base_OW.png",
             "When": null
@@ -12,7 +18,7 @@
             "LogName": "DBDaniel - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBDaniel",
-            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
             "When": null
         },
         {

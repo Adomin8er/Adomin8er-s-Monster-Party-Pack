@@ -1,8 +1,14 @@
 {
     "Changes": [
         {
-            "LogName": "Dhampir - Base Overworld Sprite",
+            "LogName": "Dhampir - Base OW Sprite Empty",
             "Action": "Load",
+            "Target": "Characters/Dhampir",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "Dhampir - Base OW Sprite",
+            "Action": "EditImage",
             "Target": "Characters/Dhampir",
             "FromFile": "assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_OW_F.png",
             "When": {
@@ -10,8 +16,14 @@
             }
         },
         {
-            "LogName": "Dhampir - Winter Overworld Sprite",
+            "LogName": "Dhampir - Winter OW Sprite Empty",
             "Action": "Load",
+            "Target": "Characters/Dhampir_Winter",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "Dhampir - Winter OW Sprite",
+            "Action": "EditImage",
             "Target": "Characters/Dhampir_Winter",
             "FromFile": "assets/Characters/NPCs_Core/Dhampir/Dhampir_Winter_OW_F.png",
             "When": {
@@ -19,8 +31,14 @@
             }
         },
         {
-            "LogName": "Dhampir - Beach Overworld Sprite",
+            "LogName": "Dhampir - Beach OW Sprite Empty",
             "Action": "Load",
+            "Target": "Characters/Dhampir_Beach",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "Dhampir - Beach OW Sprite",
+            "Action": "EditImage",
             "Target": "Characters/Dhampir_Beach",
             "FromFile": "assets/Characters/NPCs_Core/Dhampir/Dhampir_Beach_OW_F.png",
             "When": {
@@ -32,7 +50,7 @@
             "LogName": "Dhampir - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/Dhampir",
-            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
             "When": {
                 "Dhampir_Gender": "female"
             }
@@ -41,7 +59,7 @@
             "LogName": "Dhampir - Winter Portrait",
             "Action": "Load",
             "Target": "Portraits/Dhampir_Winter",
-            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
             "When": {
                 "Dhampir_Gender": "female"
             }
@@ -50,7 +68,7 @@
             "LogName": "Dhampir - Beach Portrait",
             "Action": "Load",
             "Target": "Portraits/Dhampir_Beach",
-            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
             "When": {
                 "Dhampir_Gender": "female"
             }
@@ -60,17 +78,17 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
-                "25238_HDDhampir_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
-                "25238_HDDhampir_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
-                "25238_HDDhampir_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
-                "25238_HDDhampir_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
-                "25238_HDDhampir_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
-                "25238_HDDhampir_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
-                "25238_HDDhampir_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
-                "25238_HDDhampir_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
-                "25238_HDDhampir_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
-                "25238_HDDhampir_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
-                "25238_HDDhampir_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDDhampir_Base_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDDhampir_Base_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDDhampir_Base_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDDhampir_Base_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDDhampir_Base_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDDhampir_Base_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDDhampir_Base_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDDhampir_Base_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDDhampir_Base_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDDhampir_Base_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDDhampir_Base_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Base_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
                 "25238_HDDhampir_Winter_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Winter_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir_Winter", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
                 "25238_HDDhampir_Winter_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Winter_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir_Winter", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
                 "25238_HDDhampir_Winter_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Dhampir/Dhampir_Winter_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Dhampir_Winter", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},

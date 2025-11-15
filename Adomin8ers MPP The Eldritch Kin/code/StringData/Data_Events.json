@@ -3,7 +3,7 @@
         {
             "LogName": "Arbitrary - 25238/code/StringData/Data_Events - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
                 "DeveloperNotes_Data_Events_Arbitrary.001": "+--------------------------------------------+",
                 "DeveloperNotes_Data_Events_Arbitrary.002": "|           Data/Events/Arbitrary            |",
@@ -15,11 +15,11 @@
             "Action": "EditData",
             "Target": "Data/Events/Mountain",
             "Entries": {
-                "2523800000/": "continue/64 15/farmer 57 30 0 MPP_Marlon 57 23 2 Lewis -999 -1000 2 George -1000 -1000 0 Alex -1001 -1000 0 Evelyn -1002 -1000 0  Sam -1003 -1000 0 Sebastian -1004 -1000 0 Abigail -1005 -1000 0  Haley -1006 -1000 0 Emily -1007 -1000 0  Jodi -1009 -1000 0 Vincent -1010 -1000 0 Kent -1011 -1000 0 Robin -1012 -1000 0 Demetrius -1013 -1000 0 Maru -1014 -1000 0 Penny -1015 -1000 0 Pam -1016 -1000 0 Leah -1017 -1000 0 Marnie -1018 -1000 0 Jas -1019 -1000 0 Shane -1020 -1000 0 Harvey -1021 -1000 0 Gus -1022 -1000 0 Elliott -1023 -1000 0 Caroline -1024 -1000 0 Pierre -1025 -1000 0 Willy -1027 -1000 0 Clint -1028 -1000 0 Linus -1029 -1000 0/skippable/viewport 57 23 true/move farmer 0 -5 0/pause 250/pause 1000/speak MPP_Marlon \"{{i18n:Data_Events.2523800001.001}}\"/animate farmer false false 250 12 13 12 14 12 13/pause 1500/speak MPP_Marlon \"{{i18n:Data_Events.2523800001.002}}\"/emote farmer 8/speak MPP_Marlon \"{{i18n:Data_Events.2523800001.003}}\"/emote farmer 16/speak MPP_Marlon \"{{i18n:Data_Events.2523800001.004}}\"/message \"{{i18n:Data_Events.2523800001.005}}\"/speak MPP_Marlon \"{{i18n:Data_Events.2523800001.006}}\"/pause 1000/globalFade/viewport -500 -500/changeLocation Town/warp Lewis 28 59/warp MPP_Marlon 29 60/warp farmer 30 59/warp George 25 63/warp Alex 26 63/warp Evelyn 27 63/warp  Sam 31 63/warp Sebastian 32 63/warp Abigail 33 63/warp  Haley 25 65/warp Emily 26 65/warp  Jodi 31 65/warp Vincent 32 65/warp Kent 33 65/warp Robin 25 67/warp Demetrius 26 67/warp Maru 27 67/warp Penny 31 67/warp Pam 32 67/warp Leah 33 67/warp Marnie 25 69/warp Jas 26 69/warp Shane 27 69/warp Harvey 31 69/warp Gus 32 69/warp Elliott 33 69/warp Caroline 25 71/warp Pierre 26 71/warp Willy 31 71/warp Clint 32 71/warp Linus 33 71/faceDirection farmer 2/viewport 29 67 true/pause 1000/speak MPP_Marlon \"{{i18n:Data_Events.2523800001.007}}\"/textAboveHead Abigail \"Monsters? Really?\"/textAboveHead Demetrius \"{{i18n:Data_Events.2523800001.008}}\"/pause 500/textAboveHead Harvey \"{{i18n:Data_Events.2523800001.009}}\"/textAboveHead George \"{{i18n:Data_Events.2523800001.010}}\"/pause 500/pause 250/textAboveHead Clint \"{{i18n:Data_Events.2523800001.011}}\"/pause 2000/move farmer 0 1 2/move Lewis 0 1 2/speak Lewis \"{{i18n:Data_Events.2523800001.012}}\"/faceDirection Lewis 1/pause 500/faceDirection Lewis 2/speak Lewis \"{{i18n:Data_Events.2523800001.013}}\"/emote Caroline 40 true/pause 100/emote Sam 16 true/pause 50/emote Marnie 28 true/pause 150/emote George 24 true/pause 25/emote Penny 28 true/pause 100/emote Harvey 40 true/pause 100/textAboveHead Haley \"{{i18n:Data_Events.2523800001.014}}\"/pause 100/pause 3000/end"
+                "2523800000/": "continue/ 64 15/ farmer 57 30 0 MPP_Marlon 57 23 2 Lewis -999 -1000 2 George -1000 -1000 0 Alex -1001 -1000 0 Evelyn -1002 -1000 0  Sam -1003 -1000 0 Sebastian -1004 -1000 0 Abigail -1005 -1000 0  Haley -1006 -1000 0 Emily -1007 -1000 0  Jodi -1009 -1000 0 Vincent -1010 -1000 0 Kent -1011 -1000 0 Robin -1012 -1000 0 Demetrius -1013 -1000 0 Maru -1014 -1000 0 Penny -1015 -1000 0 Pam -1016 -1000 0 Leah -1017 -1000 0 Marnie -1018 -1000 0 Jas -1019 -1000 0 Shane -1020 -1000 0 Harvey -1021 -1000 0 Gus -1022 -1000 0 Elliott -1023 -1000 0 Caroline -1024 -1000 0 Pierre -1025 -1000 0 Willy -1027 -1000 0 Clint -1028 -1000 0 Linus -1029 -1000 0/ skippable/ viewport 57 23 true/ move farmer 0 -5 0/ pause 250/ pause 1000/ speak MPP_Marlon \"{{i18n:Data_Events.2523800001.001}}\"/ animate farmer false false 250 12 13 12 14 12 13/ pause 1500/ speak MPP_Marlon \"{{i18n:Data_Events.2523800001.002}}\"/ emote farmer 8/ speak MPP_Marlon \"{{i18n:Data_Events.2523800001.003}}\"/ emote farmer 16/ speak MPP_Marlon \"{{i18n:Data_Events.2523800001.004}}\"/  emote farmer 32/ speak MPP_Marlon \"{{i18n:Data_Events.2523800001.005}}\"/ pause 1000/ globalFade/ viewport -500 -500/ changeLocation Town/ warp Lewis 28 59/ warp MPP_Marlon 29 60/ warp farmer 30 59/ warp George 25 63/ warp Alex 26 63/ warp Evelyn 27 63/ warp  Sam 31 63/ warp Sebastian 32 63/ warp Abigail 33 63/ warp  Haley 25 65/ warp Emily 26 65/ warp  Jodi 31 65/ warp Vincent 32 65/ warp Kent 33 65/ warp Robin 25 67/ warp Demetrius 26 67/ warp Maru 27 67/ warp Penny 31 67/ warp Pam 32 67/ warp Leah 33 67/ warp Marnie 25 69/ warp Jas 26 69/ warp Shane 27 69/ warp Harvey 31 69/ warp Gus 32 69/ warp Elliott 33 69/ warp Caroline 25 71/ warp Pierre 26 71/ warp Willy 31 71/ warp Clint 32 71/ warp Linus 33 71/ faceDirection farmer 2/ viewport 29 67 true/ pause 1000/ speak MPP_Marlon \"{{i18n:Data_Events.2523800001.006}}\"/ textAboveHead Abigail \"Monsters? Really?\"/ textAboveHead Demetrius \"{{i18n:Data_Events.2523800001.007}}\"/ pause 500/ textAboveHead Harvey \"{{i18n:Data_Events.2523800001.008}}\"/ textAboveHead George \"{{i18n:Data_Events.2523800001.009}}\"/ pause 500/ pause 250/ textAboveHead Clint \"{{i18n:Data_Events.2523800001.010}}\"/ pause 2000/ move farmer 0 1 2/ move Lewis 0 1 2/ speak Lewis \"{{i18n:Data_Events.2523800001.011}}\"/ faceDirection Lewis 1/ pause 500/ faceDirection Lewis 2/ speak Lewis \"{{i18n:Data_Events.2523800001.012}}\"/ emote Caroline 40 true/ pause 100/ emote Sam 16 true/ pause 50/ emote Marnie 28 true/ pause 150/ emote George 24 true/ pause 25/ emote Penny 28 true/ pause 100/ emote Harvey 40 true/ pause 100/ textAboveHead Haley \"{{i18n:Data_Events.2523800001.013}}\"/ pause 100/ pause 3000/ end"
             },
             "When": {
                 "HasReadLetter |contains=Arbitrary_MonstrousTownMeeting": true,
-                "Weather |contains=sun": true,
+                "Weather |contains=Sun": true,
                 "Query: {{Time}} <= 1400": true
             },
             "Update": "OnTimeChange"
@@ -29,7 +29,7 @@
         {
             "LogName": "Dhampir - 25238/code/StringData/Data_Events - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
                 "DeveloperNotes_Data_Events_Dhampir.001": "+--------------------------------------------+",
                 "DeveloperNotes_Data_Events_Dhampir.002": "|            Data/Events/Dhampir             |",
@@ -67,6 +67,7 @@
             "When":  {
                 "HasSeenEvent |contains=2523800101": true,
                 "Query: {{Hearts:Dhampir}} >= 2": true,
+                "Weather |contains=Sun": true,
                 "Query: {{Time}} >= 1000 AND {{Time}} <= 1400": true
             },
             "Update": "OnTimeChange"
@@ -81,6 +82,7 @@
             "When":  {
                 "HasSeenEvent |contains=2523800102": true,
                 "Query: {{Hearts:Dhampir}} >= 3": true,
+                "Weather |contains=Sun": true,
                 "Query: {{Time}} >= 1200 AND {{Time}} <= 1700": true
             },
             "Update": "OnTimeChange"
@@ -95,6 +97,7 @@
             "When":  {
                 "HasSeenEvent |contains=2523800103": true,
                 "Query: {{Hearts:Dhampir}} >= 4": true,
+                "Weather |contains=Sun": true,
                 "Query: {{Time}} >= 1800 AND {{Time}} <= 2200": true
             },
             "Update": "OnTimeChange"
@@ -124,6 +127,7 @@
             "When":  {
                 "HasSeenEvent |contains=2523800105": true,
                 "Query: {{Hearts:Dhampir}} >= 8": true,
+                "Weather |contains=Sun": true,
                 "Query: {{Time}} >= 1100 AND {{Time}} <= 1600": true
             },
             "Update": "OnTimeChange"
@@ -157,7 +161,7 @@
             "Update": "OnTimeChange"
         },
         {
-            "Logname": "Dhampir - 2523800109 - Treason",
+            "Logname": "Dhampir - 2523800109 - Reunion I",
             "Action": "EditData",
             "Target": "Data/Events/Backwoods",
             "Entries": {
@@ -171,7 +175,7 @@
             "Update": "OnTimeChange"
         },
         {
-            "Logname": "Dhampir - 2523800110 - Reunion",
+            "Logname": "Dhampir - 2523800110 - Reunion II",
             "Action": "EditData",
             "Target": "Data/Events/AdventureGuild",
             "Entries": {
@@ -187,7 +191,7 @@
         {
             "LogName": "Djinn - 25238/code/StringData/Data_Events - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
                 "DeveloperNotes_Data_Events_Djinn.001": "+--------------------------------------------+",
                 "DeveloperNotes_Data_Events_Djinn.002": "|             Data/Events/Djinn              |",
@@ -195,7 +199,7 @@
             }
         },
         {
-            "Logname": "Dhampir - 2523800100 - SpecialOrder Trigger Event",
+            "Logname": "Djinn - 2523800200 - SpecialOrder Trigger Event",
             "Action": "EditData",
             "Target": "Data/Events/Farm",
             "Entries": {
@@ -224,6 +228,7 @@
             },
             "When":  {
                 "HasSeenEvent |contains=2523800201": true,
+                "Weather |contains=sunny": true,
                 "Query: {{Hearts:Djinn}} >= 2": true
             },
             "Update": "OnTimeChange"
@@ -251,6 +256,7 @@
             },
             "When":  {
                 "HasSeenEvent |contains=2523800203": true,
+                "HasSeenEvent |contains=2523800000": true,
                 "Query: {{Hearts:Djinn}} >= 6": true
             },
             "Update": "OnTimeChange"
@@ -299,7 +305,7 @@
             "Action": "EditData",
             "Target": "Data/Events/ArchaeologyHouse",
             "Entries": {
-                "2523800208/": "continue/-500 -500/Gunther 3 8 2 farmer 10 12 3 MPP_Marlon 19 5 0/ skippable/ viewport 16 10/ pause 1000/ emote farmer 40/ pause 1500/ move farmer 0 -2 3/ pause 500/ advancedMove MPP_Marlon false 0 1 1 0 2 10/ pause 1000/ emote farmer 12/ pause 1000/ advancedMove MPP_Marlon false -3 0 2 10/ pause 1000/ advancedMove farmer false 2 0 4 10/ pause 2500/ emote farmer 28 true/ faceDirection MPP_Marlon 3/ pause 1000/ emote MPP_Marlon 8/ faceDirection farmer 2/ advancedMove MPP_Marlon false -3 0 0 4 3 10/ pause 3000/ faceDirection farmer 1/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.001}}\"/ pause 250/ animate farmer false false 125 6 7 6 8 6 8/ pause 1500/ emote MPP_Marlon 40/ speak Marlon \"{{i18n:Data_Events.2523800208.002}}\"/ emote farmer 28/ pause 250/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.003}}\"/ faceDirection MPP_Marlon 2/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.004}}\"/ faceDirection MPP_Marlon 3/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.005}}\"/ emote farmer 16/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.006}}\"/ pause 250/ advancedMove MPP_Marlon false 0 -4 -6 0 0 4 4 10/ advancedMove farmer false 2 0 0 -4 -6 0 0 3 2 10/ pause 7500/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.007}}\"/ pause 250/ emote farmer 32/ pause 250/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.008}}\"/ faceDirection farmer 1/ advancedMove MPP_Marlon false 0 1 -5 0 4 10/ proceedPosition MPP_Marlon/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.009}}\"/ advancedMove MPP_Marlon false 0 4 2 10/ proceedPosition MPP_Marlon/playSound doorOpen/ pause 250/ warp MPP_Marlon -100 -100/ pause 500/ playSound doorClose/ pause 1000/ end"
+                "2523800208/": "continue/-500 -500/Gunther 3 8 2 farmer 10 12 3 MPP_Marlon 19 5 0/ skippable/ viewport 16 10/ pause 1000/ emote farmer 40/ pause 1500/ move farmer 0 -2 3/ pause 500/ advancedMove MPP_Marlon false 0 1 1 0 2 10/ pause 1000/ emote farmer 12/ pause 1000/ advancedMove MPP_Marlon false -3 0 2 10/ pause 1000/ advancedMove farmer false 2 0 4 10/ pause 2500/ emote farmer 28 true/ faceDirection MPP_Marlon 3/ pause 1000/ emote MPP_Marlon 8/ faceDirection farmer 2/ advancedMove MPP_Marlon false -3 0 0 4 3 10/ pause 3000/ faceDirection farmer 1/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.001}}\"/ pause 250/ animate farmer false false 125 6 7 6 8 6 8/ pause 1500/ emote MPP_Marlon 40/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.002}}\"/ emote farmer 28/ pause 250/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.003}}\"/ faceDirection MPP_Marlon 2/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.004}}\"/ faceDirection MPP_Marlon 3/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.005}}\"/ emote farmer 16/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.006}}\"/ pause 250/ advancedMove MPP_Marlon false 0 -4 -6 0 0 4 4 10/ advancedMove farmer false 2 0 0 -4 -6 0 0 3 2 10/ pause 7500/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.007}}\"/ pause 250/ emote farmer 32/ pause 250/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.008}}\"/ faceDirection farmer 1/ advancedMove MPP_Marlon false 0 1 -5 0 4 10/ proceedPosition MPP_Marlon/ speak MPP_Marlon \"{{i18n:Data_Events.2523800208.009}}\"/ advancedMove MPP_Marlon false 0 4 2 10/ proceedPosition MPP_Marlon/playSound doorOpen/ pause 250/ warp MPP_Marlon -100 -100/ pause 500/ playSound doorClose/ pause 1000/ end"
             },
             "When":  {
                 "HasSeenEvent |contains=2523800207": true,
@@ -318,6 +324,187 @@
                 "HasSeenEvent |contains=2523800208": true,
                 "Query: {{Hearts:Djinn}} >= 14": true,
                 "Query: {{Time}} >= 600 AND {{Time}} <= 1400": true
+            },
+            "Update": "OnTimeChange"
+        },
+
+        
+        {
+            "LogName": "Kraken - 25238/code/StringData/Data_Events - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Events_Kraken.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Events_Kraken.002": "|             Data/Events/Kraken              |",
+                "DeveloperNotes_Data_Events_Kraken.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "Logname": "Kraken - 2523800400 - SpecialOrder Trigger Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800400/": "null"
+            }
+        },
+        {
+            "LogName": "Kraken - 2523800401 - Pendant I",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "2523800401/": "ocean/ -500 -500/ farmer 38 0 2 DBLorin 75 8 1 Kraken 77 8 3/ skippable/ viewport 38 12 true/ pause 250/ move farmer 0 8 2/ message \"{{i18n:Data_Events.2523800401.001}}\"/ emote farmer 8/ faceDirection farmer 1/ globalFade 0.015/ viewport 75 12 true/ globalFadeToClear 0.015/ warp farmer 54 13/ pause 1000/ advancedMove farmer false 11 0 0 -4 1 1000/ pause 1500/ speak Kraken \"{{i18n:Data_Events.2523800401.002}}\"/ speak DBLorin \"{{i18n:Data_Events.2523800401.003}}\"/ emote Kraken 12 true/ emote DBLorin 12/ emote farmer 8/ move farmer 7 0 1 true/  move DBLorin -1 0 1 true/  emote DBLorin 16 true/  move Kraken -1 0 3 true/ speak DBLorin \"{{i18n:Data_Events.2523800401.004}}\"/ speak Kraken \"{{i18n:Data_Events.2523800401.005}}\"/ speak DBLorin \"{{i18n:Data_Events.2523800401.006}}\"/ emote Kraken 16/ speak Kraken \"{{i18n:Data_Events.2523800401.007}}\"/ speed Kraken 4/ advancedMove Kraken false -10 0 0 3 2 1/ speed DBLorin 6/ advancedMove DBLorin false -8 0 0 3 -3 0 0 2 -20 0 1 1/ faceDirection farmer 0 true/ pause 2500/ faceDirection farmer 3/ emote Kraken 12/ faceDirection Kraken 0/ speed Kraken 2/ pause 500/ advancedMove Kraken false 0 -2 3 0/ pause 2000/  speak Kraken \"{{i18n:Data_Events.2523800401.008}}\"/ emote farmer 8/ speak Kraken \"{{i18n:Data_Events.2523800401.009}}\"/ animate farmer true false 125 6 7 6 8 6 8/ pause 500/ speak Kraken \"{{i18n:Data_Events.2523800401.010}}\"/ emote farmer 28/ pause 1000/ end"
+            },
+            "When":  {
+                "HasReadLetter |contains=Kraken_SpecialOrderThanks": true,
+                "HasFlag |contains=beachBridgeFixed": true,
+                "Weather |contains=Rain, Storm": true,
+                "Query: {{Time}} >= 1900 AND {{Time}} <= 2300": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - 2523800402 - Pendant II",
+            "Action": "EditData",
+            "Target": "Data/Events/AdventureGuild",
+            "Entries": {
+                "2523800402/": "MarlonsTheme/ -500 -500/ farmer 6 19 0 DBLorin 5 13 0 MPP_Marlon 5 11 2/ skippable/ viewport 7 11 true/ pause 250/ move farmer 0 -2 0/ emote farmer 16/ speak MPP_Marlon \"{{i18n:Data_Events.2523800402.001}}\"/ emote DBLorin 12/ speak DBLorin \"{{i18n:Data_Events.2523800402.002}}\"/ move farmer 0 -4 0/ emote farmer 8 true/ emote DBLorin 16/ faceDirection DBLorin 1/ speak DBLorin \"{{i18n:Data_Events.2523800402.003 |MPP_EK_Kraken_Lower03={{MPP_EK_Kraken_Lower_T |valueAt=3}} }}\"/ faceDirection DBLorin 0/  speak DBLorin \"{{i18n:Data_Events.2523800402.004}}\"/ speak MPP_Marlon \"{{i18n:Data_Events.2523800402.005 |MPP_EK_Kraken_Lower09={{MPP_EK_Kraken_Lower_T |valueAt=9}} }}\"/ animate farmer true false 125 12 13 12 14 12 13/  pause 1000/  faceDirection DBLorin 1/ emote DBLorin 16/ speak DBLorin \"{{i18n:Data_Events.2523800402.006}}\"/ emote MPP_Marlon 12/ speak MPP_Marlon \"{{i18n:Data_Events.2523800402.007}}\"/ emote DBLorin 16 true/ faceDirection DBLorin 0/ speak DBLorin \"{{i18n:Data_Events.2523800402.008}}\"/ emote MPP_Marlon 12/ speak MPP_Marlon \"{{i18n:Data_Events.2523800402.009}}\"/ emote DBLorin 12 true/ animate DBLorin false false 125 8 9 8 10/ speak DBLorin \"{{i18n:Data_Events.2523800402.010}}\"/ speak MPP_Marlon \"{{i18n:Data_Events.2523800402.011}}\"/ emote DBLorin 12/ advancedMove DBLorin false 0 2 1 0 0 4 2 1/ pause 3500/ warp DBLorin -100 -100/ speak MPP_Marlon \"{{i18n:Data_Events.2523800402.012}}\"/ emote farmer 32/ message \"{{i18n:Data_Events.2523800402.013}}\"/ speak MPP_Marlon \"{{i18n:Data_Events.2523800402.014}}\"/ pause 1000/ end"
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523800401": true,
+                "HasFlag |contains=guildMember": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - 2523800403 - Pendant III",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "2523800403/": "ocean/ -500 -500/ farmer 82 8 1 Kraken -100 -100 2/ skippable/ viewport 88 9 true/ pause 250/ move farmer 4 0 1/ pause 1000/ emote farmer 8 true/ pause 500/ faceDirection farmer 0/ pause 500/ faceDirection farmer 2/ pause 500/ faceDirection farmer 1/ pause 1000/ animate Kraken false false 125 20 20 21 21 20 20 21 21 22 23 24 25 26 27 28 29 30 31 30 31 30 31 64 65 66 67 68 69 70 71 72 73 73 74 74 73 73 74 74 0 0 0 0 0 0/ playSound slosh/ warp Kraken 96 8/ emote farmer 16 true/ pause 4000/ advancedMove farmer false 4 0 1 10/ faceDirection Kraken 3/ advancedMove Kraken false -4 0 3 10/ proceedPosition Kraken/ speak Kraken \"{{i18n:Data_Events.2523800403.001}}\"/ emote farmer 32/ message \"{{i18n:Data_Events.2523800403.002}}\"/ speak Kraken \"{{i18n:Data_Events.2523800403.003 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ emote farmer 28/ faceDirection Kraken 1/ speak Kraken \"{{i18n:Data_Events.2523800403.004}}\"/ advancedMove Kraken false 4 0 1 10/ proceedPosition Kraken/ animate Kraken false false 125 0 0 0 0 0 0 74 74 73 73 74 74 73 73 72 71 70 69 68 67 66 65 64 31 30 31 30 31 30 29 28 27 26 25 24 23 22 21 21 20 20 21 21 20 20/ pause 250/ playSound slosh/ pause 5250/ warp Kraken -100 -100/ pause 1000/ end"
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523800402": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - 2523800404 - Beach Patrol",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "2523800404/": "ocean/ -500 -500/ farmer 39 8 2 Kraken 56 19 0 Elliott -100 -100 2/ skippable/ viewport 39 16 true/ pause 250/ move farmer 0 5 1 true/ move Kraken 0 -13 0 true/ pause 3000/ emote farmer 8/ viewport move 4 0 3000/ speed farmer 4/ move farmer 1 0 1/ warp Elliott 49 11/ emote Elliott 16 true/ faceDirection Kraken 2/ emote Kraken 8 true/ faceDirection farmer 0/ speak Elliott \"{{i18n:Data_Events.2523800404.001}}\"/ emote farmer 8/ speak Elliott \"{{i18n:Data_Events.2523800404.002}}\"/ pause 500/ faceDirection Elliott 3/ pause 500/ faceDirection Elliott 1/ pause 500/ faceDirection Elliott 2/ emote Elliott 8/ speak Elliott \"{{i18n:Data_Events.2523800404.003}}\"/ quickQuestion #{{i18n:Data_Events.2523800404.004}}#{{i18n:Data_Events.2523800404.005}}#{{i18n:Data_Events.2523800404.006}}(break)speak Elliott \"{{i18n:Data_Events.2523800404.007}}\"\\emote Elliott 32 true\\speak Elliott \"{{i18n:Data_Events.2523800404.008}}\"\\faceDirection Elliott 0\\warp Elliott -100 -100\\pause 500\\advancedMove farmer false 7 0 0 -5 4 1\\pause 3000\\speak Kraken \"{{i18n:Data_Events.2523800404.009}}\"\\friendship Kraken 50(break)speak Elliott \"{{i18n:Data_Events.2523800404.010}}\"\\faceDirection Elliott 0\\warp Elliott -100 -100\\pause 500\\advancedMove farmer false 7 0 0 -5 4 1\\pause 3000\\speak Kraken \"{{i18n:Data_Events.2523800404.011}}\"(break)shake Elliott 1000\\speak Elliott \"{{i18n:Data_Events.2523800404.012}}\"\\faceDirection Elliott 0\\warp Elliott -100 -100\\pause 500\\advancedMove farmer false 7 0 0 -5 4 1\\pause 3000\\emote Kraken 12\\speak Kraken \"{{i18n:Data_Events.2523800404.013}}\"\\friendship Kraken -50/ emote farmer 8/ speak Kraken \"{{i18n:Data_Events.2523800404.014}}\"/ faceDirection Kraken 0/ pause 500/ faceDirection Kraken 2/ speak Kraken \"{{i18n:Data_Events.2523800404.015}}\"/ advancedMove Kraken false 1 0 0 -5/ pause 1500/ end"
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523800403": true,
+                "Query: {{Hearts:Kraken}}>=2": true,
+                "Query: {{Time}} >= 1900 AND {{Time}} <= 2300": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - 2523800405 - Lobster Traps",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "2523800405/": "ocean/ -500 -500/ farmer 25 31 2 Kraken -100 -100 2 Willy 32 35 2/ skippable/ addObject 28 36 710/ addObject 29 36 710/ addObject 31 36 710/ addObject 32 36 710/ viewport 33 36 true/ pause 250/ move farmer 0 4 1 true/ emote Willy 8/ move Willy -1 0 2 true/ pause 1500/ move Willy -2 0 2 true/ pause 2000/ move Willy -1 0 2/ pause 1000/ faceDirection Willy 3/ animate farmer false false 125 6 7 6 8 6 8/ pause 750/ speak Willy \"{{i18n:Data_Events.2523800405.001}}\"/ emote farmer 8/ speak Willy \"{{i18n:Data_Events.2523800405.002}}\"/ faceDirection Willy 2/ speak Willy \"{{i18n:Data_Events.2523800405.003}}\"/ faceDirection Willy 3/ emote Willy 8/ speak Willy \"{{i18n:Data_Events.2523800405.004}}\"/ faceDirection Willy 2/ pause 500/ speak Willy \"{{i18n:Data_Events.2523800405.005}}\"/ pause 250/ removeObject 28 36/ move Willy 2 0 0/ playSound doorOpen/ pause 500/ warp Willy -100 -100/ pause 250/ playSound doorClose/ move farmer 7 0 2/ pause 500/ emote farmer 16 true/ animate Kraken false false 125 20 20 21 21 20 20 21 21 22 23 24 25 26 27 26 27 26 27 56 57 58 59 60 60 61 61 60 60 61 61 60 60 61 61 16 16 16 16 16 16/ warp Kraken 32 38/ pause 5000/ animate Kraken false true 10 18/ playSound slosh/ speak Kraken \"{{i18n:Data_Events.2523800405.006}}\"/ emote farmer 28/ animate farmer false false 250 0 1 0 2 0 1/ pause 1750/ speak Kraken \"{{i18n:Data_Events.2523800405.007}}\"/ emote Kraken 32/ quickQuestion #{{i18n:Data_Events.2523800405.008}}#{{i18n:Data_Events.2523800405.009}}(break)animate farmer false false 250 0 1 0 2 0 1\\pause 1000\\emote Kraken 12\\speak Kraken \"{{i18n:Data_Events.2523800405.010}}\"\\emote farmer 28(break)animate farmer false false 250 0 1 0 2 0 1\\pause 1500\\speak Kraken \"{{i18n:Data_Events.2523800405.011}}\"\\emote Kraken 40/ speak Kraken \"{{i18n:Data_Events.2523800405.012}}\"/ animate Kraken false true 10 16/ pause 500/ speak Kraken \"{{i18n:Data_Events.2523800405.013}}\"/ animate Kraken false false 125 16 16 16 16 16 16 61 61 60 60 61 61 60 60 61 61 60 60 61 61 60 60 59 58 57 56 27 26 27 26 27 26 25 24 23 22 21 21 20 20 21 21 20 20/ pause 250/ playSound slosh/ pause 4500/ warp Kraken -100 -100/ pause 500/ end"
+            },
+            "When":  {
+                "HasSeenEvent |contains=2523800404": true,
+                "Query: {{Hearts:Kraken}}>=4": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - 2523800406 - Remarkably Human",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "2523800406/": "continue/ -500 -500/ farmer 7 91 1 Kraken -100 -100 2 Jodi -100 -100 2/ skippable/ viewport 13 95 true/ pause 250/ move farmer 5 0 1/ message \"{{i18n:Data_Events.2523800406.001}}\"/ emote farmer 8/ faceDirection farmer 3/ message \"{{i18n:Data_Events.2523800406.002}}\"/ faceDirection farmer 2/ emote farmer 16 true/ move farmer 0 2 2 true/ animate Kraken false false 125 20 20 21 21 20 20 21 21 22 23 24 25 26 27 26 27 26 27 56 57 58 59 60 60 61 61 60 60 61 61 60 60 61 61 16 16 16 16 16 16/ warp Kraken 12 97/ pause 5000/ animate Kraken false true 10 18/ speak Kraken \"{{i18n:Data_Events.2523800406.003}}\"/ emote farmer 8/ speak Kraken \"{{i18n:Data_Events.2523800406.004}}\"/ animate Kraken false true 10 17/ pause 1000/ animate Kraken false true 10 19/ pause 1000/ animate Kraken false true 10 18/ speak Kraken \"{{i18n:Data_Events.2523800406.005}}\"/ emote farmer 8/ playSound doorOpen/ warp Jodi 10 86/ faceDirection farmer 0/ emote farmer 16 true/ emote Kraken 16/move Jodi 0 7 1 true/ pause 750/ move farmer 1 0 3 true/ waitForAllStationary/ pause 250/ speak Jodi \"{{i18n:Data_Events.2523800406.006}}\"/ faceDirection farmer 3/ pause 500/ emote Jodi 8/ faceDirection Jodi 2/ pause 500/ jump Jodi 8/ speak Jodi \"{{i18n:Data_Events.2523800406.007}}\"/ emote Kraken 12 true/ pause 100/ faceDirection farmer 2/ speak Kraken \"{{i18n:Data_Events.2523800406.008}}\"/ animate Kraken false true 10 16/ emote Jodi 16 true/ pause 250/ faceDirection farmer 3/ speak Jodi \"{{i18n:Data_Events.2523800406.009}}\"/ animate Kraken false true 10 18/ pause 250/ speak Jodi \"{{i18n:Data_Events.2523800406.010}}\"/ pause 250/ faceDirection farmer 2/ speak Kraken \"{{i18n:Data_Events.2523800406.011}}\"/ faceDirection farmer 3/ speak Jodi \"{{i18n:Data_Events.2523800406.012}}\"/ emote Jodi 32/ faceDirection farmer 2/ speak Kraken \"{{i18n:Data_Events.2523800406.013}}\"/ emote Kraken 60/ pause 500/ emote Kraken 12/ speak Kraken \"{{i18n:Data_Events.2523800406.014}}\"/ pause 250/ faceDirection farmer 3/ speak Jodi \"{{i18n:Data_Events.2523800406.015}}\"/ emote Kraken 40/ faceDirection farmer 2/ speak Kraken \"{{i18n:Data_Events.2523800406.016 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ emote Jodi 20/ faceDirection farmer 3/ speak Jodi \"{{i18n:Data_Events.2523800406.017 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ animate Kraken false true 10 17/ faceDirection farmer 2/ pause 500/ speak Kraken \"{{i18n:Data_Events.2523800406.018}}\"/ animate Kraken false true 10 18/ pause 250/ speak Kraken \"{{i18n:Data_Events.2523800406.019}}\"/ animate Kraken false true 10 16/ speak Kraken \"{{i18n:Data_Events.2523800406.020}}\"/ animate Kraken false false 125 16 16 16 16 16 16 61 61 60 60 61 61 60 60 61 61 60 60 61 61 60 60 59 58 57 56 27 26 27 26 27 26 25 24 23 22 21 21 20 20 21 21 20 20/ pause 4750/ warp Kraken -100 -100/ pause 250/ faceDirection farmer 3/ speak Jodi \"{{i18n:Data_Events.2523800406.021 |MPP_EK_Kraken_Upper01={{MPP_EK_Kraken_Upper_T |valueAt=1}} |MPP_EK_Kraken_Lower01={{MPP_EK_Kraken_Lower_T |valueAt=1}} }}\"/ faceDirection Jodi 1/ speak Jodi \"{{i18n:Data_Events.2523800406.022}}\"/ emote Jodi 32/ speak Jodi \"{{i18n:Data_Events.2523800406.023 |MPP_EK_Kraken_Lower01={{MPP_EK_Kraken_Lower_T |valueAt=1}} |MPP_EK_Kraken_Lower03={{MPP_EK_Kraken_Lower_T |valueAt=3}} }}\"/ emote farmer 32/ pause 1000/ end"
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800405": true,
+                "HasSeenEvent |contains=2523800000": true,
+                "Query: {{Hearts:Kraken}}>=6": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - 2523800407 - Debts",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800407/": "continue/ -500 -500/ farmer 0 0 2 Kraken 0 0 0/ skippable/ pause 1000/ speak Kraken \"{{i18n:Data_Events.2523800407.001}}\"/ pause 250/ emote farmer 8/ speak Kraken \"{{i18n:Data_Events.2523800407.002}}\"/ emote Kraken 60/ speak Kraken \"{{i18n:Data_Events.2523800407.003}}\"/ pause 500/ emote farmer 88 true/ pause 250/ emote Kraken 12/ speak Kraken \"{{i18n:Data_Events.2523800407.004}}\"/ emote farmer 32/ speak Kraken \"{{i18n:Data_Events.2523800407.005}}\"/ pause 1000/ end"
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800406": true,
+                "Query: {{Hearts:Kraken}}>=8": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - 2523800408 - Not A Date Y1",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "2523800408/": "continue/ -500 -500/ farmer 5 91 1 Kraken 11 91 3 Jodi -100 -100 2 Vincent -100 -100 2 Sam -100 -100 2/ skippable/ viewport 11 91 true/ pause 250/ move farmer 4 0 1/ pause 250/ speak Kraken \"{{i18n:Data_Events.2523800408.001}}\"/ emote farmer 32/ faceDirection Kraken 0/ pause 250/ advancedMove farmer false 0 -1 1 0 0 -3/ pause 1000/ advancedMove Kraken false -1 0 0 -4/ pause 500/ globalFade 0.015 true/ pause 1000/ playSound doorOpen/ viewport -500 -500/ changeLocation MPP_EK_SamHouse/ stopAdvancedMoves/ warp farmer 4 21/ warp Kraken 4 22/ positionOffset farmer 0 20 /faceDirection farmer 0/ viewport 9 14 true/ warp Jodi 4 5/ faceDirection Jodi 0 true/ warp Sam 7 15/ faceDirection Sam 3 true/ warp Vincent 11 21/ faceDirection Vincent 1/ pause 500/ playSound doorClose/ move Sam -3 0 2 true/ move farmer 0 -2 0 true/ advancedMove Kraken false 0 -2 -1 0 0 -1/ playSound doorClose/ proceedPosition Kraken/ pause 500/ emote farmer 32 true /emote Kraken 60/ faceDirection Sam 1/ speak Sam \"{{i18n:Data_Events.2523800408.002}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.003}}\"/ faceDirection Sam 2/ speak Sam \"{{i18n:Data_Events.2523800408.004}}\"/ advancedMove farmer false 0 -1 -1 0 0 -5 2 10/ advancedMove Sam false 3 0 0 -9 0 -1 4 10/ pause 1000/ advancedMove Kraken false 0 -5 4 10/ proceedPosition Kraken/ advancedMove Jodi false 1 0 0 3 2 0 0 5 2 10/ advancedMove Vincent false 0 -2 4 10/ proceedPosition Vincent/ doAction 11 18/ pause 500/ advancedMove Vincent false 0 -4 -4 0/ proceedPosition Vincent/ emote Vincent 16/ speak Vincent \"{{i18n:Data_Events.2523800408.005}}\"/ faceDirection farmer 1 true/ faceDirection Kraken 1 true/ emote farmer 16 true/ emote Kraken 16 true/ emote Jodi 16/ speak Jodi \"{{i18n:Data_Events.2523800408.006}}\"/ speak Kraken \"{{i18n:Data_Events.2523800408.007}}\"/ faceDirection Vincent 0/ speak Vincent \"{{i18n:Data_Events.2523800408.008 |MPP_EK_Kraken_Upper01={{MPP_EK_Kraken_Upper_T |valueAt=1}} }}\"/ emote Jodi 16/ speak Jodi \"{{i18n:Data_Events.2523800408.009}}\"/ advancedMove Vincent false -2 0 0 -1 3 10/ emote Jodi 12/ move Jodi -2 0 2 true/ speak Jodi \"{{i18n:Data_Events.2523800408.010}}\"/ speak Vincent \"{{i18n:Data_Events.2523800408.011}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.012}}\"/ faceDirection Vincent 0/ speak Vincent \"{{i18n:Data_Events.2523800408.013}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.014}}\"/ advancedMove Vincent false 2 0 0 -6 -3 0 4 10/ pause 500/ emote Kraken 40/ pause 500/ speak Kraken \"{{i18n:Data_Events.2523800408.015}}\"/ move Jodi 0 1 3/ speak Jodi \"{{i18n:Data_Events.2523800408.016 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ speak Kraken \"{{i18n:Data_Events.2523800408.017}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.018}}\"/ playSound croak/ faceDirection Kraken 0/ pause 500/ emote farmer 60/ speak Jodi \"{{i18n:Data_Events.2523800408.019}}\"/ pause 500/ globalFade 0.015 true/ pause 1000/ viewport 9 9 true/ warp farmer 3 8/ faceDirection farmer 0 true/ warp Kraken 4 8/ faceDirection Kraken 0 true/ warp Jodi 3 5/ faceDirection Jodi 2 true/ warp Vincent 2 5/ faceDirection Vincent 2 true/ warp Sam 1 7/ faceDirection Sam 1 true/ emote Sam 40 true/ pause 150/ emote Jodi 40 true/ pause 250/ emote Vincent 40 true/ pause 100/ emote Kraken 40 true/ pause 150/ emote farmer 40/ pause 1000/ speak Jodi \"{{i18n:Data_Events.2523800408.020 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ speak Kraken \"{{i18n:Data_Events.2523800408.021}}\"/ emote Jodi 20/ speak Jodi \"{{i18n:Data_Events.2523800408.022}}\"/ speak Kraken \"{{i18n:Data_Events.2523800408.023}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.024}}\"/ advancedMove Kraken false 2 0 0 -3 4 10/ pause 1000/ advancedMove Jodi false 1 0 4 1000 1 0 1 250 -1 0 4 1000 1 0 1 250 -1 0 4 1000/ pause 1000/ emote Vincent 40 true/ pause 600/ emote farmer 40 true/ pause 1000/ emote Sam 40 true/ pause 800/ emote Vincent 40 true/ pause 900/ emote Sam 40/ pause 500/ faceDirection Jodi 1/ emote Jodi 32/ speak Jodi \"{{i18n:Data_Events.2523800408.025 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} |MPP_EK_Kraken_Lower09={{MPP_EK_Kraken_Lower_T |valueAt=9}} }}\"/ emote Kraken 80 true/ faceDirection Kraken 3/  playSound breakingGlass/ faceDirection Vincent 1 true/ emote farmer 16 true/ emote Jodi 16 true/ emote Sam 16 true/ emote Vincent 16 true/ pause 250/ emote Kraken 28/ speak Kraken \"{{i18n:Data_Events.2523800408.026}}\"/ speak Kraken \"{{i18n:Data_Events.2523800408.027}}\"/ emote Jodi 76 true/ pause 500/ speak Jodi \"{{i18n:Data_Events.2523800408.028}}\"/ emote Kraken 60/ speak Kraken \"{{i18n:Data_Events.2523800408.029}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.030}}\"/ pause 250/ emote Kraken 28/ speak Kraken \"{{i18n:Data_Events.2523800408.031}}\"/ faceDirection Kraken 2 true/ faceDirection Jodi 2/ speak Kraken \"{{i18n:Data_Events.2523800408.032}}\"/ emote Vincent 16 true/ faceDirection Jodi 3 true/ faceDirection Kraken 3 true/ speak Vincent \"{{i18n:Data_Events.2523800408.033}}\"/ emote Kraken 60 true/ pause 250/ speak Kraken \"{{i18n:Data_Events.2523800408.034}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.035}}\"/ faceDirection Jodi 1/ speak Jodi \"{{i18n:Data_Events.2523800408.036}}\"/ emote Jodi 32/ pause 700/ speak Kraken \"{{i18n:Data_Events.2523800408.037}}\"/ emote Kraken 20 true/ pause 250/ emote Jodi 20/ globalFade 0.015 true/ pause 1000/ viewport -500 -500/ changeLocation Beach/ pause 1000/ playMusic ocean/ viewport 88 9 true/ warp farmer 90 8/ faceDirection farmer 1 true/ warp Kraken 92 8/ faceDirection Kraken 3 true/ warp Jodi -100 -100/ warp Sam -100 -100/ warp Vincent -100 -100/ pause 1000/ speak Kraken \"{{i18n:Data_Events.2523800408.038}}\"/ faceDirection Kraken 1/ speak Kraken \"{{i18n:Data_Events.2523800408.039}}\"/ faceDirection Kraken 3/ speak Kraken \"{{i18n:Data_Events.2523800408.040}}\"/ advancedMove Kraken false 4 0 1 10/ proceedPosition Kraken/ animate Kraken false false 125 0 0 0 0 0 0 74 74 73 73 74 74 73 73 72 71 70 69 68 67 66 65 64 31 30 31 30 31 30 29 28 27 26 25 24 23 22 21 21 20 20 21 21 20 20/ pause 250/ playSound slosh/ pause 5250/ warp Kraken -100 -100/ pause 1000/ end"
+            },
+            "When": {
+                "Query: {{Year}}=1": true,
+                "HasSeenEvent |contains=2523800407": true,
+                "Query: {{Hearts:Kraken}}>=8": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - 2523800408 - Not A Date Y2+",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "2523800408/": "continue/ -500 -500/ farmer 5 91 1 Kraken 11 91 3 Jodi -100 -100 2 Kent -100 -100 2 Vincent -100 -100 2 Sam -100 -100 2/ skippable/ viewport 11 91 true/ pause 250/ move farmer 4 0 1/ pause 250/ speak Kraken \"{{i18n:Data_Events.2523800408.001}}\"/ emote farmer 32/ faceDirection Kraken 0/ pause 250/ advancedMove farmer false 0 -1 1 0 0 -3/ pause 1000/ advancedMove Kraken false -1 0 0 -4/ pause 500/ globalFade 0.015 true/ pause 1000/ playSound doorOpen/ viewport -500 -500/ changeLocation MPP_EK_SamHouse/ stopAdvancedMoves/ warp farmer 4 21/ warp Kraken 4 22/ positionOffset farmer 0 20 /faceDirection farmer 0/ viewport 9 14 true/ warp Jodi 4 5/ faceDirection Jodi 0 true/ warp Kent 3 5/ faceDirection Kent 0 true/ warp Sam 7 15/ faceDirection Sam 3 true/ warp Vincent 11 21/ faceDirection Vincent 1/ pause 500/ playSound doorClose/ move Sam -3 0 2 true/ move farmer 0 -2 0 true/ advancedMove Kraken false 0 -2 -1 0 0 -1/ playSound doorClose/ proceedPosition Kraken/ pause 500/ emote farmer 32 true /emote Kraken 60/ faceDirection Sam 1/ speak Sam \"{{i18n:Data_Events.2523800408.002}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.003}}\"/ faceDirection Sam 2/ speak Sam \"{{i18n:Data_Events.2523800408.004}}\"/ advancedMove farmer false 0 -1 -1 0 0 -5 2 10/ advancedMove Sam false 3 0 0 -9 0 -1 4 10/ pause 1000/ advancedMove Kraken false 0 -5 4 10/ proceedPosition Kraken/ advancedMove Jodi false 1 0 0 3 2 0 0 5 2 10/ advancedMove Vincent false 0 -2 4 10/ proceedPosition Vincent/ doAction 11 18/ pause 500/ advancedMove Kent false 2 0 4 10/ advancedMove Vincent false 0 -4 -4 0/ proceedPosition Vincent/ emote Vincent 16/ speak Vincent \"{{i18n:Data_Events.2523800408.005}}\"/ faceDirection farmer 1 true/ faceDirection Kraken 1 true/ emote farmer 16 true/ emote Kraken 16 true/ emote Jodi 16/ speak Jodi \"{{i18n:Data_Events.2523800408.006}}\"/ speak Kraken \"{{i18n:Data_Events.2523800408.007}}\"/ faceDirection Vincent 0/ speak Vincent \"{{i18n:Data_Events.2523800408.008}}\"/ emote Jodi 16/ speak Jodi \"{{i18n:Data_Events.2523800408.009}}\"/ advancedMove Vincent false -2 0 0 -1 3 10/ emote Jodi 12/ move Jodi -2 0 2 true/ speak Jodi \"{{i18n:Data_Events.2523800408.010}}\"/ speak Vincent \"{{i18n:Data_Events.2523800408.011}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.012}}\"/ faceDirection Vincent 0/ speak Vincent \"{{i18n:Data_Events.2523800408.013}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.014}}\"/ advancedMove Vincent false 2 0 0 -6 -3 0 4 10/ pause 500/ emote Kraken 40/ pause 500/ speak Kraken \"{{i18n:Data_Events.2523800408.015}}\"/ move Jodi 0 1 3/ speak Jodi \"{{i18n:Data_Events.2523800408.016 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ speak Kraken \"{{i18n:Data_Events.2523800408.017}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.018}}\"/ playSound croak/ faceDirection Kraken 0/ pause 500/ emote farmer 60/ speak Jodi \"{{i18n:Data_Events.2523800408.019}}\"/ pause 500/ globalFade 0.015 true/ pause 1000/ viewport 9 9 true/ warp farmer 3 8/ faceDirection farmer 0 true/ warp Kraken 4 8/ faceDirection Kraken 0 true/ warp Jodi 3 5/ faceDirection Jodi 2 true/ warp Kent 5 7/ faceDirection Kent 3 true/ warp Vincent 2 5/ faceDirection Vincent 2 true/ warp Sam 1 7/ faceDirection Sam 1 true/ emote Sam 40 true/ pause 100/ emote Kent 40 true/ pause 50/ emote Jodi 40 true/ pause 250/ emote Vincent 40 true/ pause 100/ emote Kraken 40 true/ pause 150/ emote farmer 40/ pause 1000/ speak Jodi \"{{i18n:Data_Events.2523800408.020 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ speak Kraken \"{{i18n:Data_Events.2523800408.021}}\"/ emote Jodi 20/ speak Jodi \"{{i18n:Data_Events.2523800408.022}}\"/ speak Kraken \"{{i18n:Data_Events.2523800408.023}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.024}}\"/ advancedMove Kraken false 2 0 0 -3 4 10/ pause 1000/ advancedMove Jodi false 1 0 4 1000 1 0 1 250 -1 0 4 1000 1 0 1 250 -1 0 4 1000/ pause 1000/ emote Vincent 40 true/ pause 600/ emote farmer 40 true/ pause 1000/ emote Kent 40 true/ pause 800/ emote Vincent 40 true/ pause 900/ emote Sam 40/ pause 500/ faceDirection Jodi 1/ emote Jodi 32/ speak Jodi \"{{i18n:Data_Events.2523800408.025 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} |MPP_EK_Kraken_Lower09={{MPP_EK_Kraken_Lower_T |valueAt=9}} }}\"/ emote Kraken 80 true/ faceDirection Kraken 3/  playSound breakingGlass/ faceDirection Vincent 1 true/ faceDirection Kent 0 true/ emote farmer 16 true/ emote Jodi 16 true/ emote Kent 16 true/ emote Sam 16 true/ emote Vincent 16 true/ pause 250/ emote Kraken 28/ speak Kraken \"{{i18n:Data_Events.2523800408.026}}\"/ speak Kraken \"{{i18n:Data_Events.2523800408.027}}\"/ emote Jodi 76 true/ pause 500/ speak Jodi \"{{i18n:Data_Events.2523800408.028}}\"/ emote Kraken 60/ speak Kraken \"{{i18n:Data_Events.2523800408.029}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.030}}\"/ pause 250/ emote Kraken 28/ speak Kraken \"{{i18n:Data_Events.2523800408.031}}\"/ faceDirection Kraken 2 true/ faceDirection Jodi 2/ speak Kraken \"{{i18n:Data_Events.2523800408.032}}\"/ emote Vincent 16 true/ faceDirection Jodi 3 true/ faceDirection Kraken 3 true/ speak Vincent \"{{i18n:Data_Events.2523800408.033}}\"/ emote Kraken 60 true/ pause 250/ speak Kraken \"{{i18n:Data_Events.2523800408.034}}\"/ speak Jodi \"{{i18n:Data_Events.2523800408.035}}\"/ faceDirection Jodi 1/ speak Jodi \"{{i18n:Data_Events.2523800408.036}}\"/ emote Jodi 32/ pause 700/ speak Kraken \"{{i18n:Data_Events.2523800408.037}}\"/ emote Kraken 20 true/ pause 250/ emote Jodi 20/ globalFade 0.015 true/ pause 1000/ viewport -500 -500/ changeLocation Beach/ pause 1000/ playMusic ocean/ viewport 88 9 true/ warp farmer 90 8/ faceDirection farmer 1 true/ warp Kraken 92 8/ faceDirection Kraken 3 true/ warp Jodi -100 -100/ warp Kent -100 -100/ warp Sam -100 -100/ warp Vincent -100 -100/ pause 1000/ speak Kraken \"{{i18n:Data_Events.2523800408.038}}\"/ faceDirection Kraken 1/ speak Kraken \"{{i18n:Data_Events.2523800408.039}}\"/ faceDirection Kraken 3/ speak Kraken \"{{i18n:Data_Events.2523800408.040}}\"/ advancedMove Kraken false 4 0 1 10/ proceedPosition Kraken/ animate Kraken false false 125 0 0 0 0 0 0 74 74 73 73 74 74 73 73 72 71 70 69 68 67 66 65 64 31 30 31 30 31 30 29 28 27 26 25 24 23 22 21 21 20 20 21 21 20 20/ pause 250/ playSound slosh/ pause 5250/ warp Kraken -100 -100/ pause 1000/ end"
+            },
+            "When": {
+                "Query: {{Year}}>=2": true,
+                "HasSeenEvent |contains=2523800407": true,
+                "Query: {{Hearts:Kraken}}>=8": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - 2523800409 - Falling Deeper",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "2523800409/": "ocean/ -500 -500/ farmer 87 8 1 Kraken 93 8 1/ skippable/ viewport -500 -500 true/ pause 500/ changeLocation MPP_EK_Beach/ viewport 88 9 true/ warp Kraken 93 8 true/ pause 1000/ move farmer 4 0 1/ pause 500/ speak Kraken \"{{i18n:Data_Events.2523800409.001}}\"/ faceDirection Kraken 3/ speak Kraken \"{{i18n:Data_Events.2523800409.002}}\"/ emote farmer 8/ faceDirection Kraken 3/ speak Kraken \"{{i18n:Data_Events.2523800409.003}}\"/ pause 500/ globalFade 0.015 true/ pause 1000/ viewport -500 -500/ changeLocation MPP_EK_KrakenRoom/ pause 1000/ playMusic ocean/ warp farmer 5 9/ faceDirection farmer 0 true/ warp Kraken 5 7/ faceDirection Kraken 2 true/ viewport 5 9 true/ pause 1000/ speak Kraken \"{{i18n:Data_Events.2523800409.004}}\"/ faceDirection Kraken 0/ speak Kraken \"{{i18n:Data_Events.2523800409.005}}\"/ faceDirection Kraken 2/ speak Kraken \"{{i18n:Data_Events.2523800409.006}}\"/ emote Kraken 28/ speak Kraken \"{{i18n:Data_Events.2523800409.007}}\"/ move Kraken 0 -1 0/ speak Kraken \"{{i18n:Data_Events.2523800409.008}}\"/ faceDirection Kraken 2/ pause 750/ emote Kraken 60/ pause 500/ speak Kraken \"{{i18n:Data_Events.2523800409.009}}\"/ pause 250/ message \"{{i18n:Data_Events.2523800409.010 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ pause 1000/ end"
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800408": true,
+                "Query: {{Hearts:Kraken}}>=10": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - 2523800410 - Filth",
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                "2523800410/": "Saloon1/ -500 -500/ farmer -100 -100 0 Kraken -100 -100 0 Jodi 4 19 2 Caroline 3 21 0 Pierre 2 20 1 Gus 14 18 2 Emily 17 17 0 Harvey 18 22 2 Shane 19 23 3 DBLorin 16 20 0/ skippable/ viewport 14 18 true/ advancedMove Emily true -2 0 4 10000 3 0 4 6000 -8 0 4 13000 0 1 2 20000 0 -1 7 0 4 15000/ pause 1000/ playSound doorOpen/ warp farmer 14 24/ pause 250/ advancedMove farmer false 0 -4 4 10/ pause 500 / warp Kraken 14 24/ pause 250/ advancedMove Kraken false 0 -3 4 10/ pause 250/ playSound doorClose/ pause 1000/ speak Gus \"{{i18n:Data_Events.2523800410.001 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ emote farmer 40/ emote Gus 40/ faceDirection Caroline 1/ emote Caroline 32 true/ pause 250/ faceDirection Jodi 1/ speak Caroline \"{{i18n:Data_Events.2523800410.002 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ faceDirection Kraken 3 true/ faceDirection farmer 3/ pause 250/ faceDirection Kraken 0 true/ faceDirection farmer 2/ speak Kraken \"{{i18n:Data_Events.2523800410.003}}\"/ emote farmer 64/ advancedMove Kraken false -2 0 0 -1 -7 0 3 10/ pause 500/ faceDirection farmer 3/ pause 1000/ faceDirection farmer 0/ pause 500/ faceDirection Caroline 0 true/ faceDirection Jodi 2 true/ speak Gus \"{{i18n:Data_Events.2523800410.004 |MPP_EK_Kraken_Lower29={{MPP_EK_Kraken_Lower_T |valueAt=29}} |MPP_EK_Kraken_Lower03={{MPP_EK_Kraken_Lower_T |valueAt=3}} }}\"/ emote farmer 32/ pause 250/ stopMusic/ pause 250/ speak DBLorin \"{{i18n:Data_Events.2523800410.005}}\"/ emote farmer 8 true/ faceDirection farmer 1 true/ emote Gus 8 true/ faceDirection Gus 1 true/ pause 750/ speak DBLorin \"{{i18n:Data_Events.2523800410.006}}\"/ faceDirection DBLorin 3/ speak DBLorin \"{{i18n:Data_Events.2523800410.007}}\"/ emote farmer 12 true/ emote Gus 16/ speak Gus \"{{i18n:Data_Events.2523800410.008}}\"/ speak DBLorin \"{{i18n:Data_Events.2523800410.009}}\"/ faceDirection DBLorin 0/ playSound parry/ speak DBLorin \"{{i18n:Data_Events.2523800410.010}}\"/ pause 250/ advancedMove DBLorin false 0 2 -2 0 0 2 2 10/ pause 500/ faceDirection farmer 2 true/ faceDirection Gus 2 true/ proceedPosition DBLorin/ playSound doorOpen/ pause 250/ warp DBLorin -100 -100/ pause 500/ playSound doorClose/ pause 1000/ emote farmer 12/ pause 750/ faceDirection farmer 0/ playMusic Saloon1/ speak Gus \"{{i18n:Data_Events.2523800410.011}}\"/ faceDirection Gus 3 true/ faceDirection farmer 3/ speak Gus \"{{i18n:Data_Events.2523800410.012}}\"/ faceDirection Gus 2 true/ faceDirection farmer 0/ speak Gus \"{{i18n:Data_Events.2523800410.013}}\"/ emote farmer 32/ pause 500/ advancedMove farmer false 0 1 -2 0 0 -1 -6 0 3 10/ pause 2500/ end"
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800409": true,
+                "Query: {{Hearts:Kraken}}>=12": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Kraken - 2523800411 - Kidnapping",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "2523800411/": "continue/ -500 -500/ farmer 3 90 1 Kraken 3 91 3 Jodi 25 91 3 Vincent -100 -100 2 DBLorin -100 -100 2 MPP_Marlon -100 -100 0 Seera -100 -100 2 DBKnight_01 -100 -100 2 DBKnight_02 -100 -100 2/ skippable/ viewport 11 91 true/ advancedMove farmer false 6 0 1 10/ advancedMove Kraken false 6 0 1 10/ speed Jodi 4/ advancedMove Jodi false -14 0 3 10/ pause 1750/ speak Jodi \"{{i18n:Data_Events.2523800411.001 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ emote Kraken 8 true/ emote farmer 8/ speak Kraken \"{{i18n:Data_Events.2523800411.002}}\"/ speak Jodi \"{{i18n:Data_Events.2523800411.003}}\"/ emote Kraken 16 true/ emote farmer 16/ speed Kraken 4/ speed farmer 4/ speak Kraken \"{{i18n:Data_Events.2523800411.004}}\"/ speak Jodi \"{{i18n:Data_Events.2523800411.005}}\"/ pause 250/ faceDirection Kraken 0 true/ faceDirection farmer 2 true/ pause 750/ faceDirection Kraken 1 true/ faceDirection farmer 1 true/ speak Kraken \"{{i18n:Data_Events.2523800411.006}}\"/ pause 250/ shake Jodi 250/ pause 250/ speak Jodi \"{{i18n:Data_Events.2523800411.007}}\"/ advancedMove Jodi false 1 0 1 10/ pause 100/ advancedMove Kraken false 1 0 1 10/ proceedPosition Jodi/ speak Kraken \"{{i18n:Data_Events.2523800411.008}}\"/ faceDirection Jodi 3/ speak Kraken \"{{i18n:Data_Events.2523800411.009}}\"/ emote Jodi 20/ speak Jodi \"{{i18n:Data_Events.2523800411.010 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ advancedMove farmer false 5 0 1 10/ advancedMove Kraken false 5 0 1 10/ advancedMove Jodi false 5 0 1 10/ pause 500/ globalFade 0.015 true/ pause 1000/ viewport -500 -500/ proceedPosition Kraken/ proceedPosition Jodi/ speed farmer 0/ changeLocation MPP_EK_KrakenRoom/ stopAdvancedMoves/ pause 250/ playMusic ocean/ warp farmer 3 13 true/ faceDirection farmer 0 true/ warp Kraken 2 13 true/ faceDirection Kraken 0/ warp Jodi -100 -100 true/ warp Vincent 6 6 true/ faceDirection Vincent 2 true/ warp DBLorin 5 6 true/ faceDirection DBLorin 2 true/ warp DBKnight_01 4 6 true/ warp DBKnight_02 7 6 true/ positionOffset farmer 0 15/ viewport 5 10 true/ pause 1000/ advancedMove farmer false 0 -2 3 0 4 10/ pause 100 / advancedMove Kraken false 0 -2 3 0 4 10/ proceedPosition Kraken/ speak Kraken \"{{i18n:Data_Events.2523800411.011}}\"/ speak Vincent \"{{i18n:Data_Events.2523800411.012 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ pause 500/ emote Kraken 12/ speak Kraken \"{{i18n:Data_Events.2523800411.013}}\"/ speak DBLorin \"{{i18n:Data_Events.2523800411.014}}\"/ pause 500/ speak Kraken \"{{i18n:Data_Events.2523800411.015}}\"/ emote DBLorin 12/ speak DBLorin \"{{i18n:Data_Events.2523800411.016}}\"/ pause 500/ advancedMove farmer false 0 -1 4 10/ proceedPosition farmer/ faceDirection DBLorin 1/ speak DBLorin \"{{i18n:Data_Events.2523800411.017}}\"/ pause 500 / shake Vincent 750/ pause 250/ speak Vincent \"{{i18n:Data_Events.2523800411.018}}\"/ pause 250/ speak Kraken \"{{i18n:Data_Events.2523800411.019}}\"/ faceDirection DBLorin 2/ speak DBLorin \"{{i18n:Data_Events.2523800411.020}}\"/ pause 500/ emote Kraken 12/ pause 500/ speak Kraken \"{{i18n:Data_Events.2523800411.021}}\"/ emote DBLorin 76 true/ pause 750/ speak DBLorin \"{{i18n:Data_Events.2523800411.022}}\"/ emote Kraken 16/ speak Kraken \"{{i18n:Data_Events.2523800411.023}}\"/ speak DBLorin \"{{i18n:Data_Events.2523800411.024}}\"/ emote DBLorin 76/ pause 500/ speak DBLorin \"{{i18n:Data_Events.2523800411.025}}\"/ faceDirection DBLorin 1/ speak DBLorin \"{{i18n:Data_Events.2523800411.026}}\"/ pause 1000/ speak Kraken \"{{i18n:Data_Events.2523800411.027}}\"/ advancedMove Kraken false 0 -2 4 1000 0 1 4 10/ pause 2000/ advancedMove DBKnight_01 false 0 2 1 1000 0 -2 1 2000 2 10/ pause 3500/ faceDirection DBLorin 3/ pause 1000/ faceDirection DBLorin 2/ speak Kraken \"{{i18n:Data_Events.2523800411.028}}\"/ speak DBLorin \"{{i18n:Data_Events.2523800411.029}}\"/ faceDirection DBLorin 1/ pause 500/ faceDirection DBLorin 3/ pause 500/ faceDirection DBLorin 2/ speak DBLorin \"{{i18n:Data_Events.2523800411.030}}\"/ advancedMove DBKnight_01 false 0 1 2 0 4 10/ faceDirection DBKnight_02 3/ speak Vincent \"{{i18n:Data_Events.2523800411.031}}\"/ pause 250/ advancedMove Kraken false 0 -1 4 10/ speak Kraken \"{{i18n:Data_Events.2523800411.032}}\"/ screenFlash 10/ playSound clubhit/ pause 500/ playSound clubhit/ warp DBKnight_01 4 4 true/ faceDirection DBKnight_01 2 true/ warp DBKnight_02 9 5 true/ faceDirection DBKnight_02 2 true/ animate DBKnight_01 false true 125 16/ animate DBKnight_02 true true 125 16/ pause 2000/ emote DBLorin 80 true/ faceDirection DBLorin 0/ speak DBKnight_01 \"{{i18n:Data_Events.2523800411.033}}\"/ pause 250/ faceDirection DBLorin 1/ pause 250/ faceDirection DBLorin 2/ speak DBLorin \"{{i18n:Data_Events.2523800411.034}}\"/ advancedMove Kraken false 0 -1 4 10/ proceedPosition Kraken/ speak Kraken \"{{i18n:Data_Events.2523800411.035}}\"/ emote DBLorin 12 true/ shake DBLorin 500/ speak DBLorin \"{{i18n:Data_Events.2523800411.036}}\"/ faceDirection DBLorin 1/ speak DBLorin \"{{i18n:Data_Events.2523800411.037}}\"/ screenFlash 10/ playSound clubhit/ warp Kraken 5 5 true/ warp DBLorin 5 4 true/ faceDirection DBLorin 2 true/ warp Vincent 5 10 true/ faceDirection Vincent 0 true/ pause 2000/ speak DBLorin \"{{i18n:Data_Events.2523800411.038}}\"/ pause 250/ speak Kraken \"{{i18n:Data_Events.2523800411.039}}\"/ shake DBLorin 500/ speak DBLorin \"{{i18n:Data_Events.2523800411.040}}\"/ speak Kraken \"{{i18n:Data_Events.2523800411.041}}\"/ pause 500/ speak MPP_Marlon \"{{i18n:Data_Events.2523800411.042 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ faceDirection Jodi 0 true/ warp Jodi 2 13 true/ warp MPP_Marlon 3 13 true/ pause 500/ advancedMove MPP_Marlon false 0 -2 1 0 0 -3 4 10/ pause 100/ advancedMove Jodi false 0 -2 3 0 4 10/ pause 500/ faceDirection Vincent 2 true/ emote Vincent 16 true/ faceDirection farmer 2 true/ proceedPosition Jodi/ speak Vincent \"{{i18n:Data_Events.2523800411.043}}\"/ speak Jodi \"{{i18n:Data_Events.2523800411.044}}\"/ shake DBLorin 500/ speak DBLorin \"{{i18n:Data_Events.2523800411.045}}\"/ advancedMove MPP_Marlon false 0 -1 4 10/ faceDirection Vincent 0 true/ faceDirection farmer 0 true/ speak MPP_Marlon \"{{i18n:Data_Events.2523800411.046 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ speak Kraken \"{{i18n:Data_Events.2523800411.047}}\"/ speak MPP_Marlon \"{{i18n:Data_Events.2523800411.048}}\"/ pause 1000/ animate Seera false false 125 16 16 17 17 16 16 17 17 18 19 20 21 22 23 24 25 26 27 26 27 26 27 28 29 30 31 32 33 34 35 36 37 37 38 38 37 37 38 38 0 0 0 0 0 0/ playSound slosh/ warp Seera 7 12/ emote farmer 16 true/ faceDirection farmer 2 true/ faceDirection Vincent 2 true/ faceDirection Jodi 2 true/ pause 4000/ faceDirection Seera 3/ advancedMove Seera false 0 -5 -2 0 4 10/ pause 500/ faceDirection Jodi 1/ faceDirection Vincent 1 true/ faceDirection farmer 1 true/ pause 1000/ faceDirection Jodi 0 true/ faceDirection Vincent 0 true/ faceDirection farmer 0 true/ proceedPosition Seera/ speak Seera \"{{i18n:Data_Events.2523800411.049 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ emote Kraken 16 true/ faceDirection Kraken 2/ speak Kraken \"{{i18n:Data_Events.2523800411.050}}\"/ emote Seera 32/ speak Seera \"{{i18n:Data_Events.2523800411.051 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ pause 500/ shake Kraken 500/ pause 500/ advancedMove Kraken false 0 1 2 10/ proceedPosition Kraken/ speak Kraken \"{{i18n:Data_Events.2523800411.052}}\"/ speed DBLorin 5/ advancedMove DBLorin false 0 1 -2 0 0 2 2 10/ proceedPosition DBLorin/ faceDirection MPP_Marlon 3/ speak MPP_Marlon \"{{i18n:Data_Events.2523800411.053}}\"/ emote DBLorin 28/ pause 1000/ globalFade 0.015 true/ pause 1000/ viewport -500 -500/ changeLocation MPP_EK_Beach/ pause 250/ playMusic ocean/ warp farmer 88 5 true/ faceDirection farmer 2 true/ warp Kraken 89 5 true/ faceDirection Kraken 2/ warp Jodi 88 7 true/ faceDirection Jodi 0 true/ warp Vincent 89 7 true/ faceDirection Vincent 0 true/ warp MPP_Marlon -100 -100 true/ warp Seera 90 6 true/ faceDirection Seera 3 true/ warp DBLorin -100 -100 true/ warp DBKnight_01 -100 -100 true/ warp DBKnight_02 -100 -100 true/ positionOffset farmer 0 15/ viewport 88 9 true/ pause 1000/ speak Kraken \"{{i18n:Data_Events.2523800411.054}}\"/ emote Jodi 32/ speak Jodi \"{{i18n:Data_Events.2523800411.055 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ speak Kraken \"{{i18n:Data_Events.2523800411.056}}\"/ emote Jodi 12/ speak Jodi \"{{i18n:Data_Events.2523800411.057}}\"/ emote Kraken 16/ speak Vincent \"{{i18n:Data_Events.2523800411.058 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ emote Seera 32/ speak Seera \"{{i18n:Data_Events.2523800411.059 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ emote Kraken 32/ speak Kraken \"{{i18n:Data_Events.2523800411.060}}\"/ emote Kraken 20 true/ pause 250/ emote Seera 20/ faceDirection Kraken 2/ speak Jodi \"{{i18n:Data_Events.2523800411.061 |MPP_EK_Kraken_Name={{MPP_EK_Kraken_Name_T}} }}\"/ advancedMove Jodi false -100 0/ advancedMove Vincent false -100 0/ pause 500/ advancedMove farmer false 0 2 1 10/ advancedMove Kraken false -1 0 1 10/ proceedPosition farmer/ speak Seera \"{{i18n:Data_Events.2523800411.062}}\"/ speak Kraken \"{{i18n:Data_Events.2523800411.063}}\"/ advancedMove Seera false 6 0 2 10/ proceedPosition Seera/ animate Seera false false 125 0 0 0 0 0 0 38 38 37 37 38 38 37 37 36 35 34 33 32 31 30 29 28 27 26 27 26 27 26 25 24 23 22 21 20 19 18 17 17 16 16 17 17 16 16/ pause 250/ playSound slosh/ pause 5250/ warp Seera -100 -100/ pause 1000/ faceDirection Kraken 2 true/ faceDirection farmer 0/ speak Kraken \"{{i18n:Data_Events.2523800411.064}}\"/ emote farmer 32/ speak Kraken \"{{i18n:Data_Events.2523800411.065}}\"/ emote Kraken 20/ speak Kraken \"{{i18n:Data_Events.2523800411.066}}\"/ pause 1000/ end"
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800410": true,
+                "Query: {{Hearts:Kraken}}>=14": true
             },
             "Update": "OnTimeChange"
         }

@@ -1,9 +1,9 @@
 ﻿{
-    "Name": "Adomin8ers_Monster_Party_Pack_The_Eldritch_Kin",
+    "Name": "ADMT_TESTING_Adomin8ers_Monster_Party_Pack_The_Eldritch_Kin",
     "Author": "Adomin8er",
-    "Version": "0.1.2",
+    "Version": "0.3.0",
     "Description": "Add extra characters to Stardew Valley with a twist; They're all monsters!",
-    "UniqueID": "Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin",
+    "UniqueID": "ADMT_TESTING_Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin",
     "UpdateKeys": [ "Nexus:25238" ],
     "ContentPackFor": {
         "UniqueID": "Pathoschild.ContentPatcher"

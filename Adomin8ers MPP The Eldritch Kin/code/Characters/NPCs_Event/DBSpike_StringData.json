@@ -13,7 +13,7 @@
             "Target": "Data/Characters",
             "Entries": {
                 "DBSpike": {
-                    "DisplayName": "{{i18n:NPCs_Event.DBSpike.NameKnown}}",
+                    "DisplayName": "{{i18n:NPCs_Event.DBSpike.Name}}",
                     "Gender": "Male",
                     "Age": "Adult",
                     "BirthSeason": "Spring",
@@ -27,7 +27,7 @@
                     "CanBeRomanced": false,
                     "CanReceiveGifts": false,
                     "CanVisitIsland": false,
-                    "Caledar": "HiddenAlways",
+                    "Calendar": "HiddenAlways",
                     "SocialTab": "HiddenAlways",
                     "SpouseWantsChildren": false,
                     "SpouseGiftJealousy": false,

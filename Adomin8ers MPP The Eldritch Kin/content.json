@@ -10,6 +10,11 @@
       "AllowValues": "Female",
       "Default": "Female",
       "Section": "Demi-Human Gender"
+    },
+    "Kraken_Gender": {
+      "AllowValues": "Female",
+      "Default": "Female",
+      "Section": "Demi-Human Gender"
     }
   },
 
@@ -51,7 +56,7 @@
     },
     {
       "Name": "MPP_EK_Dhampir_Upper_T",
-      "Value": "{{GenderWords_Lower}}",
+      "Value": "{{GenderWords_Upper}}",
       "When": {
           "Dhampir_Gender": "Female"
       }
@@ -74,9 +79,32 @@
     },
     {
       "Name": "MPP_EK_Djinn_Upper_T",
-      "Value": "{{GenderWords_Lower}}",
+      "Value": "{{GenderWords_Upper}}",
       "When": {
           "Djinn_Gender": "Female"
+      }
+    },
+
+    // Kraken
+    {
+      "Name": "MPP_EK_Kraken_Name_T",
+      "Value": "{{i18n:Content.Dynamic_Tokens.Names.Kraken_FemaleName}}",
+      "When": {
+        "Kraken_Gender": "Female"
+      }
+    },
+    {
+      "Name": "MPP_EK_Kraken_Lower_T",
+      "Value": "{{GenderWords_Lower}}",
+      "When": {
+          "Kraken_Gender": "Female"
+      }
+    },
+    {
+      "Name": "MPP_EK_Kraken_Upper_T",
+      "Value": "{{GenderWords_Upper}}",
+      "When": {
+          "Kraken_Gender": "Female"
       }
     },
 
@@ -125,6 +153,29 @@
     //   "Value": "{{GenderWordsSwapped_Upper}}",
     //   "When": {
     //       "Djinn_Gender": "Male"
+    //   }
+    // }
+
+    // Kraken
+    // {
+    //     "Name": "MPP_EK_Kraken_Name_T",
+    //     "Value": "{{i18n:Content.Dynamic_Tokens.Names.Kraken_MaleName}}",
+    //     "When": {
+    //       "Kraken_Gender": "Male"
+    //     }
+    // },
+    // {
+    //   "Name": "MPP_EK_Kraken_Lower_T",
+    //   "Value": "{{GenderWordsSwapped_Lower}}",
+    //   "When": {
+    //       "Kraken_Gender": "Male"
+    //   }
+    // },
+    // {
+    //   "Name": "MPP_EK_Kraken_Upper_T",
+    //   "Value": "{{GenderWordsSwapped_Upper}}",
+    //   "When": {
+    //       "Kraken_Gender": "Male"
     //   }
     // }
 
@@ -725,6 +776,14 @@
         "Djinn_Gender": "female"
       }
     },
+    {
+      "LogName": "Include Kraken Female",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Core/Kraken/Kraken_ImageData.json, code/Characters/NPCs_Core/Kraken/Kraken_StringData.json",
+      "When": {
+        "Kraken_Gender": "female"
+      }
+    },
 
     // Event NPCs
     {
@@ -792,6 +851,11 @@
       "Action": "Include",
       "FromFile": "code/Characters/NPCs_Event/MPP_MrQi_ImageData.json, code/Characters/NPCs_Event/MPP_MrQi_StringData.json"
     },
+    {
+      "LogName": "Include Seera",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Event/Seera_ImageData.json, code/Characters/NPCs_Event/Seera_StringData.json"
+    },
     
     // Items   
     {
@@ -805,7 +869,7 @@
     {
       "LogName": "Include Maps",
       "Action": "Include",
-      "FromFile": "code/Maps/Additions.json, code/Maps/Patches.json"
+      "FromFile": "code/Maps/Additions.json, code/Maps/Patches.json, code/Maps/Setups.json,"
     },
 
     // Shops
@@ -822,7 +886,12 @@
       "FromFile": "code/StringData/Data.json, code/StringData/Data_Events.json, code/StringData/Data_Festivals.json, code/StringData/ChairTiles.json"
     },
 
-
+    // Other
+    {
+      "LogName": "Include Other Files",
+      "Action": "Include",
+      "FromFile": "code/Other/Other_ImageData.json"
+    },
 
     // Mod Compatability
     {

@@ -3,7 +3,7 @@
         {
             "LogName": "Traveler - 25238/code/Shops - DeveloperNotes",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MMP_EK_DeveloperNotes",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
             "Entries": {
                 "DeveloperNotes_Shops_Traveler.001": "+--------------------------------------------+",
                 "DeveloperNotes_Shops_Traveler.002": "|               Shops/Traveler               |",

@@ -1,8 +1,14 @@
 {
-    "Changes": [ 
+    "Changes": [
         {
-            "LogName": "Cordelia - Base Overworld Sprite",
+            "LogName": "Cordelia - Base OW Sprite Empty",
             "Action": "Load",
+            "Target": "Characters/Cordelia",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "Cordelia - Base OW Sprite",
+            "Action": "EditImage",
             "Target": "Characters/Cordelia",
             "FromFile": "assets/Characters/NPCs_Event/Cordelia_Base_OW.png",
             "When": null
@@ -12,7 +18,7 @@
             "LogName": "Cordelia - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/Cordelia",
-            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
             "When": null
         },
         {

@@ -1,8 +1,14 @@
 {
-    "Changes": [ 
+    "Changes": [
         {
-            "LogName": "DBMane - Base Overworld Sprite",
+            "LogName": "DBMane - Base OW Sprite Empty",
             "Action": "Load",
+            "Target": "Characters/DBMane",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "DBMane - Base OW Sprite",
+            "Action": "EditImage",
             "Target": "Characters/DBMane",
             "FromFile": "assets/Characters/NPCs_Event/DBMane_Base_OW.png",
             "When": null
@@ -12,7 +18,7 @@
             "LogName": "DBMane - Base Portrait",
             "Action": "Load",
             "Target": "Portraits/DBMane",
-            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
             "When": null
         },
         {

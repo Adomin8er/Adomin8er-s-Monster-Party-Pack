@@ -1,8 +1,14 @@
 {
-    "Changes": [ 
+    "Changes": [
         {
-            "LogName": "DBKaliah - Base Overworld Sprite",
+            "LogName": "DBKaliah - Base OW Sprite Empty",
             "Action": "Load",
+            "Target": "Characters/DBKaliah",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "DBKaliah - Base OW Sprite",
+            "Action": "EditImage",
             "Target": "Characters/DBKaliah",
             "FromFile": "assets/Characters/NPCs_Event/DBKaliah_Base_OW.png",
             "When": null
@@ -12,7 +18,7 @@
             "LogName": "DBKaliah - Base Portraits",
             "Action": "Load",
             "Target": "Portraits/DBKaliah",
-            "FromFile": "assets/Characters/Size1536_ImageBase.png",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
             "When": null
         },
         {

@@ -1,0 +1,10 @@
+{
+    "Changes": [
+        {
+            "LogName": "Other - Update Emotes Spreadsheet",
+            "Action": "Load",
+            "Target": "TileSheets/emotes",
+            "FromFile": "assets/Other/emotes.png"
+        }
+    ]
+}

@@ -1,0 +1,234 @@
+{
+    "Changes": [
+        {
+            "LogName": "Arbitrary - 25238/code/Maps/Setups - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Location_Arbitrary.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Location_Arbitrary.002": "|          Data/Locations/Arbitrary          |",
+                "DeveloperNotes_Data_Location_Arbitrary.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Arbitrary - Map Setup - CharacterLobby",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_CharacterLobby": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_CharacterLobby}}",
+                    "DefaultArrivalTile": {
+                        "X": 4,
+                        "Y": 4
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_CharacterLobby"
+                    }
+                }
+            }
+        },
+        
+        {
+            "LogName": "Dhampir - 25238/code/Maps/Setups - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Location_Dhampir.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Location_Dhampir.002": "|           Data/Locations/Dhampir           |",
+                "DeveloperNotes_Data_Location_Dhampir.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Dhampir - Map Setup - DhampirRoom Setup",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_DhampirRoom": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_DhampirRoom}}",
+                    "DefaultArrivalTile": {
+                        "X": 6,
+                        "Y": 6
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_DhampirRoom"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Dhampir - Map Setup - MPP EK Hospital",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_Hospital": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_Hospital}}",
+                    "DefaultArrivalTile": {
+                        "X": 10,
+                        "Y": 15
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_Hospital"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Dhampir - Map Setup - MPP EK ScienceHouse",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_ScienceHouse": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_ScienceHouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 7,
+                        "Y": 20
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_ScienceHouse"
+                    }
+                }
+            }
+        },
+        
+        {
+            "LogName": "Djinn - 25238/code/Maps/Setups - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Location_Djinn.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Location_Djinn.002": "|            Data/Locations/Djinn            |",
+                "DeveloperNotes_Data_Location_Djinn.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Djinn - Map Setup - Courthouse",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_CourtHouse": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_CourtHouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 8,
+                        "Y": 11
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_CourtHouse"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Djinn - Map Setup - DesertTruck",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_DesertTruck": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_DesertTruck}}",
+                    "DefaultArrivalTile": {
+                        "X": 18,
+                        "Y": 28
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_DesertTruck"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Djinn - Map Setup - SandyHouse",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_SandyHouse": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_SandyHouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 2,
+                        "Y": 7
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_SandyHouse"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Djinn - Map Setup - SandyHouse Improved",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_SandyHouse_Improved": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_SandyHouse_Improved}}",
+                    "DefaultArrivalTile": {
+                        "X": 2,
+                        "Y": 7
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_SandyHouse_Improved"
+                    }
+                }
+            }
+        },
+        
+        {
+            "LogName": "Kraken - 25238/code/Maps/Setups - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Location_Kraken.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Location_Kraken.002": "|            Data/Locations/Kraken            |",
+                "DeveloperNotes_Data_Location_Kraken.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Kraken - Map Setup - Beach",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_Beach": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_Beach}}",
+                    "DefaultArrivalTile": {
+                        "X": 40,
+                        "Y": 13
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_Beach"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Kraken - Map Setup - KrakenRoom",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_KrakenRoom": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_KrakenRoom}}",
+                    "DefaultArrivalTile": {
+                        "X": 5,
+                        "Y": 4
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_KrakenRoom"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Kraken - Map Setup - SamHouse",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_SamHouse": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_SamHouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 4,
+                        "Y": 13
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_SamHouse"
+                    }
+                }
+            }
+        }
+    ]
+}
