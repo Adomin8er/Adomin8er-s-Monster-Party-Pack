@@ -13,11 +13,13 @@
     "Content.Dynamic_Tokens.GenderTokens.GenderWordsSwapped_Upper": "She, He, Her, Him, His, ${Her^Her}$, ${His^His}$, Hers, Woman, Man, Women, Men, Girl, Boy, Mother, Father, Mom, Dad, Grandmother, Grandfather, Grandma, Grandpa, Daughter, Son, Granddaughter, Grandson, Sister, Brother, Wife, Husband, Aunt, Uncle, Queen, King, Princess, Prince, Female, Male, Lady, Gentleman, Ma'am, Sir, ${Lady^Lady}$, Lord, Mrs, Mr, Hun, ${Son^Son}$, Mistress, Master, Niece, Nephew, Suit, Dress, Shorts, Skirt, Sorceress, Wizard, Gal, Guy, Miss, Mister, ${Dear^Sweetie}$, Herself, Himself",
     "Content.Dynamic_Tokens.Names.Arbitrary_Unknown" : "???",
     "Content.Dynamic_Tokens.Names.Dhampir_FemaleName" : "Casandra",
-    "Content.Dynamic_Tokens.Names.Dhampir_MaleName" : "Casian",
+    "Content.Dynamic_Tokens.Names.Dhampir_MaleName" : "Cassian",
     "Content.Dynamic_Tokens.Names.Djinn_FemaleName" : "Savani",
     "Content.Dynamic_Tokens.Names.Djinn_MaleName" : "Unknown",
     "Content.Dynamic_Tokens.Names.Kraken_FemaleName" : "Nysamora",
     "Content.Dynamic_Tokens.Names.Kraken_MaleName" : "Unknown",
+    "Content.Dynamic_Tokens.Names.Mimic_FemaleName" : "Tori",
+    "Content.Dynamic_Tokens.Names.Mimic_MaleName" : "Tian",
 
 
     "===Category.002===": "<<<<<<<<<<<<<<< Characters.NPC_Type.Character_StringData >>>>>>>>>>>>>>>",
@@ -842,6 +844,8 @@
 
     "---MIMIC_STRINGDATA---": "------------------------------------------------------",
     "MIMIC.CHARACTERS.STRINGDATA": "",
+    "Mimic_StringData.Characters_DisplayName": "{{MPP_EK_Mimic_Name}}",
+    "Mimic_StringData.Characters_Gender": "{{MPP_EK_Mimic_Upper37}}",
 
     "---MUMMY_STRINGDATA---": "------------------------------------------------------",
     "MUMMY.CHARACTERS.STRINGDATA": "",
@@ -893,8 +897,11 @@
     
     "---MAPS (KRAKEN)---":  "------------------------------------------------------",
     "Maps.DisplayName.MPP_EK_Beach": "MPP EK Beach",
-    "Maps.DisplayName.MPP_EK_KrakenRoom": "MPP EK KrakenRoom",
+    "Maps.DisplayName.MPP_EK_KrakenRoom": "{{MPP_EK_Kraken_Name}}'s KrakenRoom",
     "Maps.DisplayName.MPP_EK_SamHouse": "MPP EK SamHouse",
+    
+    "---MAPS (Mimic)---":  "------------------------------------------------------",
+    "Maps.DisplayName.MPP_EK_MimicRoom": "{{MPP_EK_Mimic_Name}}'s MimicRoom",
 
     "===Category.004===": "<<<<<<<<<<<<<<<          Code.StringData.Data            >>>>>>>>>>>>>>>",
     
@@ -903,6 +910,7 @@
     "Data.Data_Mail.Dhampir_SpecialOrderThanks": "Thanks for gathering the materials! The room looks wonderful and I've already been selected as a mentor. The intern should get here on Thursday.^^   - Robin[#]Internship Prep",
     "Data.Data_Mail.Djinn_SpecialOrderThanks": "We did it! The Oasis was ranked #1 for most beautiful tourist stop in all of Calico. Come celebrate with me this weekend!.^^   - Sandy[#]Regional Inspections",
     "Data.Data_Mail.Kraken_SpecialOrderThanks": "Hello @,^^Thank you so much for the help with the party! Poor Jas got scared when Vincent told her about a 'Storm Monster' he saw at the beach last night, but^the ice cream you brought helped calm her down. After that everyone had a great time!^^   - Jodi[#]Vincent's Party",
+    "Data.Data_Mail.Mimic_SpecialOrderThanks": "Thanks for the materials! Now I don't have to worry about that monster I ran into in the mine the other morning.^^   - Clint[#]High Quality Gear",
 
     "---DATA.DATA_SPECIALORDERS---": "------------------------------------------------------",
     "DATA.DATA_SPECIALORDERS.DHAMPIR": "",
@@ -923,7 +931,13 @@
     "Data.Data_SpecialOrders.Kraken.Objective.01": "Place pizzas in Jodi's kitchen.",
     "Data.Data_SpecialOrders.Kraken.Objective.02": "Place cookies in Jodi's kitchen.",
     "Data.Data_SpecialOrders.Kraken.Objective.03": "Place ice cream in Jodi's kitchen.",
-    "Data.Data_SpecialOrders.Kraken.Text": "Vincent wants to have a party. Would anyone mind helping us get everything we need?",
+    "Data.Data_SpecialOrders.Kraken.Text": "Vincent wants to have a party. Would anyone mind helping us get everything we need?        -Jodi",
+
+    "DATA.DATA_SPECIALORDERS.MIMIC": "",
+    "Data.Data_SpecialOrders.Mimic.Name": "High Quality Gear",
+    "Data.Data_SpecialOrders.Mimic.Objective.01": "Place hardwood in Clint's forge.",
+    "Data.Data_SpecialOrders.Mimic.Objective.02": "Place diamonds in Clint's forge.",
+    "Data.Data_SpecialOrders.Mimic.Text": "Several orders for high quality gear have come in recently but they're wearing out my equipment. Can anyone help me collect materials so I can craft more durable tools?        -Clint",
 
     "===Category.005===": "<<<<<<<<<<<<<<<       Code.StringData.Data_Events        >>>>>>>>>>>>>>>",
 
@@ -1527,6 +1541,20 @@
     "Data_Events.2523800411.064": "It's strange... for the first time in years, the ocean feels calm. Like it's breathing again.$0",
     "Data_Events.2523800411.065": "For so long I thought my strength only brought pain.$0#$b#But today... it protected someone.$0",
     "Data_Events.2523800411.066": "Thank you @.$4#$b#Thank you for everything.$4",
+
+
+    "---DATA_EVENTS.25238004xx (MIMIC)---":  "------------------------------------------------------",
+    "Data_Events.2523800501.001": "Boo!$5",
+    "Data_Events.2523800501.002": "I'm sorry, it was just a joke!#3@#b#Please don't hurt me!$3",
+    "Data_Events.2523800501.003": "C-can you please put the sword away?$3",
+    "Data_Events.2523800501.004": "Jeez. You really don't like being scared do you.$5#$b#Do you always swing your sword a people for harmless pranks?$5",
+    "Data_Events.2523800501.005": "Eat you?$99#$b#That sounds... gross.$99",
+    "Data_Events.2523800501.006": "Anyways.$0#$b$I'm Tori!$1#$b#Do you want to play with me?$1#$b#Marlon says I can't go outside but I'm so bored I think I might die.$1",
+    "Data_Events.2523800501.007": "Come on!$1#$b#My room is over here!$1#$b#I just moved in so it's a bit messy but it'll be fun, I promise!$1",
+    "Data_Events.2523800501.008": "What is it?$99",
+    "Data_Events.2523800501.010": "Oh. Okay...$2",
+    "Data_Events.2523800501.011": "But you have to promise you'll come play with me later!$3#$b#A real promise! Not a fake human 'maybe' promise!$3",
+    "Data_Events.2523800501.012": "Yay!$1#$b#I'll be waiting!$1#$b#If you take too long, I'll come scare you again!$5",
     
     "===Category.006===": "<<<<<<<<<<<<<<<     Code.StringData.Data_Festivals       >>>>>>>>>>>>>>>"
 }

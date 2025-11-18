@@ -327,8 +327,8 @@
             },
             "Update": "OnTimeChange"
         },
-
         
+
         {
             "LogName": "Kraken - 25238/code/StringData/Data_Events - DeveloperNotes",
             "Action": "EditData",
@@ -505,6 +505,41 @@
             "When": {
                 "HasSeenEvent |contains=2523800410": true,
                 "Query: {{Hearts:Kraken}}>=14": true
+            },
+            "Update": "OnTimeChange"
+        },
+        
+        
+        {
+            "LogName": "Mimic - 25238/code/StringData/Data_Events - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Events_Mimic.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Events_Mimic.002": "|             Data/Events/Mimic              |",
+                "DeveloperNotes_Data_Events_Mimic.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "Logname": "Mimic - 2523800500 - SpecialOrder Trigger Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800500/": "null"
+            }
+        },
+        {
+            "LogName": "Mimic - 2523800501 - Pendant I",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "2523800501/": "ocean/ -500 -500/ farmer 38 0 2 DBLorin 75 8 1 Mimic 77 8 3/ skippable/ viewport 38 12 true/ pause 250/ move farmer 0 8 2/ message \"{{i18n:Data_Events.2523800401.001}}\"/ emote farmer 8/ faceDirection farmer 1/ globalFade 0.015/ viewport 75 12 true/ globalFadeToClear 0.015/ warp farmer 54 13/ pause 1000/ advancedMove farmer false 11 0 0 -4 1 1000/ pause 1500/ speak Mimic \"{{i18n:Data_Events.2523800401.002}}\"/ speak DBLorin \"{{i18n:Data_Events.2523800401.003}}\"/ emote Mimic 12 true/ emote DBLorin 12/ emote farmer 8/ move farmer 7 0 1 true/  move DBLorin -1 0 1 true/  emote DBLorin 16 true/  move Mimic -1 0 3 true/ speak DBLorin \"{{i18n:Data_Events.2523800401.004}}\"/ speak Mimic \"{{i18n:Data_Events.2523800401.005}}\"/ speak DBLorin \"{{i18n:Data_Events.2523800401.006}}\"/ emote Mimic 16/ speak Mimic \"{{i18n:Data_Events.2523800401.007}}\"/ speed Mimic 4/ advancedMove Mimic false -10 0 0 3 2 1/ speed DBLorin 6/ advancedMove DBLorin false -8 0 0 3 -3 0 0 2 -20 0 1 1/ faceDirection farmer 0 true/ pause 2500/ faceDirection farmer 3/ emote Mimic 12/ faceDirection Mimic 0/ speed Mimic 2/ pause 500/ advancedMove Mimic false 0 -2 3 0/ pause 2000/  speak Mimic \"{{i18n:Data_Events.2523800401.008}}\"/ emote farmer 8/ speak Mimic \"{{i18n:Data_Events.2523800401.009}}\"/ animate farmer true false 125 6 7 6 8 6 8/ pause 500/ speak Mimic \"{{i18n:Data_Events.2523800401.010}}\"/ emote farmer 28/ pause 1000/ end"
+            },
+            "When":  {
+                "HasReadLetter |contains=Mimic_SpecialOrderThanks": true,
+                "HasFlag |contains=beachBridgeFixed": true,
+                "Weather |contains=Rain, Storm": true,
+                "Query: {{Time}} >= 1900 AND {{Time}} <= 2300": true
             },
             "Update": "OnTimeChange"
         }

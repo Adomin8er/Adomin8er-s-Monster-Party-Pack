@@ -1,0 +1,801 @@
+{
+    "Changes": [
+        {
+            "LogName": "Mimic - StringData - Setup",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Mimic, Characters/Dialogue/MarriageDialogueMimic, Characters/Schedules/Mimic, Strings/Schedules/Mimic",
+            "FromFile": "code/blank.json"
+        },
+        {
+            "LogName": "Mimic - StringData - Characters",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Mimic": {
+                    "DisplayName": "{{i18n:Mimic_StringData.Characters_DisplayName |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} }}",
+                    "Gender": "{{i18n:Mimic_StringData.Characters_Gender |MPP_EK_Mimic_Upper37={{MPP_EK_Mimic_Upper_T |valueAt=37}} }}",
+                    "Age": "Adult",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 11,
+                    "HomeRegion": "Other",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanSocialize": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanBeRomanced": false,
+                    "KissSpriteIndex": 33,
+                    "KissSpriteFacingRight": false,
+                    "CanReceiveGifts": true,
+                    "CanVisitIsland": false,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "SpouseWantsChildren": true,
+                    "SpouseGiftJealousy": true,
+                    "PerfectionScore": false,
+                    "DumpsterDiveFriendshipEffect": -25,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarParticipant": false,
+                    "Appearance": [
+                        {
+                            "Id": "Mimic_Winter",
+                            "Season": "Winter",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Mimic_Winter",
+                            "Sprite": "Characters/Mimic_Winter",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 0
+                        },
+                        {
+                            "Id": "Mimic_Beach",
+                            "Portrait": "Portraits/Mimic_Beach",
+                            "Sprite": "Characters/Mimic_Beach",
+                            "IsIslandAttire": true,
+                            "Precedence": -101,
+                            "Weight": 0
+                        }
+                    ],
+                    "SpouseRoom": {
+                        "MapAsset": "MPP_EK_MimicSpouseRoom",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "MPP_EK_MimicSpouseArea",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 4,
+                            "Height": 4
+                        },
+                        "SpriteAnimationPixelOffset": {
+                            "X": 0,
+                            "Y": 0
+                        }
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "MPP_EK_CharacterLobby",
+                            "Tile": {
+                                "X": 1,
+                                "Y": 1
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Update Home",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Mimic": {
+                    "WinterStarParticipant": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "MPP_EK_MimicRoom",
+                            "Tile": {
+                                "X": 10,
+                                "Y": 6
+                            },
+                            "Direction": "Left"
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800101": true
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Update Dating",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Mimic": {
+                    "CanBeRomanced": true,
+                    "CanVisitIsland": true,
+                    "FlowerDanceCanDance": true
+                }
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800107": true
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - NPCGiftTastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Mimic": "/64 769 709 348 637 575 767 852/ /80 66 422 410 726 725 382/ /145 283 595 773 RiverJelly 16 376/ /248 772 768 421 74 93 167/ / /"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Base",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Mimic",
+            "Entries": {
+                "GreenRain": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.GreenRain}}",
+                "GreenRain_2": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.GreenRain_2}}",
+                "DumpsterDiveComment": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.DumpsterDiveComment}}",
+                "HitBySlingshot": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.HitBySlingshot}}",
+                "Resort": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Resort}}",
+                "Resort_Bar": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Resort_Bar}}",
+                "Resort_Chair": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Resort_Chair}}",
+                "Resort_Dance": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Resort_Dance}}",
+                "Resort_Entering": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Resort_Entering}}",
+                "Resort_Leaving": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Resort_Leaving}}",
+                "Resort_Shore": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Resort_Shore}}",
+                "Resort_Towel": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Resort_Towel}}",
+                "Resort_Umbrella": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Resort_Umbrella}}",
+                "Resort_Wander": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Resort_Wander}}",
+                "SpouseFarmhouseClutter": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.SpouseFarmhouseClutter}}",
+                "SpouseGiftJealous": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.SpouseGiftJealous}}",
+                "Spouse_MonstersInHouse": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Spouse_MonstersInHouse}}",
+                "SpouseStardrop": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.SpouseStardrop}}",
+                "breakUp": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.breakUp}}",
+                "divorced": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.divorced}}",
+                "WipedMemory": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.WipedMemory |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} }}",
+                "AcceptGift_(O)64": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptGift_(O)64}}",
+                "AcceptGift_(O)769": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptGift_(O)769}}",
+                "AcceptGift_(O)709": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptGift_(O)709}}",
+                "AcceptGift_Loved": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptGift_Loved}}",
+                "AcceptGift_Liked": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptGift_Liked}}",
+                "AcceptGift_Neutral": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptGift_Neutral}}",
+                "AcceptGift_Disliked": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptGift_Disliked}}",
+                "AcceptGift_Hated": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptGift_Hated}}",
+                "AcceptBirthdayGift_(O)348": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptBirthdayGift_(O)348}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Liked": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptBirthdayGift_Liked}}",
+                "AcceptBirthdayGift_Neutral": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptBirthdayGift_Neutral}}",
+                "AcceptBirthdayGift_Disliked": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptBirthdayGift_Disliked}}",
+                "AcceptBirthdayGift_Hated": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptBirthdayGift_Hated}}",
+                "AcceptBouquet": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.AcceptBouquet}}",
+                "MovieInvitation": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.MovieInvitation}}",
+                "RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.}}",
+                "RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.}}",
+                "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.}}",
+                "RejectMovieTicket_Divorced": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.}}",
+                "RejectItem_(O)248": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.RejectItem_(O)248}}",
+                "RejectGift_Divorced": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.RejectGift_Divorced}}",
+                "RejectBouquet_VeryLowHearts": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.}}",
+                "RejectBouquet_LowHearts": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.}}",
+                "RejectBouquet_AlreadyAccepted": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.}}",
+                "RejectBouquet_AlreadyAccepted_Married": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.}}",
+                "RejectMermaidPendant_Under10Hearts": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.}}",
+                "RejectMermaidPendant_Under10Hearts_AskedAgain": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.RejectMermaidPendant_Under10Hearts_AskedAgain}}",
+                "RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.}}",
+                "Fair_Judging": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Fair_Judging}}",
+                "Fair_Judged_PlayerWon": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Fair_Judged_PlayerWon}}",
+                "Fair_Judged_PlayerLost": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Fair_Judged_PlayerLost}}",
+                "FlowerDance_Accept": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.FlowerDance_Accept}}",
+                "FlowerDance_Accept_Spouse": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.FlowerDance_Accept_Spouse}}",
+                "FlowerDance_Decline": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.FlowerDance_Decline}}",
+                "WinterStar_GiveGift_Before": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.WinterStar_GiveGift_Before}}",
+                "WinterStar_GiveGift_After": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.WinterStar_GiveGift_After}}",
+                "Mountain_Tue": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Mountain_Tue}}",
+                "Saloon_Fri": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Saloon_Fri}}",
+                "Saloon_Fri6": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Saloon_Fri6}}",
+                "Mon": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Mon}}",
+                "Tue": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Tue}}",
+                "Wed": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Wed}}",
+                "Thu": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Thu}}",
+                "Fri": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Fri}}",
+                "Sat": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Sat}}",
+                "Sun": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.Sun}}",
+                "spring_1": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.spring_1}}",
+                "spring_Mon": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.spring_Mon}}",
+                "spring_Mon6": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.spring_Mon6}}",
+                "summer_1": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.summer_1}}",
+                "summer_Fri": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.summer_Fri}}",
+                "summer_Fri8": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.summer_Fri8}}",
+                "fall_1": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.fall_1}}",
+                "fall_Wed": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.fall_Wed}}",
+                "fall_Wed4": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.fall_Wed4}}",
+                "winter_1": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.winter_1}}",
+                "winter_Thu": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.winter_Thu}}",
+                "winter_Thu2": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.winter_Thu2}}",
+                "winter_Thu6": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.winter_Thu6}}",
+                "winter_Thu8": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.winter_Thu8}}",
+                "eventSeen_2523800101": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.eventSeen_2523800101}}",
+                "eventSeen_2523800101_memory_oneday": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.eventSeen_2523800101_memory_oneday}}",
+                "eventSeen_2523800101_memory_oneweek": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.eventSeen_2523800101_memory_oneweek}}",
+                "eventSeen_2523800101_memory_twoweeks": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.eventSeen_2523800101_memory_twoweeks |MPP_EK_Sebastian_Name={{MPP_EK_Sebastian_Name_T}} |MPP_EK_Sebastian_Lower00={{MPP_EK_Sebastian_Lower_T |valueAt=0}} |MPP_EK_Sebastian_Lower02={{MPP_EK_Sebastian_Lower_T |valueAt=2}} }}",
+                "eventSeen_2523800101_memory_fourweeks": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.eventSeen_2523800101_memory_fourweeks |MPP_EK_Maru_Name={{MPP_EK_Maru_Name_T}} |MPP_EK_Maru_Lower01={{MPP_EK_Maru_Lower_T |valueAt=1}} |MPP_EK_Maru_Lower04={{MPP_EK_Maru_Lower_T |valueAt=4}} |MPP_EK_Maru_Upper01={{MPP_EK_Maru_Upper_T |valueAt=1}} }}",
+                "eventSeen_2523800101_memory_eightweeks": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.eventSeen_2523800101_memory_eightweeks}}",
+                "eventSeen_2523800101_memory_oneyear": "{{i18n:Mimic_StringData.Characters_Dialogue_Mimic.eventSeen_2523800101_memory_oneyear}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Rainy",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Rainy.Mimic}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue 01/13 Egg Festival",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Mimic": "{{i18n:Mimic_StringData.Data_Festivals_Spring13.Mimic}}",
+                "Mimic_y2": "{{i18n:Mimic_StringData.Data_Festivals_Spring13.Mimic_y2}}",
+                "Mimic_spouse": "{{i18n:Mimic_StringData.Data_Festivals_Spring13.Mimic_spouse}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue 01/24 Flower Dance",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Mimic": "{{i18n:Mimic_StringData.Data_Festivals_Spring24.Mimic}}",
+                "Mimic_y2": "{{i18n:Mimic_StringData.Data_Festivals_Spring24.Mimic_y2}}"
+            },
+            "When": {
+                "Spouse |contains=Mimic": false
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue 01/24 Flower Dance",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Mimic": "{{i18n:Mimic_StringData.Data_Festivals_Spring24.Mimic_spouse}}",
+                "Mimic_y2": "{{i18n:Mimic_StringData.Data_Festivals_Spring24.Mimic_spouse}}"
+            },
+            "When": {
+                "Spouse |contains=Mimic": true
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue 02/11 Luau",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Mimic": "{{i18n:Mimic_StringData.Data_Festivals_Summer11.Mimic}}",
+                "Mimic_y2": "{{i18n:Mimic_StringData.Data_Festivals_Summer11.Mimic_y2}}",
+                "Mimic_spouse": "{{i18n:Mimic_StringData.Data_Festivals_Summer11.Mimic_spouse}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue 02/28 Moonlight Jellies",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Mimic": "{{i18n:Mimic_StringData.Data_Festivals_Summer28.Mimic}}",
+                "Mimic_y2": "{{i18n:Mimic_StringData.Data_Festivals_Summer28.Mimic_y2}}",
+                "Mimic_spouse": "{{i18n:Mimic_StringData.Data_Festivals_Summer28.Mimic_spouse}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue 03/16 Fair",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "Mimic": "{{i18n:Mimic_StringData.Data_Festivals_Fall16.Mimic}}",
+                "Mimic_y2": "{{i18n:Mimic_StringData.Data_Festivals_Fall16.Mimic_y2}}",
+                "Mimic_spouse": "{{i18n:Mimic_StringData.Data_Festivals_Fall16.Mimic_spouse}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue 03/27 Spirit's Eve",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "Mimic": "{{i18n:Mimic_StringData.Data_Festivals_Fall27.Mimic}}",
+                "Mimic_y2": "{{i18n:Mimic_StringData.Data_Festivals_Fall27.Mimic_y2}}",
+                "Mimic_spouse": "{{i18n:Mimic_StringData.Data_Festivals_Fall27.Mimic_spouse}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue 04/08 Festival of Ice",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries": {
+                "Mimic": "{{i18n:Mimic_StringData.Data_Festivals_Winter8.Mimic}}",
+                "Mimic_y2": "{{i18n:Mimic_StringData.Data_Festivals_Winter8.Mimic_y2}}",
+                "Mimic_spouse": "{{i18n:Mimic_StringData.Data_Festivals_Winter8.Mimic_spouse}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue 04/25 Winter Star",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "Mimic": "{{i18n:Mimic_StringData.Data_Festivals_Winter25.Mimic}}",
+                "Mimic_y2": "{{i18n:Mimic_StringData.Data_Festivals_Winter25.Mimic_y2}}",
+                "Mimic_spouse": "{{i18n:Mimic_StringData.Data_Festivals_Winter25.Mimic_spouse}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Engagement",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "Mimic0": "{{i18n:Mimic_StringData.Data_EngagementDialogue.Mimic0}}",
+                "Mimic1": "{{i18n:Mimic_StringData.Data_EngagementDialogue.Mimic1}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Marriage",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueMimic",
+            "Entries": {
+                "spring_1": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.spring_1}}",
+                "summer_14": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.summer_14}}",
+                "fall_2": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.fall_2}}",
+                "winter_17": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.winter_17}}",
+                "patio_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.patio_Mimic}}",
+                "Rainy_Day_0": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Rainy_Day_0}}",
+                "Rainy_Day_1": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Rainy_Day_1}}",
+                "Rainy_Day_2": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Rainy_Day_2}}",
+                "Rainy_Day_3": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Rainy_Day_3}}",
+                "Rainy_Day_4": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Rainy_Day_4}}",
+                "Indoor_Day_0": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Indoor_Day_0}}",
+                "Indoor_Day_1": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Indoor_Day_1}}",
+                "Indoor_Day_2": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Indoor_Day_2}}",
+                "Indoor_Day_3": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Indoor_Day_3}}",
+                "Indoor_Day_4": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Indoor_Day_4}}",
+                "Rainy_Night_0": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Rainy_Night_0}}",
+                "Rainy_Night_1": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Rainy_Night_1}}",
+                "Rainy_Night_2": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Rainy_Night_2}}",
+                "Rainy_Night_3": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Rainy_Night_3}}",
+                "Rainy_Night_4": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Rainy_Night_4}}",
+                "Rainy_Night_5": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Rainy_Night_5}}",
+                "Indoor_Night_0": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Indoor_Night_0}}",
+                "Indoor_Night_1": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Indoor_Night_1}}",
+                "Indoor_Night_2": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Indoor_Night_2}}",
+                "Indoor_Night_3": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Indoor_Night_3}}",
+                "Indoor_Night_4": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Indoor_Night_4}}",
+                "Indoor_Night_5": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Indoor_Night_5}}",
+                "funLeave_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.funLeave_Mimic}}",
+                "funReturn_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.funReturn_Mimic}}",
+                "spring_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.spring_Mimic}}",
+                "summer_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.summer_Mimic}}",
+                "fall_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.fall_Mimic}}",
+                "winter_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.winter_Mimic}}",
+                "Outdoor_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Outdoor_Mimic}}",
+                "Outdoor_0": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Outdoor_0}}",
+                "Outdoor_1": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Outdoor_1}}",
+                "Outdoor_2": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Outdoor_2}}",
+                "Outdoor_3": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Outdoor_3}}",
+                "Outdoor_4": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Outdoor_4}}",
+                "Outdoor_5": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Outdoor_5}}",
+                "spouseRoom_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.spouseRoom_Mimic}}",
+                "OneKid_0": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.OneKid_0}}",
+                "OneKid_1": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.OneKid_1}}",
+                "OneKid_2": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.OneKid_2}}",
+                "OneKid_3": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.OneKid_3}}",
+                "OneKid_4": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.OneKid_4}}",
+                "TwoKids_0": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.TwoKids_0}}",
+                "TwoKids_1": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.TwoKids_1}}",
+                "TwoKids_2": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.TwoKids_2}}",
+                "TwoKids_3": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.TwoKids_3}}",
+                "TwoKids_4": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.TwoKids_4}}",
+                "Good_0": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Good_0}}",
+                "Good_1": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Good_1}}",
+                "Good_2": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Good_2}}",
+                "Good_3": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Good_3}}",
+                "Good_4": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Good_4}}",
+                "Good_5": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Good_5}}",
+                "Good_6": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Good_6}}",
+                "Good_7": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Good_7}}",
+                "Good_8": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Good_8}}",
+                "Good_9": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Good_9}}",
+                "Neutral_0": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Neutral_0}}",
+                "Neutral_1": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Neutral_1}}",
+                "Neutral_2": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Neutral_2}}",
+                "Neutral_3": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Neutral_3}}",
+                "Neutral_4": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Neutral_4}}",
+                "Neutral_5": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Neutral_5}}",
+                "Neutral_6": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Neutral_6}}",
+                "Neutral_7": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Neutral_7}}",
+                "Neutral_8": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Neutral_8}}",
+                "Neutral_9": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Neutral_9}}",
+                "Bad_0": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Bad_0}}",
+                "Bad_1": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Bad_1}}",
+                "Bad_2": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Bad_2}}",
+                "Bad_3": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Bad_3}}",
+                "Bad_4": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Bad_4}}",
+                "Bad_5": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Bad_5}}",
+                "Bad_6": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Bad_6}}",
+                "Bad_7": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Bad_7}}",
+                "Bad_8": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Bad_8}}",
+                "Bad_9": "{{i18n:Mimic_StringData.Characters_Dialogue_MarriageDialogueMimic.Bad_9}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Extra",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "SummitEvent_Dialogue3_Mimic": "{{i18n:Mimic_StringData.Data_ExtraDialogue.SummitEvent_Dialogue3_Mimic}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Strings From Maps",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "MimicRoom.001": "{{i18n:Mimic_StringData.Strings_StringsFromMaps.MimicRoom.001}}",
+                "MimicRoom.002": "{{i18n:Mimic_StringData.Strings_StringsFromMaps.MimicRoom.002}}",
+                "MimicRoom.003": "{{i18n:Mimic_StringData.Strings_StringsFromMaps.MimicRoom.003 |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} }}",
+                "MimicRoom.004": "{{i18n:Mimic_StringData.Strings_StringsFromMaps.MimicRoom.004}}",
+                "MimicSpouseRoom.001": "{{i18n:Mimic_StringData.Strings_StringsFromMaps.MimicSpouseRoom.001}}",
+                "MimicSpouseRoom.002": "{{i18n:Mimic_StringData.Strings_StringsFromMaps.MimicSpouseRoom.002 |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} |MPP_EK_Mimic_Lower04={{MPP_EK_Mimic_Lower_T |valueAt=4}} }}",
+                "MimicSpouseRoom.003": "{{i18n:Mimic_StringData.Strings_StringsFromMaps.MimicSpouseRoom.003}}",
+                "MimicSpouseArea.001": "{{i18n:Mimic_StringData.Strings_StringsFromMaps.MimicSpouseArea.001}}",
+                "MimicSpouseArea.002": "{{i18n:Mimic_StringData.Strings_StringsFromMaps.MimicSpouseArea.002 |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} }}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Strings From CS Files",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "Mimic_AfterWedding": "{{i18n:Mimic_StringData.Strings_StringsFromCSFiles.Mimic_AfterWedding}}",
+                "Mimic_Engaged": "{{i18n:Mimic_StringData.Strings_StringsFromCSFiles.Mimic_Engaged}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Movie Reactions",
+            "Action": "EditData",
+            "Target": "Strings/movieReactions",
+            "Entries": {
+                "Mimic_love_movie_BeforeMovie": "{{i18n:Mimic_StringData.Strings_MovieReactions.Mimic_love_movie_BeforeMovie}}",
+                "Mimic_love_movie_DuringMovie": "{{i18n:Mimic_StringData.Strings_MovieReactions.Mimic_love_movie_DuringMovie}}",
+                "Mimic_love_movie_AfterMovie": "{{i18n:Mimic_StringData.Strings_MovieReactions.Mimic_love_movie_AfterMovie}}",
+                "Mimic_like_movie_BeforeMovie": "{{i18n:Mimic_StringData.Strings_MovieReactions.Mimic_like_movie_BeforeMovie}}",
+                "Mimic_like_movie_DuringMovie": "{{i18n:Mimic_StringData.Strings_MovieReactions.Mimic_like_movie_DuringMovie}}",
+                "Mimic_like_movie_AfterMovie": "{{i18n:Mimic_StringData.Strings_MovieReactions.Mimic_like_movie_AfterMovie}}",
+                "Mimic_dislike_movie_BeforeMovie": "{{i18n:Mimic_StringData.Strings_MovieReactions.Mimic_dislike_movie_BeforeMovie}}",
+                "Mimic_dislike_movie_DuringMovie": "{{i18n:Mimic_StringData.Strings_MovieReactions.Mimic_dislike_movie_DuringMovie}}",
+                "Mimic_dislike_movie_AfterMovie": "{{i18n:Mimic_StringData.Strings_MovieReactions.Mimic_dislike_movie_AfterMovie}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Data Movie Reactions",
+            "Action": "EditData",
+            "Target": "Data/movieReactions",
+            "Entries": {
+                "NPCName": "Mimic",
+                "Reactions": [
+                    {
+                        "Tag": "horror",
+                        "Response": "love",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Love_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Love_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Love_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_0"
+                    },
+                    {
+                        "Tag": "art",
+                        "Response": "love",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Love_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Love_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Love_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_1"
+                    },
+                    {
+                        "Tag": "sci-fi",
+                        "Response": "like",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_2"
+                    },
+                    {
+                        "Tag": "classic",
+                        "Response": "like",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_3"
+                    },
+                    {
+                        "Tag": "romance",
+                        "Response": "like",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_4"
+                    },
+                    {
+                        "Tag": "documentary",
+                        "Response": "like",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Like_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_5"
+                    },
+                    {
+                        "Tag": "action",
+                        "Response": "dislike",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Dislike_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Dislike_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Dislike_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_6"
+                    },
+                    {
+                        "Tag": "comedy",
+                        "Response": "dislike",
+                        "Whitelist": [],
+                        "SpecialResponses": {
+                            "BeforeMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Dislike_Movie_BeforeMovie]"
+                            },
+                            "DuringMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Dislike_Movie_DuringMovie]"
+                            },
+                            "AfterMovie": {
+                                "ResponsePoint": null,
+                                "Script": null,
+                                "Text": "[LocalizedText Strings\\MovieReactions:Mimic_Dislike_Movie_AfterMovie]"
+                            }
+                        },
+                        "Id": "reaction_7"
+                    },
+                    {
+                        "Tag": "family",
+                        "Response": "reject",
+                        "Whitelist": [],
+                        "Id": "reaction_8"
+                    }
+                ]
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Animation Descriptions",
+            "Action": "EditData",
+            "Target": "Strings/animationDescriptions",
+            "Entries": {
+                "Mimic_DesertFestival_2.001": "{{i18n:Mimic_StringData.Strings_AnimationDescriptions.Mimic_DesertFestival_2.001}}",
+                "Mimic_marriage_DesertFestival_2.001": "{{i18n:Mimic_StringData.Strings_AnimationDescriptions.Mimic_marriage_DesertFestival_2.001 |MPP_EK_Emily_Name={{MPP_EK_Emily_Name_T}} |MPP_EK_Emily_Lower03={{MPP_EK_Emily_Lower_T |valueAt=3}} }}",
+                "Mimic_N.001": "{{i18n:Mimic_StringData.Strings_AnimationDescriptions.Mimic_N.001}}",
+                "Mimic_marriage_N.001": "{{i18n:Mimic_StringData.Strings_AnimationDescriptions.Mimic_marriage_N.001}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Data Animation Descriptions",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "Mimic_sleep": "52/52/52"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Schedules",
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Mimic",
+            "Entries": {
+                "Mon": "800 Town 37 12 2/ 1000 Town 23 27 1/ 1130 Town 27 22 2/ 1230 Town 41 39 2/ 1430 Town 69 15 3/ 1700 ScienceHouse 26 10 2/ 1900 MPP_EK_MimicRoom 3 5 0 Mimic_SitUp/ 2200 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "marriage_Mon": "900 ScienceHouse 15 8 3/ 1230 Mountain 28 15 2/ 2100 bed",
+                "Tue": "800 Town 69 9 2/ 1130 Town 27 22 2/ 1230 Town 35 38 3/ 1430 Town 68 90 1/ 1700 ScienceHouse 26 10 2/ 1900 MPP_EK_MimicRoom 3 5 2/ 2200 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "Wed": "900 Mountain 9 5 3/ 1130 ScienceHouse 26 10 2/ 1230 BusStop 22 22 3/ 1400 Forest 66 11 3/ 1500 Forest 105 24 1/ 1700 ScienceHouse 5 18 2/ 1900 MPP_EK_MimicRoom 3 5 0 Mimic_SitUp/ 2200 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "Thu": "800 Town 69 52 1/ 1000 Town 69 55 1/ 1130 Town 53 94 2/ 1230 Town 74 93 1/ 1430 Town 74 96/ 1700 ScienceHouse 26 10 2/ 1900 MPP_EK_MimicRoom 3 5 0 Mimic_SitUp/ 2200 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "Fri": "800 Town 23 53 1/ 930 Town 32 56 1/ 1000 Town 25 61 3/ 1030 Town 22 67 3/ 1100 Town 37 68 1/ 1130 Town 43 78 2/ 1200 Town 28 75 3/ 1230 Town 29 75 1/ 1300 Town 27 90 0/ 1330 Town 29 75 1/ 1400 Town 53 101 3/ 1430 Town 55 101 1/ 1500 Saloon 38 19 2/ 2100 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "marriage_Fri": "800 Town 23 53 1/ 930 Town 32 56 1/ 1000 Town 25 61 3/ 1030 Town 22 67 3/ 1100 Town 37 68 1/ 1130 Town 43 78 2/ 1200 Town 28 75 3/ 1230 Town 29 75 1/ 1300 Town 27 90 0/ 1330 Town 29 75 1/ 1400 Town 53 101 3/ 1430 Town 55 101 1/ 1500 Saloon 38 19 2/ 2100 bed",
+                "summer_Fri": "900 Mine 14 4 3/ 1200 Mine 11 9 3/ 1430 Mountain 23 4 0/ 1600 ScienceHouse 26 10 2/ 1800 MPP_EK_MimicRoom 3 5 0 Mimic_SitUp/ 2200 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "Sat": "900 MPP_EK_MimicRoom 3 5 0 Mimic_SitUp/ 1200 Mountain 48 24 1/ 1600 ScienceHouse 26 10 2/ 1800 MPP_EK_MimicRoom 3 5 0 Mimic_SitUp/ 2200 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "Sun": "900 ScienceHouse 2 21 3/ 1230 Mountain 28 15 2/ 1600 ScienceHouse 26 10 2/ 1800 MPP_EK_MimicRoom 3 5 0 Mimic_SitUp/ 2200 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "rain": "900 MPP_EK_MimicRoom 9 9 0/ 1200 Town 49 32 2/ 1600 ScienceHouse 26 10 2/ 1800 MPP_EK_MimicRoom 3 5 0 Mimic_SitUp/ 2200 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "rain2": "900 MPP_EK_MimicRoom 9 9 0/ 1600 ScienceHouse 26 10 2/ 1800 MPP_EK_MimicRoom 3 5 0 Mimic_SitUp/ 2200 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "GreenRain": "900 MPP_EK_MimicRoom 8 5 0/ 2100 MPP_EK_MimicRoom 3 5 0 Mimic_SitUp/ 2200 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "DesertFestival_2.001": "900 Desert 41 6 2 \"Strings\\animationDescriptions:Mimic_DesertFestival_2.001\"/ 2400 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "marriage_DesertFestival_2.001": "900 Desert 22 39 1 \"Strings\\animationDescriptions:Mimic_marriage_DesertFestival_2.001\"/ 2400 bed",
+                "N.001": "800 Town 69 9 2/ 1130 Town 27 22 2/ 1230 Town 35 38 3/ 1430 Town 68 90 1/ 1700 Beach 13 30 1 \"Strings\\animationDescriptions:Mimic_N.001\"/ 2400 MPP_EK_MimicRoom 10 6 3 Mimic_sleep",
+                "marriage_N.001": "1700 Beach 37 33 1 \"Strings\\animationDescriptions:Mimic_marriage_N.001\"/ 2400 bed"
+            },
+            "When": {
+                "HasSeenEvent |contains=2523800101": true
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Demetrius",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+            "Entries": {
+                "eventSeen_2523800101": "{{i18n:Mimic_StringData.Characters_Dialogue_Demetrius.eventSeen_2523800101 |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} |MPP_EK_Mimic_Lower01={{MPP_EK_Mimic_Lower_T |valueAt=1}} |MPP_EK_Mimic_Lower13={{MPP_EK_Mimic_Lower_T |valueAt=13}} |MPP_EK_Maru_Name={{MPP_EK_Maru_Name_T}} }}",
+                "eventSeen_2523800101_memory_eightweeks": "{{i18n:Mimic_StringData.Characters_Dialogue_Demetrius.eventSeen_2523800101_memory_eightweeks |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} |MPP_EK_Mimic_Lower04={{MPP_EK_Mimic_Lower_T |valueAt=4}} |MPP_EK_Mimic_Lower13={{MPP_EK_Mimic_Lower_T |valueAt=13}} }}",
+                "dating_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Demetrius.dating_Mimic |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} |MPP_EK_Mimic_Lower03={{MPP_EK_Mimic_Lower_T |valueAt=3}} |MPP_EK_Mimic_Lower23={{MPP_EK_Mimic_Lower_T |valueAt=23}} }}",
+                "married_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Demetrius.married_Mimic |MPP_EK_Mimic_Lower03={{MPP_EK_Mimic_Lower_T |valueAt=3}} |MPP_EK_Sebastian_Name={{MPP_EK_Sebastian_Name_T}} |MPP_EK_Sebastian_Lower00={{MPP_EK_Sebastian_Lower_T |valueAt=0}} }}",
+                "Mimic_inlaw_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Demetrius.Mimic_inlaw_Mimic}}",
+                "divorced_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Demetrius.divorced_Mimic |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} }}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Lewis",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Lewis",
+            "Entries": {
+                "eventSeen_2523800101": "{{i18n:Mimic_StringData.Characters_Dialogue_Lewis.eventSeen_2523800101 |MPP_EK_Mimic_Lower03={{MPP_EK_Mimic_Lower_T |valueAt=3}} }}",
+                "eventSeen_2523800101_memory_oneyear": "{{i18n:Mimic_StringData.Characters_Dialogue_Lewis.eventSeen_2523800101_memory_oneyear |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} |MPP_EK_Mimic_Lower01={{MPP_EK_Mimic_Lower_T |valueAt=1}} |MPP_EK_Mimic_Lower04={{MPP_EK_Mimic_Lower_T |valueAt=4}} }}",
+                "married_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Lewis.married_Mimic}}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Maru",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries": {
+                "eventSeen_2523800101": "{{i18n:Mimic_StringData.Characters_Dialogue_Maru.eventSeen_2523800101 |MPP_EK_Mimic_Lower01={{MPP_EK_Mimic_Lower_T |valueAt=1}} |MPP_EK_Mimic_Lower13={{MPP_EK_Mimic_Lower_T |valueAt=13}} }}",
+                "eventSeen_2523800101_memory_fourweeks": "{{i18n:Mimic_StringData.Characters_Dialogue_Maru.eventSeen_2523800101_memory_fourweeks |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} |MPP_EK_Mimic_Lower01={{MPP_EK_Mimic_Lower_T |valueAt=1}} |MPP_EK_Mimic_Lower04={{MPP_EK_Mimic_Lower_T |valueAt=4}} }}",
+                "dating_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Maru.dating_Mimic |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} }}",
+                "married_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Maru.married_Mimic}}",
+                "Mimic_inlaw_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Maru.Mimic_inlaw_Mimic |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} }}",
+                "divorced_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Maru.divorced_Mimic |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} |MPP_EK_Mimic_Lower03={{MPP_EK_Mimic_Lower_T |valueAt=3}} |MPP_EK_Mimic_Upper={{MPP_EK_Mimic_Upper_T |valueAt=1}} }}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Robin",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries": {
+                "eventSeen_2523800101": "{{i18n:Mimic_StringData.Characters_Dialogue_Robin.eventSeen_2523800101 |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} }}",
+                "eventSeen_2523800101_memory_oneweek": "{{i18n:Mimic_StringData.Characters_Dialogue_Robin.eventSeen_2523800101_memory_oneweek |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} |MPP_EK_Mimic_Lower01={{MPP_EK_Mimic_Lower_T |valueAt=1}} }}",
+                "dating_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Robin.dating_Mimic |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} |MPP_EK_Mimic_Lower03={{MPP_EK_Mimic_Lower_T |valueAt=3}} |MPP_EK_Mimic_Upper={{MPP_EK_Mimic_Upper_T |valueAt=1}} }}",
+                "married_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Robin.married_Mimic}}",
+                "Mimic_inlaw_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Robin.Mimic_inlaw_Mimic |MPP_EK_Mimic_Lower01={{MPP_EK_Mimic_Lower_T |valueAt=1}} |MPP_EK_Mimic_Lower29={{MPP_EK_Mimic_Lower_T |valueAt=29}} |MPP_EK_Mimic_Upper={{MPP_EK_Mimic_Upper_T |valueAt=1}} }}",
+                "divorced_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Robin.divorced_Mimic |MPP_EK_Mimic_Lower13={{MPP_EK_Mimic_Lower_T |valueAt=13}} |MPP_EK_Mimic_Upper={{MPP_EK_Mimic_Upper_T |valueAt=1}} }}"
+            }
+        },
+        {
+            "LogName": "Mimic - StringData - Dialogue Sebastian",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries": {
+                "eventSeen_2523800101": "{{i18n:Mimic_StringData.Characters_Dialogue_Sebastian.eventSeen_2523800101}}",
+                "eventSeen_2523800101_memory_twoweeks": "{{i18n:Mimic_StringData.Characters_Dialogue_Sebastian.eventSeen_2523800101_memory_twoweeks |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} |MPP_EK_Mimic_Lower01={{MPP_EK_Mimic_Lower_T |valueAt=1}} }}",
+                "dating_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Sebastian.dating_Mimic |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} }}",
+                "married_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Sebastian.married_Mimic |MPP_EK_Mimic_Lower03={{MPP_EK_Mimic_Lower_T |valueAt=3}} }}",
+                "Mimic_inlaw_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Sebastian.Mimic_inlaw_Mimic |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} |MPP_EK_Mimic_Lower03={{MPP_EK_Mimic_Lower_T |valueAt=3}} }}",
+                "divorced_Mimic": "{{i18n:Mimic_StringData.Characters_Dialogue_Sebastian.divorced_Mimic |MPP_EK_Mimic_Upper={{MPP_EK_Mimic_Upper_T |valueAt=1}} }}"
+            }
+        }
+    ]
+}

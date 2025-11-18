@@ -1,0 +1,132 @@
+{
+    "Changes": [
+        {
+            "LogName": "Mimic - Base OW Sprite Empty",
+            "Action": "Load",
+            "Target": "Characters/Mimic",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "Mimic - Base OW Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Mimic",
+            "FromFile": "assets/Characters/NPCs_Core/Mimic/Mimic_Base_OW_F.png",
+            "When": {
+                "Mimic_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Mimic - Winter OW Sprite Empty",
+            "Action": "Load",
+            "Target": "Characters/Mimic_Winter",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "Mimic - Winter OW Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Mimic_Winter",
+            "FromFile": "assets/Characters/NPCs_Core/Mimic/Mimic_Winter_OW_F.png",
+            "When": {
+                "Mimic_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Mimic - Beach OW Sprite Empty",
+            "Action": "Load",
+            "Target": "Characters/Mimic_Beach",
+            "FromFile": "assets/Characters/Size32_OWSpriteBase.png"
+        },
+        {
+            "LogName": "Mimic - Beach OW Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Mimic_Beach",
+            "FromFile": "assets/Characters/NPCs_Core/Mimic/Mimic_Beach_OW_F.png",
+            "When": {
+                "Mimic_Gender": "female"
+            }
+        },
+
+        {
+            "LogName": "Mimic - Base Portrait",
+            "Action": "Load",
+            "Target": "Portraits/Mimic",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
+            "When": {
+                "Mimic_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Mimic - Winter Portrait",
+            "Action": "Load",
+            "Target": "Portraits/Mimic_Winter",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
+            "When": {
+                "Mimic_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Mimic - Beach Portrait",
+            "Action": "Load",
+            "Target": "Portraits/Mimic_Beach",
+            "FromFile": "assets/Characters/Size1536_PortraitBase.png",
+            "When": {
+                "Mimic_Gender": "female"
+            }
+        },
+        {
+            "LogName": "Mimic - Upscale Portraits",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "25238_HDMimic_Base_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Base_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Base_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Base_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Base_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Base_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Base_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Base_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Base_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Base_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Base_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Base_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Base_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Base_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Base_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Base_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Base_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Base_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Base_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Base_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Base_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Base_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Winter_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Winter_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Winter", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Winter_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Winter_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Winter", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Winter_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Winter_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Winter", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Winter_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Winter_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Winter", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Winter_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Winter_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Winter", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Winter_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Winter_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Winter", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Winter_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Winter_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Winter", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Winter_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Winter_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Winter", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Winter_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Winter_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Winter", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Winter_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Winter_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Winter", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Winter_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Winter_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Winter", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Beach_00": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Beach_HD_F.png}}:0", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Beach", "TargetRect": {"X": 0, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Beach_01": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Beach_HD_F.png}}:1", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Beach", "TargetRect": {"X": 64, "Y": 0, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Beach_02": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Beach_HD_F.png}}:2", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Beach", "TargetRect": {"X": 0, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Beach_03": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Beach_HD_F.png}}:3", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Beach", "TargetRect": {"X": 64, "Y": 64, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Beach_04": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Beach_HD_F.png}}:4", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Beach", "TargetRect": {"X": 0, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Beach_05": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Beach_HD_F.png}}:5", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Beach", "TargetRect": {"X": 64, "Y": 128, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Beach_06": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Beach_HD_F.png}}:6", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Beach", "TargetRect": {"X": 0, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Beach_07": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Beach_HD_F.png}}:7", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Beach", "TargetRect": {"X": 64, "Y": 192, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Beach_08": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Beach_HD_F.png}}:8", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Beach", "TargetRect": {"X": 0, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Beach_09": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Beach_HD_F.png}}:9", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Beach", "TargetRect": {"X": 64, "Y": 256, "Width": 64, "Height": 64}},
+                "25238_HDMimic_Beach_10": {"SourceTexture": "{{InternalAssetKey: assets/Characters/NPCs_Core/Mimic/Mimic_Beach_HD_F.png}}:10", "SourceSizeOverride": {"X": 256, "Y": 256}, "TargetTexture": "Portraits/Mimic_Beach", "TargetRect": {"X": 0, "Y": 320, "Width": 64, "Height": 64}}
+            },
+            "When": {
+                "Mimic_Gender": "female"
+            }
+        },
+
+        {
+            "LogName": "Mimic - Purchaseable Portrait",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "Adomin8er.MPP_EK_MimicPortrait": "Mimic/painting/2 2/2 2/1/999/-1/{{i18n:Mimic_StringData.Characters_DisplayName |MPP_EK_Mimic_Name={{MPP_EK_Mimic_Name_T}} }} Portrait/0/Mods\\Adomin8er.Adomin8ersMonsterPartyPack_TheEldritchKin\\EK_Portraits/true"
+            },
+            "When": {
+                "Mimic_Gender": "female"
+            }
+        }
+    ]
+}
