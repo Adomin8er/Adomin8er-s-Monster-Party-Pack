@@ -1550,7 +1550,7 @@
     "Data_Events.2523800501.004": "Jeez. You really don't like being scared do you.$5#$b#Do you always swing your sword a people for harmless pranks?$5",
     "Data_Events.2523800501.005": "Eat you?$10#$b#That sounds... gross.$10",
     "Data_Events.2523800501.006": "Anyways.$0#$b$I'm Tori!$1#$b#Do you want to play a game with me?$1",
-    "Data_Events.2523800501.007": "Come on!$1#$b#My home is over here!$1#$b#I just moved in so it's a bit messy but it'll be fun, I promise!$1",
+    "Data_Events.2523800501.007": "Come on!$1#$b#My home is over here!$1#$b#I just moved in so it's a bit empty but it'll be fun, I promise!$1",
     "Data_Events.2523800501.008": "What is it?$10",
     "Data_Events.2523800501.010": "Oh. Okay...$2",
     "Data_Events.2523800501.011": "But you have to promise you'll come play with me later!$3#$b#A real promise! Not a fake human 'maybe' promise!$3",
@@ -1665,7 +1665,7 @@
     "Data_Events.2523800508.020": "Tori... you were brave. I'm proud of you, kid.$4",
     "Data_Events.2523800508.021": "Thanks, Marlon. I'll—try not to cause trouble again...$2",
     "Data_Events.2523800508.022": "*Clint laughs kindly.* Trouble? That was Kaliah's fault, not yours. I've never had a better helper.$9",
-    "Data_Events.2523800508.023": "*Tori turns to you, teary and grateful.*$7#b#Thanks for standing by me, @... I—let's go home.$6"
+    "Data_Events.2523800508.023": "*Tori turns to you, teary and grateful.*$7#b#Thanks for standing by me, @... I—let's go home.$6",
 
     "===Category.006===": "<<<<<<<<<<<<<<<     Code.StringData.Data_Festivals       >>>>>>>>>>>>>>>"
 }

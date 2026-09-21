@@ -1,0 +1,12 @@
+{
+    "Changes": [
+        {
+            "LogName": "Reaper - ImageData Placeholder",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Reaper_ImageData.001": "Placeholder for Reaper image data."
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "Changes": [
+        {
+            "LogName": "Mummy - StringData Placeholder",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Mummy_StringData.001": "Placeholder for Mummy string data."
+            }
+        }
+    ]
+}

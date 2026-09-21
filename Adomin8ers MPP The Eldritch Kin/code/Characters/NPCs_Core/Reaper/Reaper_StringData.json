@@ -1,0 +1,12 @@
+{
+    "Changes": [
+        {
+            "LogName": "Reaper - StringData Placeholder",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Reaper_StringData.001": "Placeholder for Reaper string data."
+            }
+        }
+    ]
+}

@@ -229,6 +229,68 @@
                     }
                 }
             }
-        }
+        },
+        
+        {
+            "LogName": "Mimic - 25238/code/Maps/Setups - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Location_Mimic.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Location_Mimic.002": "|            Data/Locations/Mimic            |",
+                "DeveloperNotes_Data_Location_Mimic.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Mimic - Map Setup - Mine",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_Mine": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_Mine}}",
+                    "DefaultArrivalTile": {
+                        "X": 40,
+                        "Y": 13
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_Mine"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Mimic - Map Setup - MimicRoom",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MPP_EK_MimicRoom": {
+                    "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_MimicRoom}}",
+                    "DefaultArrivalTile": {
+                        "X": 5,
+                        "Y": 4
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MPP_EK_MimicRoom"
+                    }
+                }
+            }
+        },
+        // {
+        //     "LogName": "Mimic - Map Setup - SamHouse",
+        //     "Action": "EditData",
+        //     "Target": "Data/Locations",
+        //     "Entries": {
+        //         "MPP_EK_SamHouse": {
+        //             "DisplayName": "{{i18n:Maps.DisplayName.MPP_EK_SamHouse}}",
+        //             "DefaultArrivalTile": {
+        //                 "X": 4,
+        //                 "Y": 13
+        //             },
+        //             "CreateOnLoad": {
+        //                 "MapPath": "Maps/MPP_EK_SamHouse"
+        //             }
+        //         }
+        //     }
+        // }
     ]
 }

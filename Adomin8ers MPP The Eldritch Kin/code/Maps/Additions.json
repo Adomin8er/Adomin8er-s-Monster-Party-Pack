@@ -178,6 +178,46 @@
             "Target": "Maps/MPP_EK_KrakenSpouseRoom",
             "FromFile": "assets/Maps/MPP_EK_KrakenSpouseRoom.tmx",
             "When": null
+        },
+
+        
+        {
+            "LogName": "Mimic - 25238/code/Maps/Additions - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Maps_Additions_Mimic.001": "+--------------------------------------------+",
+                "DeveloperNotes_Maps_Additions_Mimic.002": "|                 Maps/Mimic                |",
+                "DeveloperNotes_Maps_Additions_Mimic.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "LogName": "Mimic - Map Addition - MPP_EK_Mine",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_Mine",
+            "FromFile": "assets/Maps/MPP_EK_Mine.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Mimic - Map Addition - MPP_EK_MimicRoom",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_MimicRoom",
+            "FromFile": "assets/Maps/MPP_EK_MimicRoom.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Mimic - Map Addition - MPP_EK_MimicSpouseArea",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_MimicSpouseArea",
+            "FromFile": "assets/Maps/MPP_EK_MimicSpouseArea.tmx",
+            "When": null
+        },
+        {
+            "LogName": "Mimic - Map Addition - MPP_EK_MimicSpouseRoom",
+            "Action": "Load",
+            "Target": "Maps/MPP_EK_MimicSpouseRoom",
+            "FromFile": "assets/Maps/MPP_EK_MimicSpouseRoom.tmx",
+            "When": null
         }
     ]
 }

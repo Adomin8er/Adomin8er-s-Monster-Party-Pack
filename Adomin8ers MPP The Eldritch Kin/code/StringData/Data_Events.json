@@ -330,6 +330,106 @@
         
 
         {
+            "LogName": "Gargoyle - 25238/code/StringData/Data_Events - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Events_Gargoyle.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Events_Gargoyle.002": "|            Data/Events/Gargoyle            |",
+                "DeveloperNotes_Data_Events_Gargoyle.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "Logname": "Gargoyle - 2523800300 - SpecialOrder Trigger Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800300/": "null"
+            }
+        },
+        {
+            "LogName": "Gargoyle - 2523800301 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800301/": "null"
+            }
+        },
+        {
+            "LogName": "Gargoyle - 2523800302 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800302/": "null"
+            }
+        },
+        {
+            "LogName": "Gargoyle - 2523800303 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800303/": "null"
+            }
+        },
+        {
+            "LogName": "Gargoyle - 2523800304 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800304/": "null"
+            }
+        },
+        {
+            "LogName": "Gargoyle - 2523800305 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800305/": "null"
+            }
+        },
+        {
+            "LogName": "Gargoyle - 2523800306 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800306/": "null"
+            }
+        },
+        {
+            "LogName": "Gargoyle - 2523800307 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800307/": "null"
+            }
+        },
+        {
+            "LogName": "Gargoyle - 2523800308 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800308/": "null"
+            }
+        },
+        {
+            "LogName": "Gargoyle - 2523800309 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800309/": "null"
+            }
+        },
+        {
+            "LogName": "Gargoyle - 2523800310 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800310/": "null"
+            }
+        },
+
+
+        {
             "LogName": "Kraken - 25238/code/StringData/Data_Events - DeveloperNotes",
             "Action": "EditData",
             "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
@@ -542,6 +642,306 @@
                 "Query: {{Time}} >= 1900 AND {{Time}} <= 2300": true
             },
             "Update": "OnTimeChange"
+        },
+
+
+        {
+            "LogName": "Mummy - 25238/code/StringData/Data_Events - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Events_Mummy.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Events_Mummy.002": "|             Data/Events/Mummy              |",
+                "DeveloperNotes_Data_Events_Mummy.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "Logname": "Mummy - 2523800600 - SpecialOrder Trigger Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800600/": "null"
+            }
+        },
+        {
+            "LogName": "Mummy - 2523800601 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800601/": "null"
+            }
+        },
+        {
+            "LogName": "Mummy - 2523800602 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800602/": "null"
+            }
+        },
+        {
+            "LogName": "Mummy - 2523800603 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800603/": "null"
+            }
+        },
+        {
+            "LogName": "Mummy - 2523800604 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800604/": "null"
+            }
+        },
+        {
+            "LogName": "Mummy - 2523800605 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800605/": "null"
+            }
+        },
+        {
+            "LogName": "Mummy - 2523800606 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800606/": "null"
+            }
+        },
+        {
+            "LogName": "Mummy - 2523800607 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800607/": "null"
+            }
+        },
+        {
+            "LogName": "Mummy - 2523800608 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800608/": "null"
+            }
+        },
+        {
+            "LogName": "Mummy - 2523800609 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800609/": "null"
+            }
+        },
+        {
+            "LogName": "Mummy - 2523800610 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800610/": "null"
+            }
+        },
+
+
+        {
+            "LogName": "Reaper - 25238/code/StringData/Data_Events - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Events_Reaper.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Events_Reaper.002": "|             Data/Events/Reaper             |",
+                "DeveloperNotes_Data_Events_Reaper.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "Logname": "Reaper - 2523800700 - SpecialOrder Trigger Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800700/": "null"
+            }
+        },
+        {
+            "LogName": "Reaper - 2523800701 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800701/": "null"
+            }
+        },
+        {
+            "LogName": "Reaper - 2523800702 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800702/": "null"
+            }
+        },
+        {
+            "LogName": "Reaper - 2523800703 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800703/": "null"
+            }
+        },
+        {
+            "LogName": "Reaper - 2523800704 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800704/": "null"
+            }
+        },
+        {
+            "LogName": "Reaper - 2523800705 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800705/": "null"
+            }
+        },
+        {
+            "LogName": "Reaper - 2523800706 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800706/": "null"
+            }
+        },
+        {
+            "LogName": "Reaper - 2523800707 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800707/": "null"
+            }
+        },
+        {
+            "LogName": "Reaper - 2523800708 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800708/": "null"
+            }
+        },
+        {
+            "LogName": "Reaper - 2523800709 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800709/": "null"
+            }
+        },
+        {
+            "LogName": "Reaper - 2523800710 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800710/": "null"
+            }
+        },
+
+
+        {
+            "LogName": "Slime - 25238/code/StringData/Data_Events - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Events_Slime.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Events_Slime.002": "|              Data/Events/Slime             |",
+                "DeveloperNotes_Data_Events_Slime.003": "+--------------------------------------------+"
+            }
+        },
+        {
+            "Logname": "Slime - 2523800800 - SpecialOrder Trigger Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800800/": "null"
+            }
+        },
+        {
+            "LogName": "Slime - 2523800801 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800801/": "null"
+            }
+        },
+        {
+            "LogName": "Slime - 2523800802 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800802/": "null"
+            }
+        },
+        {
+            "LogName": "Slime - 2523800803 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800803/": "null"
+            }
+        },
+        {
+            "LogName": "Slime - 2523800804 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800804/": "null"
+            }
+        },
+        {
+            "LogName": "Slime - 2523800805 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800805/": "null"
+            }
+        },
+        {
+            "LogName": "Slime - 2523800806 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800806/": "null"
+            }
+        },
+        {
+            "LogName": "Slime - 2523800807 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800807/": "null"
+            }
+        },
+        {
+            "LogName": "Slime - 2523800808 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800808/": "null"
+            }
+        },
+        {
+            "LogName": "Slime - 2523800809 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800809/": "null"
+            }
+        },
+        {
+            "LogName": "Slime - 2523800810 - Event Placeholder",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2523800810/": "null"
+            }
         }
     ]
 }

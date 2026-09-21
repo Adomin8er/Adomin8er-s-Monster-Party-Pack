@@ -777,12 +777,32 @@
       }
     },
     {
+      "LogName": "Include Gargoyle Placeholder",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Core/Gargoyle/Gargoyle_ImageData.json, code/Characters/NPCs_Core/Gargoyle/Gargoyle_StringData.json"
+    },
+    {
       "LogName": "Include Kraken Female",
       "Action": "Include",
       "FromFile": "code/Characters/NPCs_Core/Kraken/Kraken_ImageData.json, code/Characters/NPCs_Core/Kraken/Kraken_StringData.json",
       "When": {
         "Kraken_Gender": "female"
       }
+    },
+    {
+      "LogName": "Include Mummy Placeholder",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Core/Mummy/Mummy_ImageData.json, code/Characters/NPCs_Core/Mummy/Mummy_StringData.json"
+    },
+    {
+      "LogName": "Include Reaper Placeholder",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Core/Reaper/Reaper_ImageData.json, code/Characters/NPCs_Core/Reaper/Reaper_StringData.json"
+    },
+    {
+      "LogName": "Include Slime Placeholder",
+      "Action": "Include",
+      "FromFile": "code/Characters/NPCs_Core/Slime/Slime_ImageData.json, code/Characters/NPCs_Core/Slime/Slime_StringData.json"
     },
 
     // Event NPCs

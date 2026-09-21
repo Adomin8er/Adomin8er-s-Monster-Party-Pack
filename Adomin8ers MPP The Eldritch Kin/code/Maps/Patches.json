@@ -433,6 +433,73 @@
             "When": {
                 "Spouse |contains=Kraken": true
             }
+        },
+        
+        {
+            "LogName": "Mimic - 25238/code/Maps/Patches - DeveloperNotes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Data_Location_Mimic.001": "+--------------------------------------------+",
+                "DeveloperNotes_Data_Location_Mimic.002": "|            Data/Locations/Mimic            |",
+                "DeveloperNotes_Data_Location_Mimic.003": "+--------------------------------------------+"
+            }
+        },
+        // {
+        //     "LogName": "Mimic - Map Patch - Dropbox Clint",
+        //     "Action": "EditMap",
+        //     "Target": "Maps/SamHouse",
+        //     "FromFile": "assets/Maps/MPP_EK_SamHouse.tmx",
+        //     "FromArea": {
+        //         "X": 4,
+        //         "Y": 4,
+        //         "Width": 2,
+        //         "Height": 4
+        //     },
+        //     "ToArea": {
+        //         "X": 4,
+        //         "Y": 4,
+        //         "Width": 2,
+        //         "Height": 4
+        //     },
+        //     "When": {
+        //         "HasReadLetter |contains=Mimic_SpecialOrderThanks": false
+        //     },
+        //     "Update": "OnLocationChange"
+        // },
+        {
+            "LogName": "Mimic - Map Patch - Mine MimicRoom Warp",
+            "Action": "EditMap",
+            "Target": "Maps/Mine",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "23 3 MPP_EK_MimicRoom 6 13",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Mimic - Map Patch - Mine Tunnel",
+            "Action": "EditMap",
+            "Target": "Maps/Mine",
+            "FromFile": "assets/Maps/MPP_EK_Mine.tmx",
+            "FromArea": {
+                "X": 20,
+                "Y": 0,
+                "Width": 7,
+                "Height": 4
+            },
+            "ToArea": {
+                "X": 20,
+                "Y": 0,
+                "Width": 7,
+                "Height": 4
+            }
         }
     ]
 }

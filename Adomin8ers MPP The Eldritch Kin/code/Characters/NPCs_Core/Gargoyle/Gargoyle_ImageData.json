@@ -1,0 +1,12 @@
+{
+    "Changes": [
+        {
+            "LogName": "Gargoyle - ImageData Placeholder",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Gargoyle_ImageData.001": "Placeholder for Gargoyle image data."
+            }
+        }
+    ]
+}

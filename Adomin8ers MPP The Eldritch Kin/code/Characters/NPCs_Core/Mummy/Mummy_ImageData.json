@@ -1,0 +1,12 @@
+{
+    "Changes": [
+        {
+            "LogName": "Mummy - ImageData Placeholder",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MPP_EK_DeveloperNotes",
+            "Entries": {
+                "DeveloperNotes_Mummy_ImageData.001": "Placeholder for Mummy image data."
+            }
+        }
+    ]
+}
